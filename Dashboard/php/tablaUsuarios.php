@@ -2,6 +2,7 @@
 
   //Tablas Usuarios pages Dashboard-Usuarios
   require_once("../php/conexionBD.php");
+  include("../config.php");
   $conexion = conectar();
 
   $consulta = "SELECT * FROM usuarios";
@@ -11,10 +12,10 @@
     while($fila = mysqli_fetch_assoc($resultado)){
       echo "<tr>";
       echo "<td>
-              <a href='../templates/usuario.php?id=".$fila['idUsuario']."'>".$fila['idUsuario']."</a>
+              <a href='".$amigable."/panel/usuario/".$fila['idUsuario']."/'>".$fila['idUsuario']."</a>
             </td>";
       echo "<td>
-              <a href='../templates/usuario.php?id=".$fila['idUsuario']."'>".$fila['usuario']."</a>
+              <a href='".$amigable."/panel/usuario/".$fila['idUsuario']."/'>".$fila['usuario']."</a>
             </td>";
       echo "<td>".$fila['emailUsuario']."</td>";
       echo "<td>".$fila['saldoEfectivo']."</td>";

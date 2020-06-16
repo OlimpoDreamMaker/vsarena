@@ -1,6 +1,7 @@
 <?php
 $p = '..';
 session_start();
+require_once("../config.php");
 require_once("../php/conexionBD.php");
 require_once("../php/isAdmin.php");
 require_once("../php/dataUser.php");
@@ -24,7 +25,7 @@ desconectarBD($conexion);
 <head>
   <?php
   require_once("$p/components/head.php");
-  mostrarHead("Torneos",$p);
+  mostrarHead("Torneos",$url);
   ?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -238,7 +239,7 @@ desconectarBD($conexion);
               <!-- Titulo Form END -->
 
               <!-- Form START -->
-              <form role="form" action="../php/crearTorneo.php" method="POST">
+              <form role="form" action="<?php echo $url;?>/php/crearTorneo.php" method="POST">
                 
                 <!-- Card Body START -->
                 <div class="row card-body">

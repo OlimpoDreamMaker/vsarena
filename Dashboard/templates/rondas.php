@@ -1,6 +1,7 @@
 <?php
 $p = '..';
 session_start();
+require_once("../config.php");
 require_once("$p/php/conexionBD.php");
 require_once("$p/php/isAdmin.php");
 require_once("$p/php/dataUser.php");
@@ -41,7 +42,7 @@ desconectarBD($conexion);
 <head>
   <?php
   require_once("$p/components/head.php");
-  mostrarHead("Rondas",$p);
+  mostrarHead("Rondas",$url);
   ?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -77,8 +78,8 @@ desconectarBD($conexion);
           <!-- Navegacion Pages START -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="./torneos.php">Torneos</a></li>
-              <li class="breadcrumb-item"><a href="./torneo.php?id=<?php echo $idTorneo;?>"><?php echo $torneo;?></a></li>
+              <li class="breadcrumb-item"><a href="<?php echo $amigable;?>/panel/torneos/">Torneos</a></li>
+              <li class="breadcrumb-item"><a href="<?php echo $amigable;?>/panel/torneo/<?php echo $idTorneo;?>/"><?php echo $torneo;?></a></li>
               <li class="breadcrumb-item active"><?php echo $nombreRonda;?></li>
             </ol>
           </div>
@@ -134,8 +135,8 @@ desconectarBD($conexion);
                   <!-- Contenido Tabla Torneo START -->
                   <tbody>
                   <tr>
-                    <td><a href="./torneo.php?id=<?php echo $idTorneo;?>"><?php echo $idTorneo;?></a></td>
-                    <td><a href="./juego.php?id<?php echo $idJuego;?>"><?php echo $juego;?></a></td>
+                    <td><a href="<?php echo $amigable;?>/panel/torneo/<?php echo $idTorneo;?>/"><?php echo $idTorneo;?></a></td>
+                    <td><a href="<?php echo $amigable;?>/panel/juego/<?php echo $idJuego;?>/"><?php echo $juego;?></a></td>
                     <td><?php echo $cantMaxEquipos;?></td>
                     <td><?php if($fasesDeGrupo==1){echo "Si";}else{echo "No";}?></td>
                     <td><?php echo $modalidad;?></td>

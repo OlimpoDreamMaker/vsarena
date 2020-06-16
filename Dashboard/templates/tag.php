@@ -1,6 +1,7 @@
 <?php
 $p = '..';
 session_start();
+require_once("../config.php");
 require_once("../php/conexionBD.php");
 require_once("../php/isAdmin.php");
 $conexion = conectar();
@@ -30,7 +31,7 @@ desconectarBD($conexion);
 <head>
   <?php
   require_once("$p/components/head.php");
-  mostrarHead("Tag | $nombreTag",$p);
+  mostrarHead("Tag | $nombreTag",$url);
   ?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -66,7 +67,7 @@ desconectarBD($conexion);
           <!-- Navegacion Pages START -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="./noticias.php">Noticias</a></li>
+              <li class="breadcrumb-item"><a href="<?php echo $amigable;?>/panel/noticias/">Noticias</a></li>
               <li class="breadcrumb-item active"><?php echo $nombreTag;?></li>
             </ol>
           </div>
@@ -164,7 +165,7 @@ desconectarBD($conexion);
               <!-- Card Header END -->
 
               <!-- Form START -->
-              <form class="form-horizontal" method="POST" action="../php/modificarTag.php?id=<?php echo $idTag;?>">
+              <form class="form-horizontal" method="POST" action="<?php echo $url;?>/php/modificarTag.php?id=<?php echo $idTag;?>">
 
                 <!-- Card Body START -->
                 <div class="card-body">
@@ -209,7 +210,7 @@ desconectarBD($conexion);
               <!-- Subtitulo END -->
 
               <!-- Form START -->
-              <form class="form-horizontal" method="POST" action="../php/eliminarTag.php?id=<?php echo $idTag;?>">
+              <form class="form-horizontal" method="POST" action="<?php echo $url;?>/php/eliminarTag.php?id=<?php echo $idTag;?>">
 
                 <!-- Card Body START -->
                 <div class="card-body">

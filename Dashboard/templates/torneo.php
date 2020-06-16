@@ -1,6 +1,7 @@
 <?php
 $p = '..';
 session_start();
+require_once("../config.php");
 require_once("../php/conexionBD.php");
 require_once("../php/isAdmin.php");
 require_once("../php/dataUser.php");
@@ -45,7 +46,7 @@ desconectarBD($conexion);
 <head>
   <?php
   require_once("$p/components/head.php");
-  mostrarHead("Torneo | $nombreTorneo",$p);
+  mostrarHead("Torneo | $nombreTorneo",$url);
   ?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -81,7 +82,7 @@ desconectarBD($conexion);
           <!-- Navegacion Pages START -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="./torneos.php">Torneos</a></li>
+              <li class="breadcrumb-item"><a href="<?php echo $amigable;?>/panel/torneos/">Torneos</a></li>
               <li class="breadcrumb-item active"><?php echo $nombreTorneo;?></li>
             </ol>
           </div>
@@ -210,11 +211,11 @@ desconectarBD($conexion);
                   <tbody>
                   <tr>
                     <td><?php echo $idTorneo;?></td>
-                    <td><a href="./juego.php?id=<?php echo $idJuego;?>"><?php echo $juego;?></a></td>
+                    <td><a href="<?php echo $amigable;?>/panel/juego/<?php echo $idJuego;?>/"><?php echo $juego;?></a></td>
                     <td><?php echo $cantMaxEquipos;?></td>
                     <td>
                       <?php if($fasesDeGrupo==1){echo "Si";}else{echo "No";}?>
-                      </td>
+                    </td>
                     <td><?php echo $modalidad;?></td>
                     <td><?php echo $estado;?></td>
                     <td><?php echo $tipoPart;?></td>
@@ -351,7 +352,7 @@ desconectarBD($conexion);
               <!-- Card Header END -->
 
               <!-- Form START -->
-              <form role="form" action="../php/modificarTorneo.php?id=<?php echo $idTorneo;?>" method="POST">
+              <form role="form" action="<?php echo $url;?>/php/modificarTorneo.php?id=<?php echo $idTorneo;?>" method="POST">
                 
                 <!-- Card Body START -->
                 <div class="row card-body">
@@ -468,7 +469,7 @@ desconectarBD($conexion);
               <p class="m-2 text-dark">Ingrese su cuenta para cancelar el torneo</p>
               
               <!-- Form START -->
-              <form class="form-horizontal" action="../php/cancelarTorneo.php?id=<?php echo $idTorneo;?>" method="POST">
+              <form class="form-horizontal" action="<?php echo $url;?>/php/cancelarTorneo.php?id=<?php echo $idTorneo;?>" method="POST">
                 
                 <!-- Card Body START -->
                 <div class="card-body">
@@ -518,7 +519,7 @@ desconectarBD($conexion);
               <p class="m-2 text-dark">Ingrese su cuenta para eliminar el torneo</p>
 
               <!-- Form START -->
-              <form class="form-horizontal" action="../php/eliminarTorneo.php=id<?php echo $idTorneo;?>" method="POST">
+              <form class="form-horizontal" action="<?php echo $url;?>/php/eliminarTorneo.php=id<?php echo $idTorneo;?>" method="POST">
 
                 <!-- Card Body START -->
                 <div class="card-body">
@@ -570,7 +571,7 @@ desconectarBD($conexion);
               <!-- Card Header END -->
 
               <!-- Form START -->
-              <form class="form-horizontal" action="../php/crearGrupo.php?tor=<?php echo $idTorneo;?>" method="POST">
+              <form class="form-horizontal" action="<?php echo $url;?>/php/crearGrupo.php?tor=<?php echo $idTorneo;?>" method="POST">
 
                 <!-- Card Body START -->
                 <div class="card-body">
@@ -613,7 +614,7 @@ desconectarBD($conexion);
               <!-- Card Header END -->
 
               <!-- Form START -->
-              <form class="form-horizontal" action="../php/crearRonda.php?tor=<?php echo $idTorneo;?>" method="POST">
+              <form class="form-horizontal" action="<?php echo $url;?>/php/crearRonda.php?tor=<?php echo $idTorneo;?>" method="POST">
 
                 <!-- Card Body START -->
                 <div class="card-body">
@@ -653,7 +654,7 @@ desconectarBD($conexion);
               <!-- Card Header END -->
 
               <!-- Form START -->
-              <form class="form-horizontal" action="../php/crearPremios.php?id=<?php echo $idTorneo;?>" method="POST">
+              <form class="form-horizontal" action="<?php echo $url;?>/php/crearPremios.php?id=<?php echo $idTorneo;?>" method="POST">
 
                 <!-- Card Body START -->
                 <div class="card-body">

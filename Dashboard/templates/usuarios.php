@@ -1,6 +1,7 @@
 <?php
 $p = '..';
 session_start();
+require_once("../config.php");
 require_once("$p/php/conexionBD.php");
 require_once("$p/php/isAdmin.php");
 require_once("$p/php/dataUser.php");
@@ -24,7 +25,7 @@ desconectarBD($conexion);
 <head>
   <?php
   require_once("$p/components/head.php");
-  mostrarHead("Usuarios",$p);
+  mostrarHead("Usuarios",$url);
   ?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -222,7 +223,7 @@ desconectarBD($conexion);
         <!-- Enviar un email a todos los Usuarios START -->
         <div class="row">
           <div class="col-12">
-            <form class="card card-outline card-info" action="../php/emailUsuarios.php" method="POST">
+            <form class="card card-outline card-info" action="<?php echo $url;?>/php/emailUsuarios.php" method="POST">
 
               <!-- Card Header START -->
               <div class="card-header">

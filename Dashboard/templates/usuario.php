@@ -1,8 +1,9 @@
 <?php
 $p = '..';
 session_start();
-require_once("../php/conexionBD.php");
-require_once("../php/isAdmin.php");
+require_once("../config.php");
+require_once("$p/php/conexionBD.php");
+require_once("$p/php/isAdmin.php");
 $conexion = conectar();
 if(isset($_SESSION['usuario'])){
   if(isAdmin($conexion,$_SESSION['usuario'])){
@@ -35,7 +36,7 @@ desconectarBD($conexion);
 <head>
   <?php
   require_once("$p/components/head.php");
-  mostrarHead("Usuario | $nombreUsuario",$p);
+  mostrarHead("Usuario | $nombreUsuario",$url);
   ?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -71,7 +72,7 @@ desconectarBD($conexion);
           <!-- Navegacion Pages START -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="../templates/usuarios.php">Usuarios</a></li>
+              <li class="breadcrumb-item"><a href="<?php echo $amigable;?>/panel/usuarios/">Usuarios</a></li>
               <li class="breadcrumb-item active"><?php echo $nombreUsuario;?></li>
             </ol>
           </div>
@@ -168,7 +169,7 @@ desconectarBD($conexion);
 
                     <!-- Imagen Producto START -->
                     <div class="col-12">
-                      <img src="../../avatarUser/<?php echo $avatar;?>" class="product-image" alt="Avatar <?php echo $nombreUsuario?>">
+                      <img src="<?php echo $imagenes; ?>/avatarUser/<?php echo $avatar;?>" class="product-image" alt="Avatar <?php echo $nombreUsuario?>">
                     </div>
                     <!-- Imagen Producto END -->
 
@@ -466,7 +467,7 @@ desconectarBD($conexion);
               <p class="m-2 text-dark">Ingrese su cuenta para <?php if($isAdmin==1){echo "quitar";}else{echo "dar";}?> permisos de administrador</p>
               
               <!-- Form START -->
-              <form class="form-horizontal" action="../php/darQuitarAdmin.php?id=<?php echo $idUsuario;?>" method="POST">
+              <form class="form-horizontal" action="<?php echo $url; ?>/php/darQuitarAdmin.php?id=<?php echo $idUsuario;?>" method="POST">
                 
                 <!-- Card Body START -->
                 <div class="card-body">
@@ -519,7 +520,7 @@ desconectarBD($conexion);
               <p class="m-2 text-dark">Ingrese su cuenta para bannear</p>
               
               <!-- Form START -->
-              <form class="form-horizontal" action="../php/eliminarUsuario.php?id=<?php echo $idUsuario;?>" method="POST">
+              <form class="form-horizontal" action="<?php echo $url; ?>/php/eliminarUsuario.php?id=<?php echo $idUsuario;?>" method="POST">
                 
                 <!-- Card Body START -->
                 <div class="card-body">
@@ -569,7 +570,7 @@ desconectarBD($conexion);
         <!-- Enviar un email a todos los Usuarios START -->
         <div class="row">
           <div class="col-12">
-            <form class="card card-outline card-info" action="../php/emailUsuario.php?usuario=<?php echo $email ;?>" method="POST">
+            <form class="card card-outline card-info" action="<?php echo $url; ?>/php/emailUsuario.php?usuario=<?php echo $email ;?>" method="POST">
 
               <!-- Card Header START -->
               <div class="card-header">
@@ -621,61 +622,61 @@ desconectarBD($conexion);
 
 <!-- SCRIPTS -->
 <!-- jQuery -->
-<script src="../plugins/jquery/jquery.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button);
 </script>
 <!-- Bootstrap 4 -->
-<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- DataTables -->
-<script src="../plugins/datatables/jquery.dataTables.js"></script>
-<script src="../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/datatables/jquery.dataTables.js"></script>
+<script src="<?php echo $url; ?>/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 <!-- ChartJS -->
-<script src="../plugins/chart.js/Chart.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/chart.js/Chart.min.js"></script>
 <!-- Sparkline -->
-<script src="../plugins/sparklines/sparkline.js"></script>
+<script src="<?php echo $url; ?>/plugins/sparklines/sparkline.js"></script>
 <!-- JQVMap -->
-<script src="../plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<script src="<?php echo $url; ?>/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
 <!-- jQuery Knob Chart -->
-<script src="../plugins/jquery-knob/jquery.knob.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/jquery-knob/jquery.knob.min.js"></script>
 <!-- daterangepicker -->
-<script src="../plugins/moment/moment.min.js"></script>
-<script src="../plugins/daterangepicker/daterangepicker.js"></script>
+<script src="<?php echo $url; ?>/plugins/moment/moment.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/daterangepicker/daterangepicker.js"></script>
 <!-- Tempusdominus Bootstrap 4 -->
-<script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Summernote -->
-<script src="../plugins/summernote/summernote-bs4.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/summernote/summernote-bs4.min.js"></script>
 <!-- overlayScrollbars -->
-<script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- Select2 -->
-<script src="../plugins/select2/js/select2.full.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/select2/js/select2.full.min.js"></script>
 <!-- Bootstrap4 Duallistbox -->
-<script src="../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
 <!-- InputMask -->
-<script src="../plugins/moment/moment.min.js"></script>
-<script src="../plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/moment/moment.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
 <!-- date-range-picker -->
-<script src="../plugins/daterangepicker/daterangepicker.js"></script>
+<script src="<?php echo $url; ?>/plugins/daterangepicker/daterangepicker.js"></script>
 <!-- bootstrap color picker -->
-<script src="../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
 <!-- Tempusdominus Bootstrap 4 -->
-<script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Bootstrap Switch -->
-<script src="../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+<script src="<?php echo $url; ?>/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
 <!-- AdminLTE App -->
-<script src="../dist/js/adminlte.min.js"></script>
+<script src="<?php echo $url; ?>/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE App -->
-<script src="../dist/js/adminlte.js"></script>
+<script src="<?php echo $url; ?>/dist/js/adminlte.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="../dist/js/pages/dashboard.js"></script>
+<script src="<?php echo $url; ?>/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="../dist/js/demo.js"></script>
+<script src="<?php echo $url; ?>/dist/js/demo.js"></script>
 <!-- page script -->
 <script>
   $(function () {

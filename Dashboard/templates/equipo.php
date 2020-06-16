@@ -1,6 +1,7 @@
 <?php
 $p = '..';
 session_start();
+require_once("../config.php");
 require_once("$p/php/conexionBD.php");
 require_once("$p/php/isAdmin.php");
 require_once("$p/php/dataUser.php");
@@ -32,7 +33,7 @@ $lider = $equipo['lider_idUsuario'];
 <head>  
   <?php
   require_once("$p/components/head.php");
-  mostrarHead("Equipo | $nombreEquipo", $p);
+  mostrarHead("Equipo | $nombreEquipo", $url);
   ?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -206,7 +207,7 @@ $lider = $equipo['lider_idUsuario'];
         <!-- Enviar un email a todos los Usuarios START -->
         <div class="row">
           <div class="col-12">
-            <form class="card card-outline card-info">
+            <form class="card card-outline card-info" action="<?php echo $url;?>" method="POST">
 
               <!-- Card Header START -->
               <div class="card-header">

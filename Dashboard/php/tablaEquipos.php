@@ -2,6 +2,7 @@
 
   //Tablas Equipos pages Dashboard-Usuarios
   require_once("../php/conexionBD.php");
+  require_once("../config.php");
   $conexion = conectar();
 
   $consulta = "SELECT * FROM equipos";
@@ -11,10 +12,10 @@
     while($fila = mysqli_fetch_assoc($resultado)){
       echo "<tr>";
       echo "<td>
-              <a href='../templates/equipo.php?id=".$fila['idEquipo']."'>".$fila['idEquipo']."</a>
+              <a href='".$amigable."/panel/equipo/".$fila['idEquipo']."/'>".$fila['idEquipo']."</a>
             </td>";
       echo "<td>
-              <a href='../templates/equipo.php?id=".$fila['idEquipo']."'>".$fila['equipo']."</a>
+              <a href='".$amigable."/panel/equipo/".$fila['idEquipo']."/'>".$fila['equipo']."</a>
             </td>";
       $idEquipo = $fila['idEquipo'];
       $subConsulta = "SELECT * 

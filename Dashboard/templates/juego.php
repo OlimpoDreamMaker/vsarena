@@ -1,6 +1,7 @@
 <?php
 $p = '..';
 session_start();
+require_once("../config.php");
 require_once("$p/php/conexionBD.php");
 require_once("$p/php/isAdmin.php");
 require_once("$p/php/dataUser.php");
@@ -33,7 +34,7 @@ desconectarBD($conexion);
 <head>
   <?php
   require_once("$p/components/head.php");
-  mostrarHead("Juego | $nombreJuego", $p);
+  mostrarHead("Juego | $nombreJuego", $url);
   ?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -69,7 +70,7 @@ desconectarBD($conexion);
           <!-- Navegacion Pages START -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="./juegos.php">Juegos</a></li>
+              <li class="breadcrumb-item"><a href="<?php echo $amigable;?>/panel/juegos/">Juegos</a></li>
               <li class="breadcrumb-item active"><?php echo $nombreJuego;?></li>
             </ol>
           </div>
@@ -126,7 +127,7 @@ desconectarBD($conexion);
 
               <!-- Imagen Juego START -->
               <div class="col-12">
-                <img src="<?php echo "../../imgJuegos/$imgJuego";?>" class="product-image" alt="Product Image">
+                <img src="<?php echo "$imagenes/imgJuegos/$imgJuego";?>" class="product-image" alt="Product Image">
               </div>
               <!-- Imagen Juego END -->
 
@@ -173,7 +174,7 @@ desconectarBD($conexion);
               <!-- Card Header END -->
               
               <!-- Form START -->
-              <form role="form" action="../modificarJuego.php?id=<?php echo $idJuego;?>" method="POST">
+              <form role="form" action="<?php echo $url;?>/modificarJuego.php?id=<?php echo $idJuego;?>" method="POST">
 
                 <!-- Card Body START -->
                 <div class="row card-body">
@@ -251,7 +252,7 @@ desconectarBD($conexion);
               <!-- Subtitulo END -->
 
               <!-- Form START -->
-              <form class="form-horizontal" method="POST" action="../php/eliminarJuego.php">
+              <form class="form-horizontal" method="POST" action="<?php echo $url;?>/php/eliminarJuego.php">
 
                 <!-- Card Body START -->
                 <div class="card-body">

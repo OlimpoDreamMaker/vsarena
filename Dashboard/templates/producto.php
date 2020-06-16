@@ -1,6 +1,7 @@
 <?php
 $p = '..';
 session_start();
+require_once("../config.php");
 require_once("$p/php/conexionBD.php");
 require_once("$p/php/isAdmin.php");
 require_once("$p/php/dataUser.php");
@@ -35,7 +36,7 @@ desconectarBD($conexion);
 <head>
   <?php
   require_once("$p/components/head.php");
-  mostrarHead("Producto | $nombreProducto",$p);
+  mostrarHead("Producto | $nombreProducto",$url);
   ?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -71,7 +72,7 @@ desconectarBD($conexion);
           <!-- Navegacion Pages START -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="./tienda.php">Tienda</a></li>
+              <li class="breadcrumb-item"><a href="<?php echo $url;?>/panel/tienda/">Tienda</a></li>
               <li class="breadcrumb-item active"><?php echo $nombreProducto;?></li>
             </ol>
           </div>
@@ -128,7 +129,7 @@ desconectarBD($conexion);
             <!-- Imagen Producto START -->
             <div class="col-12 col-sm-6">
               <div class="col-12">
-                <img src="../../imgProductos/<?php echo $imgProducto;?>" class="product-image" alt="Product Image">
+                <img src="<?php echo $imagenes;?>/imgProductos/<?php echo $imgProducto;?>" class="product-image" alt="Product Image">
               </div>
             </div>
             <!-- Imagen Producto END -->
@@ -253,7 +254,7 @@ desconectarBD($conexion);
               <!-- Card Header START -->
 
               <!-- Form START -->
-              <form role="form" action="../php/modificarProducto.php?id=<?php ?>" method="POST" enctype="multipart/form-data">
+              <form role="form" action="<?php echo $url;?>/php/modificarProducto.php?id=<?php ?>" method="POST" enctype="multipart/form-data">
 
                 <!-- Card Body START -->
                 <div class="row card-body">
@@ -340,7 +341,7 @@ desconectarBD($conexion);
               <!-- Subtitulo END -->
 
               <!-- FORM START -->
-              <form class="form-horizontal" action= "../php/eliminarProducto.php?id=<?php echo $idProducto;?>">
+              <form class="form-horizontal" action= "<?php echo $url;?>/php/eliminarProducto.php?id=<?php echo $idProducto;?>">
 
                 <!-- Card Body START -->
                 <div class="card-body">

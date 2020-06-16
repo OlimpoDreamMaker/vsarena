@@ -1,6 +1,7 @@
 <?php
 $p = '..';
 session_start();
+require_once("../config.php");
 require_once("$p/php/conexionBD.php");
 require_once("$p/php/isAdmin.php");
 require_once("$p/php/dataUser.php");
@@ -33,7 +34,7 @@ desconectarBD($conexion);
 <head>
   <?php
   require_once("$p/components/head.php");
-  mostrarHead("Cupon | $nombreCupon", $p);
+  mostrarHead("Cupon | $nombreCupon", $url);
   ?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -69,7 +70,7 @@ desconectarBD($conexion);
           <!-- Navegacion Pages START -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="$p/templates/tienda.php">Tienda</a></li>
+              <li class="breadcrumb-item"><a href="<?php echo $amigable;?>/panel/tienda/">Tienda</a></li>
               <li class="breadcrumb-item active"><?php echo $nombreCupon;?></li>
             </ol>
           </div>
@@ -352,7 +353,7 @@ desconectarBD($conexion);
               <!-- Titulo Form END -->
               
               <!-- Form START -->
-              <form role="form" action="../php/modificarCupon.php" method="POST" enctype="multipart/form-data">
+              <form role="form" action="<?php echo $url; ?>/php/modificarCupon.php" method="POST" enctype="multipart/form-data">
                 <div class="row card-body">
                   
                   <!-- Input Nombre Cupon START -->
@@ -412,7 +413,7 @@ desconectarBD($conexion);
               <p class="m-2 text-dark">Ingrese su cuenta para eliminar el Cupon</p>
 
               <!-- Form START -->
-              <form class="form-horizontal" method="POST" action="../php/eliminarCupon.php?id=<?php echo $idCupon;?>">
+              <form class="form-horizontal" method="POST" action="<?php echo $url;?>/php/eliminarCupon.php?id=<?php echo $idCupon;?>">
 
                 <!-- Card Body START -->
                 <div class="card-body">

@@ -1,6 +1,7 @@
 <?php
 $p = '..';
 session_start();
+require_once("../config.php");
 require_once("$p/php/conexionBD.php");
 require_once("$p/php/isAdmin.php");
 require_once("$p/php/dataUser.php");
@@ -41,7 +42,7 @@ desconectarBD($conexion);
 <head>
   <?php
   require_once("$p/components/head.php");
-  mostrarHead("Grupo | $nombreGrupo", $p);
+  mostrarHead("Grupo | $nombreGrupo", $url);
   ?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -77,8 +78,8 @@ desconectarBD($conexion);
           <!-- Navegacion Pages START -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="./torneos.php">Torneos</a></li>
-              <li class="breadcrumb-item"><a href="./torneo.php?id=<?php echo $idTorneo;?>"><?php echo $torneo;?></a></li>
+              <li class="breadcrumb-item"><a href="<?php echo $amigable; ?>/panel/torneos/">Torneos</a></li>
+              <li class="breadcrumb-item"><a href="<?php echo $amigable; ?>/panel/torneo/<?php echo $idTorneo;?>/"><?php echo $torneo;?></a></li>
               <li class="breadcrumb-item active"><?php echo $nombreGrupo;?></li>
             </ol>
           </div>
@@ -134,8 +135,8 @@ desconectarBD($conexion);
                   <!-- Contenido Tabla Torneo START -->
                   <tbody>
                   <tr>
-                    <td><a href="./torneo.php?id=<?php echo $idTorneo;?>"><?php echo $idTorneo;?></a></td>
-                    <td><a href="./juego.php?id<?php echo $idJuego;?>"><?php echo $juego;?></a></td>
+                    <td><a href="<?php echo $amigable;?>/panel/torneo/<?php echo $idTorneo;?>/"><?php echo $idTorneo;?></a></td>
+                    <td><a href="<?php echo $amigable;?>/panel/juego/<?php echo $idJuego;?>/"><?php echo $juego;?></a></td>
                     <td><?php echo $cantMaxEquipos;?></td>
                     <td><?php if($fasesDeGrupo==1){echo "Si";}else{echo "No";}?></td>
                     <td><?php echo $modalidad;?></td>
@@ -179,7 +180,7 @@ desconectarBD($conexion);
 
               <!-- Card Header START --
               <div class="card-header">
-                <h3 class="card-title">Grupo <?php $nombreGrupo;?></h3>
+                <h3 class="card-title">Grupo ?php $nombreGrupo;?--</h3>
               </div>
               <!-- Card Header END --
               
@@ -355,7 +356,7 @@ desconectarBD($conexion);
               <p class="m-2 text-dark">Ingrese su cuenta para eliminar el Grupo</p>
 
               <!-- Form START -->
-              <form class="form-horizontal" action="../php/eliminarGrupo.php?idGrupo=<?php echo $idGrupo;?>" method="POST">
+              <form class="form-horizontal" action="<?php echo $url;?>/php/eliminarGrupo.php?idGrupo=<?php echo $idGrupo;?>" method="POST">
                 <div class="card-body">
 
                   <!-- Input Cuenta START -->
@@ -402,7 +403,7 @@ desconectarBD($conexion);
               <!-- Card Header END -->
 
               <!-- Form START -->
-              <form class="form-horizontal" action="../php/modificarGrupo.php?id=<?php echo $idGrupo;?>" method="POST">
+              <form class="form-horizontal" action="<?php echo $url;?>/php/modificarGrupo.php?id=<?php echo $idGrupo;?>" method="POST">
                 <div class="card-body">
 
                   <!-- Input Nombre START -->
@@ -440,7 +441,7 @@ desconectarBD($conexion);
               <!-- Card Header END -->
 
               <!-- Form START -->
-              <form role="form" action="../php/armarGrupo.php?id=<?php echo $idGrupo;?>" method="POST">
+              <form role="form" action="<?php echo $url;?>/php/armarGrupo.php?id=<?php echo $idGrupo;?>" method="POST">
 
                 <!-- Card Body START -->
                 <div class="row card-body">
@@ -495,7 +496,7 @@ desconectarBD($conexion);
               <!-- Card Header END -->
 
               <!-- Form START -->
-              <form role="form">
+              <form role="form" action="" method="POST">
 
                 <!-- Card Body START -->
                 <div class="row card-body">

@@ -1,5 +1,6 @@
  <?php
  require_once("../php/dataUser.php");
+ require_once("../config.php");
  $conect = conectar();
  $id = $_SESSION['usuario'];
  $user = dataUser($conect, $id);
@@ -10,7 +11,7 @@
 
   <!-- Logo Page START -->
   <a href="index3.html" class="brand-link">
-    <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+    <img src="<?php echo $url; ?>/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
           style="opacity: .8">
     <span class="brand-text font-weight-light">VsArena</span>
   </a>
@@ -22,7 +23,7 @@
     <!-- Sidebar user panel (optional) START-->
     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
       <div class="image">
-        <img src="../../avatarUser/<?php echo $user['avatar'];?>" class="img-circle elevation-2" alt="User Image">
+        <img src="<?php echo $imagenes; ?>/avatarUser/<?php echo $user['avatar'];?>" class="img-circle elevation-2" alt="User Image">
       </div>
       <div class="info">
         <a href="#" class="d-block"><?php echo $user['usuario'];?></a>
@@ -34,7 +35,7 @@
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item">
-          <a href="../templates/usuarios.php" class="nav-link">
+          <a href="<?php echo $amigable; ?>/panel/usuarios/" class="nav-link">
             <i class="nav-icon fas fa-user"></i>
             <p>
               Usuarios
@@ -42,7 +43,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="../templates/noticias.php" class="nav-link">
+          <a href="<?php echo $amigable; ?>/panel/noticias/" class="nav-link">
             <i class="nav-icon fas fa-newspaper"></i>
             <p>
               Noticias
@@ -50,7 +51,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="../templates/torneos.php" class="nav-link">
+          <a href="<?php echo $amigable; ?>/panel/torneos/" class="nav-link">
             <i class="nav-icon fas fa-trophy"></i>
             <p>
               Torneos
@@ -58,7 +59,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="../templates/juegos.php" class="nav-link">
+          <a href="<?php echo $amigable; ?>/panel/juegos/" class="nav-link">
             <i class="nav-icon fas fa-gamepad"></i>
             <p>
               Juegos
@@ -66,7 +67,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="../templates/tienda.php" class="nav-link">
+          <a href="<?php echo $amigable; ?>/panel/tienda/" class="nav-link">
             <i class="nav-icon fas fa-store"></i>
             <p>
               Tienda
@@ -74,7 +75,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="../php/logout.php" class="nav-link">
+          <a href="<?php echo $url; ?>/php/logout.php" class="nav-link">
             <i class="nav-icon fas fa-lock"></i>
             <p>
               Cerrar sesion

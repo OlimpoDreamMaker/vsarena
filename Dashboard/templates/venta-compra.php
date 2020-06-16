@@ -1,6 +1,7 @@
 <?php
 $p = '..';
 session_start();
+require_once("../config.php");
 require_once("../php/conexionBD.php");
 require_once("../php/isAdmin.php");
 require_once("../php/dataUser.php");
@@ -31,7 +32,7 @@ desconectarBD($conexion);
 <head>
   <?php
   require_once("$p/components/head.php");
-  mostrarHead("Vena-Compra",$p);
+  mostrarHead("Vena-Compra",$url);
   ?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -67,7 +68,7 @@ desconectarBD($conexion);
           <!-- Navegacion Pages START -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="./tienda.php">Tienda</a></li>
+              <li class="breadcrumb-item"><a href="<?php echo $amigable;?>/panel/tienda/">Tienda</a></li>
               <li class="breadcrumb-item active">Venta/Compra #<?php echo $idVenta?></li>
             </ol>
           </div>

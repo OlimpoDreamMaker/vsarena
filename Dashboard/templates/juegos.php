@@ -1,6 +1,7 @@
 <?php
 $p = '..';
 session_start();
+require_once("../config.php");
 require_once("../php/conexionBD.php");
 require_once("../php/isAdmin.php");
 require_once("../php/dataUser.php");
@@ -24,7 +25,7 @@ desconectarBD($conexion);
 <head>
   <?php
   require_once("$p/components/head.php");
-  mostrarHead("Juegos",$p);
+  mostrarHead("Juegos",$url);
   ?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -168,7 +169,7 @@ desconectarBD($conexion);
               <!-- Card Header END -->
 
               <!-- Form START -->
-              <form role="form" action="../php/crearJuego.php" method="POST" enctype="multipart/form-data">
+              <form role="form" action="<?php echo $url; ?>/php/crearJuego.php" method="POST" enctype="multipart/form-data">
                 <div class="row card-body">
 
                   <!-- Input Nombre Juego START -->

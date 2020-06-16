@@ -1,6 +1,7 @@
 <?php
 $p = '..';
 session_start();
+require_once("../config.php");
 require_once("../php/conexionBD.php");
 require_once("../php/isAdmin.php");
 require_once("../php/dataUser.php");
@@ -24,7 +25,7 @@ desconectarBD($conexion);
 <head>
   <?php
   require_once("$p/components/head.php");
-  mostrarHead("Noticia",$p);
+  mostrarHead("Noticia",$url);
   ?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -190,7 +191,7 @@ desconectarBD($conexion);
               <!-- Card Header END -->
 
               <!-- Form START -->
-              <form class="form-horizontal" method="POST" action="../php/crearTag.php">
+              <form class="form-horizontal" method="POST" action="<?php echo $url;?>/php/crearTag.php">
 
                 <!-- Card Body START -->
                 <div class="card-body">
@@ -286,7 +287,7 @@ desconectarBD($conexion);
               <!-- Titulo Form END -->
               
               <!-- Form START -->
-              <form role="form" action="../php/crearNoticia.php?autor=1" method="POST" enctype="multipart/form-data">
+              <form role="form" action="<?php echo $url; ?>/php/crearNoticia.php?autor=1" method="POST" enctype="multipart/form-data">
 
                 <div class="row card-body">
                   

@@ -1,6 +1,7 @@
 <?php
 $p = '..';
 session_start();
+require_once("../config.php");
 require_once("../php/conexionBD.php");
 require_once("../php/isAdmin.php");
 require_once("../php/dataUser.php");
@@ -42,7 +43,7 @@ desconectarBD($conexion);
 <head>
   <?php
   require_once("$p/components/head.php");
-  mostrarHead("Premio | $nombrePremio",$p);
+  mostrarHead("Premio | $nombrePremio",$url);
   ?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -78,8 +79,8 @@ desconectarBD($conexion);
           <!-- Navegacion Pages START -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="./torneos.php">Torneos</a></li>
-              <li class="breadcrumb-item"><a href="./torneo.php?id=<?php echo $idTorneo?>"><?php echo $torneo;?></a></li>
+              <li class="breadcrumb-item"><a href="<?php echo $url;?>/panel/torneos/">Torneos</a></li>
+              <li class="breadcrumb-item"><a href="<?php echo $url;?>/panel/torneo/<?php echo $idTorneo?>/"><?php echo $torneo;?></a></li>
               <li class="breadcrumb-item active"><?php echo $nombrePremio;?></li>
             </ol>
           </div>
@@ -172,7 +173,7 @@ desconectarBD($conexion);
               <!-- Card Header END -->
 
               <!-- Form START -->
-              <form role="form" action="../php/modificarPremio.php?id=<?php echo $idPremio;?>" method="POST">
+              <form role="form" action="<?php echo $url;?>/php/modificarPremio.php?id=<?php echo $idPremio;?>" method="POST">
                 
                 <!-- Card Body START -->
                 <div class="row card-body">
@@ -286,7 +287,7 @@ desconectarBD($conexion);
               <p class="m-2 text-dark">Ingrese su cuenta para eliminar el premio</p>
 
               <!-- Form START -->
-              <form class="form-horizontal" action ="../php/eliminarPremio.php?id=<?php echo $idPremio;?>" method="POST">
+              <form class="form-horizontal" action ="<?php echo $url;?>/php/eliminarPremio.php?id=<?php echo $idPremio;?>" method="POST">
                 
                 <!-- Card Body START -->
                 <div class="card-body">
