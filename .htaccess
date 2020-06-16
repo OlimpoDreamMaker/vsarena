@@ -1,1 +1,3 @@
 Options All -Indexes
+ErrorDocument 403 /VSARENA/FrontEnd/404.php
+ErrorDocument 404 /VSARENA/FrontEnd/404.php
