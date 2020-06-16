@@ -84,7 +84,7 @@
     </section>
     <!--CATEGORIA END-->
 
-    <!--DONATIONS WRAP BEGIN-->
+    <!--DONATIONS WRAP START-->
     <section class="donations-wrap">
         <div class="container">
             <div class="row">

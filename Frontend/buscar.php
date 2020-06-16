@@ -86,6 +86,7 @@
 
     <!--MAIN BUSCADOR START-->
     <section class="search-wrapper">
+
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -147,6 +148,7 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <!--START FOOTER-->
