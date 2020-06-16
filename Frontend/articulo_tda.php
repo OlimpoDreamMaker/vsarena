@@ -64,13 +64,15 @@
     ?>
     <!--NAV END-->
 
-    <!--CONTENT BEGIN-->
+    <!--CUERPO ARTICULO START-->
     <div class="content">
         <div class="container">
             <div class="row row-offcanvas row-offcanvas-left">
 
-                <!--SIEDBAR BEGIN-->
+                <!--SIDEBAR MENU START-->
                 <section class="sidebar col-xs-6 col-sm-6 col-md-3 sidebar-offcanvas" id="sidebar">
+
+                    <!--CATEGORIAS-->
                     <div class="sidebar-menu-wrap">
                         <h6>Categoria</h6>
                         <ul class="categories-list">
@@ -98,6 +100,8 @@
                             </li>
                         </ul>
                     </div>
+
+                    <!--BUSCAR-->
                     <div class="sidebar-search-wrap">
                         <h6>Buscar</h6>
                         <form>
@@ -107,6 +111,8 @@
                             </div>
                         </form>
                     </div>
+
+                    <!--CALENDARIO-->
                     <div class="sidebar-calendar">
                         <h6>Calendario</h6>
                         <div class="widget widget_calendar">
@@ -181,6 +187,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!--BUSCAR-->
                     <div class="sidebar-search-wrap">
                         <h6>Buscar</h6>
                         <form>
@@ -190,6 +198,8 @@
                             </div>
                         </form>
                     </div>
+
+                    <!--CALENDARIO-->
                     <div class="sidebar-calendar">
                         <h6>Calendario</h6>
                         <div class="widget widget_calendar">
@@ -264,6 +274,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!--NOTICIAS RECIENTES-->
                     <div class="recent-news">
                         <h6>Noticias recientes</h6>
                         <div class="item">
@@ -279,6 +291,8 @@
                             <a href="news-single.html" class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maxime ratione magni quam! Ea cupiditate blanditiis voluptatum non possimus neque! Enim accusantium eum eveniet laborum laboriosam, voluptatem quis beatae rem. </a>
                         </div>
                     </div>
+
+                    <!--TAGS-->
                     <div class="sidebar-tags-wrap">
                         <h6>Tags</h6>
                         <div class="tags">
@@ -290,16 +304,19 @@
                         </div>
                     </div>
                 </section>
+                <!--SIDEBAR MENU END-->
 
-                <!--SIEDBAR END-->
-
-                <!--NEWS SINGLE BEGIN-->
-
+                <!--SECCION NOTICIAS-->
                 <section class="news-single col-xs-12 col-sm-12 col-md-9">
+
+                    <!--BOTON LATERAL NOTICIAS-->
                     <p class="hidden-md hidden-lg">
                         <button type="button" class="btn sidebar-btn" data-toggle="offcanvas" title="Toggle sidebar">sidebar</button>
                     </p>
+
+                    <!--NOTICIA START-->
                     <div class="item">
+                        <!--NOTICIA-->
                         <div class="top-info">
                             <div class="date"><a href="#">25 Sep 2016</a> Por <a href="#">Mason Carrington</a></div>
                             <div class="comment-quantity">3 Comentarios</div>
@@ -315,6 +332,7 @@
                                 <p class="name">Brandon Campbell</p>
                             </blockquote>
                             <p>Fixie four dollar toast meggings, 8-bit letterpress schlitz kale chips vexillologist yr venmo blog kitsch hammock affogato. Tbh kombucha typewriter pug, cliche ramps try-hard. Salvia enamel pin quinoa twee edison bulb, affogato typewriter unicorn cray asymmetrical. Scenester bitters kinfolk, small batch green juice cliche flexitarian poutine fixie cornhole dreamcatcher. Mustache irony pickled schlitz wayfarers tattooed. Kale chips roof party activated charcoal, paleo kogi affogato coloring book direct trade. Blue bottle dreamcatcher cardigan, bicycle rights live-edge shoreditch echo park sartorial deep v heirloom narwhal mumblecore.</p>
+                            <!--TAGS-->
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="tags">
@@ -325,117 +343,124 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!--AUTOR-->
                         <div class="author-box">
                             <div class="top">
                                 <div class="avatar"><img src="images/common/author-avatar.jpg" alt="author-avatar"></div>
                                 <div class="info">
                                     <div class="name">Mason Carrington</div>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut obcaecati ipsam odio! Sit vero aperiam nulla eaque? Placeat minima corporis itaque nostrum, obcaecati, voluptas cumque, delectus sed cum repellendus reprehenderit.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur</p>
                                 </div>
-
-                            </div>
-                            <div class="share-box">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="item">
-                                            <div class="row">
-                                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                                    <div class="title">25 posts</div>
-                                                </div>
-                                                <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 text-right">
-                                                    <ul class="share-socials">
-                                                        <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comments-wrap">
-                            <h4>Comentarios</h4>
-                            <div class="comment-item">
-                                <div class="avatar"><img src="images/common/user-avatar.jpg" alt="user-avatar"></div>
-                                <div class="info">
-                                    <div class="date">
-                                        <a href="#">25 Sep 2016</a> Por <a href="#">Ian Finch</a>
-                                        <a href="#" class="quote">#</a>
-                                    </div>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quo excepturi fugit molestiae omnis harum consectetur reprehenderit numquam ipsam magnam molestias, autem possimus libero dolores magni, nisi totam dolorum odio?</p>
-                                    <a href="#" class="reply">Responder</a>
-                                </div>
-                            </div>
-                            <div class="comment-item answer">
-                                <div class="avatar"><img src="images/common/user-avatar.jpg" alt="user-avatar"></div>
-                                <div class="info">
-                                    <div class="date">
-                                        <a href="#">25 Sep 2016</a> Por <a href="#">Ian Finch</a>
-                                        <a href="#" class="quote">#</a>
-                                    </div>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quo excepturi fugit molestiae omnis harum consectetur reprehenderit numquam ipsam magnam molestias, autem possimus libero dolores magni, nisi totam dolorum odio?</p>
-                                    <a href="#" class="reply">Responder</a>
-                                </div>
-                            </div>
-                            <div class="comment-item">
-                                <div class="avatar"><img src="images/common/user-avatar.jpg" alt="user-avatar"></div>
-                                <div class="info">
-                                    <div class="date">
-                                        <a href="#">25 Sep 2016</a> Por <a href="#">Ian Finch</a>
-                                        <a href="#" class="quote">#</a>
-                                    </div>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quo excepturi fugit molestiae omnis harum consectetur reprehenderit numquam ipsam magnam molestias, autem possimus libero dolores magni, nisi totam dolorum odio?</p>
-                                    <a href="#" class="reply">Responder</a>
-                                </div>
-                            </div>
-                            <div class="leave-comment-wrap">
-                                <h4>Dejar un comentario</h4>
-                                <form>
+                                <div class="share-box">
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="item">
-                                                <label>
-                                                    <span>Nombre <i>*</i></span>
-                                                    <input type="text" name="name" placeholder="Nombre">
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="item">
-                                                <label>
-                                                    <span>Correo <i>*</i></span>
-                                                    <input type="email" name="email" placeholder="Correo">
-                                                </label>
-                                            </div>
-                                        </div>
                                         <div class="col-md-12">
                                             <div class="item">
-                                                <label>
-                                                    <span>Tu comentario</span>
-                                                    <textarea></textarea>
-                                                </label>
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                        <div class="title">25 posts</div>
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 text-right">
+                                                        <ul class="share-socials">
+                                                            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                                            <li><a href="#"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <button class="comment-submit">Dejar comentario</button>
                                         </div>
                                     </div>
-                                </form>
+                                </div>
+                            </div>
+
+                            <!--COMENTARIOS-->
+                            <div class="comments-wrap">
+                                <h4>Comentarios</h4>
+                                <div class="comment-item">
+                                    <div class="avatar"><img src="images/common/user-avatar.jpg" alt="user-avatar"></div>
+                                    <div class="info">
+                                        <div class="date">
+                                            <a href="#">25 Sep 2016</a> Por <a href="#">Ian Finch</a>
+                                            <a href="#" class="quote">#</a>
+                                        </div>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quo excepturi fugit molestiae omnis harum consectetur reprehenderit numquam ipsam magnam molestias, autem possimus libero dolores magni, nisi totam dolorum odio?</p>
+                                        <a href="#" class="reply">Responder</a>
+                                    </div>
+                                </div>
+                                <!--COMENTARIO RESPUESTA-->
+                                <div class="comment-item answer">
+                                    <div class="avatar"><img src="images/common/user-avatar.jpg" alt="user-avatar"></div>
+                                    <div class="info">
+                                        <div class="date">
+                                            <a href="#">25 Sep 2016</a> Por <a href="#">Ian Finch</a>
+                                            <a href="#" class="quote">#</a>
+                                        </div>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quo excepturi fugit molestiae omnis harum consectetur reprehenderit numquam ipsam magnam molestias, autem possimus libero dolores magni, nisi totam dolorum odio?</p>
+                                        <a href="#" class="reply">Responder</a>
+                                    </div>
+                                </div>
+                                <!--COMENTARIO-->
+                                <div class="comment-item">
+                                    <div class="avatar"><img src="images/common/user-avatar.jpg" alt="user-avatar"></div>
+                                    <div class="info">
+                                        <div class="date">
+                                            <a href="#">25 Sep 2016</a> Por <a href="#">Ian Finch</a>
+                                            <a href="#" class="quote">#</a>
+                                        </div>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quo excepturi fugit molestiae omnis harum consectetur reprehenderit numquam ipsam magnam molestias, autem possimus libero dolores magni, nisi totam dolorum odio?</p>
+                                        <a href="#" class="reply">Responder</a>
+                                    </div>
+                                </div>
+
+                                <!--FORMULARIO-->
+                                <div class="leave-comment-wrap">
+                                    <h4>Dejar un comentario</h4>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="item">
+                                                    <label>
+                                                        <span>Nombre <i>*</i></span>
+                                                        <input type="text" name="name" placeholder="Nombre">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="item">
+                                                    <label>
+                                                        <span>Correo <i>*</i></span>
+                                                        <input type="email" name="email" placeholder="Correo">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="item">
+                                                    <label>
+                                                        <span>Tu comentario</span>
+                                                        <textarea></textarea>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <button class="comment-submit">Dejar comentario</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
                             </div>
                         </div>
-                    </div>
-                </section>
+                        <!--NOTICIA END-->
 
-                <!--NEWS SINGLE END-->
+                </section>
+                <!--SECCION NOTICIAS END-->
 
             </div>
         </div>
     </div>
-
-    <!--CONTENT END-->
+    <!--CUERPO ARTICULO END-->
 
     <!--START FOOTER-->
     <?php
