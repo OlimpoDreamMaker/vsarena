@@ -82,16 +82,17 @@
             </div>
         </div>
     </section>
-    <!--BREADCRUMBS END-->
+    <!--CATEGORIA END-->
 
-    <!--CONTENT BEGIN-->
-
+    <!--NOTICIAS CUERPO START-->
     <div class="content">
         <div class="container">
             <div class="row row-offcanvas row-offcanvas-left">
 
-                <!--SIDEBAR BEGIN-->
+                <!--SIDEBAR START-->
                 <section class="sidebar col-xs-6 col-md-3 sidebar-offcanvas" id="sidebar">
+
+                    <!--CATEGORIAS-->
                     <div class="sidebar-menu-wrap">
                         <h6>Categoria</h6>
                         <ul class="categories-list">
@@ -119,6 +120,8 @@
                             </li>
                         </ul>
                     </div>
+
+                    <!--BUSCADOR-->
                     <div class="sidebar-search-wrap">
                         <h6>Buscar</h6>
                         <form>
@@ -128,6 +131,8 @@
                             </div>
                         </form>
                     </div>
+
+                    <!--CALENDARIO-->
                     <div class="sidebar-calendar">
                         <h6>Calendario</h6>
                         <div class="widget widget_calendar">
@@ -202,6 +207,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!--TAGS-->
                     <div class="sidebar-tags-wrap">
                         <h6>Tags</h6>
                         <div class="tags">
@@ -212,13 +219,19 @@
                             <a href="#">LoL</a>
                         </div>
                     </div>
+
                 </section>
-                <!--SIEDBAR END-->
-                <!--NEWS LIST BEGIN-->
+                <!--SIEDEBAR END-->
+
+                <!--SECCION ARTICULOS START-->
                 <div class="news-list col-xs-12 col-md-9">
+
+                    <!--BOTON MENU LATERAL-->
                     <p class="hidden-md hidden-lg">
-                        <button type="button" class="btn sidebar-btn" data-toggle="offcanvas" title="Toggle sidebar">Barra Lateral</button>
+                        <button type="button" class="btn sidebar-btn" data-toggle="offcanvas" title="Toggle sidebar">MENÚ</button>
                     </p>
+
+                    <!--ARTICULO DESTACADO-->
                     <div class="item img-top">
                         <div class="img-wrap">
                             <div class="bage"><a href="#">Destacado</a></div>
@@ -232,6 +245,8 @@
                             <div class="clear"></div>
                         </div>
                     </div>
+
+                    <!--ARTICULO-->
                     <div class="item">
                         <div class="info">
                             <a href="#" class="name">FORMATO DE NOTICIA - Solo Texto</a>
@@ -244,6 +259,8 @@
                             <a href="#" class="continue">LEER MÁS</a>
                         </div>
                     </div>
+
+                    <!--PAGINACION-->
                     <div class="pagination-wrap">
                         <ul class="pagination">
                             <li><a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
@@ -255,14 +272,14 @@
                             <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
-                </div>
-                <!--NEWS LIST END-->
 
+                </div>
+                <!--SECCION ARTICULOS END-->
 
             </div>
         </div>
     </div>
-    <!--CONTENT END-->
+    <!--NOTICIAS CUERPO END-->
 
     <!--START FOOTER-->
     <?php
