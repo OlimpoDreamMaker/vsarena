@@ -7,5 +7,3 @@
         <link href="css/style.min.css" rel="stylesheet" type="text/css" />
         
     <!--END HOJAS-->');
-
-?>

@@ -72,7 +72,7 @@
 					<div class="info">
 						<div class="wrap">
 							<ul class="breadcrumbs">
-								<li><a href="index.html">Inicio</a>/</li>
+								<li><a href="index.php">Inicio</a>/</li>
 								<li>Mi Perfil</li>
 							</ul>
 							<h1>Mi Perfil</h1>
@@ -275,6 +275,7 @@
 							</tr>
 						</table>
 					</div>
+
 				</div>
 				<!--PLAYER BATTLE END-->
 
@@ -283,7 +284,7 @@
 	</section>
 	<!--PLAYER CONTENEDOR END-->
 
-	<!--PLAYER SECCION FOOTER BEGIN-->
+	<!--PLAYER SECCION FOOTER START-->
 	<section class="main-club-stuff">
 
 		<!--PLAYER EQUIPOS START-->
@@ -308,14 +309,19 @@
 		</div>
 		<!--PLAYER EQUIPOS END-->
 
-		<!--PLAYER EQUIPOS START-->
+		<!--COMPAÑEROS START-->
 		<div class="tab-content">
+
 			<div class="tab-pane active" id="managers" role="tabpanel">
 				<div id="managers_carousel" class="carousel slide main-stuff-slider" data-ride="carousel">
 					<div class="carousel-inner" role="listbox">
+
+						<!--FILA DE COMPAÑEROS START-->
 						<div class="item active">
 							<div class="container">
 								<div class="row">
+
+									<!--COMPAÑERO-->
 									<div class="col-md-4">
 										<div class="staff-item">
 											<a href="staff.html">
@@ -328,6 +334,7 @@
 											</a>
 										</div>
 									</div>
+									<!--COMPAÑERO-->
 									<div class="col-md-4">
 										<div class="staff-item">
 											<a href="staff.html">
@@ -340,6 +347,7 @@
 											</a>
 										</div>
 									</div>
+									<!--COMPAÑERO-->
 									<div class="col-md-4 ">
 										<div class="staff-item">
 											<a href="staff.html">
@@ -352,12 +360,18 @@
 											</a>
 										</div>
 									</div>
+
 								</div>
 							</div>
 						</div>
+						<!--FILA DE COMPAÑEROS END-->
+
+						<!--FILA DE COMPAÑEROS START-->
 						<div class="item">
 							<div class="container">
 								<div class="row">
+
+									<!--COMPAÑERO-->
 									<div class="col-md-4">
 										<div class="staff-item">
 											<a href="staff.html">
@@ -370,6 +384,7 @@
 											</a>
 										</div>
 									</div>
+									<!--COMPAÑERO-->
 									<div class="col-md-4">
 										<div class="staff-item">
 											<a href="staff.html">
@@ -382,6 +397,7 @@
 											</a>
 										</div>
 									</div>
+									<!--COMPAÑERO-->
 									<div class="col-md-4 ">
 										<div class="staff-item">
 											<a href="staff.html">
@@ -394,10 +410,13 @@
 											</a>
 										</div>
 									</div>
+
 								</div>
 							</div>
 						</div>
-						<!-- Controls -->
+						<!--FILA DE COMPAÑEROS END-->
+
+						<!--CONTROLES START-->
 						<a class="nav-arrow left-arrow" href="#managers_carousel" role="button" data-slide="prev">
 							<i class="fa fa-angle-left" aria-hidden="true"></i>
 							<span class="sr-only"></span>
@@ -406,20 +425,27 @@
 							<i class="fa fa-angle-right" aria-hidden="true"></i>
 							<span class="sr-only"></span>
 						</a>
+						<!--CONTROLES END-->
+
 					</div>
 				</div>
 			</div>
+
 			<div class="tab-pane" id="firstteam" role="tabpanel">
 				<div id="firstteam_carousel" class="carousel slide main-stuff-slider" data-ride="carousel">
 					<div class="carousel-inner" role="listbox">
+
+						<!--FILA DE COMPAÑEROS START-->
 						<div class="item active">
 							<div class="container">
 								<div class="row">
+
+									<!--COMPAÑERO-->
 									<div class="col-md-4">
 										<div class="staff-item">
 											<a href="staff.html">
 												<span class="info">
-													<span class="name">James<br>Deshon</span>
+													<span class="name">Lucas<br>Marshman</span>
 													<span class="position">Left Forward</span>
 													<span class="number">14</span>
 												</span>
@@ -427,53 +453,12 @@
 											</a>
 										</div>
 									</div>
+									<!--COMPAÑERO-->
 									<div class="col-md-4">
 										<div class="staff-item">
 											<a href="staff.html">
 												<span class="info">
-													<span class="name">Deshon<br>James</span>
-													<span class="position">Left Midfielder</span>
-													<span class="number">8</span>
-												</span>
-												<img src="images/vs_arena/stuff-person.jpg" alt="person-slider">
-											</a>
-										</div>
-									</div>
-									<div class="col-md-4 ">
-										<div class="staff-item">
-											<a href="staff.html">
-												<span class="info">
-													<span class="name">James<br>Deshon</span>
-													<span class="position">Central Attacking Midfielder</span>
-													<span class="number">7</span>
-												</span>
-												<img src="images/vs_arena/player-3.jpg" alt="person-slider">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-4">
-										<div class="staff-item">
-											<a href="staff.html">
-												<span class="info">
-													<span class="name">Lucas<br>Marsh</span>
-													<span class="position">Left Forward</span>
-													<span class="number">14</span>
-												</span>
-												<img src="images/vs_arena/player-3.jpg" alt="person-slider">
-											</a>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="staff-item">
-											<a href="staff.html">
-												<span class="info">
-													<span class="name">Luca<br>Mas</span>
+													<span class="name">Lucas<br>Marshman</span>
 													<span class="position">Left Midfielder</span>
 													<span class="number">8</span>
 												</span>
@@ -481,11 +466,62 @@
 											</a>
 										</div>
 									</div>
+									<!--COMPAÑERO-->
 									<div class="col-md-4 ">
 										<div class="staff-item">
 											<a href="staff.html">
 												<span class="info">
-													<span class="name">Lucasoto<br>Marsh</span>
+													<span class="name">Lucas<br>Marshman</span>
+													<span class="position">Central Attacking Midfielder</span>
+													<span class="number">7</span>
+												</span>
+												<img src="images/vs_arena/player-3.jpg" alt="person-slider">
+											</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<!--FILA DE COMPAÑEROS END-->
+
+						<!--FILA DE COMPAÑEROS START-->
+						<div class="item">
+							<div class="container">
+								<div class="row">
+
+									<!--COMPAÑERO-->
+									<div class="col-md-4">
+										<div class="staff-item">
+											<a href="staff.html">
+												<span class="info">
+													<span class="name">Lucas<br>Marshman</span>
+													<span class="position">Left Forward</span>
+													<span class="number">14</span>
+												</span>
+												<img src="images/vs_arena/player-3.jpg" alt="person-slider">
+											</a>
+										</div>
+									</div>
+									<!--COMPAÑERO-->
+									<div class="col-md-4">
+										<div class="staff-item">
+											<a href="staff.html">
+												<span class="info">
+													<span class="name">Lucas<br>Marshman</span>
+													<span class="position">Left Midfielder</span>
+													<span class="number">8</span>
+												</span>
+												<img src="images/vs_arena/player-2.jpg" alt="person-slider">
+											</a>
+										</div>
+									</div>
+									<!--COMPAÑERO-->
+									<div class="col-md-4 ">
+										<div class="staff-item">
+											<a href="staff.html">
+												<span class="info">
+													<span class="name">Lucas<br>Marshman</span>
 													<span class="position">Central Attacking Midfielder</span>
 													<span class="number">7</span>
 												</span>
@@ -493,22 +529,29 @@
 											</a>
 										</div>
 									</div>
+
 								</div>
 							</div>
 						</div>
-						<!-- Controls -->
-						<a class="nav-arrow left-arrow" href="#firstteam_carousel" role="button" data-slide="prev">
+						<!--FILA DE COMPAÑEROS END-->
+
+						<!--CONTROLES START-->
+						<a class="nav-arrow left-arrow" href="#managers_carousel" role="button" data-slide="prev">
 							<i class="fa fa-angle-left" aria-hidden="true"></i>
 							<span class="sr-only"></span>
 						</a>
-						<a class="nav-arrow right-arrow" href="#firstteam_carousel" role="button" data-slide="next">
+						<a class="nav-arrow right-arrow" href="#managers_carousel" role="button" data-slide="next">
 							<i class="fa fa-angle-right" aria-hidden="true"></i>
 							<span class="sr-only"></span>
 						</a>
+						<!--CONTROLES END-->
+
 					</div>
 				</div>
 			</div>
+
 		</div>
+		<!--COMPAÑEROS END-->
 
 	</section>
 	<!--PLAYER SECCION FOOTER END-->
