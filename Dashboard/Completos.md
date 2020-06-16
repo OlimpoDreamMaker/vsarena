@@ -1,0 +1,13 @@
+- usuarios.php Listo
+- equipo.php Listo
+- grupo.php Listo
+- juego.php Listo
+- juegos.php Listo
+- login.php Listo
+- premio.php Listo
+- producto.php Listo
+- rondas.php Listo
+- tienda.php Listo
+- torneo.php Listo
+- torneos.php Listo
+- venta-compra.php
