@@ -1,5 +1,5 @@
 <?php
-  $url = "http://olimpodm.com/Dashboard";
-  $amigable = "http://olimpodm.com/panel/usuarios";
-  $imagenes = "http://olimpodm.com/imagenes"
+  $url = "https://vsarena.net/Dashboard";
+  $amigable = "https://vsarena.net";
+  $imagenes = "https://vsarena.net/imagenes"
 ?>
