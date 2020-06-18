@@ -2,68 +2,52 @@
 <html lang="es">
 
 <head>
-
     <!--START ROBOTS-->
     <?php
-
     include('estructura/robots.php');
 
     ?>
     <!--END ROBOTS-->
-
     <!--START METAS GLOBALES-->
     <?php
-
     include('estructura/global_meta.php');
 
     ?>
     <!--END METAS GLOBALES-->
-
     <!--START FUENTES-->
     <?php
-
     include('estructura/global_fuentes.php');
 
     ?>
     <!--END FUENTES-->
-
     <!--START HOJAS-->
     <?php
-
     include('estructura/global_hojas.php');
 
     ?>
     <!--END HOJAS-->
-
     <!--START METAS LOCALES-->
     <meta name="description" content="Página referida a las batallas, ultimas batallas, resultados, tus momentos favoritos, y mucho más" />
     <meta name="keywords" content="torneos, batallas, juegos online, plataforma de torneos, dinero, leage of legend, rp" />
     <!--END METAS LOCALES-->
-
     <!--START TITULO-->
     <title>Batallas</title>
     <!--END TITULO-->
-
 </head>
 
 <body>
-
     <!--PRELOADER START-->
     <?php
-
     include('estructura/preloader.php');
 
     ?>
     <!--PRELOADER END-->
-
     <!--NAV START-->
     <?php
-
     include('estructura/barra_navegacion.php');
 
     ?>
     <!--NAV END-->
-
     <!--CATEGORIA START-->
     <section class="image-header">
         <div class="container">
@@ -83,7 +67,6 @@
         </div>
     </section>
     <!--CATEGORIA END-->
-
     <!--MAIN BATALLAS BEGIN-->
     <section class="main-match-shedule amateurs-match-shedule">
         <div class="container">
@@ -91,14 +74,12 @@
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <h5>Próximas Batallas</h5>
                 </div>
-
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <ul class="tab-filters" role="tablist">
                         <li class="active"><a href="#all" role="tab" data-toggle="tab" aria-expanded="true">LoL</a></li>
                         <li><a href="#nationalcup" role="tab" data-toggle="tab" aria-expanded="true">Free Fire</a></li>
                         <li><a href="#premierleague" role="tab" data-toggle="tab" aria-expanded="true">Dota</a></li>
                     </ul>
-
                     <div class="tab-content">
                         <div class="tab-pane active" id="all">
                             <div class="amateurs-main-match">
@@ -171,11 +152,9 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <h6>Ultimas Batallas</h6>
                 </div>
-
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="main-lates-matches">
                         <a href="#" class="item">
@@ -227,7 +206,6 @@
                                 </span>
                                 <span class="score">
                                     <span>3:2</span>
-
                                 </span>
                                 <span class="team1">
                                     <span>Team 2</span>
@@ -280,23 +258,18 @@
         </div>
     </section>
     <!--MAIN BATALLAS END-->
-
     <!--START FOOTER-->
     <?php
-
     include('estructura/footer.php');
 
     ?>
     <!--END FOOTER-->
-
     <!--START SCRIPTS-->
     <?php
-
     include('estructura/scripts.php');
 
     ?>
     <!--END SCRIPTS-->
-
 </body>
 
 </html>

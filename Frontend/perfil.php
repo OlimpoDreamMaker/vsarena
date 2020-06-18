@@ -2,68 +2,52 @@
 <html lang="es">
 
 <head>
-
 	<!--START ROBOTS-->
 	<?php
-
 	include('estructura/robots.php');
 
 	?>
 	<!--END ROBOTS-->
-
 	<!--START METAS GLOBALES-->
 	<?php
-
 	include('estructura/global_meta.php');
 
 	?>
 	<!--END METAS GLOBALES-->
-
 	<!--START FUENTES-->
 	<?php
-
 	include('estructura/global_fuentes.php');
 
 	?>
 	<!--END FUENTES-->
-
 	<!--START HOJAS-->
 	<?php
-
 	include('estructura/global_hojas.php');
 
 	?>
 	<!--END HOJAS-->
-
 	<!--START METAS LOCALES-->
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<!--END METAS LOCALES-->
-
 	<!--START TITULO-->
 	<title>Mi Perfil</title>
 	<!--END TITULO-->
-
 </head>
 
 <body>
-
 	<!--PRELOADER START-->
 	<?php
-
 	include('estructura/preloader.php');
 
 	?>
 	<!--PRELOADER END-->
-
 	<!--NAV START-->
 	<?php
-
 	include('estructura/barra_navegacion.php');
 
 	?>
 	<!--NAV END-->
-
 	<!--CATEGORIA START-->
 	<section class="image-header">
 		<div class="container">
@@ -83,18 +67,15 @@
 		</div>
 	</section>
 	<!--CATEGORIA END-->
-
 	<!--PLAYER WRAP START-->
 	<section class="player-single-wrap">
 		<div class="container">
 			<div class="row">
-
 				<!--NOMBRE PERFIL-->
 				<div class="col-md-12">
 					<div class="captain-bage">Capitan</div>
 					<h4 class="player-name">Sniki Mid Laner</h4>
 				</div>
-
 				<!--FOTO PERFIL-->
 				<div class="col-md-6">
 					<div class="player-photo">
@@ -102,11 +83,9 @@
 						<img class="img-responsive" src="images/vs_arena/single-player-photo.jpg" alt="player">
 					</div>
 				</div>
-
 				<!--PLAYER INFO START-->
 				<div class="col-md-6">
 					<div class="player-info">
-
 						<!--DATOS-->
 						<h6 class="player-info-title">Mis datos</h6>
 						<div class="summary">
@@ -121,7 +100,6 @@
 								<div class="col-md-9 col-sm-9 col-xs-9">Mid laner</div>
 							</div>
 						</div>
-
 						<!--HISTORIAL-->
 						<h6>Historial de equipos</h6>
 						<div class="overflow-scroll">
@@ -143,11 +121,9 @@
 								</tr>
 							</table>
 						</div>
-
 						<!--PERFIL DESCRIPCION-->
 						<h6>Sobre mi</h6>
 						<p>Pabst irony tattooed, synth sriracha selvage pok pok. Wayfarers kinfolk sartorial, helvetica you </p>
-
 						<!--SECCION PREMIOS-->
 						<h6>Premios</h6>
 						<ul class="player-trophey">
@@ -164,14 +140,11 @@
 								<div class="year">2017</div>
 							</li>
 						</ul>
-
 					</div>
 				</div>
 				<!--PLAYER INFO END-->
-
 				<!--PLAYER BATTLE START-->
 				<div class="col-md-12">
-
 					<div class="col-md-12 overflow-scroll">
 						<h6>Ultimos 5 partidos</h6>
 						<table>
@@ -275,18 +248,14 @@
 							</tr>
 						</table>
 					</div>
-
 				</div>
 				<!--PLAYER BATTLE END-->
-
 			</div>
 		</div>
 	</section>
 	<!--PLAYER CONTENEDOR END-->
-
 	<!--PLAYER SECCION FOOTER START-->
 	<section class="main-club-stuff">
-
 		<!--PLAYER EQUIPOS START-->
 		<div class="container">
 			<div class="row">
@@ -308,19 +277,15 @@
 			</div>
 		</div>
 		<!--PLAYER EQUIPOS END-->
-
 		<!--COMPAÑEROS START-->
 		<div class="tab-content">
-
 			<div class="tab-pane active" id="managers" role="tabpanel">
 				<div id="managers_carousel" class="carousel slide main-stuff-slider" data-ride="carousel">
 					<div class="carousel-inner" role="listbox">
-
 						<!--FILA DE COMPAÑEROS START-->
 						<div class="item active">
 							<div class="container">
 								<div class="row">
-
 									<!--COMPAÑERO-->
 									<div class="col-md-4">
 										<div class="staff-item">
@@ -360,17 +325,14 @@
 											</a>
 										</div>
 									</div>
-
 								</div>
 							</div>
 						</div>
 						<!--FILA DE COMPAÑEROS END-->
-
 						<!--FILA DE COMPAÑEROS START-->
 						<div class="item">
 							<div class="container">
 								<div class="row">
-
 									<!--COMPAÑERO-->
 									<div class="col-md-4">
 										<div class="staff-item">
@@ -410,12 +372,10 @@
 											</a>
 										</div>
 									</div>
-
 								</div>
 							</div>
 						</div>
 						<!--FILA DE COMPAÑEROS END-->
-
 						<!--CONTROLES START-->
 						<a class="nav-arrow left-arrow" href="#managers_carousel" role="button" data-slide="prev">
 							<i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -426,20 +386,16 @@
 							<span class="sr-only"></span>
 						</a>
 						<!--CONTROLES END-->
-
 					</div>
 				</div>
 			</div>
-
 			<div class="tab-pane" id="firstteam" role="tabpanel">
 				<div id="firstteam_carousel" class="carousel slide main-stuff-slider" data-ride="carousel">
 					<div class="carousel-inner" role="listbox">
-
 						<!--FILA DE COMPAÑEROS START-->
 						<div class="item active">
 							<div class="container">
 								<div class="row">
-
 									<!--COMPAÑERO-->
 									<div class="col-md-4">
 										<div class="staff-item">
@@ -479,17 +435,14 @@
 											</a>
 										</div>
 									</div>
-
 								</div>
 							</div>
 						</div>
 						<!--FILA DE COMPAÑEROS END-->
-
 						<!--FILA DE COMPAÑEROS START-->
 						<div class="item">
 							<div class="container">
 								<div class="row">
-
 									<!--COMPAÑERO-->
 									<div class="col-md-4">
 										<div class="staff-item">
@@ -529,12 +482,10 @@
 											</a>
 										</div>
 									</div>
-
 								</div>
 							</div>
 						</div>
 						<!--FILA DE COMPAÑEROS END-->
-
 						<!--CONTROLES START-->
 						<a class="nav-arrow left-arrow" href="#managers_carousel" role="button" data-slide="prev">
 							<i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -545,33 +496,25 @@
 							<span class="sr-only"></span>
 						</a>
 						<!--CONTROLES END-->
-
 					</div>
 				</div>
 			</div>
-
 		</div>
 		<!--COMPAÑEROS END-->
-
 	</section>
 	<!--PLAYER SECCION FOOTER END-->
-
 	<!--START FOOTER-->
 	<?php
-
 	include('estructura/footer.php');
 
 	?>
 	<!--END FOOTER-->
-
 	<!--START SCRIPTS-->
 	<?php
-
 	include('estructura/scripts.php');
 
 	?>
 	<!--END SCRIPTS-->
-
 </body>
 
 </html>
