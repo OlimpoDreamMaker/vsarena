@@ -1,27 +1,27 @@
-#Options All -Indexes
+Options All -Indexes
 
-#Errores
-# ErrorDocument 403 /VsArena/FrontEnd/404.php
+Errores
+ErrorDocument 403 /VsArena/FrontEnd/404.php
 ErrorDocument 404 /VsArena/FrontEnd/404.php
 
-#Enlaces amigables Dashboard
+Enlaces amigables Dashboard
 Options +FollowSymLinks
 RewriteEngine on
 
-RewriteRule ^panel/cupon/([0-9]+)/$ /VsArena/Dashboard/templates/cupon.php?id=$1
-RewriteRule ^panel/equipo/([0-9]+)/$ /VsArena/Dashboard/templates/equipo.php?id=$1
-RewriteRule ^panel/grupo/([0-9]+)/$ /VsArena/Dashboard/templates/grupo.php?id=$1
-RewriteRule ^panel/juego/([0-9]+)/$ /VsArena/Dashboard/templates/juego.php?id=$1
-RewriteRule ^panel/juegos/$ /VsArena/Dashboard/templates/juegos.php
-RewriteRule ^panel/noticia/([0-9]+)/$ /VsArena/Dashboard/templates/noticia.php?id=$1
-RewriteRule ^panel/noticias/$ /VsArena/Dashboard/templates/noticias.php
-RewriteRule ^panel/premio/([0-9]+)/$ /VsArena/Dashboard/templates/premio.php?id=$1
-RewriteRule ^panel/producto/([0-9]+)/$ /VsArena/Dashboard/templates/producto.php?id=$1
-RewriteRule ^panel/rondas/([0-9]+)/$ /VsArena/Dashboard/templates/rondas.php?id=$1
-RewriteRule ^panel/tag/([0-9]+)/$ /VsArena/Dashboard/templates/tag.php?id=$1
-RewriteRule ^panel/tienda/$ /VsArena/Dashboard/templates/tienda.php
-RewriteRule ^panel/torneo/([0-9]+)/$ /VsArena/Dashboard/templates/torneo.php?id=$1
-RewriteRule ^panel/torneos/$ /VsArena/Dashboard/templates/torneos.php
-RewriteRule ^panel/usuario/([0-9]+)/$ /VsArena/Dashboard/templates/usuario.php?id=$1
-RewriteRule ^panel/usuarios/$ /VsArena/Dashboard/templates/usuarios.php
+RewriteRule ^panel/cupon/([0-9]+)/$ Dashboard/templates/cupon.php?id=$1
+RewriteRule ^panel/equipo/([0-9]+)/$ Dashboard/templates/equipo.php?id=$1
+RewriteRule ^panel/grupo/([0-9]+)/$ Dashboard/templates/grupo.php?id=$1
+RewriteRule ^panel/juego/([0-9]+)/$ Dashboard/templates/juego.php?id=$1
+RewriteRule ^panel/juegos/$ Dashboard/templates/juegos.php
+RewriteRule ^panel/noticia/([0-9]+)/$ Dashboard/templates/noticia.php?id=$1
+RewriteRule ^panel/noticias/$ Dashboard/templates/noticias.php
+RewriteRule ^panel/premio/([0-9]+)/$ Dashboard/templates/premio.php?id=$1
+RewriteRule ^panel/producto/([0-9]+)/$ Dashboard/templates/producto.php?id=$1
+RewriteRule ^panel/rondas/([0-9]+)/$ Dashboard/templates/rondas.php?id=$1
+RewriteRule ^panel/tag/([0-9]+)/$ Dashboard/templates/tag.php?id=$1
+RewriteRule ^panel/tienda/$ Dashboard/templates/tienda.php
+RewriteRule ^panel/torneo/([0-9]+)/$ Dashboard/templates/torneo.php?id=$1
+RewriteRule ^panel/torneos/$ Dashboard/templates/torneos.php
+RewriteRule ^panel/usuario/([0-9]+)/$ Dashboard/templates/usuario.php?id=$1
+RewriteRule ^panel/usuarios/$ Dashboard/templates/usuarios.php
 RewriteRule ^panel/venta-compra/([0-9]+)/$ /VsArena/Dashboard/templates/venta-compra.php?id=$1
