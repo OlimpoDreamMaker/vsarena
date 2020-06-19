@@ -2,52 +2,40 @@
 <html lang="es">
 
 <head>
-
     <!--START ROBOTS-->
     <?php
-
     include('estructura/robots.php');
 
     ?>
     <!--END ROBOTS-->
-
     <!--START METAS GLOBALES-->
     <?php
-
     include('estructura/global_meta.php');
 
     ?>
     <!--END METAS GLOBALES-->
-
     <!--START FUENTES-->
     <?php
-
     include('estructura/global_fuentes.php');
 
     ?>
     <!--END FUENTES-->
-
     <!--START HOJAS-->
     <?php
-
     include('estructura/global_hojas.php');
 
     ?>
     <!--END HOJAS-->
-
     <!--START METAS LOCALES-->
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <!--END METAS LOCALES-->
-
     <!--START TITULO-->
     <title>Sitio en mantenimiento</title>
     <!--END TITULO-->
-
 </head>
 
 <body class="error-page">
-
     <!--ERROR WRAP BEGIN-->
     <div class="error-wrap offline">
         <div class="container">
@@ -57,7 +45,6 @@
                 </div>
             </div>
         </div>
-
         <div class="offline-title">
             <div class="container">
                 <div class="row">
@@ -77,15 +64,12 @@
         </div>
     </div>
     <!--ERROR WRAP END-->
-
     <!--START SCRIPTS-->
     <?php
-
     include('estructura/scripts.php');
 
     ?>
     <!--END SCRIPTS-->
-
 </body>
 
 </html>

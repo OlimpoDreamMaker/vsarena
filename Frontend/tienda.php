@@ -2,68 +2,52 @@
 <html lang="es">
 
 <head>
-
     <!--START ROBOTS-->
     <?php
-
     include('estructura/robots.php');
 
     ?>
     <!--END ROBOTS-->
-
     <!--START METAS GLOBALES-->
     <?php
-
     include('estructura/global_meta.php');
 
     ?>
     <!--END METAS GLOBALES-->
-
     <!--START FUENTES-->
     <?php
-
     include('estructura/global_fuentes.php');
 
     ?>
     <!--END FUENTES-->
-
     <!--START HOJAS-->
     <?php
-
     include('estructura/global_hojas.php');
 
     ?>
     <!--END HOJAS-->
-
     <!--START METAS LOCALES-->
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <!--END METAS LOCALES-->
-
     <!--START TITULO-->
     <title>Tienda</title>
     <!--END TITULO-->
-
 </head>
 
 <body>
-
     <!--PRELOADER START-->
     <?php
-
     include('estructura/preloader.php');
 
     ?>
     <!--PRELOADER END-->
-
     <!--NAV START-->
     <?php
-
     include('estructura/barra_navegacion.php');
 
     ?>
     <!--NAV END-->
-
     <!--CATEGORIA START-->
     <section class="image-header">
         <div class="container">
@@ -83,19 +67,14 @@
         </div>
     </section>
     <!--CATEGORIA END-->
-
     <!--TIENDA CUERPO START-->
     <div class="store-wrap">
-
         <!--CONTAINER START-->
         <div class="container">
-
             <!--ROW START-->
             <div class="row row-offcanvas row-offcanvas-left">
-
                 <!--LEFT SIDEBAR START-->
                 <div class="sidebar col-xs-6 col-sm-6 col-md-3 sidebar-offcanvas" id="sidebar">
-
                     <!--CATEGORIA START-->
                     <div class="sidebar-menu-wrap">
                         <h6>Categoria</h6>
@@ -125,11 +104,9 @@
                         </ul>
                     </div>
                     <!--CATEGORIA END-->
-
                     <!--FILTROS START-->
                     <div class="filter-wrap">
                         <h6>Filtros</h6>
-
                         <div class="filter-items-wrap">
                             <!--JUEGOS START-->
                             <div class="filter-title">Juego</div>
@@ -182,7 +159,6 @@
                                 </ul>
                             </div>
                             <!--JUEGOS END-->
-
                             <!--MARCA START-->
                             <div class="filter-title">Marca</div>
                             <div class="filter-item">
@@ -202,7 +178,6 @@
                                 </ul>
                             </div>
                             <!--MARCA END-->
-
                             <!--MARCA START-->
                             <div class="filter-title">Marca</div>
                             <div class="filter-item">
@@ -222,7 +197,6 @@
                                 </ul>
                             </div>
                             <!--MARCA END-->
-
                             <!--COLORES START-->
                             <div class="filter-title">Colores</div>
                             <div class="color-filter-item">
@@ -292,7 +266,6 @@
                                 </ul>
                             </div>
                             <!--COLORES END-->
-
                             <!--TAMAÑO START-->
                             <div class="filter-title">Tamaño</div>
                             <div class="size-filter-item">
@@ -342,27 +315,20 @@
                                 </ul>
                             </div>
                             <!--TAMAÑO END-->
-
                         </div>
-
                     </div>
                     <!--FILTROS END-->
-
                 </div>
                 <!--LEFT SIDEBAR END-->
-
                 <!--CANJEAR START-->
                 <div class="col-xs-12 col-sm-12 col-md-9">
-
                     <!--BOTON MOBILE START-->
                     <p class="hidden-md hidden-lg">
                         <button type="button" class="btn sidebar-btn" data-toggle="offcanvas" title="Toggle sidebar">Sidebar</button>
                     </p>
                     <!--BOTON MOBILE END-->
-
                     <!--TITULO CANJEAR START-->
                     <h6>Canjear productos</h6>
-
                     <!--PRODUCTOS CANJEAR START-->
                     <div class="row">
                         <!--PRODUCTO 01 START-->
@@ -383,7 +349,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!--PRODUCTO 02 START-->
                         <div class="col-md-4 col-sm-6">
                             <div class="store-list-item">
@@ -402,7 +367,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!--PRODUCTO 03 START-->
                         <div class="col-md-4 col-sm-6">
                             <div class="store-list-item">
@@ -421,7 +385,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!--PRODUCTO 04 START-->
                         <div class="col-md-4 col-sm-6">
                             <div class="store-list-item">
@@ -440,7 +403,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!--PRODUCTO 05 START-->
                         <div class="col-md-4 col-sm-6">
                             <div class="store-list-item">
@@ -459,7 +421,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!--PRODUCTO 06 START-->
                         <div class="col-md-4 col-sm-6">
                             <div class="store-list-item">
@@ -478,7 +439,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!--PRODUCTO 07 START-->
                         <div class="col-md-4 col-sm-6">
                             <div class="store-list-item">
@@ -497,7 +457,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!--PRODUCTO 08 START-->
                         <div class="col-md-4 col-sm-6">
                             <div class="store-list-item">
@@ -516,7 +475,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!--PRODUCTO 09 START-->
                         <div class="col-md-4 col-sm-6">
                             <div class="store-list-item">
@@ -535,7 +493,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!--PAGINACION START-->
                         <div class="col-md-12">
                             <div class="pagination-wrap">
@@ -551,17 +508,14 @@
                             </div>
                         </div>
                         <!--PAGINACION END-->
-
                     </div>
                     <!--PRODUCTOS CANJEAR END-->
-
                 </div>
                 <!--CANJEAR END-->
             </div>
             <!--ROW END-->
         </div>
         <!--CONTAINER END-->
-
         <!--TIENDA OFICIAL START-->
         <div class="store-banner position-relative">
             <div class="store-banner-info">
@@ -576,26 +530,20 @@
             </div>
         </div>
         <!--TIENDA OFICIAL END-->
-
     </div>
     <!--TIENDA CUERPO END-->
-
     <!--START FOOTER-->
     <?php
-
     include('estructura/footer.php');
 
     ?>
     <!--END FOOTER-->
-
     <!--START SCRIPTS-->
     <?php
-
     include('estructura/scripts.php');
 
     ?>
     <!--END SCRIPTS-->
-
 </body>
 
 </html>
