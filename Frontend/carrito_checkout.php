@@ -71,6 +71,7 @@
     <section class="checkout-wrap">
         <div class="container">
             <div class="row">
+                <!--CONT TOP-->
                 <div class="col-md-12">
                     <div class="alert team-alert fade in" role="alert">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span class="fa fa-close" aria-hidden="true"></span></button>
@@ -81,11 +82,13 @@
                         Tienes un cupon? <a href="#">CLICK aqui para INGRESARLO</a>
                     </div>
                 </div>
+                <!--FORMULARIO START-->
                 <div class="col-md-7">
                     <h4>Detalles de compra</h4>
                     <div class="customer-info">
                         <form>
                             <div class="row">
+                                <!--DATO-->
                                 <div class="col-md-6">
                                     <div class="item">
                                         <label>
@@ -94,6 +97,7 @@
                                         </label>
                                     </div>
                                 </div>
+                                <!--DATO-->
                                 <div class="col-md-6">
                                     <div class="item">
                                         <label>
@@ -102,6 +106,7 @@
                                         </label>
                                     </div>
                                 </div>
+                                <!--DATO-->
                                 <div class="col-md-6">
                                     <div class="item">
                                         <label>
@@ -110,6 +115,7 @@
                                         </label>
                                     </div>
                                 </div>
+                                <!--DATO-->
                                 <div class="col-md-6">
                                     <div class="item">
                                         <label>
@@ -118,6 +124,7 @@
                                         </label>
                                     </div>
                                 </div>
+                                <!--DATO-->
                                 <div class="col-md-12">
                                     <div class="item">
                                         <label>
@@ -130,6 +137,7 @@
                                         </label>
                                     </div>
                                 </div>
+                                <!--DATO-->
                                 <div class="col-md-12">
                                     <div class="item">
                                         <label>
@@ -139,6 +147,7 @@
                                         <input type="text" placeholder="Apartamento, piso, suite (opcional)" name="address">
                                     </div>
                                 </div>
+                                <!--DATO-->
                                 <div class="col-md-12">
                                     <div class="item">
                                         <label>
@@ -147,6 +156,7 @@
                                         </label>
                                     </div>
                                 </div>
+                                <!--DATO-->
                                 <div class="col-md-6">
                                     <div class="item">
                                         <label>
@@ -159,6 +169,7 @@
                         </form>
                     </div>
                     <h4>Informacion adicional</h4>
+                    <!--DATO-->
                     <div class="customer-info">
                         <div class="item">
                             <label>
@@ -168,6 +179,8 @@
                         </div>
                     </div>
                 </div>
+                <!--FORMULARIO END-->
+                <!--DETALLES ORDEN START-->
                 <div class="col-md-5">
                     <h4>Tu orden</h4>
                     <table class="cart-table">
@@ -190,6 +203,7 @@
                             </tr>
                         </tbody>
                     </table>
+                    <!--INFORMACION DE PAGO-->
                     <div class="cart-total">
                         <div class="delivery-list">
                             <label class="item">
@@ -222,11 +236,11 @@
                         </div>
                     </div>
                 </div>
+                <!--DETALLES ORDEN END-->
             </div>
         </div>
     </section>
     <!--CHECKOUT WRAP END-->
-    <!--STANDING TABLE WRAP END-->
     <!--START FOOTER-->
     <?php
     include('estructura/footer.php');

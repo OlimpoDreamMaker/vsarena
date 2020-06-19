@@ -1,40 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--START ROBOTS-->
+    <?php
+    include('estructura/robots.php');
+
+    ?>
+    <!--END ROBOTS-->
+    <!--START METAS GLOBALES-->
+    <?php
+    include('estructura/global_meta.php');
+
+    ?>
+    <!--END METAS GLOBALES-->
+    <!--START FUENTES-->
+    <?php
+    include('estructura/global_fuentes.php');
+
+    ?>
+    <!--END FUENTES-->
+    <!--START HOJAS-->
+    <?php
+    include('estructura/global_hojas.php');
+
+    ?>
+    <!--END HOJAS-->
+    <!--START METAS LOCALES-->
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--END METAS LOCALES-->
+    <!--START TITULO-->
     <title>Llaves</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat%7COpen+Sans:700,400%7CRaleway:400,800,900" rel="stylesheet" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+    <!--END TITULO-->
 </head>
 
 <body>
-
-    <div class="preloader-wrapper" id="preloader">
-        <div class="motion-line dark-big"></div>
-        <div class="motion-line yellow-big"></div>
-        <div class="motion-line dark-small"></div>
-        <div class="motion-line yellow-normal"></div>
-        <div class="motion-line yellow-small1"></div>
-        <div class="motion-line yellow-small2"></div>
-    </div>
-
-
-    <!--NAV WRAP START-->
+    <!--PRELOADER START-->
     <?php
+    include('estructura/preloader.php');
 
+    ?>
+    <!--PRELOADER END-->
+    <!--NAV START-->
+    <?php
     include('estructura/barra_navegacion.php');
 
     ?>
-    <!--NAV WRAP END-->
+    <!--NAV END-->
 
 
 
-    <!--BREADCRUMBS BEGIN-->
+    <!--CATEGORIA START-->
     <section class="image-header">
         <div class="container">
             <div class="row">
@@ -52,7 +69,7 @@
             </div>
         </div>
     </section>
-    <!--BREADCRUMBS END-->
+    <!--CATEGORIA END-->
 
     <!--STANDING CUP BEGIN-->
     <section class="standing-cup">
