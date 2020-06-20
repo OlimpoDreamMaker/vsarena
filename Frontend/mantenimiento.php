@@ -56,10 +56,10 @@ require_once("../BackEnd/config.php");
                         <span class="big-text">Está en</span>
                         <span class="big-text">Mantenimiento</span>
                         <ul class="offline-socials">
-                            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
+                            <li><a href="<?php echo $facebook;?>"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                            <li><a href="<?php echo $twitter;?>"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="<?php echo $youtube;?>"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                            <li><a href="<?php echo $twitch;?>"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </div>

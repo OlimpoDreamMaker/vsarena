@@ -152,7 +152,7 @@ require_once("../BackEnd/config.php");
                                         </li>
                                         <li class="stage-item">
                                             <span class="store-badge new">Nuevo</span>
-                                            <img src="images/common/product-main-img.jpg" alt="product-main-img">
+                                            <img src="<?php echo $urlFE;?>images/common/product-main-img.jpg" alt="product-main-img">
                                         </li>
                                         <li class="stage-item">
                                             <span class="store-badge new">Nuevo</span>

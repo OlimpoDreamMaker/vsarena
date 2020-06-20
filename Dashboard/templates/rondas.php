@@ -10,12 +10,12 @@ if(isset($_SESSION['usuario'])){
 
   }else{
     desconectar($conexion);
-    header("Location: ../index.php");
+    header("Location: $amigable/panel/");
   }
 }else{
   echo "<script>alert('Necesita ser admin para podes acceder a esta pagina')</script>";
   desconectar($conexion);
-  header("Location: ../index.php?err=456");
+  header("Location: $amigable/panel/456/");
 }
 $idRonda = $_GET['id'];
 $consulta =  "SELECT * FROM rondas r, torneos t, juegos j

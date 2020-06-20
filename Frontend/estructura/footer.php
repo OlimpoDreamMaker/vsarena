@@ -39,14 +39,14 @@
                             <h4>Contáctanos</h4>
                             <ul class='contact-list'>
                                 <li><i class='fa fa-flag' aria-hidden='true'></i><span>Lorem Lorem Lorem Lorem Lorem</span></li>
-                                <li><i class='fa fa-envelope' aria-hidden='true'></i><a href='mailto:team@email.com'>team@email.com</a></li>
-                                <li class='phone'><i class='fa fa-phone' aria-hidden='true'></i><span>+342 - 3564569</span></li>
+                                <li><i class='fa fa-envelope' aria-hidden='true'></i><a href='mailto:$correo'>$correo.com</a></li>
+                                <li class='phone'><i class='fa fa-phone' aria-hidden='true'></i><span>$telefono</span></li>
                             </ul>
                             <ul class='socials'>
-                                <li><a href='#'><i class='fa fa-facebook-square' aria-hidden='true'></i></a></li>
-                                <li><a href='#'><i class='fa fa-twitter' aria-hidden='true'></i></a></li>
-                                <li><a href='#'><i class='fa fa-twitch' aria-hidden='true'></i></a></li>
-                                <li><a href='#'><i class='fa fa-instagram' aria-hidden='true'></i></a></li>
+                                <li><a href='$facebook'><i class='fa fa-facebook-square' aria-hidden='true'></i></a></li>
+                                <li><a href='$twitter'><i class='fa fa-twitter' aria-hidden='true'></i></a></li>
+                                <li><a href='$twitch'><i class='fa fa-twitch' aria-hidden='true'></i></a></li>
+                                <li><a href='$youtube'><i class='fa fa-youtube' aria-hidden='true'></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                     </div>
                     <div class='col-xs-6'>
                         <div class='created'>
-                            <a href='#'>Created by Olimpo DM</a>
+                            <a href='olimpodm.com'>Created by Olimpo DM</a>
                         </div>
                     </div>
                 </div>

@@ -65,11 +65,10 @@ require_once("../BackEnd/config.php");
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="error-menu">
-                            <li><a href="#">facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Twich</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">YouTube</a></li>
+                            <li><a href="<?php echo $facebook;?>">facebook</a></li>
+                            <li><a href="<?php echo $twitter;?>">Twitter</a></li>
+                            <li><a href="<?php echo $twitch;?>">Twich</a></li>
+                            <li><a href="<?php echo $youtube;?>">YouTube</a></li>
                         </ul>
                     </div>
                 </div>

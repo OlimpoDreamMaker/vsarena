@@ -18,7 +18,7 @@ echo ("<!--NAV START-->
 						<a href='$amigable/torneos'><span>Torneos</span></a>
 					</li>
 					<li>
-						<a href='$amigable/tienda><span>Tienda</span></a>
+						<a href='$amigable/tienda'><span>Tienda</span></a>
 					</li>
 					<li>
 						<a href='$amigable/noticias'><span>Noticias</span></a>
@@ -75,7 +75,7 @@ echo ("<!--NAV START-->
 								<div class='total-digit'>$ 120</div>
 							</div>
 							<div class='wrap btn-wrap'>
-								<a href='$amigable/carrito.php' class='btn view'>Ver Carrito</a>
+								<a href='$amigable/carrito' class='btn view'>Ver Carrito</a>
 								<a href='#' class='btn check'>Vaciar Carrito</a>
 							</div>
 						</div>

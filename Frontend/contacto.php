@@ -83,14 +83,14 @@ require_once("../BackEnd/config.php");
                </div>
                <ul class="contact-list">
                   <li><i class="fa fa-flag" aria-hidden="true"></i><span>276 Upper Parliament Street, Liverpool L8, Great Britain</span></li>
-                  <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:team@email.com">team@email.com</a></li>
-                  <li class="phone"><i class="fa fa-phone" aria-hidden="true"></i><span>+61 3 8376 6284</span></li>
+                  <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:<?php echo $correo;?>"><?php echo $correo;?></a></li>
+                  <li class="phone"><i class="fa fa-phone" aria-hidden="true"></i><span><?php echo $telefono;?></span></li>
                </ul>
                <ul class="contact-bar">
-                  <li class="facebook"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                  <li class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                  <li class="google"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                  <li class="pinterest"><a href="#"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
+                  <li class="facebook"><a href=<?php echo $facebook;?>><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                  <li class="twitter"><a href=<?php echo $twitter;?>><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li class="google"><a href=<?php echo $youtube?>><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                  <li class="pinterest"><a href=<?php echo $twitch;?>><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
                </ul>
             </div>
             <!--DATOS END-->

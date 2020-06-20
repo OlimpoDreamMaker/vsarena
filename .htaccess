@@ -1,13 +1,15 @@
 #Options All -Indexes
 
 #Errores
-#ErrorDocument 403 /VsArena/FrontEnd/404.php
-#ErrorDocument 404 /VsArena/FrontEnd/404.php
+ErrorDocument 403 /VsArena/FrontEnd/404.php
+ErrorDocument 404 /VsArena/FrontEnd/404.php
 
 #Enlaces amigables Dashboard
 Options +FollowSymLinks
 RewriteEngine on
 
+RewriteRule ^panel/$ Dashboard/index.php
+RewriteRule ^panel/([0-9]+)/$ Dashboard/index.php?err=$1
 RewriteRule ^panel/cupon/([0-9]+)/$ Dashboard/templates/cupon.php?id=$1
 RewriteRule ^panel/equipo/([0-9]+)/$ Dashboard/templates/equipo.php?id=$1
 RewriteRule ^panel/grupo/([0-9]+)/$ Dashboard/templates/grupo.php?id=$1
@@ -32,7 +34,7 @@ RewriteRule ^404$ FrontEnd/404.php
 RewriteRule ^articulo$ FrontEnd/articulo_tda.php
 RewriteRule ^batallas$ FrontEnd/batallas.php
 RewriteRule ^buscar$ FrontEnd/buscar.php
-RewriteRule ^campeonatos_activos$ FrontEnd/campeonatos_activos.php
+RewriteRule ^torneos$ FrontEnd/campeonatos_activos.php
 RewriteRule ^carrito$ FrontEnd/carrito.php
 RewriteRule ^carrito_checkout$ FrontEnd/carrito_checkout.php
 RewriteRule ^contacto$ FrontEnd/contacto.php
@@ -44,7 +46,7 @@ RewriteRule ^home$ FrontEnd/index.php
 #RewriteRule ^login$ FrontEnd/login.php
 RewriteRule ^mantenimiento$ FrontEnd/mantenimiento.php
 RewriteRule ^nosotros$ FrontEnd/nosotros.php
-RewriteRule ^noticias_blog$ FrontEnd/noticias_blg.php
+RewriteRule ^noticias$ FrontEnd/noticias_blg.php
 RewriteRule ^perfil$ FrontEnd/perfil.php
 RewriteRule ^perfil_cpto$ FrontEnd/perfil_cpto.php
 RewriteRule ^premios$ FrontEnd/premios.php
