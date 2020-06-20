@@ -1,5 +1,6 @@
 <?php
-require_once("../BackEnd/config.php");
+require_once('../BackEnd/config.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -66,7 +67,7 @@ require_once("../BackEnd/config.php");
 									<div class="big-title">
 										VSARENA
 									</div>
-									<a href="<?php echo $amigable;?>/torneos" class="btn">
+									<a href="<?php echo $amigable; ?>/torneos" class="btn">
 										TORNEOS
 									</a>
 								</div>
@@ -85,7 +86,7 @@ require_once("../BackEnd/config.php");
 									<div class="big-title">
 										Magnificas noticias
 									</div>
-									<a href="<?php echo $amigable;?>/noticias" class="btn">
+									<a href="<?php echo $amigable; ?>/noticias" class="btn">
 										NOTICIAS
 									</a>
 								</div>
@@ -118,13 +119,13 @@ require_once("../BackEnd/config.php");
 					<span>Sponsors</span>
 				</div>
 				<div class="col-md-3 col-sm-4 text-center">
-					<img src="<?php echo $urlFE;?>/images/common/sponsor-img.png" alt="sponsor-image">
+					<img src="<?php echo $urlFE; ?>/images/common/sponsor-img.png" alt="sponsor-image">
 				</div>
 				<div class="col-md-3 col-sm-4  text-center">
-					<img src="<?php echo $urlFE;?>/images/common/sponsor-img.png" alt="sponsor-image">
+					<img src="<?php echo $urlFE; ?>/images/common/sponsor-img.png" alt="sponsor-image">
 				</div>
 				<div class="col-md-3 col-sm-4  text-center">
-					<img src="<?php echo $urlFE;?>/images/common/sponsor-img.png" alt="sponsor-image">
+					<img src="<?php echo $urlFE; ?>/images/common/sponsor-img.png" alt="sponsor-image">
 				</div>
 			</div>
 		</div>
@@ -136,7 +137,7 @@ require_once("../BackEnd/config.php");
 				<div class="col-md-5">
 					<h5 class="esport-landing-header">Proximo torneo</h5>
 					<div class="esport-team-landing-next-event">
-						<img src="<?php echo $urlFE;?>/images/common/esport-team-landing-next-event-logo.png" alt="next-event">
+						<img src="<?php echo $urlFE; ?>/images/common/esport-team-landing-next-event-logo.png" alt="next-event">
 						<div class="name">
 							Majestic Skull proyect
 						</div>
@@ -150,12 +151,12 @@ require_once("../BackEnd/config.php");
 					<!--ESPORT TEAM LANDING LATEST MATCHES BEGIN-->
 					<div class="esport-team-landing-latest-matches">
 						<a href="#">
-							<img src="<?php echo $urlFE;?>/images/common/esport-champ-late-match.jpg" alt="background">
+							<img src="<?php echo $urlFE; ?>/images/common/esport-champ-late-match.jpg" alt="background">
 							<span>Cuartos de finales</span>
 							<div>
 								<div class="team left">
 									<span>
-										<img src="<?php echo $urlFE;?>/images/common/team-logo2.png" alt="team-logo">
+										<img src="<?php echo $urlFE; ?>/images/common/team-logo2.png" alt="team-logo">
 									</span>
 									<span class="team-name">internacional</span>
 								</div>
@@ -164,7 +165,7 @@ require_once("../BackEnd/config.php");
 								</div>
 								<div class="team right">
 									<span class="image">
-										<img src="<?php echo $urlFE;?>/images/common/team-logo2.png" alt="team-logo">
+										<img src="<?php echo $urlFE; ?>/images/common/team-logo2.png" alt="team-logo">
 									</span>
 									<span class="team-name">internacional</span>
 								</div>
@@ -172,12 +173,12 @@ require_once("../BackEnd/config.php");
 							<span>full time</span>
 						</a>
 						<a href="#">
-							<img src="<?php echo $urlFE;?>/images/common/esport-champ-late-match.jpg" alt="background">
+							<img src="<?php echo $urlFE; ?>/images/common/esport-champ-late-match.jpg" alt="background">
 							<span>Cuartos de finales</span>
 							<div>
 								<div class="team left">
 									<span>
-										<img src="<?php echo $urlFE;?>/images/common/team-logo2.png" alt="team-logo">
+										<img src="<?php echo $urlFE; ?>/images/common/team-logo2.png" alt="team-logo">
 									</span>
 									<span class="team-name">internacional</span>
 								</div>
@@ -186,7 +187,7 @@ require_once("../BackEnd/config.php");
 								</div>
 								<div class="team right">
 									<span class="image">
-										<img src="<?php echo $urlFE;?>/images/common/team-logo2.png" alt="team-logo">
+										<img src="<?php echo $urlFE; ?>/images/common/team-logo2.png" alt="team-logo">
 									</span>
 									<span class="team-name">internacional</span>
 								</div>
@@ -224,7 +225,7 @@ require_once("../BackEnd/config.php");
 						<div class="wrap">
 							<div class="width players-wrapper">
 								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE;?>/images/common/esport-players.jpg">
+									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
 										Robert Fitzgerald
 									</span>
@@ -260,7 +261,7 @@ require_once("../BackEnd/config.php");
 									</span>
 								</a>
 								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE;?>/images/common/esport-players.jpg">
+									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
 										Robert Fitzgerald
 									</span>
@@ -296,7 +297,7 @@ require_once("../BackEnd/config.php");
 									</span>
 								</a>
 								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE;?>/images/common/esport-players.jpg">
+									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
 										Robert Fitzgerald
 									</span>
@@ -332,7 +333,7 @@ require_once("../BackEnd/config.php");
 									</span>
 								</a>
 								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE;?>/images/common/esport-players.jpg">
+									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
 										Robert Fitzgerald
 									</span>
@@ -368,7 +369,7 @@ require_once("../BackEnd/config.php");
 									</span>
 								</a>
 								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE;?>/images/common/esport-players.jpg">
+									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
 										Robert Fitzgerald
 									</span>
@@ -410,7 +411,7 @@ require_once("../BackEnd/config.php");
 						<div class="wrap">
 							<div class="width players-wrapper">
 								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE;?>/images/common/esport-players.jpg">
+									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
 										Robert Fitzgerald
 									</span>
@@ -446,7 +447,7 @@ require_once("../BackEnd/config.php");
 									</span>
 								</a>
 								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE;?>/images/common/esport-players.jpg">
+									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
 										Robert Fitzgerald
 									</span>
@@ -482,7 +483,7 @@ require_once("../BackEnd/config.php");
 									</span>
 								</a>
 								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE;?>/images/common/esport-players.jpg">
+									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
 										Robert Fitzgerald
 									</span>
@@ -518,7 +519,7 @@ require_once("../BackEnd/config.php");
 									</span>
 								</a>
 								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE;?>/images/common/esport-players.jpg">
+									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
 										Robert Fitzgerald
 									</span>
@@ -554,7 +555,7 @@ require_once("../BackEnd/config.php");
 									</span>
 								</a>
 								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE;?>/images/common/esport-players.jpg">
+									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
 										Robert Fitzgerald
 									</span>
@@ -596,7 +597,7 @@ require_once("../BackEnd/config.php");
 						<div class="wrap">
 							<div class="width players-wrapper">
 								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE;?>/images/common/esport-players.jpg">
+									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
 										Robert Fitzgerald
 									</span>
@@ -632,7 +633,7 @@ require_once("../BackEnd/config.php");
 									</span>
 								</a>
 								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE;?>/images/common/esport-players.jpg">
+									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
 										Robert Fitzgerald
 									</span>
@@ -668,7 +669,7 @@ require_once("../BackEnd/config.php");
 									</span>
 								</a>
 								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE;?>/images/common/esport-players.jpg">
+									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
 										Robert Fitzgerald
 									</span>
@@ -704,7 +705,7 @@ require_once("../BackEnd/config.php");
 									</span>
 								</a>
 								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE;?>/images/common/esport-players.jpg">
+									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
 										Robert Fitzgerald
 									</span>
@@ -740,7 +741,7 @@ require_once("../BackEnd/config.php");
 									</span>
 								</a>
 								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE;?>/images/common/esport-players.jpg">
+									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
 										Robert Fitzgerald
 									</span>
@@ -794,21 +795,21 @@ require_once("../BackEnd/config.php");
 						</div>
 						<div class="col-xs-6">
 							<span class="feature">
-								<img src="<?php echo $urlFE;?>/images/common/esport-team-lp-feature-ico.png" alt="feature">
+								<img src="<?php echo $urlFE; ?>/images/common/esport-team-lp-feature-ico.png" alt="feature">
 								<span>Diversion</span>
 							</span>
 							<span class="feature">
-								<img src="<?php echo $urlFE;?>/images/common/esport-team-lp-feature-ico.png" alt="feature">
+								<img src="<?php echo $urlFE; ?>/images/common/esport-team-lp-feature-ico.png" alt="feature">
 								<span>Jugabilidad</span>
 							</span>
 						</div>
 						<div class="col-xs-6">
 							<span class="feature">
-								<img src="<?php echo $urlFE;?>/images/common/esport-team-lp-feature-ico.png" alt="feature">
+								<img src="<?php echo $urlFE; ?>/images/common/esport-team-lp-feature-ico.png" alt="feature">
 								<span>Premios</span>
 							</span>
 							<span class="feature">
-								<img src="<?php echo $urlFE;?>/images/common/esport-team-lp-feature-ico.png" alt="feature">
+								<img src="<?php echo $urlFE; ?>/images/common/esport-team-lp-feature-ico.png" alt="feature">
 								<span>Aventura</span>
 							</span>
 						</div>
@@ -840,21 +841,21 @@ require_once("../BackEnd/config.php");
 						<div class="row">
 							<div class="col-md-4 col-sm-4">
 								<div class="item">
-									<img src="<?php echo $urlFE;?>/images/common/am-trophey.png" alt="am-trophey">
+									<img src="<?php echo $urlFE; ?>/images/common/am-trophey.png" alt="am-trophey">
 									<div class="name">National cup</div>
 									<div class="year">2010</div>
 								</div>
 							</div>
 							<div class="col-md-4 col-sm-4">
 								<div class="item">
-									<img src="<?php echo $urlFE;?>/images/common/am-trophey1.png" alt="am-trophey">
+									<img src="<?php echo $urlFE; ?>/images/common/am-trophey1.png" alt="am-trophey">
 									<div class="name">Championship trophy</div>
 									<div class="year">2012</div>
 								</div>
 							</div>
 							<div class="col-md-4 col-sm-4">
 								<div class="item">
-									<img src="<?php echo $urlFE;?>/images/common/am-trophey2.png" alt="am-trophey">
+									<img src="<?php echo $urlFE; ?>/images/common/am-trophey2.png" alt="am-trophey">
 									<div class="name">Super cup</div>
 									<div class="year">2017</div>
 								</div>
@@ -925,7 +926,7 @@ require_once("../BackEnd/config.php");
 				<div class="row row-eq-height">
 					<div class="col-md-4">
 						<a href="#" class="news-wprapper">
-							<img src="<?php echo $urlFE;?>/images/common/esport-team-landing-news-big.jpg" alt="news-img">
+							<img src="<?php echo $urlFE; ?>/images/common/esport-team-landing-news-big.jpg" alt="news-img">
 							<div class="news-border">
 								<span class="date">25 august</span>
 								<span class="name">Internacional inertns</span>
@@ -936,7 +937,7 @@ require_once("../BackEnd/config.php");
 						<div class="row no-gutters row-eq-height">
 							<div class="col-md-6">
 								<a href="#" class="news-wprapper">
-									<img src="<?php echo $urlFE;?>/images/common/esport-team-landing-news-1.jpg" alt="news-img">
+									<img src="<?php echo $urlFE; ?>/images/common/esport-team-landing-news-1.jpg" alt="news-img">
 									<div class="news-border">
 										<span class="date">25 august</span>
 										<span class="name">Internacional inertns</span>
@@ -945,7 +946,7 @@ require_once("../BackEnd/config.php");
 							</div>
 							<div class="col-md-6">
 								<a href="#" class="news-wprapper">
-									<img src="<?php echo $urlFE;?>/images/common/esport-team-landing-news-2.jpg" alt="news-img">
+									<img src="<?php echo $urlFE; ?>/images/common/esport-team-landing-news-2.jpg" alt="news-img">
 									<div class="news-border">
 										<span class="date">25 august</span>
 										<span class="name">Internacional inertns</span>
@@ -956,7 +957,7 @@ require_once("../BackEnd/config.php");
 						<div class="row no-gutters row-eq-height">
 							<div class="col-md-6">
 								<a href="#" class="news-wprapper">
-									<img src="<?php echo $urlFE;?>/images/common/esport-team-landing-news-3.jpg" alt="news-img">
+									<img src="<?php echo $urlFE; ?>/images/common/esport-team-landing-news-3.jpg" alt="news-img">
 									<div class="news-border">
 										<span class="date">25 august</span>
 										<span class="name">Internacional inertns</span>
@@ -965,7 +966,7 @@ require_once("../BackEnd/config.php");
 							</div>
 							<div class="col-md-6">
 								<a href="#" class="news-wprapper">
-									<img src="<?php echo $urlFE;?>/images/common/esport-team-landing-news-4.jpg" alt="news-img">
+									<img src="<?php echo $urlFE; ?>/images/common/esport-team-landing-news-4.jpg" alt="news-img">
 									<div class="news-border">
 										<span class="date">25 august</span>
 										<span class="name">Internacional inertns</span>
@@ -1020,7 +1021,7 @@ require_once("../BackEnd/config.php");
 									<div>
 										<a href="#">
 											<span class="store-badge hot">Destacado</span>
-											<img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product-image">
+											<img src="<?php echo $urlFE; ?>/images/common/store-item-img.jpg" alt="product-image">
 										</a>
 										<div class="info">
 											<span class="name">Lorem Lorem Lorem</span>
@@ -1034,7 +1035,7 @@ require_once("../BackEnd/config.php");
 									<div>
 										<a href="#">
 											<span class="store-badge new">Nuevo</span>
-											<img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product-image">
+											<img src="<?php echo $urlFE; ?>/images/common/store-item-img.jpg" alt="product-image">
 										</a>
 										<div class="info">
 											<span class="name">Lorem lorem lorem</span>
@@ -1047,7 +1048,7 @@ require_once("../BackEnd/config.php");
 								<div class="esport-store-list-item">
 									<div>
 										<a href="#">
-											<img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product-image">
+											<img src="<?php echo $urlFE; ?>/images/common/store-item-img.jpg" alt="product-image">
 										</a>
 										<div class="info">
 											<span class="name">Lorem lorem lorem</span>
@@ -1060,7 +1061,7 @@ require_once("../BackEnd/config.php");
 								<div class="esport-store-list-item">
 									<div>
 										<a href="#">
-											<img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product-image">
+											<img src="<?php echo $urlFE; ?>/images/common/store-item-img.jpg" alt="product-image">
 										</a>
 										<div class="info">
 											<span class="name">Lorem lorem lorem</span>
@@ -1078,7 +1079,7 @@ require_once("../BackEnd/config.php");
 									<div>
 										<a href="#">
 											<span class="store-badge hot">Destacado</span>
-											<img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product-image">
+											<img src="<?php echo $urlFE; ?>/images/common/store-item-img.jpg" alt="product-image">
 										</a>
 										<div class="info">
 											<span class="name">Lorem Lorem Lorem</span>
@@ -1092,7 +1093,7 @@ require_once("../BackEnd/config.php");
 									<div>
 										<a href="#">
 											<span class="store-badge new">Nuevo</span>
-											<img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product-image">
+											<img src="<?php echo $urlFE; ?>/images/common/store-item-img.jpg" alt="product-image">
 										</a>
 										<div class="info">
 											<span class="name">Lorem lorem lorem</span>
@@ -1105,7 +1106,7 @@ require_once("../BackEnd/config.php");
 								<div class="esport-store-list-item">
 									<div>
 										<a href="#">
-											<img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product-image">
+											<img src="<?php echo $urlFE; ?>/images/common/store-item-img.jpg" alt="product-image">
 										</a>
 										<div class="info">
 											<span class="name">Lorem lorem lorem</span>
@@ -1118,7 +1119,7 @@ require_once("../BackEnd/config.php");
 								<div class="esport-store-list-item">
 									<div>
 										<a href="#">
-											<img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product-image">
+											<img src="<?php echo $urlFE; ?>/images/common/store-item-img.jpg" alt="product-image">
 										</a>
 										<div class="info">
 											<span class="name">Lorem lorem lorem</span>
@@ -1136,7 +1137,7 @@ require_once("../BackEnd/config.php");
 									<div>
 										<a href="#">
 											<span class="store-badge hot">Destacado</span>
-											<img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product-image">
+											<img src="<?php echo $urlFE; ?>/images/common/store-item-img.jpg" alt="product-image">
 										</a>
 										<div class="info">
 											<span class="name">Lorem Lorem Lorem</span>
@@ -1150,7 +1151,7 @@ require_once("../BackEnd/config.php");
 									<div>
 										<a href="#">
 											<span class="store-badge new">Nuevo</span>
-											<img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product-image">
+											<img src="<?php echo $urlFE; ?>/images/common/store-item-img.jpg" alt="product-image">
 										</a>
 										<div class="info">
 											<span class="name">Lorem lorem lorem</span>
@@ -1163,7 +1164,7 @@ require_once("../BackEnd/config.php");
 								<div class="esport-store-list-item">
 									<div>
 										<a href="#">
-											<img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product-image">
+											<img src="<?php echo $urlFE; ?>/images/common/store-item-img.jpg" alt="product-image">
 										</a>
 										<div class="info">
 											<span class="name">Lorem lorem lorem</span>
@@ -1176,7 +1177,7 @@ require_once("../BackEnd/config.php");
 								<div class="esport-store-list-item">
 									<div>
 										<a href="#">
-											<img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product-image">
+											<img src="<?php echo $urlFE; ?>/images/common/store-item-img.jpg" alt="product-image">
 										</a>
 										<div class="info">
 											<span class="name">Lorem lorem lorem</span>

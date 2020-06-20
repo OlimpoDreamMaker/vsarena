@@ -5,7 +5,7 @@ require_once("../BackEnd/config.php");
 
 <head>
 	<!-- sonata seo -->
-	<title>Login | ArenaGG</title>
+	<title>Login | VsArena</title>
 	<meta name="keywords" content="arenagg, lvp, fandroid, liga, videojuegos, profesional, competición, ranking, partidos">
 	<meta name="description" content="ArenaGG, where playing video games comes with a reward. Signup and compete in our tournaments.">
 	<meta name="robots" content="index, follow">
@@ -4137,17 +4137,12 @@ require_once("../BackEnd/config.php");
 
 					<div class="row">
 						<div class="col-xs-12">
-							<div class="logo-top">
-								<a href="/es/">
-									<img class="img-responsive" alt="" src="https://s3-eu-west-1.amazonaws.com/arenagg-static/email/arena_logo.png">
-								</a>
-							</div>
 
 							<div class="login-card">
 								<div class="row">
 									<div class="col-xs-12">
 										<div class="right-container">
-											<h2 style="margin-bottom: 25px;" class="center">Bienvenido a ArenaGG</h2>
+											<h2 style="margin-bottom: 25px;" class="center">Bienvenido a VsArena</h2>
 
 											<div class="row">
 												<div class="col-xs-12 center">

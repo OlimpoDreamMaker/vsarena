@@ -2,7 +2,7 @@
 
 <head>
 	<!-- sonata seo -->
-	<title>Registro | ArenaGG</title>
+	<title>Registro | VsArena</title>
 	<meta name="keywords" content="arenagg, lvp, fandroid, liga, videojuegos, profesional, competición, ranking, partidos">
 	<meta name="description" content="ArenaGG, where playing video games comes with a reward. Signup and compete in our tournaments.">
 	<meta name="robots" content="index, follow">
@@ -4144,11 +4144,6 @@
 
 					<div class="row">
 						<div class="col-xs-12">
-							<div class="logo-top">
-								<a href="/es/">
-									<img class="img-responsive" alt="" src="https://s3-eu-west-1.amazonaws.com/arenagg-static/email/arena_logo.png">
-								</a>
-							</div>
 							<div class="login-card big">
 								<div class="row">
 									<div class="col-xs-12">
