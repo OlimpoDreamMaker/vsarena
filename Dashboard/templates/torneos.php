@@ -1,31 +1,30 @@
 <?php
 $p = '..';
 session_start();
-require_once("../config.php");
-require_once("../php/conexionBD.php");
-require_once("../php/isAdmin.php");
-require_once("../php/dataUser.php");
+require_once("../../BackEnd/config.php");
+require_once("../../BackEnd/funciones.php");
+require_once("../../BackEnd/mostrarTablas.php");
 $conexion = conectar();
 if(isset($_SESSION['usuario'])){
   if(isAdmin($conexion,$_SESSION['usuario'])){
 
   }else{
-    desconectarBD($conexion);
+    desconectar($conexion);
     header("Location: ../index.php");
   }
 }else{
   echo "<script>alert('Necesita ser admin para podes acceder a esta pagina')</script>";
-  desconectarBD($conexion);
+  desconectar($conexion);
   header("Location: ../index.php?err=456");
 }
-desconectarBD($conexion);
+desconectar($conexion);
 ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <?php
   require_once("$p/components/head.php");
-  mostrarHead("Torneos",$url);
+  mostrarHead("Torneos",$urlDB);
   ?>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -41,6 +40,9 @@ desconectarBD($conexion);
   <!-- Main Sidebar Container START-->
   <?php
   require_once("$p/components/aside.php");
+  $conexion = conectar();
+  aside(4,$conexion,$amigable,$urlDB,$imagenes);
+  desconectar($conexion);
   ?>
   <!-- Main Sidebar Container END-->
 
@@ -91,11 +93,9 @@ desconectarBD($conexion);
             <div class="small-box bg-primary">
               <div class="inner">
                 <?php
-                require_once("../php/cantidadTorneos.php");
-                require_once("../php/conexionBD.php");
                 $conexion = conectar();
                 echo "<h3>".cantidadTorneos($conexion)."</h3>";
-                desconectarBD($conexion);
+                desconectar($conexion);
                 ?>
                 <p>Torneos Totales</p>
               </div>
@@ -111,10 +111,9 @@ desconectarBD($conexion);
             <div class="small-box bg-info">
               <div class="inner">
                 <?php
-                require_once("../php/cantidadTorneosActivos.php");
                 $conexion = conectar();
                 echo "<h3>".cantidadTorneosActivos($conexion)."</h3>";
-                desconectarBD($conexion);
+                desconectar($conexion);
                 ?>
                 <p>Torneos Activos</p>
               </div>
@@ -130,10 +129,9 @@ desconectarBD($conexion);
             <div class="small-box bg-success">
               <div class="inner">
                 <?php
-                require_once("../php/cantidadTorneosConcluidos.php");
                 $conexion = conectar();
                 echo "<h3>".cantidadTorneosConcluidos($conexion)."</h3>";
-                desconectarBD($conexion);
+                desconectar($conexion);
                 ?>
                 <p>Torneos Concluidos</p>
               </div>
@@ -149,10 +147,9 @@ desconectarBD($conexion);
             <div class="small-box bg-danger">
               <div class="inner">
                 <?php
-                require_once("../php/cantidadTorneosCancelados.php");
                 $conexion = conectar();
                 echo "<h3>".cantidadTorneosCancelados($conexion)."</h3>";
-                desconectarBD($conexion);
+                desconectar($conexion);
                 ?>
                 <p>Torneos Cancelados</p>
               </div>
@@ -201,7 +198,9 @@ desconectarBD($conexion);
                   <!-- Contenido Tienda START -->
                   <tbody>
                   <?php
-                  require_once("../php/tablaTorneos.php");
+                  $conexion = conectar();
+                  torneos($conexion,$amigable);
+                  desconectar($conexion);
                   ?>
                   </tbody>
                   <!-- Contenido Tienda END -->
@@ -239,7 +238,7 @@ desconectarBD($conexion);
               <!-- Titulo Form END -->
 
               <!-- Form START -->
-              <form role="form" action="<?php echo $url;?>/php/crearTorneo.php" method="POST">
+              <form role="form" action="<?php echo $urlDB;?>/php/crearTorneo.php" method="POST">
                 
                 <!-- Card Body START -->
                 <div class="row card-body">
@@ -263,7 +262,6 @@ desconectarBD($conexion);
                     <label for="juego">Juego</label>
                     <select class="form-control" id="juego" name="juego">
                       <?php
-                      require_once("../php/conexionBD.php");
                       $conexion = conectar();
                       $consulta = "SELECT * FROM juegos";
                       $resultado = mysqli_query($conexion, $consulta);
@@ -273,7 +271,7 @@ desconectarBD($conexion);
                         }
                         echo "<option value='".$fila['idJuego']."'>".$fila['juego']."</option>";
                       }
-                      $desconectar = desconectarBD($conexion);
+                      $desconectar = desconectar($conexion);
                       ?>
                     </select>
                   </div>
@@ -361,61 +359,61 @@ desconectarBD($conexion);
 
 <!-- SCRIPTS -->
 <!-- jQuery -->
-<script src="../plugins/jquery/jquery.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button);
 </script>
 <!-- Bootstrap 4 -->
-<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- DataTables -->
-<script src="../plugins/datatables/jquery.dataTables.js"></script>
-<script src="../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/datatables/jquery.dataTables.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 <!-- ChartJS -->
-<script src="../plugins/chart.js/Chart.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/chart.js/Chart.min.js"></script>
 <!-- Sparkline -->
-<script src="plugins/sparklines/sparkline.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/sparklines/sparkline.js"></script>
 <!-- JQVMap -->
-<script src="../plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
 <!-- jQuery Knob Chart -->
-<script src="../plugins/jquery-knob/jquery.knob.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/jquery-knob/jquery.knob.min.js"></script>
 <!-- daterangepicker -->
-<script src="../plugins/moment/moment.min.js"></script>
-<script src="../plugins/daterangepicker/daterangepicker.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/moment/moment.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/daterangepicker/daterangepicker.js"></script>
 <!-- Tempusdominus Bootstrap 4 -->
-<script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Summernote -->
-<script src="../plugins/summernote/summernote-bs4.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/summernote/summernote-bs4.min.js"></script>
 <!-- overlayScrollbars -->
-<script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- Select2 -->
-<script src="../plugins/select2/js/select2.full.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/select2/js/select2.full.min.js"></script>
 <!-- Bootstrap4 Duallistbox -->
-<script src="../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
 <!-- InputMask -->
-<script src="../plugins/moment/moment.min.js"></script>
-<script src="../plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/moment/moment.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
 <!-- date-range-picker -->
-<script src="../plugins/daterangepicker/daterangepicker.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/daterangepicker/daterangepicker.js"></script>
 <!-- bootstrap color picker -->
-<script src="../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
 <!-- Tempusdominus Bootstrap 4 -->
-<script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Bootstrap Switch -->
-<script src="../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+<script src="<?php echo $urlDB;?>/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
 <!-- AdminLTE App -->
-<script src="../dist/js/adminlte.min.js"></script>
+<script src="<?php echo $urlDB;?>/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE App -->
-<script src="../dist/js/adminlte.js"></script>
+<script src="<?php echo $urlDB;?>/dist/js/adminlte.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="../dist/js/pages/dashboard.js"></script>
+<script src="<?php echo $urlDB;?>/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="../dist/js/demo.js"></script>
+<script src="<?php echo $urlDB;?>/dist/js/demo.js"></script>
 <!-- page script -->
 <script>
   $(function () {

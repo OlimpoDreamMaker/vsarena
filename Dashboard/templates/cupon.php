@@ -1,7 +1,7 @@
 <?php
 $p = '..';
 session_start();
-require_once("../config.php");
+require_once("../../BackEnd/config.php");
 require_once("$p/php/conexionBD.php");
 require_once("$p/php/isAdmin.php");
 require_once("$p/php/dataUser.php");

@@ -1,14 +1,14 @@
-Options All -Indexes
+#Options All -Indexes
 
-Errores
-ErrorDocument 403 /VsArena/FrontEnd/404.php
-ErrorDocument 404 /VsArena/FrontEnd/404.php
+#Errores
+#ErrorDocument 403 /VsArena/FrontEnd/404.php
+#ErrorDocument 404 /VsArena/FrontEnd/404.php
 
-Enlaces amigables Dashboard
-Options +FollowSymLinks
-RewriteEngine on
+#Enlaces amigables Dashboard
+#Options +FollowSymLinks
+#RewriteEngine on
 
-RewriteRule ^panel/cupon/([0-9]+)/$ Dashboard/templates/cupon.php?id=$1
+#RewriteRule ^panel/cupon/([0-9]+)/$ Dashboard/templates/cupon.php?id=$1
 RewriteRule ^panel/equipo/([0-9]+)/$ Dashboard/templates/equipo.php?id=$1
 RewriteRule ^panel/grupo/([0-9]+)/$ Dashboard/templates/grupo.php?id=$1
 RewriteRule ^panel/juego/([0-9]+)/$ Dashboard/templates/juego.php?id=$1
