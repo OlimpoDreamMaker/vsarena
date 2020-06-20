@@ -2,68 +2,52 @@
 <html lang="es">
 
 <head>
-
     <!--START ROBOTS-->
     <?php
-
     include('estructura/robots.php');
 
     ?>
     <!--END ROBOTS-->
-
     <!--START METAS GLOBALES-->
     <?php
-
     include('estructura/global_meta.php');
 
     ?>
     <!--END METAS GLOBALES-->
-
     <!--START FUENTES-->
     <?php
-
     include('estructura/global_fuentes.php');
 
     ?>
     <!--END FUENTES-->
-
     <!--START HOJAS-->
     <?php
-
     include('estructura/global_hojas.php');
 
     ?>
     <!--END HOJAS-->
-
     <!--START METAS LOCALES-->
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <!--END METAS LOCALES-->
-
     <!--START TITULO-->
     <title>Producto Seleccionado</title>
     <!--END TITULO-->
-
 </head>
 
 <body>
-
     <!--PRELOADER START-->
     <?php
-
     include('estructura/preloader.php');
 
     ?>
     <!--PRELOADER END-->
-
     <!--NAV START-->
     <?php
-
     include('estructura/barra_navegacion.php');
 
     ?>
     <!--NAV END-->
-
     <!--CATEGORIA START-->
     <section class="image-header">
         <div class="container">
@@ -83,24 +67,19 @@
         </div>
     </section>
     <!--CATEGORIA END-->
-
     <!--CUERPO TIENDA PRODUCTO START-->
     <section class="product-single">
-
         <!--PRODUCTO START-->
         <div class="container">
             <div class="row">
-
                 <!--TITULO-->
                 <div class="col-md-12">
                     <h4>Camiseta Deportiva</h4>
                 </div>
-
                 <!--PRODUCTO SLYDER START-->
                 <div class="col-md-7">
                     <div class="product-slider">
                         <div class="connected-carousels">
-
                             <!--CARRUSEL IZQUIERDA DE FOTOS START-->
                             <div class="navigation jcarousel-skin-default">
                                 <a href="#" class="prev prev-navigation"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
@@ -132,7 +111,6 @@
                                 </div>
                             </div>
                             <!--CARRUSEL IZQUIERDA DE FOTOS END-->
-
                             <!--CARRUSEL DERECHO DE FOTOS START-->
                             <div class="stage">
                                 <div class="carousel carousel-stage">
@@ -183,23 +161,17 @@
                                 </div>
                             </div>
                             <!--CARRUSEL DERECHO DE FOTOS START-->
-
                         </div>
                     </div>
                 </div>
                 <!--PRODUCTO SLYDER END-->
-
                 <!--INFORMACION DERECHA DEL PRODUCTO START-->
                 <div class="col-md-5">
                     <div class="product-right-info">
-
                         <!--DESCRIPCION PRODUCTO START-->
-
                         <div class="price">$ 65</div>
                         <p>Hella pop-up flexitarian, semiotics migas humblebrag schlitz literally tofu deep v thundercats skateboard viral cornhole. Lomo knausgaard truffaut selfies flexitarian, tbh swag kickstarter gastropub mustache readymade artisan keffiyeh gochujang.</p>
-
                         <!--DESCRIPCION PRODUCTO END-->
-
                         <!--COLORES PRODUCTO START-->
                         <div class="title">Colores</div>
                         <div class="color-filter-item">
@@ -242,10 +214,8 @@
                                 </li>
                             </ul>
                         </div>
-
                         <!--TAMAÑOS PRODUCTO START-->
                         <div class="title">Tamaños</div>
-
                         <div class="size-filter-item">
                             <ul>
                                 <li>
@@ -293,15 +263,12 @@
                             </ul>
                         </div>
                         <!--TAMAÑOS PRODUCTO END-->
-
                         <!--CANTIDAD PRODUCTO START-->
                         <div class="title">Cantidad</div>
-
                         <div class="quantity-wrap">
                             <input type="number" placeholder="1">
                             <a href="#.html" class="btn small">Agregar al carrito</a>
                         </div>
-
                         <div class="details">
                             <ul>
                                 <li><span>Categorias: </span>Woman, camiseta, Slim</li>
@@ -317,7 +284,6 @@
                             </ul>
                         </div>
                         <!--CANTIDAD PRODUCTO END-->
-
                         <!--LISTA REDES START-->
                         <ul class="socials">
                             <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
@@ -325,18 +291,14 @@
                             <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                         </ul>
                         <!--LISTA REDES END-->
-
                     </div>
                 </div>
                 <!--INFORMACION DERECHA DEL PRODUCTO END-->
-
             </div>
         </div>
         <!--PRODUCTO END-->
-
         <!--FOOTER PRODUCTO START-->
         <div class="product-tab-wrap">
-
             <!--TITULOS FOOTER PRODUCTO START-->
             <div class="tab-top">
                 <div class="container">
@@ -352,12 +314,10 @@
                 </div>
             </div>
             <!--TITULOS FOOTER PRODUCTO END-->
-
             <!--COMENTARIOS PRODUCTO START-->
             <div class="tab-item">
                 <div class="container">
                     <div class="row">
-
                         <!--COMENTARIOS PRODUCTO START-->
                         <div class="col-md-7">
                             <div class="comments-wrap">
@@ -392,7 +352,6 @@
                             </div>
                         </div>
                         <!--COMENTARIOS PRODUCTO END-->
-
                         <!--FORMULARIO PRODUCTO START-->
                         <div class="col-md-5">
                             <div class="leave-comment-wrap">
@@ -431,15 +390,12 @@
                             </div>
                         </div>
                         <!--FORMULARIO PRODUCTO END-->
-
                     </div>
                 </div>
             </div>
             <!--COMENTARIOS PRODUCTO END-->
-
         </div>
         <!--FOOTER PRODUCTO START-->
-
         <!--TIENDA OFICIAL START-->
         <div class="store-banner position-relative">
             <div class="store-banner-info">
@@ -454,23 +410,18 @@
             </div>
         </div>
         <!--TIENDA OFICIAL END-->
-
     </section>
     <!--CUERPO TIENDA PRODUCTO START-->
-
     <!--CARRUSEL RELACIONADOS START-->
     <section class="featured-products">
         <div class="container">
             <div class="row">
-
                 <div class="col-md-12">
                     <h4>Relacionados</h4>
                 </div>
-
                 <!--CONTENEDOR ITEMS START-->
                 <div class="col-md-12">
                     <div class="owl-carousel owl-theme featured-slider">
-
                         <!--ITEM 01-->
                         <div class="store-list-item">
                             <div>
@@ -488,7 +439,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!--ITEM 02-->
                         <div class="store-list-item">
                             <div>
@@ -506,7 +456,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!--ITEM 03-->
                         <div class="store-list-item">
                             <div>
@@ -524,7 +473,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!--ITEM 04-->
                         <div class="store-list-item">
                             <div>
@@ -542,7 +490,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!--ITEM 05-->
                         <div class="store-list-item">
                             <div>
@@ -560,11 +507,9 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <!--CONTENEDOR ITEMS END-->
-
                 <!--BOTONES START-->
                 <div class="col-md-6">
                     <div class="custom-navigation featured-navigation">
@@ -572,33 +517,26 @@
                         <a class="custom-prev-btn"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
-
                 <div class="col-md-6 text-right">
                     <a href="store.html" class="feat-show-all">Mostrar todo</a>
                 </div>
                 <!--BOTONES END-->
-
             </div>
         </div>
     </section>
     <!--CARRUSEL RELACIONADOS END-->
-
     <!--START FOOTER-->
     <?php
-
     include('estructura/footer.php');
 
     ?>
     <!--END FOOTER-->
-
     <!--START SCRIPTS-->
     <?php
-
     include('estructura/scripts.php');
 
     ?>
     <!--END SCRIPTS-->
-
 </body>
 
 </html>

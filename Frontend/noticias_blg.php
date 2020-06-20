@@ -2,68 +2,52 @@
 <html lang="es">
 
 <head>
-
     <!--START ROBOTS-->
     <?php
-
     include('estructura/robots.php');
 
     ?>
     <!--END ROBOTS-->
-
     <!--START METAS GLOBALES-->
     <?php
-
     include('estructura/global_meta.php');
 
     ?>
     <!--END METAS GLOBALES-->
-
     <!--START FUENTES-->
     <?php
-
     include('estructura/global_fuentes.php');
 
     ?>
     <!--END FUENTES-->
-
     <!--START HOJAS-->
     <?php
-
     include('estructura/global_hojas.php');
 
     ?>
     <!--END HOJAS-->
-
     <!--START METAS LOCALES-->
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <!--END METAS LOCALES-->
-
     <!--START TITULO-->
     <title>Noticias</title>
     <!--END TITULO-->
-
 </head>
 
 <body>
-
     <!--PRELOADER START-->
     <?php
-
     include('estructura/preloader.php');
 
     ?>
     <!--PRELOADER END-->
-
     <!--NAV START-->
     <?php
-
     include('estructura/barra_navegacion.php');
 
     ?>
     <!--NAV END-->
-
     <!--CATEGORIA START-->
     <section class="image-header">
         <div class="container">
@@ -83,22 +67,21 @@
         </div>
     </section>
     <!--CATEGORIA END-->
-
     <!--NOTICIAS CUERPO START-->
     <div class="content">
         <div class="container">
             <div class="row row-offcanvas row-offcanvas-left">
-
                 <!--SIDEBAR START-->
                 <section class="sidebar col-xs-6 col-md-3 sidebar-offcanvas" id="sidebar">
-
                     <!--CATEGORIAS-->
                     <div class="sidebar-menu-wrap">
                         <h6>Categoria</h6>
                         <ul class="categories-list">
+                            <!--CATE-->
                             <li>
                                 <a href="#"><span class="count">4</span>Nuevas</a>
                             </li>
+                            <!--CATE-->
                             <li>
                                 <a href="#"><span class="count">22</span>Competiciones y Entrevistas</a>
                                 <ul>
@@ -109,18 +92,20 @@
                                     <li><a href="#"><span class="count">7</span>Otras</a></li>
                                 </ul>
                             </li>
+                            <!--CATE-->
                             <li>
                                 <a href="#"><span class="count">4</span>Competiciones</a>
                             </li>
+                            <!--CATE-->
                             <li>
                                 <a href="#"><span class="count">4</span>Mejores momentos</a>
                             </li>
+                            <!--CATE-->
                             <li>
                                 <a href="#"><span class="count">4</span>Otras</a>
                             </li>
                         </ul>
                     </div>
-
                     <!--BUSCADOR-->
                     <div class="sidebar-search-wrap">
                         <h6>Buscar</h6>
@@ -131,7 +116,6 @@
                             </div>
                         </form>
                     </div>
-
                     <!--CALENDARIO-->
                     <div class="sidebar-calendar">
                         <h6>Calendario</h6>
@@ -207,7 +191,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!--TAGS-->
                     <div class="sidebar-tags-wrap">
                         <h6>Tags</h6>
@@ -219,18 +202,14 @@
                             <a href="#">LoL</a>
                         </div>
                     </div>
-
                 </section>
                 <!--SIEDEBAR END-->
-
                 <!--SECCION ARTICULOS START-->
                 <div class="news-list col-xs-12 col-md-9">
-
                     <!--BOTON MENU LATERAL-->
                     <p class="hidden-md hidden-lg">
                         <button type="button" class="btn sidebar-btn" data-toggle="offcanvas" title="Toggle sidebar">MENÚ</button>
                     </p>
-
                     <!--ARTICULO DESTACADO-->
                     <div class="item img-top">
                         <div class="img-wrap">
@@ -245,7 +224,6 @@
                             <div class="clear"></div>
                         </div>
                     </div>
-
                     <!--ARTICULO-->
                     <div class="item">
                         <div class="info">
@@ -259,7 +237,6 @@
                             <a href="#" class="continue">LEER MÁS</a>
                         </div>
                     </div>
-
                     <!--PAGINACION-->
                     <div class="pagination-wrap">
                         <ul class="pagination">
@@ -272,31 +249,24 @@
                             <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
-
                 </div>
                 <!--SECCION ARTICULOS END-->
-
             </div>
         </div>
     </div>
     <!--NOTICIAS CUERPO END-->
-
     <!--START FOOTER-->
     <?php
-
     include('estructura/footer.php');
 
     ?>
     <!--END FOOTER-->
-
     <!--START SCRIPTS-->
     <?php
-
     include('estructura/scripts.php');
 
     ?>
     <!--END SCRIPTS-->
-
 </body>
 
 </html>

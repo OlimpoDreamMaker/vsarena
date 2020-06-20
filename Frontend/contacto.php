@@ -2,68 +2,52 @@
 <html lang="es">
 
 <head>
-
    <!--START ROBOTS-->
    <?php
-
    include('estructura/robots.php');
 
    ?>
    <!--END ROBOTS-->
-
    <!--START METAS GLOBALES-->
    <?php
-
    include('estructura/global_meta.php');
 
    ?>
    <!--END METAS GLOBALES-->
-
    <!--START FUENTES-->
    <?php
-
    include('estructura/global_fuentes.php');
 
    ?>
    <!--END FUENTES-->
-
    <!--START HOJAS-->
    <?php
-
    include('estructura/global_hojas.php');
 
    ?>
    <!--END HOJAS-->
-
    <!--START METAS LOCALES-->
    <meta name="description" content="" />
    <meta name="keywords" content="" />
    <!--END METAS LOCALES-->
-
    <!--START TITULO-->
    <title>Contáctanos</title>
    <!--END TITULO-->
-
 </head>
 
 <body>
-
    <!--PRELOADER START-->
    <?php
-
    include('estructura/preloader.php');
 
    ?>
    <!--PRELOADER END-->
-
    <!--NAV START-->
    <?php
-
    include('estructura/barra_navegacion.php');
 
    ?>
    <!--NAV END-->
-
    <!--CATEGORIA START-->
    <section class="image-header">
       <div class="container">
@@ -83,12 +67,10 @@
       </div>
    </section>
    <!--CATEGORIA END-->
-
    <!--CONTACT WRAP BEGIN-->
    <section class="contacts-wrap">
       <div class="container">
          <div class="row">
-
             <!--DATOS START-->
             <div class="col-md-5">
                <h4>Sobre nosotros</h4>
@@ -109,14 +91,13 @@
                </ul>
             </div>
             <!--DATOS END-->
-
             <!--FORMULARIO START-->
             <div class="col-md-7">
                <h4>Contacto</h4>
-
                <div class="leave-comment-wrap">
                   <form>
                      <div class="row">
+                        <!--DATO-->
                         <div class="col-md-6">
                            <div class="item">
                               <label>
@@ -125,6 +106,7 @@
                               </label>
                            </div>
                         </div>
+                        <!--DATO-->
                         <div class="col-md-6">
                            <div class="item">
                               <label>
@@ -133,6 +115,7 @@
                               </label>
                            </div>
                         </div>
+                        <!--DATO-->
                         <div class="col-md-12">
                            <div class="item">
                               <label>
@@ -141,6 +124,7 @@
                               </label>
                            </div>
                         </div>
+                        <!--DATO-->
                         <div class="col-md-12">
                            <div class="item">
                               <label>
@@ -157,28 +141,22 @@
                </div>
             </div>
             <!--FORMULARIO END-->
-
          </div>
       </div>
    </section>
    <!--CONTACT WRAP END-->
-
    <!--START FOOTER-->
    <?php
-
    include('estructura/footer.php');
 
    ?>
    <!--END FOOTER-->
-
    <!--START SCRIPTS-->
    <?php
-
    include('estructura/scripts.php');
 
    ?>
    <!--END SCRIPTS-->
-
 </body>
 
 </html>

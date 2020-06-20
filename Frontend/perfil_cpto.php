@@ -2,36 +2,53 @@
 <html lang="es">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--START ROBOTS-->
+    <?php
+    include('estructura/robots.php');
+
+    ?>
+    <!--END ROBOTS-->
+    <!--START METAS GLOBALES-->
+    <?php
+    include('estructura/global_meta.php');
+
+    ?>
+    <!--END METAS GLOBALES-->
+    <!--START FUENTES-->
+    <?php
+    include('estructura/global_fuentes.php');
+
+    ?>
+    <!--END FUENTES-->
+    <!--START HOJAS-->
+    <?php
+    include('estructura/global_hojas.php');
+
+    ?>
+    <!--END HOJAS-->
+    <!--START METAS LOCALES-->
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--END METAS LOCALES-->
+    <!--START TITULO-->
     <title>Campeonato - Perfil</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat%7COpen+Sans:700,400%7CRaleway:400,800,900" rel="stylesheet" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+    <!--END TITULO-->
 </head>
 
 <body>
-
-    <div class="preloader-wrapper" id="preloader">
-        <div class="motion-line dark-big"></div>
-        <div class="motion-line yellow-big"></div>
-        <div class="motion-line dark-small"></div>
-        <div class="motion-line yellow-normal"></div>
-        <div class="motion-line yellow-small1"></div>
-        <div class="motion-line yellow-small2"></div>
-    </div>
-
-    <!--NAV WRAP START-->
+    <!--PRELOADER START-->
     <?php
+    include('estructura/preloader.php');
 
+    ?>
+    <!--PRELOADER END-->
+    <!--NAV START-->
+    <?php
     include('estructura/barra_navegacion.php');
 
     ?>
-    <!--NAV WRAP END-->
-
-    <!--BREADCRUMBS BEGIN-->
+    <!--NAV END-->
+    <!--CATEGORIA START-->
     <section class="image-header">
         <div class="container">
             <div class="row">
@@ -49,22 +66,21 @@
             </div>
         </div>
     </section>
-    <!--BREADCRUMBS END-->
-
-    <!--CLUB WRAP BEGIN-->
-
+    <!--CATEGORIA END-->
+    <!--HEADER CAMPEONATO START-->
     <section class="club-wrap club-champ">
+        <!--TITULO-->
         <div class="container">
             <div class="row">
                 <div class="col-md-9">
-                    <h4>Copa campeonatado LCS</h4>
+                    <h4>Copa LCS</h4>
                 </div>
                 <div class="col-md-3">
                     <a href="trophies.html" class="btn small club-top-btn">Premios</a>
                 </div>
             </div>
         </div>
-
+        <!--INFORMACION CAMPEONATO START-->
         <div class="championship-header-wrapper">
             <div class="container">
                 <div class="row">
@@ -90,14 +106,12 @@
                 </div>
             </div>
         </div>
+        <!--INFORMACION CAMPEONATO END-->
     </section>
-
-    <!--CLUB WRAP END-->
-
-    <!--CHAMPIONSHIP WRAP BEGIN-->
-
+    <!--HEADER CAMPEONATO END-->
+    <!--CUERPO CAMPEONATO START-->
     <div class="championship-wrap">
-        <!--CHAMPIONSHIP NAVIGATION BEGIN -->
+        <!--BARRA DE NAVEGACION-->
         <div class="champ-navigation">
             <div class="container">
                 <div class="row">
@@ -112,68 +126,76 @@
                 </div>
             </div>
         </div>
-        <!--CHAMPIONSHIP NAVIGATION END -->
         <div class="champ-tab-wrap tab-content">
-
-            <!--CHAMPIONSHIP PART WRAP BEGIN -->
+            <!--PARTICIPANTES START-->
             <div class="tab-item part-wrap tab-pane active" id="participants">
                 <div class="part-list">
                     <div class="container">
                         <div class="row">
+                            <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
                                     <span class="logo"><img src="images/vs_arena/team-logo1.png" width="80" height="80" alt="team-logo"></span>
                                     <span class="name">Team 1</span>
                                 </a>
                             </div>
+                            <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
                                     <span class="logo"><img src="images/vs_arena/team-logo2.png" width="80" height="80" alt="team-logo"></span>
                                     <span class="name">Team 2</span>
                                 </a>
                             </div>
+                            <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
                                     <span class="logo"><img src="images/vs_arena/team-logo3.png" width="80" height="80" alt="team-logo"></span>
                                     <span class="name">Team 3</span>
                                 </a>
                             </div>
+                            <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
                                     <span class="logo"><img src="images/vs_arena/team-logo4.png" width="80" height="80" alt="team-logo"></span>
                                     <span class="name">Team 4</span>
                                 </a>
                             </div>
+                            <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
                                     <span class="logo"><img src="images/vs_arena/team-logo5.png" width="80" height="80" alt="team-logo"></span>
                                     <span class="name">Team 5</span>
                                 </a>
                             </div>
+                            <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
                                     <span class="logo"><img src="images/vs_arena/team-logo1.png" width="80" height="80" alt="team-logo"></span>
                                     <span class="name">Team 6</span>
                                 </a>
                             </div>
+                            <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
                                     <span class="logo"><img src="images/vs_arena/team-logo2.png" width="80" height="80" alt="team-logo"></span>
                                     <span class="name">Team 7</span>
                                 </a>
                             </div>
+                            <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
                                     <span class="logo"><img src="images/vs_arena/team-logo3.png" width="80" height="80" alt="team-logo"></span>
                                     <span class="name">Team 8</span>
                                 </a>
                             </div>
+                            <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
                                     <span class="logo"><img src="images/vs_arena/team-logo4.png" width="80" height="80" alt="team-logo"></span>
                                     <span class="name">Team 9</span>
                                 </a>
                             </div>
+                            <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
                                     <span class="logo"><img src="images/vs_arena/team-logo5.png" width="80" height="80" alt="team-logo"></span>
@@ -184,14 +206,14 @@
                     </div>
                 </div>
             </div>
-            <!--CHAMPIONSHIP PART WRAP END -->
-
-            <!--CHAMPIONSHIP MATCH WRAP BEGIN -->
+            <!--PARTICIPANTES END-->
+            <!--MATCHS START-->
             <div class="tab-item match-wrap tab-pane" id="matches">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="main-lates-matches">
+                                <!--MATCH-->
                                 <a href="matches.html" class="item">
                                     <span class="championship">National cup - quarterfinal</span>
                                     <span class="teams-wrap">
@@ -201,6 +223,7 @@
                                     </span>
                                     <span class="game-result">(5-4) penalties</span>
                                 </a>
+                                <!--MATCH-->
                                 <a href="matches.html" class="item">
                                     <span class="championship">National cup - quarterfinal</span>
                                     <span class="teams-wrap">
@@ -210,6 +233,7 @@
                                     </span>
                                     <span class="game-result">(5-4) penalties</span>
                                 </a>
+                                <!--MATCH-->
                                 <a href="matches.html" class="item">
                                     <span class="championship">National cup - quarterfinal</span>
                                     <span class="teams-wrap">
@@ -219,6 +243,7 @@
                                     </span>
                                     <span class="game-result">(5-4) penalties</span>
                                 </a>
+                                <!--MATCH-->
                                 <a href="matches.html" class="item">
                                     <span class="championship">National cup - quarterfinal</span>
                                     <span class="teams-wrap">
@@ -228,6 +253,7 @@
                                     </span>
                                     <span class="game-result">(5-4) penalties</span>
                                 </a>
+                                <!--MATCH-->
                                 <a href="matches.html" class="item">
                                     <span class="championship">National cup - quarterfinal</span>
                                     <span class="teams-wrap">
@@ -242,18 +268,22 @@
                     </div>
                 </div>
             </div>
-            <!--CHAMPIONSHIP MATCH WRAP END -->
+            <!--MATCHS END-->
+            <!--TABLA POSICIONES START-->
             <div class="tab-item tournament-tab tab-pane" id="tournamentgrid">
                 <div class="container">
                     <div class="row">
+                        <!--TITULO TABLA-->
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <ul class="tab-filters">
                                 <li class="active"><a href="#groupstage" data-toggle="tab">Group stage</a></li>
                                 <li><a href="#playoff" data-toggle="tab">Playoffs</a></li>
                             </ul>
                         </div>
+                        <!--TABLA POSICION START-->
                         <div class="col-md-12 col-sm-12 col-xs-12 overflow-scroll">
                             <div class="tab-content">
+                                <!--GROUP STAGE-->
                                 <div id="groupstage" class="tab-pane fade in active">
                                     <table class="standing-full">
                                         <tbody>
@@ -366,7 +396,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-
+                                <!--PLAY OFF-->
                                 <div id="playoff" class="tab-pane fade">
                                     <table class="standing-full">
                                         <tbody>
@@ -481,15 +511,17 @@
                                 </div>
                             </div>
                         </div>
+                        <!--TABLA POSICION START-->
                     </div>
                 </div>
             </div>
-
-            <!--CHAMPIONSHIP NEWS TAB BEGIN -->
+            <!--TABLA POSICIONES END-->
+            <!--NOTICIAS START-->
             <div class="tab-item news-tab tab-pane" id="news">
                 <div class="news-list">
                     <div class="container">
                         <div class="row">
+                            <!--NOTICIA-->
                             <div class="col-md-6">
                                 <div class="item img-top">
                                     <div class="img-wrap">
@@ -505,6 +537,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!--NOTICIA-->
                             <div class="col-md-6">
                                 <div class="item img-top">
                                     <div class="img-wrap">
@@ -520,6 +553,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!--NOTICIA-->
                             <div class="col-md-6">
                                 <div class="item img-top">
                                     <div class="img-wrap">
@@ -535,6 +569,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!--NOTICIA-->
                             <div class="col-md-6">
                                 <div class="item img-top">
                                     <div class="img-wrap">
@@ -554,74 +589,22 @@
                     </div>
                 </div>
             </div>
-            <!--CHAMPIONSHIP NEWS TAB END -->
+            <!--NOTICIAS END-->
         </div>
     </div>
-    <!--CHAMPIONSHIP WRAP END-->
+    <!--CUERPO CAMPEONATO END-->
+    <!--START FOOTER-->
+    <?php
+    include('estructura/footer.php');
 
+    ?>
+    <!--END FOOTER-->
+    <!--START SCRIPTS-->
+    <?php
+    include('estructura/scripts.php');
 
-    <script type="text/javascript" src="js/library/jquery.js"></script>
-    <script type="text/javascript" src="js/library/jquery-ui.js"></script>
-    <script type="text/javascript" src="js/library/bootstrap.js"></script>
-    <script type="text/javascript" src="js/library/jquery.sticky.js"></script>
-    <script type="text/javascript" src="js/library/jquery.jcarousel.js"></script>
-    <script type="text/javascript" src="js/library/jcarousel.connected-carousels.js"></script>
-    <script type="text/javascript" src="js/library/owl.carousel.js"></script>
-    <script type="text/javascript" src="js/library/progressbar.js"></script>
-    <script type="text/javascript" src="js/library/jquery.bracket.min.js"></script>
-    <script type="text/javascript" src="js/library/chartist.js"></script>
-    <script type="text/javascript" src="js/library/Chart.js"></script>
-    <script type="text/javascript" src="js/library/fancySelect.js"></script>
-    <script type="text/javascript" src="js/library/isotope.pkgd.js"></script>
-    <script type="text/javascript" src="js/library/imagesloaded.pkgd.js"></script>
-
-    <script type="text/javascript" src="js/jquery.team-coundown.js"></script>
-    <script type="text/javascript" src="js/matches-slider.js"></script>
-    <script type="text/javascript" src="js/header.js"></script>
-    <script type="text/javascript" src="js/matches_broadcast_listing.js"></script>
-    <script type="text/javascript" src="js/news-line.js"></script>
-    <script type="text/javascript" src="js/match_galery.js"></script>
-    <script type="text/javascript" src="js/main-club-gallery.js"></script>
-    <script type="text/javascript" src="js/product-slider.js"></script>
-    <script type="text/javascript" src="js/circle-bar.js"></script>
-    <script type="text/javascript" src="js/standings.js"></script>
-    <script type="text/javascript" src="js/shop-price-filter.js"></script>
-    <script type="text/javascript" src="js/timeseries.js"></script>
-    <script type="text/javascript" src="js/radar.js"></script>
-    <script type="text/javascript" src="js/slider.js"></script>
-    <script type="text/javascript" src="js/preloader.js"></script>
-    <script type="text/javascript" src="js/diagram.js"></script>
-    <script type="text/javascript" src="js/bi-polar-diagram.js"></script>
-    <script type="text/javascript" src="js/label-placement-diagram.js"></script>
-    <script type="text/javascript" src="js/donut-chart.js"></script>
-    <script type="text/javascript" src="js/animate-donut.js"></script>
-    <script type="text/javascript" src="js/advanced-smil.js"></script>
-    <script type="text/javascript" src="js/svg-path.js"></script>
-    <script type="text/javascript" src="js/pick-circle.js"></script>
-    <script type="text/javascript" src="js/horizontal-bar.js"></script>
-    <script type="text/javascript" src="js/gauge-chart.js"></script>
-    <script type="text/javascript" src="js/stacked-bar.js"></script>
-
-    <script type="text/javascript" src="js/library/chartist-plugin-legend.js"></script>
-    <script type="text/javascript" src="js/library/chartist-plugin-threshold.js"></script>
-    <script type="text/javascript" src="js/library/chartist-plugin-pointlabels.js"></script>
-
-    <script type="text/javascript" src="js/treshold.js"></script>
-    <script type="text/javascript" src="js/visible.js"></script>
-    <script type="text/javascript" src="js/anchor.js"></script>
-    <script type="text/javascript" src="js/landing_carousel.js"></script>
-    <script type="text/javascript" src="js/landing_sport_standings.js"></script>
-    <script type="text/javascript" src="js/twitterslider.js"></script>
-    <script type="text/javascript" src="js/champions.js"></script>
-    <script type="text/javascript" src="js/landing_mainnews_slider.js"></script>
-    <script type="text/javascript" src="js/carousel.js"></script>
-    <script type="text/javascript" src="js/video_slider.js"></script>
-    <script type="text/javascript" src="js/footer_slides.js"></script>
-    <script type="text/javascript" src="js/player_test.js"></script>
-
-    <script type="text/javascript" src="js/main.js"></script>
-
-
+    ?>
+    <!--END SCRIPTS-->
 </body>
 
 </html>

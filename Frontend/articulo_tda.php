@@ -2,76 +2,58 @@
 <html lang="es">
 
 <head>
-
     <!--START ROBOTS-->
     <?php
-
     include('estructura/robots.php');
 
     ?>
     <!--END ROBOTS-->
-
     <!--START METAS GLOBALES-->
     <?php
-
     include('estructura/global_meta.php');
 
     ?>
     <!--END METAS GLOBALES-->
-
     <!--START FUENTES-->
     <?php
-
     include('estructura/global_fuentes.php');
 
     ?>
     <!--END FUENTES-->
-
     <!--START HOJAS-->
     <?php
-
     include('estructura/global_hojas.php');
 
     ?>
     <!--END HOJAS-->
-
     <!--START METAS LOCALES-->
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <!--END METAS LOCALES-->
-
     <!--START TITULO-->
     <title>Artículo</title>
     <!--END TITULO-->
-
 </head>
 
 <body>
-
     <!--PRELOADER START-->
     <?php
-
     include('estructura/preloader.php');
 
     ?>
     <!--PRELOADER END-->
-
     <!--NAV START-->
     <?php
-
     include('estructura/barra_navegacion.php');
 
     ?>
     <!--NAV END-->
-
     <!--CUERPO ARTICULO START-->
     <div class="content">
         <div class="container">
             <div class="row row-offcanvas row-offcanvas-left">
-
                 <!--SIDEBAR MENU START-->
                 <section class="sidebar col-xs-6 col-sm-6 col-md-3 sidebar-offcanvas" id="sidebar">
-
                     <!--CATEGORIAS-->
                     <div class="sidebar-menu-wrap">
                         <h6>Categoria</h6>
@@ -100,7 +82,6 @@
                             </li>
                         </ul>
                     </div>
-
                     <!--BUSCAR-->
                     <div class="sidebar-search-wrap">
                         <h6>Buscar</h6>
@@ -111,7 +92,6 @@
                             </div>
                         </form>
                     </div>
-
                     <!--CALENDARIO-->
                     <div class="sidebar-calendar">
                         <h6>Calendario</h6>
@@ -187,7 +167,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!--BUSCAR-->
                     <div class="sidebar-search-wrap">
                         <h6>Buscar</h6>
@@ -198,7 +177,6 @@
                             </div>
                         </form>
                     </div>
-
                     <!--CALENDARIO-->
                     <div class="sidebar-calendar">
                         <h6>Calendario</h6>
@@ -274,7 +252,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!--NOTICIAS RECIENTES-->
                     <div class="recent-news">
                         <h6>Noticias recientes</h6>
@@ -291,7 +268,6 @@
                             <a href="news-single.html" class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maxime ratione magni quam! Ea cupiditate blanditiis voluptatum non possimus neque! Enim accusantium eum eveniet laborum laboriosam, voluptatem quis beatae rem. </a>
                         </div>
                     </div>
-
                     <!--TAGS-->
                     <div class="sidebar-tags-wrap">
                         <h6>Tags</h6>
@@ -305,15 +281,12 @@
                     </div>
                 </section>
                 <!--SIDEBAR MENU END-->
-
                 <!--SECCION NOTICIAS-->
                 <section class="news-single col-xs-12 col-sm-12 col-md-9">
-
                     <!--BOTON LATERAL NOTICIAS-->
                     <p class="hidden-md hidden-lg">
                         <button type="button" class="btn sidebar-btn" data-toggle="offcanvas" title="Toggle sidebar">sidebar</button>
                     </p>
-
                     <!--NOTICIA START-->
                     <div class="item">
                         <!--NOTICIA-->
@@ -343,7 +316,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!--AUTOR-->
                         <div class="author-box">
                             <div class="top">
@@ -374,7 +346,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <!--COMENTARIOS-->
                             <div class="comments-wrap">
                                 <h4>Comentarios</h4>
@@ -413,7 +384,6 @@
                                         <a href="#" class="reply">Responder</a>
                                     </div>
                                 </div>
-
                                 <!--FORMULARIO-->
                                 <div class="leave-comment-wrap">
                                     <h4>Dejar un comentario</h4>
@@ -449,35 +419,27 @@
                                         </div>
                                     </form>
                                 </div>
-
                             </div>
                         </div>
                         <!--NOTICIA END-->
-
                 </section>
                 <!--SECCION NOTICIAS END-->
-
             </div>
         </div>
     </div>
     <!--CUERPO ARTICULO END-->
-
     <!--START FOOTER-->
     <?php
-
     include('estructura/footer.php');
 
     ?>
     <!--END FOOTER-->
-
     <!--START SCRIPTS-->
     <?php
-
     include('estructura/scripts.php');
 
     ?>
     <!--END SCRIPTS-->
-
 </body>
 
 </html>
