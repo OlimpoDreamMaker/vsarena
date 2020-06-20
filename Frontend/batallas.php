@@ -71,16 +71,20 @@
     <section class="main-match-shedule amateurs-match-shedule">
         <div class="container">
             <div class="row">
+                <!--TITULO TOP-->
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <h5>Próximas Batallas</h5>
                 </div>
+                <!--BATALLAS END-->
                 <div class="col-md-12 col-sm-12 col-xs-12">
+                    <!--OPCIONES SLYDER-->
                     <ul class="tab-filters" role="tablist">
                         <li class="active"><a href="#all" role="tab" data-toggle="tab" aria-expanded="true">LoL</a></li>
                         <li><a href="#nationalcup" role="tab" data-toggle="tab" aria-expanded="true">Free Fire</a></li>
                         <li><a href="#premierleague" role="tab" data-toggle="tab" aria-expanded="true">Dota</a></li>
                     </ul>
                     <div class="tab-content">
+                        <!--MATCH-->
                         <div class="tab-pane active" id="all">
                             <div class="amateurs-main-match">
                                 <div class="title">Premier League - Round 28</div>
@@ -104,6 +108,7 @@
                                 <div class="title">26 septiembre / 8:45 PM</div>
                             </div>
                         </div>
+                        <!--MATCH-->
                         <div class="tab-pane" id="nationalcup">
                             <div class="amateurs-main-match">
                                 <div class="title">LCS - Round 1</div>
@@ -127,6 +132,7 @@
                                 <div class="title">26 septiembre / 8:45 PM</div>
                             </div>
                         </div>
+                        <!--MATCH-->
                         <div class="tab-pane" id="premierleague">
                             <div class="amateurs-main-match">
                                 <div class="title">Premier League - Round 28</div>
@@ -152,11 +158,13 @@
                         </div>
                     </div>
                 </div>
+                <!--BATALLAS END-->
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <h6>Ultimas Batallas</h6>
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="main-lates-matches">
+                        <!--MATCH-->
                         <a href="#" class="item">
                             <span class="championship">LCS - Cuartos de final</span>
                             <span class="teams-wrap">
@@ -176,6 +184,7 @@
                             </span>
                             <span class="game-result">(5-4) lorem</span>
                         </a>
+                        <!--MATCH-->
                         <a href="#" class="item">
                             <span class="championship">LCS - Cuartos de final</span>
                             <span class="teams-wrap">
@@ -195,6 +204,7 @@
                             </span>
                             <span class="game-result">(5-4) lorem</span>
                         </a>
+                        <!--MATCH-->
                         <a href="#" class="item">
                             <span class="championship">LCS - Cuartos de final</span>
                             <span class="teams-wrap">
@@ -214,6 +224,7 @@
                             </span>
                             <span class="game-result">(5-4) lorem</span>
                         </a>
+                        <!--MATCH-->
                         <a href="#" class="item">
                             <span class="championship">LCS - Cuartos de final</span>
                             <span class="teams-wrap">
@@ -233,6 +244,7 @@
                             </span>
                             <span class="game-result">(5-4) lorem</span>
                         </a>
+                        <!--MATCH-->
                         <a href="#" class="item">
                             <span class="championship">LCS - Cuartos de final</span>
                             <span class="teams-wrap">
@@ -250,6 +262,7 @@
                                     <span><img src="images/common/team-logo5.png" alt="team-image"></span>
                                 </span>
                             </span>
+                            <!--MATCH-->
                             <span class="game-result">(5-4) lorem</span>
                         </a>
                     </div>

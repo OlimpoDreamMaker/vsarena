@@ -128,22 +128,26 @@
                     <div class="cart-total">
                         <h5>Carrito Total</h5>
                         <div class="delivery-list">
+                            <!--ENVIO-->
                             <label class="item">
                                 <input name="del-check" type="radio">
                                 <span class="name">Envio Express</span>
                                 <span class="price">$ 4</span>
                             </label>
+                            <!--ENVIO-->
                             <label class="item">
                                 <input name="del-check" type="radio">
                                 <span class="name">Envio Express</span>
                                 <span class="price">$ 4</span>
                                 <span class="delivery-text">Realice su pago directamente en nuestra cuenta bancaria. Utilice su ID de pedido como referencia de pago.</span>
                             </label>
+                            <!--ENVIO-->
                             <label class="item">
                                 <input name="del-check" type="radio">
                                 <span class="name">Envio Express</span>
                                 <span class="price">$ 4</span>
                             </label>
+                            <!--ENVIO-->
                             <div class="cart-total-info">
                                 <div class="title">Total</div>
                                 <div class="price">$ 194</div>

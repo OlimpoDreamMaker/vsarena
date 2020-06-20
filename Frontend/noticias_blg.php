@@ -77,9 +77,11 @@
                     <div class="sidebar-menu-wrap">
                         <h6>Categoria</h6>
                         <ul class="categories-list">
+                            <!--CATE-->
                             <li>
                                 <a href="#"><span class="count">4</span>Nuevas</a>
                             </li>
+                            <!--CATE-->
                             <li>
                                 <a href="#"><span class="count">22</span>Competiciones y Entrevistas</a>
                                 <ul>
@@ -90,12 +92,15 @@
                                     <li><a href="#"><span class="count">7</span>Otras</a></li>
                                 </ul>
                             </li>
+                            <!--CATE-->
                             <li>
                                 <a href="#"><span class="count">4</span>Competiciones</a>
                             </li>
+                            <!--CATE-->
                             <li>
                                 <a href="#"><span class="count">4</span>Mejores momentos</a>
                             </li>
+                            <!--CATE-->
                             <li>
                                 <a href="#"><span class="count">4</span>Otras</a>
                             </li>

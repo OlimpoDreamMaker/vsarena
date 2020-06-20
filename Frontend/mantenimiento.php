@@ -36,7 +36,7 @@
 </head>
 
 <body class="error-page">
-    <!--ERROR WRAP BEGIN-->
+    <!--ERROR WRAP START-->
     <div class="error-wrap offline">
         <div class="container">
             <div class="row">

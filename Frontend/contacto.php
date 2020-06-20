@@ -97,6 +97,7 @@
                <div class="leave-comment-wrap">
                   <form>
                      <div class="row">
+                        <!--DATO-->
                         <div class="col-md-6">
                            <div class="item">
                               <label>
@@ -105,6 +106,7 @@
                               </label>
                            </div>
                         </div>
+                        <!--DATO-->
                         <div class="col-md-6">
                            <div class="item">
                               <label>
@@ -113,6 +115,7 @@
                               </label>
                            </div>
                         </div>
+                        <!--DATO-->
                         <div class="col-md-12">
                            <div class="item">
                               <label>
@@ -121,6 +124,7 @@
                               </label>
                            </div>
                         </div>
+                        <!--DATO-->
                         <div class="col-md-12">
                            <div class="item">
                               <label>

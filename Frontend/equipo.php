@@ -71,10 +71,12 @@
   <div class="club-staff-top">
     <div class="container">
       <div class="row">
+        <!--LINEA-->
         <div class="col-md-12">
           <h4>Top laner</h4>
         </div>
         <div class="staff-box">
+          <!--PLAYER-->
           <div class="col-md-4  col-sm-6 col-xs-12">
             <a href="player-second-page.html" class="item">
               <span class="info">
@@ -85,6 +87,7 @@
               <img src="images/vs_arena/staff-item-img.jpg" alt="player">
             </a>
           </div>
+          <!--PLAYER-->
           <div class="col-md-4  col-sm-6 col-xs-12">
             <a href="player.html" class="item">
               <span class="info">
@@ -95,6 +98,7 @@
               <img src="images/vs_arena/staff-item-img.jpg" alt="player">
             </a>
           </div>
+          <!--PLAYER-->
           <div class="col-md-4  col-sm-6 col-xs-12">
             <a href="player-second-page.html" class="item">
               <span class="info">
@@ -105,104 +109,71 @@
               <img src="images/vs_arena/staff-item-img.jpg" alt="player">
             </a>
           </div>
-          <div class="col-md-4  col-sm-6 col-xs-12">
-            <a href="player.html" class="item">
-              <span class="info">
-                <span class="name">Woejcaiech Szeczaesny</span>
-                <span class="position">Lorem</span>
-                <span class="number">1</span>
-              </span>
-              <img src="images/vs_arena/staff-item-img.jpg" alt="player">
-            </a>
+          <!--LINEA-->
+          <div class="col-md-12">
+            <h4>Mid laner</h4>
           </div>
-          <div class="col-md-4  col-sm-6 col-xs-12">
-            <a href="player-second-page.html" class="item">
-              <span class="info">
-                <span class="name">Ireaiazoz</span>
-                <span class="position">Lorem</span>
-                <span class="number">1</span>
-              </span>
-              <img src="images/vs_arena/staff-item-img.jpg" alt="player">
-            </a>
-          </div>
-        </div>
-        <div class="col-md-12">
-          <h4>Mid laner</h4>
-        </div>
-        <div class="staff-box">
-          <div class="col-md-4  col-sm-6 col-xs-12">
-            <a href="player-second-page.html" class="item">
-              <span class="info">
-                <span class="name">Keevian Treapap</span>
-                <span class="position">Lorem</span>
-                <span class="number">9</span>
-              </span>
-              <img src="images/vs_arena/player-2.jpg" alt="player">
-            </a>
-          </div>
-          <div class="col-md-4  col-sm-6 col-xs-12">
-            <a href="player.html" class="item">
-              <span class="info">
-                <span class="name">Pieeraluigi Goellaini</span>
-                <span class="position">Lorem</span>
-                <span class="number">8</span>
-              </span>
-              <img src="images/vs_arena/player-2.jpg" alt="player">
-            </a>
-          </div>
-          <div class="col-md-4  col-sm-6 col-xs-12">
-            <a href="player-second-page.html" class="item">
-              <span class="info">
-                <span class="name">Reemiaro</span>
-                <span class="position">Lorem</span>
-                <span class="number">29</span>
-              </span>
-              <img src="images/vs_arena/player-2.jpg" alt="player">
-            </a>
-          </div>
-          <div class="col-md-4  col-sm-6 col-xs-12">
-            <a href="player.html" class="item">
-              <span class="info">
-                <span class="name">Woejcaiech Szeczaesny</span>
-                <span class="position">Lorem</span>
-                <span class="number">10</span>
-              </span>
-              <img src="images/vs_arena/player-2.jpg" alt="player">
-            </a>
-          </div>
-          <div class="col-md-4  col-sm-6 col-xs-12">
-            <a href="player-second-page.html" class="item">
-              <span class="info">
-                <span class="name">Ireaiazoz</span>
-                <span class="position">Lorem</span>
-                <span class="number">7</span>
-              </span>
-              <img src="images/vs_arena/player-2.jpg" alt="player">
-            </a>
+          <div class="staff-box">
+            <!--PLAYER-->
+            <div class="col-md-4  col-sm-6 col-xs-12">
+              <a href="player-second-page.html" class="item">
+                <span class="info">
+                  <span class="name">Keevian Treapap</span>
+                  <span class="position">Lorem</span>
+                  <span class="number">9</span>
+                </span>
+                <img src="images/vs_arena/player-2.jpg" alt="player">
+              </a>
+            </div>
+            <!--PLAYER-->
+            <div class="col-md-4  col-sm-6 col-xs-12">
+              <a href="player.html" class="item">
+                <span class="info">
+                  <span class="name">Pieeraluigi Goellaini</span>
+                  <span class="position">Lorem</span>
+                  <span class="number">8</span>
+                </span>
+                <img src="images/vs_arena/player-2.jpg" alt="player">
+              </a>
+            </div>
+            <!--PLAYER-->
+            <div class="col-md-4  col-sm-6 col-xs-12">
+              <a href="player-second-page.html" class="item">
+                <span class="info">
+                  <span class="name">Reemiaro</span>
+                  <span class="position">Lorem</span>
+                  <span class="number">29</span>
+                </span>
+                <img src="images/vs_arena/player-2.jpg" alt="player">
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
   <!--CLUB STAFF TOP END-->
-  <!--MAIN CLUB STAFF BEGIN-->
+  <!--MAIN CLUB STAFF START-->
   <section class="main-club-stuff">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
+          <!--NAV STAFF-->
           <h4 class="soccer-h4">Miembros Staff</h4>
           <ul class="player-filters" role="tablist">
+            <!--TITULO-->
             <li class="active">
               <a href="#managers" role="tab" data-toggle="tab">
                 Managers
               </a>
             </li>
+            <!--TITULO-->
             <li>
               <a href="#firstteam" role="tab" data-toggle="tab">
                 Second team
               </a>
             </li>
+            <!--TITULO-->
             <li>
               <a href="#academy" role="tab" data-toggle="tab">
                 Fan-club
@@ -213,12 +184,15 @@
       </div>
     </div>
     <div class="tab-content">
+      <!--PANEL START-->
       <div class="tab-pane active" id="managers" role="tabpanel">
         <div id="managers_carousel" class="carousel slide main-stuff-slider" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
             <div class="item active">
               <div class="container">
+                <!--PLAYER x 3-->
                 <div class="row">
+                  <!--PLAYER-->
                   <div class="col-md-4">
                     <div class="staff-item">
                       <a href="staff.html">
@@ -231,6 +205,7 @@
                       </a>
                     </div>
                   </div>
+                  <!--PLAYER-->
                   <div class="col-md-4">
                     <div class="staff-item">
                       <a href="staff.html">
@@ -243,6 +218,7 @@
                       </a>
                     </div>
                   </div>
+                  <!--PLAYER-->
                   <div class="col-md-4 ">
                     <div class="staff-item">
                       <a href="staff.html">
@@ -258,9 +234,11 @@
                 </div>
               </div>
             </div>
+            <!--PLAYER x 3-->
             <div class="item">
               <div class="container">
                 <div class="row">
+                  <!--PLAYER-->
                   <div class="col-md-4">
                     <div class="staff-item">
                       <a href="staff.html">
@@ -273,6 +251,7 @@
                       </a>
                     </div>
                   </div>
+                  <!--PLAYER-->
                   <div class="col-md-4">
                     <div class="staff-item">
                       <a href="staff.html">
@@ -285,6 +264,7 @@
                       </a>
                     </div>
                   </div>
+                  <!--PLAYER-->
                   <div class="col-md-4 ">
                     <div class="staff-item">
                       <a href="staff.html">
@@ -300,7 +280,7 @@
                 </div>
               </div>
             </div>
-            <!-- Controls -->
+            <!--CONTROLES-->
             <a class="nav-arrow left-arrow" href="#managers_carousel" role="button" data-slide="prev">
               <i class="fa fa-angle-left" aria-hidden="true"></i>
               <span class="sr-only"></span>
@@ -312,12 +292,16 @@
           </div>
         </div>
       </div>
+      <!--PANEL END-->
+      <!--PANEL START-->
       <div class="tab-pane" id="academy" role="tabpanel">
         <div id="academy_carousel" class="carousel slide main-stuff-slider" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
             <div class="item active">
               <div class="container">
+                <!--PLAYER x 3-->
                 <div class="row">
+                  <!--PLAYER-->
                   <div class="col-md-4">
                     <div class="staff-item">
                       <a href="staff.html">
@@ -330,6 +314,7 @@
                       </a>
                     </div>
                   </div>
+                  <!--PLAYER-->
                   <div class="col-md-4">
                     <div class="staff-item">
                       <a href="staff.html">
@@ -342,6 +327,7 @@
                       </a>
                     </div>
                   </div>
+                  <!--PLAYER-->
                   <div class="col-md-4 ">
                     <div class="staff-item">
                       <a href="staff.html">
@@ -359,7 +345,9 @@
             </div>
             <div class="item">
               <div class="container">
+                <!--PLAYER x 3-->
                 <div class="row">
+                  <!--PLAYER-->
                   <div class="col-md-4">
                     <div class="staff-item">
                       <a href="staff.html">
@@ -372,6 +360,7 @@
                       </a>
                     </div>
                   </div>
+                  <!--PLAYER-->
                   <div class="col-md-4">
                     <div class="staff-item">
                       <a href="staff.html">
@@ -384,6 +373,7 @@
                       </a>
                     </div>
                   </div>
+                  <!--PLAYER-->
                   <div class="col-md-4 ">
                     <div class="staff-item">
                       <a href="staff.html">
@@ -399,7 +389,7 @@
                 </div>
               </div>
             </div>
-            <!-- Controls -->
+            <!--CONTROLES-->
             <a class="nav-arrow left-arrow" href="#academy_carousel" role="button" data-slide="prev">
               <i class="fa fa-angle-left" aria-hidden="true"></i>
               <span class="sr-only"></span>
@@ -411,12 +401,16 @@
           </div>
         </div>
       </div>
+      <!--PANEL END-->
+      <!--PANEL START-->
       <div class="tab-pane" id="firstteam" role="tabpanel">
         <div id="firstteam_carousel" class="carousel slide main-stuff-slider" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
+            <!--PLAYER x3-->
             <div class="item active">
               <div class="container">
                 <div class="row">
+                  <!--PLAYER-->
                   <div class="col-md-4">
                     <div class="staff-item">
                       <a href="staff.html">
@@ -429,6 +423,7 @@
                       </a>
                     </div>
                   </div>
+                  <!--PLAYER-->
                   <div class="col-md-4">
                     <div class="staff-item">
                       <a href="staff.html">
@@ -441,6 +436,7 @@
                       </a>
                     </div>
                   </div>
+                  <!--PLAYER-->
                   <div class="col-md-4 ">
                     <div class="staff-item">
                       <a href="staff.html">
@@ -458,7 +454,9 @@
             </div>
             <div class="item">
               <div class="container">
+                <!--PLAYER x3-->
                 <div class="row">
+                  <!--PLAYER-->
                   <div class="col-md-4">
                     <div class="staff-item">
                       <a href="staff.html">
@@ -471,6 +469,7 @@
                       </a>
                     </div>
                   </div>
+                  <!--PLAYER-->
                   <div class="col-md-4">
                     <div class="staff-item">
                       <a href="staff.html">
@@ -483,6 +482,7 @@
                       </a>
                     </div>
                   </div>
+                  <!--PLAYER-->
                   <div class="col-md-4 ">
                     <div class="staff-item">
                       <a href="staff.html">
@@ -498,7 +498,7 @@
                 </div>
               </div>
             </div>
-            <!-- Controls -->
+            <!--CONTROLES-->
             <a class="nav-arrow left-arrow" href="#firstteam_carousel" role="button" data-slide="prev">
               <i class="fa fa-angle-left" aria-hidden="true"></i>
               <span class="sr-only"></span>
@@ -510,6 +510,7 @@
           </div>
         </div>
       </div>
+      <!--PANEL END-->
     </div>
   </section>
   <!--MAIN CLUB STAFF END-->

@@ -295,6 +295,7 @@
             <div class="list">
                 <div class="container">
                     <div class="row">
+                        <!--SPONSOR-->
                         <div class="col-sm-3 col-xs-6 text-center">
                             <img class="image-width" src="images/common/sponsor-img.png" alt="sponsor-img">
                         </div>
