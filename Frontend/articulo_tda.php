@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -256,16 +259,16 @@
                     <div class="recent-news">
                         <h6>Noticias recientes</h6>
                         <div class="item">
-                            <div class="date"><a href="news-single.html">25 Sep 2016</a> EN <a href="news-single.html">Destacados</a></div>
-                            <a href="news-single.html" class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maxime ratione magni quam! Ea cupiditate blanditiis voluptatum non possimus neque! Enim accusantium eum eveniet laborum laboriosam, voluptatem quis beatae rem. </a>
+                            <div class="date"><a href="<?php echo $amigable;?>/articulo">25 Sep 2016</a> EN <a  href="<?php echo $amigable;?>/articulo">Destacados</a></div>
+                            <a  href="<?php echo $amigable;?>/articulo" class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maxime ratione magni quam! Ea cupiditate blanditiis voluptatum non possimus neque! Enim accusantium eum eveniet laborum laboriosam, voluptatem quis beatae rem. </a>
                         </div>
                         <div class="item">
-                            <div class="date"><a href="news-single.html">25 Sep 2016</a> EN <a href="news-single.html">Destacados</a></div>
-                            <a href="news-single.html" class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maxime ratione magni quam! Ea cupiditate blanditiis voluptatum non possimus neque! Enim accusantium eum eveniet laborum laboriosam, voluptatem quis beatae rem. </a>
+                            <div class="date"><a  href="<?php echo $amigable;?>/articulo">25 Sep 2016</a> EN <a  href="<?php echo $amigable;?>/articulo">Destacados</a></div>
+                            <a  href="<?php echo $amigable;?>/articulo" class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maxime ratione magni quam! Ea cupiditate blanditiis voluptatum non possimus neque! Enim accusantium eum eveniet laborum laboriosam, voluptatem quis beatae rem. </a>
                         </div>
                         <div class="item">
-                            <div class="date"><a href="news-single.html">25 Sep 2016</a> EN <a href="news-single.html">Destacados</a></div>
-                            <a href="news-single.html" class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maxime ratione magni quam! Ea cupiditate blanditiis voluptatum non possimus neque! Enim accusantium eum eveniet laborum laboriosam, voluptatem quis beatae rem. </a>
+                            <div class="date"><a  href="<?php echo $amigable;?>/articulo">25 Sep 2016</a> EN <a  href="<?php echo $amigable;?>/articulo">Destacados</a></div>
+                            <a  href="<?php echo $amigable;?>/articulo" class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maxime ratione magni quam! Ea cupiditate blanditiis voluptatum non possimus neque! Enim accusantium eum eveniet laborum laboriosam, voluptatem quis beatae rem. </a>
                         </div>
                     </div>
                     <!--TAGS-->
@@ -296,7 +299,7 @@
                         </div>
                         <div class="img-wrap">
                             <div class="bage highlight">highlight</div>
-                            <img src="images/vs_arena/news-list-img.jpg" alt="news-single">
+                            <img src="<?php echo $urlFE?>/images/vs_arena/news-list-img.jpg" alt="news-single">
                         </div>
                         <div class="post-text">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quo excepturi fugit molestiae omnis harum consectetur reprehenderit numquam ipsam magnam molestias, autem possimus libero dolores magni, nisi totam dolorum odio? Next level paleo taxidermy, bespoke messenger bag leggings occupy food truck. <br>Hella pop-up flexitarian, semiotics migas humblebrag schlitz literally tofu deep v thundercats skateboard viral cornhole. Lomo knausgaard truffaut selfies flexitarian, tbh swag kickstarter gastropub mustache readymade artisan keffiyeh gochujang.</p>
@@ -319,7 +322,7 @@
                         <!--AUTOR-->
                         <div class="author-box">
                             <div class="top">
-                                <div class="avatar"><img src="images/common/author-avatar.jpg" alt="author-avatar"></div>
+                                <div class="avatar"><img src="<?php echo $urlFE?>/images/common/author-avatar.jpg" alt="author-avatar"></div>
                                 <div class="info">
                                     <div class="name">Mason Carrington</div>
                                     <p>Lorem ipsum dolor sit amet consectetur</p>
@@ -350,7 +353,7 @@
                             <div class="comments-wrap">
                                 <h4>Comentarios</h4>
                                 <div class="comment-item">
-                                    <div class="avatar"><img src="images/common/user-avatar.jpg" alt="user-avatar"></div>
+                                    <div class="avatar"><img src="<?php echo $urlFE?>/images/common/user-avatar.jpg" alt="user-avatar"></div>
                                     <div class="info">
                                         <div class="date">
                                             <a href="#">25 Sep 2016</a> Por <a href="#">Ian Finch</a>
@@ -362,7 +365,7 @@
                                 </div>
                                 <!--COMENTARIO RESPUESTA-->
                                 <div class="comment-item answer">
-                                    <div class="avatar"><img src="images/common/user-avatar.jpg" alt="user-avatar"></div>
+                                    <div class="avatar"><img src="<?php echo $urlFE?>/images/common/user-avatar.jpg" alt="user-avatar"></div>
                                     <div class="info">
                                         <div class="date">
                                             <a href="#">25 Sep 2016</a> Por <a href="#">Ian Finch</a>
@@ -374,7 +377,7 @@
                                 </div>
                                 <!--COMENTARIO-->
                                 <div class="comment-item">
-                                    <div class="avatar"><img src="images/common/user-avatar.jpg" alt="user-avatar"></div>
+                                    <div class="avatar"><img src="<?php echo $urlFE?>/images/common/user-avatar.jpg" alt="user-avatar"></div>
                                     <div class="info">
                                         <div class="date">
                                             <a href="#">25 Sep 2016</a> Por <a href="#">Ian Finch</a>

@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -41,7 +44,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="index.php" class="error-logo"><img src="images/vs_arena/error-logo.png" alt="logo"></a>
+                    <a href="<?php echo $amigable?>/" class="error-logo"><img src="<?php echo $urlFE?>/images/vs_arena/error-logo.png" alt="logo"></a>
                 </div>
             </div>
         </div>

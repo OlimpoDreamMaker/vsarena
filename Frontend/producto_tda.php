@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -56,7 +59,7 @@
                     <div class="info">
                         <div class="wrap">
                             <ul class="breadcrumbs">
-                                <li><a href="index.php">Inicio</a>/</li>
+                                <li><a href="<?php echo $amigable;?>/">Inicio</a>/</li>
                                 <li>Producto</li>
                             </ul>
                             <h1>Producto</h1>
@@ -87,25 +90,25 @@
                                 <div class="carousel carousel-navigation jcarousel-vertical">
                                     <ul>
                                         <li>
-                                            <img src="images/common/training-tank-1.jpg" alt="product-thumb">
+                                            <img src="<?php echo $urlFE;?>/images/common/training-tank-1.jpg" alt="product-thumb">
                                         </li>
                                         <li>
-                                            <img src="images/common/training-tank-1.jpg" alt="product-thumb">
+                                            <img src="<?php echo $urlFE;?>/images/common/training-tank-1.jpg" alt="product-thumb">
                                         </li>
                                         <li>
-                                            <img src="images/common/training-tank-1.jpg" alt="product-thumb">
+                                            <img src="<?php echo $urlFE;?>/images/common/training-tank-1.jpg" alt="product-thumb">
                                         </li>
                                         <li>
-                                            <img src="images/common/training-tank-1.jpg" alt="product-thumb">
+                                            <img src="<?php echo $urlFE;?>/images/common/training-tank-1.jpg" alt="product-thumb">
                                         </li>
                                         <li>
-                                            <img src="images/common/training-tank-1.jpg" alt="training-tank-1">
+                                            <img src="<?php echo $urlFE;?>/images/common/training-tank-1.jpg" alt="training-tank-1">
                                         </li>
                                         <li>
-                                            <img src="images/common/training-tank-1.jpg" alt="product-thumb">
+                                            <img src="<?php echo $urlFE;?>/images/common/training-tank-1.jpg" alt="product-thumb">
                                         </li>
                                         <li>
-                                            <img src="images/common/training-tank-1.jpg" alt="product-thumb">
+                                            <img src="<?php echo $urlFE;?>/images/common/training-tank-1.jpg" alt="product-thumb">
                                         </li>
                                     </ul>
                                 </div>
@@ -117,7 +120,35 @@
                                     <ul>
                                         <li class="stage-item">
                                             <span class="store-badge new">Nuevo</span>
-                                            <img src="images/common/product-main-img.jpg" alt="product-main-img">
+                                            <img src="<?php echo $urlFE;?>/images/common/product-main-img.jpg" alt="product-main-img">
+                                        </li>
+                                        <li class="stage-item">
+                                            <span class="store-badge new">Nuevo</span>
+                                            <img src="<?php echo $urlFE;?>/images/common/product-main-img.jpg" alt="product-main-img">
+                                        </li>
+                                        <li class="stage-item">
+                                            <span class="store-badge new">Nuevo</span>
+                                            <img src="<?php echo $urlFE;?>/images/common/product-main-img.jpg" alt="product-main-img">
+                                        </li>
+                                        <li class="stage-item">
+                                            <span class="store-badge new">Nuevo</span>
+                                            <img src="<?php echo $urlFE;?>/images/common/product-main-img.jpg" alt="product-main-img">
+                                        </li>
+                                        <li class="stage-item">
+                                            <span class="store-badge new">Nuevo</span>
+                                            <img src="<?php echo $urlFE;?>/images/common/product-main-img.jpg" alt="product-main-img">
+                                        </li>
+                                        <li class="stage-item">
+                                            <span class="store-badge new">Nuevo</span>
+                                            <img src="<?php echo $urlFE;?>/images/common/product-main-img.jpg" alt="product-main-img">
+                                        </li>
+                                        <li class="stage-item">
+                                            <span class="store-badge new">Nuevo</span>
+                                            <img src="<?php echo $urlFE;?>/images/common/product-main-img.jpg" alt="product-main-img">
+                                        </li>
+                                        <li class="stage-item">
+                                            <span class="store-badge new">Nuevo</span>
+                                            <img src="<?php echo $urlFE;?>/images/common/product-main-img.jpg" alt="product-main-img">
                                         </li>
                                         <li class="stage-item">
                                             <span class="store-badge new">Nuevo</span>
@@ -125,35 +156,7 @@
                                         </li>
                                         <li class="stage-item">
                                             <span class="store-badge new">Nuevo</span>
-                                            <img src="images/common/product-main-img.jpg" alt="product-main-img">
-                                        </li>
-                                        <li class="stage-item">
-                                            <span class="store-badge new">Nuevo</span>
-                                            <img src="images/common/product-main-img.jpg" alt="product-main-img">
-                                        </li>
-                                        <li class="stage-item">
-                                            <span class="store-badge new">Nuevo</span>
-                                            <img src="images/common/product-main-img.jpg" alt="product-main-img">
-                                        </li>
-                                        <li class="stage-item">
-                                            <span class="store-badge new">Nuevo</span>
-                                            <img src="images/common/product-main-img.jpg" alt="product-main-img">
-                                        </li>
-                                        <li class="stage-item">
-                                            <span class="store-badge new">Nuevo</span>
-                                            <img src="images/common/product-main-img.jpg" alt="product-main-img">
-                                        </li>
-                                        <li class="stage-item">
-                                            <span class="store-badge new">Nuevo</span>
-                                            <img src="images/common/product-main-img.jpg" alt="product-main-img">
-                                        </li>
-                                        <li class="stage-item">
-                                            <span class="store-badge new">Nuevo</span>
-                                            <img src="images/common/product-main-img.jpg" alt="product-main-img">
-                                        </li>
-                                        <li class="stage-item">
-                                            <span class="store-badge new">Nuevo</span>
-                                            <img src="images/common/product-main-img.jpg" alt="product-main-img">
+                                            <img src="<?php echo $urlFE;?>/images/common/product-main-img.jpg" alt="product-main-img">
                                         </li>
                                     </ul>
                                     <a href="#" class="prev prev-stage"><span><i class="fa fa-angle-left" aria-hidden="true"></i></span></a>
@@ -323,7 +326,7 @@
                             <div class="comments-wrap">
                                 <h6>Comentarios</h6>
                                 <div class="comment-item">
-                                    <div class="avatar"><img src="images/common/author-avatar.jpg" alt="author-avatar"></div>
+                                    <div class="avatar"><img src="<?php echo $urlFE;?>/images/common/author-avatar.jpg" alt="author-avatar"></div>
                                     <div class="info">
                                         <div class="date">
                                             <a href="#">25 Sep 2016</a> Por <a href="#">Ian Finch</a>
@@ -332,7 +335,7 @@
                                     </div>
                                 </div>
                                 <div class="comment-item">
-                                    <div class="avatar"><img src="images/common/author-avatar.jpg" alt="author-avatar"></div>
+                                    <div class="avatar"><img src="<?php echo $urlFE;?>/images/common/author-avatar.jpg" alt="author-avatar"></div>
                                     <div class="info">
                                         <div class="date">
                                             <a href="#">25 Sep 2016</a> Por <a href="#">Ian Finch</a>
@@ -341,7 +344,7 @@
                                     </div>
                                 </div>
                                 <div class="comment-item">
-                                    <div class="avatar"><img src="images/common/author-avatar.jpg" alt="author-avatar"></div>
+                                    <div class="avatar"><img src="<?php echo $urlFE;?>/images/common/author-avatar.jpg" alt="author-avatar"></div>
                                     <div class="info">
                                         <div class="date">
                                             <a href="#">25 Sep 2016</a> Por <a href="#">Ian Finch</a>
@@ -403,7 +406,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="title">Tienda <span>Oficial</span></div>
-                            <a href="tienda.php" class="btn">Detalles</a>
+                            <a href="<?php echo $amigalbe;?>/tienda" class="btn">Detalles</a>
                         </div>
                     </div>
                 </div>
@@ -427,7 +430,7 @@
                             <div>
                                 <a href="product.html">
                                     <span class="store-badge hot">hot</span>
-                                    <img src="images/common/store-item-img.jpg" alt="store-item-img">
+                                    <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="store-item-img">
                                 </a>
                                 <div class="info">
                                     <span class="name">Lorem ipsum lorem</span>
@@ -444,7 +447,7 @@
                             <div>
                                 <a href="product.html">
                                     <span class="store-badge hot">hot</span>
-                                    <img src="images/common/store-item-img.jpg" alt="store-item-img">
+                                    <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="store-item-img">
                                 </a>
                                 <div class="info">
                                     <span class="name">Lorem ipsum lorem</span>
@@ -461,7 +464,7 @@
                             <div>
                                 <a href="product.html">
                                     <span class="store-badge hot">hot</span>
-                                    <img src="images/common/store-item-img.jpg" alt="store-item-img">
+                                    <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="store-item-img">
                                 </a>
                                 <div class="info">
                                     <span class="name">Lorem ipsum lorem</span>
@@ -478,7 +481,7 @@
                             <div>
                                 <a href="product.html">
                                     <span class="store-badge hot">hot</span>
-                                    <img src="images/common/store-item-img.jpg" alt="store-item-img">
+                                    <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="store-item-img">
                                 </a>
                                 <div class="info">
                                     <span class="name">Lorem ipsum lorem</span>
@@ -495,7 +498,7 @@
                             <div>
                                 <a href="product.html">
                                     <span class="store-badge hot">hot</span>
-                                    <img src="images/common/store-item-img.jpg" alt="store-item-img">
+                                    <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="store-item-img">
                                 </a>
                                 <div class="info">
                                     <span class="name">Lorem ipsum lorem</span>

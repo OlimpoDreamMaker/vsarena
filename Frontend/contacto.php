@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -56,7 +59,7 @@
                <div class="info">
                   <div class="wrap">
                      <ul class="breadcrumbs">
-                        <li><a href="index.php">Inicio</a>/</li>
+                        <li><a href="<?php echo $amigable;?>/">Inicio</a>/</li>
                         <li>Contáctanos</li>
                      </ul>
                      <h1>Contáctanos</h1>
@@ -76,7 +79,7 @@
                <h4>Sobre nosotros</h4>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in dolor sit amet risus efficitur elementum eu et diam. Pellentesque maximus interdum massa ut commodo. Nam lacus lacus, aliquam vel justo sed, lobortis accumsan sapien. In congue tortor arcu, sed</p>
                <div class="contact-office-img">
-                  <img class="img-responsive" src="images/vs_arena/contact-office-img.jpg" alt="contact-office-img">
+                  <img class="img-responsive" src="<?php echo $urlFE;?>/images/vs_arena/contact-office-img.jpg" alt="contact-office-img">
                </div>
                <ul class="contact-list">
                   <li><i class="fa fa-flag" aria-hidden="true"></i><span>276 Upper Parliament Street, Liverpool L8, Great Britain</span></li>

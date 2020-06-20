@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -56,7 +59,7 @@
 					<div class="info">
 						<div class="wrap">
 							<ul class="breadcrumbs">
-								<li><a href="index.html">Inicio</a>/</li>
+								<li><a href="<?php echo $amigable;?>/">Inicio</a>/</li>
 								<li>Prox. Enfrentamiento</li>
 							</ul>
 							<h1>Prox. Enfrentamiento</h1>
@@ -76,7 +79,7 @@
 					<div class="upcoming-match-info">
 						<!--TEAM-->
 						<div class="team">
-							<div class="avatar"><img src="images/vs_arena/team-logo1.png" alt="match-list-team-img"></div>
+							<div class="avatar"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" alt="match-list-team-img"></div>
 							<div class="text">
 								Team 1
 								<div class="latest">
@@ -116,7 +119,7 @@
 									<span class="win">V</span>
 								</div>
 							</div>
-							<div class="avatar"><img src="images/vs_arena/team-logo2.png" alt="match-list-team-img"></div>
+							<div class="avatar"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo2.png" alt="match-list-team-img"></div>
 						</div>
 					</div>
 					<!--INFORMACION DE ENFRENTAMIENTO END-->
@@ -145,7 +148,7 @@
 								<div class="col-md-4 col-sm-5">
 									<span class="img-champ">
 										<a href="championship.html" title="The Greatest League">
-											<img src="images/vs_arena/championship-ico.jpg" alt="champ-img">
+											<img src="<?php echo $urlFE;?>/images/vs_arena/championship-ico.jpg" alt="champ-img">
 										</a>
 									</span>
 								</div>
@@ -177,60 +180,60 @@
 								</div>
 								<!--MIEMBRO-->
 								<div class="member">
-									<a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+									<a href="player.html" class="avatar"><img src="<?php echo $urlFE;?>/images/common/member-avatar.jpg" alt="member-avatar"></a>
 									<div class="info">
 										<div class="wrap">
 											<a href="player.html" class="name">Pasveer (GK)</a>
 											<div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
 											<div class="card red" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
 										</div>
-										<div class="country"><img src="images/common/group_icon1.png" alt="flag">Lorem</div>
+										<div class="country"><img src="<?php echo $urlFE;?>/images/common/group_icon1.png" alt="flag">Lorem</div>
 									</div>
 								</div>
 								<!--MIEMBRO-->
 								<div class="member">
-									<a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+									<a href="player.html" class="avatar"><img src="<?php echo $urlFE;?>/images/common/member-avatar.jpg" alt="member-avatar"></a>
 									<div class="info">
 										<div class="wrap">
 											<a href="player.html" class="name">Pasveer (GK)</a>
 											<div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
 											<div class="card red" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
 										</div>
-										<div class="country"><img src="images/common/group_icon1.png" alt="flag">Lorem</div>
+										<div class="country"><img src="<?php echo $urlFE;?>/images/common/group_icon1.png" alt="flag">Lorem</div>
 									</div>
 								</div>
 								<!--MIEMBRO-->
 								<div class="member">
-									<a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+									<a href="player.html" class="avatar"><img src="<?php echo $urlFE;?>/images/common/member-avatar.jpg" alt="member-avatar"></a>
 									<div class="info">
 										<div class="wrap">
 											<a href="player.html" class="name">Pasveer (GK)</a>
 											<div class="goal" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
 										</div>
-										<div class="country"><img src="images/common/group_icon1.png" alt="flag">Lorem</div>
+										<div class="country"><img src="<?php echo $urlFE;?>/images/common/group_icon1.png" alt="flag">Lorem</div>
 									</div>
 								</div>
 								<!--MIEMBRO-->
 								<div class="member">
-									<a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+									<a href="player.html" class="avatar"><img src="<?php echo $urlFE;?>/images/common/member-avatar.jpg" alt="member-avatar"></a>
 									<div class="info">
 										<div class="wrap">
 											<a href="player.html" class="name">Pasveer (GK)</a>
 											<div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
 										</div>
-										<div class="country"><img src="images/common/group_icon1.png" alt="flag">Lorem</div>
+										<div class="country"><img src="<?php echo $urlFE;?>/images/common/group_icon1.png" alt="flag">Lorem</div>
 									</div>
 								</div>
 								<!--MIEMBRO-->
 								<div class="member">
-									<a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+									<a href="player.html" class="avatar"><img src="<?php echo $urlFE;?>/images/common/member-avatar.jpg" alt="member-avatar"></a>
 									<div class="info">
 										<div class="wrap">
 											<a href="player.html" class="name">Pasveer (GK)</a>
 											<div class="card yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
 											<div class="card red" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
 										</div>
-										<div class="country"><img src="images/common/group_icon1.png" alt="flag">Lorem</div>
+										<div class="country"><img src="<?php echo $urlFE;?>/images/common/group_icon1.png" alt="flag">Lorem</div>
 									</div>
 								</div>
 							</div>
@@ -249,9 +252,9 @@
 											<div class="goal" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
 											<a href="player.html" class="name">Pasveer (GK)</a>
 										</div>
-										<div class="country"><img src="images/common/group_icon.png" alt="ícono del grupo"> Lorem</div>
+										<div class="country"><img src="<?php echo $urlFE;?>/images/common/group_icon.png" alt="ícono del grupo"> Lorem</div>
 									</div>
-									<a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+									<a href="player.html" class="avatar"><img src="<?php echo $urlFE;?>/images/common/member-avatar.jpg" alt="member-avatar"></a>
 								</div>
 								<!--MIEMBRO-->
 								<div class="member">
@@ -261,9 +264,9 @@
 											<div class="goal" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
 											<a href="player.html" class="name">Pasveer (GK)</a>
 										</div>
-										<div class="country"><img src="images/common/group_icon.png" alt="ícono del grupo"> Lorem</div>
+										<div class="country"><img src="<?php echo $urlFE;?>/images/common/group_icon.png" alt="ícono del grupo"> Lorem</div>
 									</div>
-									<a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+									<a href="player.html" class="avatar"><img src="<?php echo $urlFE;?>/images/common/member-avatar.jpg" alt="member-avatar"></a>
 								</div>
 								<!--MIEMBRO-->
 								<div class="member">
@@ -273,9 +276,9 @@
 											<div class="goal" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
 											<a href="player.html" class="name">Pasveer (GK)</a>
 										</div>
-										<div class="country"><img src="images/common/group_icon.png" alt="ícono del grupo"> Lorem</div>
+										<div class="country"><img src="<?php echo $urlFE;?>/images/common/group_icon.png" alt="ícono del grupo"> Lorem</div>
 									</div>
-									<a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+									<a href="player.html" class="avatar"><img src="<?php echo $urlFE;?>/images/common/member-avatar.jpg" alt="member-avatar"></a>
 								</div>
 								<!--MIEMBRO-->
 								<div class="member">
@@ -285,9 +288,9 @@
 											<div class="goal" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
 											<a href="player.html" class="name">Pasveer (GK)</a>
 										</div>
-										<div class="country"><img src="images/common/group_icon.png" alt="ícono del grupo"> Lorem</div>
+										<div class="country"><img src="<?php echo $urlFE;?>/images/common/group_icon.png" alt="ícono del grupo"> Lorem</div>
 									</div>
-									<a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+									<a href="player.html" class="avatar"><img src="<?php echo $urlFE;?>/images/common/member-avatar.jpg" alt="member-avatar"></a>
 								</div>
 								<!--MIEMBRO-->
 								<div class="member">
@@ -297,9 +300,9 @@
 											<div class="goal" data-toggle="tooltip" data-placement="top" title="" data-original-title="32’"></div>
 											<a href="player.html" class="name">Pasveer (GK)</a>
 										</div>
-										<div class="country"><img src="images/common/group_icon.png" alt="ícono del grupo"> Lorem</div>
+										<div class="country"><img src="<?php echo $urlFE;?>/images/common/group_icon.png" alt="ícono del grupo"> Lorem</div>
 									</div>
-									<a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+									<a href="player.html" class="avatar"><img src="<?php echo $urlFE;?>/images/common/member-avatar.jpg" alt="member-avatar"></a>
 								</div>
 							</div>
 						</div>
@@ -313,12 +316,12 @@
 							<div class="team-wrap">
 								<!--MIEMBRO-->
 								<div class="member">
-									<a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+									<a href="player.html" class="avatar"><img src="<?php echo $urlFE;?>/images/common/member-avatar.jpg" alt="member-avatar"></a>
 									<div class="info">
 										<div class="wrap">
 											<a href="player.html" class="name">Coach 1</a>
 										</div>
-										<div class="country"><img src="images/common/group_icon1.png" alt="flag">Lorem</div>
+										<div class="country"><img src="<?php echo $urlFE;?>/images/common/group_icon1.png" alt="flag">Lorem</div>
 									</div>
 								</div>
 							</div>
@@ -331,9 +334,9 @@
 										<div class="wrap">
 											<a href="player.html" class="name">Coach 2 </a>
 										</div>
-										<div class="country"><img src="images/common/group_icon.png" alt="ícono del grupo"> Lorem</div>
+										<div class="country"><img src="<?php echo $urlFE;?>/images/common/group_icon.png" alt="ícono del grupo"> Lorem</div>
 									</div>
-									<a href="player.html" class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></a>
+									<a href="player.html" class="avatar"><img src="<?php echo $urlFE;?>/images/common/member-avatar.jpg" alt="member-avatar"></a>
 								</div>
 							</div>
 						</div>

@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -56,7 +59,7 @@
           <div class="info">
             <div class="wrap">
               <ul class="breadcrumbs">
-                <li><a href="index.html">Inicio</a>/</li>
+                <li><a href="<?php echo $amigable?>/">Inicio</a>/</li>
                 <li>Equipo</li>
               </ul>
               <h1>Equipo</h1>
@@ -84,7 +87,7 @@
                 <span class="position">Lorem</span>
                 <span class="number">1</span>
               </span>
-              <img src="images/vs_arena/staff-item-img.jpg" alt="player">
+              <img src="<?php echo $urlFE;?>/images/vs_arena/staff-item-img.jpg" alt="player">
             </a>
           </div>
           <!--PLAYER-->
@@ -95,7 +98,7 @@
                 <span class="position">Lorem</span>
                 <span class="number">10</span>
               </span>
-              <img src="images/vs_arena/staff-item-img.jpg" alt="player">
+              <img src="<?php echo $urlFE;?>/images/vs_arena/staff-item-img.jpg" alt="player">
             </a>
           </div>
           <!--PLAYER-->
@@ -106,7 +109,7 @@
                 <span class="position">Lorem</span>
                 <span class="number">29</span>
               </span>
-              <img src="images/vs_arena/staff-item-img.jpg" alt="player">
+              <img src="<?php echo $urlFE;?>/images/vs_arena/staff-item-img.jpg" alt="player">
             </a>
           </div>
           <!--LINEA-->
@@ -122,7 +125,7 @@
                   <span class="position">Lorem</span>
                   <span class="number">9</span>
                 </span>
-                <img src="images/vs_arena/player-2.jpg" alt="player">
+                <img src="<?php echo $urlFE;?>/images/vs_arena/player-2.jpg" alt="player">
               </a>
             </div>
             <!--PLAYER-->
@@ -133,7 +136,7 @@
                   <span class="position">Lorem</span>
                   <span class="number">8</span>
                 </span>
-                <img src="images/vs_arena/player-2.jpg" alt="player">
+                <img src="<?php echo $urlFE;?>/images/vs_arena/player-2.jpg" alt="player">
               </a>
             </div>
             <!--PLAYER-->
@@ -144,7 +147,7 @@
                   <span class="position">Lorem</span>
                   <span class="number">29</span>
                 </span>
-                <img src="images/vs_arena/player-2.jpg" alt="player">
+                <img src="<?php echo $urlFE;?>/images/vs_arena/player-2.jpg" alt="player">
               </a>
             </div>
           </div>
@@ -201,7 +204,7 @@
                           <span class="position">Left Forward</span>
                           <span class="number">14</span>
                         </span>
-                        <img src="images/vs_arena/player-2.jpg" alt="person-slider">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/player-2.jpg" alt="person-slider">
                       </a>
                     </div>
                   </div>
@@ -214,7 +217,7 @@
                           <span class="position">Left Midfielder</span>
                           <span class="number">8</span>
                         </span>
-                        <img src="images/vs_arena/player-2.jpg" alt="person-slider">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/player-2.jpg" alt="person-slider">
                       </a>
                     </div>
                   </div>
@@ -227,7 +230,7 @@
                           <span class="position">Central Attacking Midfielder</span>
                           <span class="number">7</span>
                         </span>
-                        <img src="images/vs_arena/player-3.jpg" alt="person-slider">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/player-3.jpg" alt="person-slider">
                       </a>
                     </div>
                   </div>
@@ -247,7 +250,7 @@
                           <span class="position">Left Forward</span>
                           <span class="number">14</span>
                         </span>
-                        <img src="images/vs_arena/player-3.jpg" alt="person-slider">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/player-3.jpg" alt="person-slider">
                       </a>
                     </div>
                   </div>
@@ -260,7 +263,7 @@
                           <span class="position">Left Midfielder</span>
                           <span class="number">8</span>
                         </span>
-                        <img src="images/vs_arena/player-2.jpg" alt="person-slider">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/player-2.jpg" alt="person-slider">
                       </a>
                     </div>
                   </div>
@@ -273,7 +276,7 @@
                           <span class="position">Central Attacking Midfielder</span>
                           <span class="number">7</span>
                         </span>
-                        <img src="images/vs_arena/player-2.jpg" alt="person-slider">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/player-2.jpg" alt="person-slider">
                       </a>
                     </div>
                   </div>
@@ -310,7 +313,7 @@
                           <span class="position">Left Forward</span>
                           <span class="number">14</span>
                         </span>
-                        <img src="images/vs_arena/player-2.jpg" alt="person-slider">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/player-2.jpg" alt="person-slider">
                       </a>
                     </div>
                   </div>
@@ -323,7 +326,7 @@
                           <span class="position">Left Midfielder</span>
                           <span class="number">8</span>
                         </span>
-                        <img src="images/vs_arena/stuff-person.jpg" alt="person-slider">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/stuff-person.jpg" alt="person-slider">
                       </a>
                     </div>
                   </div>
@@ -336,7 +339,7 @@
                           <span class="position">Central Attacking Midfielder</span>
                           <span class="number">7</span>
                         </span>
-                        <img src="images/vs_arena/player-3.jpg" alt="person-slider">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/player-3.jpg" alt="person-slider">
                       </a>
                     </div>
                   </div>
@@ -356,7 +359,7 @@
                           <span class="position">Left Forward</span>
                           <span class="number">14</span>
                         </span>
-                        <img src="images/vs_arena/player-3.jpg" alt="person-slider">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/player-3.jpg" alt="person-slider">
                       </a>
                     </div>
                   </div>
@@ -369,7 +372,7 @@
                           <span class="position">Left Midfielder</span>
                           <span class="number">8</span>
                         </span>
-                        <img src="images/vs_arena/player-2.jpg" alt="person-slider">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/player-2.jpg" alt="person-slider">
                       </a>
                     </div>
                   </div>
@@ -382,7 +385,7 @@
                           <span class="position">Central Attacking Midfielder</span>
                           <span class="number">7</span>
                         </span>
-                        <img src="images/vs_arena/stuff-person.jpg" alt="person-slider">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/stuff-person.jpg" alt="person-slider">
                       </a>
                     </div>
                   </div>
@@ -419,7 +422,7 @@
                           <span class="position">Left Forward</span>
                           <span class="number">14</span>
                         </span>
-                        <img src="images/vs_arena/stuff-person.jpg" alt="person-slider">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/stuff-person.jpg" alt="person-slider">
                       </a>
                     </div>
                   </div>
@@ -432,7 +435,7 @@
                           <span class="position">Left Midfielder</span>
                           <span class="number">8</span>
                         </span>
-                        <img src="images/vs_arena/stuff-person.jpg" alt="person-slider">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/stuff-person.jpg" alt="person-slider">
                       </a>
                     </div>
                   </div>
@@ -445,7 +448,7 @@
                           <span class="position">Central Attacking Midfielder</span>
                           <span class="number">7</span>
                         </span>
-                        <img src="images/vs_arena/player-3.jpg" alt="person-slider">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/player-3.jpg" alt="person-slider">
                       </a>
                     </div>
                   </div>
@@ -465,7 +468,7 @@
                           <span class="position">Left Forward</span>
                           <span class="number">14</span>
                         </span>
-                        <img src="images/vs_arena/player-3.jpg" alt="person-slider">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/player-3.jpg" alt="person-slider">
                       </a>
                     </div>
                   </div>
@@ -478,7 +481,7 @@
                           <span class="position">Left Midfielder</span>
                           <span class="number">8</span>
                         </span>
-                        <img src="images/vs_arena/player-2.jpg" alt="person-slider">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/player-2.jpg" alt="person-slider">
                       </a>
                     </div>
                   </div>
@@ -491,7 +494,7 @@
                           <span class="position">Central Attacking Midfielder</span>
                           <span class="number">7</span>
                         </span>
-                        <img src="images/vs_arena/stuff-person.jpg" alt="person-slider">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/stuff-person.jpg" alt="person-slider">
                       </a>
                     </div>
                   </div>

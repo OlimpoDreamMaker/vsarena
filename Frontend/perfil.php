@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -56,7 +59,7 @@
 					<div class="info">
 						<div class="wrap">
 							<ul class="breadcrumbs">
-								<li><a href="index.php">Inicio</a>/</li>
+								<li><a href="<?php echo $amigable;?>/">Inicio</a>/</li>
 								<li>Mi Perfil</li>
 							</ul>
 							<h1>Mi Perfil</h1>
@@ -80,7 +83,7 @@
 				<div class="col-md-6">
 					<div class="player-photo">
 						<div class="number">1</div>
-						<img class="img-responsive" src="images/vs_arena/single-player-photo.jpg" alt="player">
+						<img class="img-responsive" src="<?php echo $urlFE;?>/images/vs_arena/single-player-photo.jpg" alt="player">
 					</div>
 				</div>
 				<!--PLAYER INFO START-->
@@ -110,12 +113,12 @@
 									<th>Asesinatos totales</th>
 								</tr>
 								<tr>
-									<td class="club"><img src="images/vs_arena/team-logo1.png" width="30" height="30" alt="trophy"> Internacional</td>
+									<td class="club"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" width="30" height="30" alt="trophy"> Internacional</td>
 									<td>27</td>
 									<td><span>10</span></td>
 								</tr>
 								<tr>
-									<td class="club"><img src="images/vs_arena/team-logo2.png" width="30" height="30" alt="trophy"> Internacional</td>
+									<td class="club"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo2.png" width="30" height="30" alt="trophy"> Internacional</td>
 									<td>27</td>
 									<td><span>10</span></td>
 								</tr>
@@ -128,15 +131,15 @@
 						<h6>Premios</h6>
 						<ul class="player-trophey">
 							<li>
-								<img src="images/common/am-trophey1.png" width="100" height="150" alt="trophy">
+								<img src="<?php echo $urlFE;?>/images/common/am-trophey1.png" width="100" height="150" alt="trophy">
 								<div class="year">2012</div>
 							</li>
 							<li>
-								<img src="images/common/am-trophey.png" width="100" height="150" alt="trophy">
+								<img src="<?php echo $urlFE;?>/images/common/am-trophey.png" width="100" height="150" alt="trophy">
 								<div class="year">2015</div>
 							</li>
 							<li>
-								<img src="images/common/am-trophey2.png" width="100" height="150" alt="trophy">
+								<img src="<?php echo $urlFE;?>/images/common/am-trophey2.png" width="100" height="150" alt="trophy">
 								<div class="year">2017</div>
 							</li>
 						</ul>
@@ -166,7 +169,7 @@
 								<td>
 									<a href="matches.html">
 										<span class="team">
-											<img src="images/common/team-logo1.png" width="30" height="30" alt="main-match-icon">
+											<img src="<?php echo $urlFE;?>/images/common/team-logo1.png" width="30" height="30" alt="main-match-icon">
 										</span>
 										<span>Team 1</span>
 									</a>
@@ -187,7 +190,7 @@
 								<td>
 									<a href="matches.html">
 										<span class="team">
-											<img src="images/common/team-logo2.png" width="30" height="30" alt="main-match-icon">
+											<img src="<?php echo $urlFE;?>/images/common/team-logo2.png" width="30" height="30" alt="main-match-icon">
 										</span>
 										<span>Team 2</span>
 									</a>
@@ -208,7 +211,7 @@
 								<td>
 									<a href="matches.html">
 										<span class="team">
-											<img src="images/common/team-logo3.png" width="30" height="30" alt="main-match-icon">
+											<img src="<?php echo $urlFE;?>/images/common/team-logo3.png" width="30" height="30" alt="main-match-icon">
 										</span>
 										<span>Team 3</span>
 									</a>
@@ -229,7 +232,7 @@
 								<td>
 									<a href="matches.html">
 										<span class="team">
-											<img src="images/common/team-logo4.png" width="30" height="30" alt="main-match-icon">
+											<img src="<?php echo $urlFE;?>/images/common/team-logo4.png" width="30" height="30" alt="main-match-icon">
 										</span>
 										<span>Team 4</span>
 									</a>
@@ -295,7 +298,7 @@
 													<span class="position">Left Forward</span>
 													<span class="number">14</span>
 												</span>
-												<img src="images/vs_arena/stuff-person.jpg" alt="person-slider">
+												<img src="<?php echo $urlFE;?>/images/vs_arena/stuff-person.jpg" alt="person-slider">
 											</a>
 										</div>
 									</div>
@@ -308,7 +311,7 @@
 													<span class="position">Left Midfielder</span>
 													<span class="number">8</span>
 												</span>
-												<img src="images/vs_arena/player-2.jpg" alt="person-slider">
+												<img src="<?php echo $urlFE;?>/images/vs_arena/player-2.jpg" alt="person-slider">
 											</a>
 										</div>
 									</div>
@@ -321,7 +324,7 @@
 													<span class="position">Central Attacking Midfielder</span>
 													<span class="number">7</span>
 												</span>
-												<img src="images/vs_arena/player-3.jpg" alt="person-slider">
+												<img src="<?php echo $urlFE;?>/images/vs_arena/player-3.jpg" alt="person-slider">
 											</a>
 										</div>
 									</div>
@@ -342,7 +345,7 @@
 													<span class="position">Left Forward</span>
 													<span class="number">14</span>
 												</span>
-												<img src="images/vs_arena/player-3.jpg" alt="person-slider">
+												<img src="<?php echo $urlFE;?>/images/vs_arena/player-3.jpg" alt="person-slider">
 											</a>
 										</div>
 									</div>
@@ -355,7 +358,7 @@
 													<span class="position">Left Midfielder</span>
 													<span class="number">8</span>
 												</span>
-												<img src="images/vs_arena/player-2.jpg" alt="person-slider">
+												<img src="<?php echo $urlFE;?>/images/vs_arena/player-2.jpg" alt="person-slider">
 											</a>
 										</div>
 									</div>
@@ -368,7 +371,7 @@
 													<span class="position">Central Attacking Midfielder</span>
 													<span class="number">7</span>
 												</span>
-												<img src="images/vs_arena/stuff-person.jpg" alt="person-slider">
+												<img src="<?php echo $urlFE;?>/images/vs_arena/stuff-person.jpg" alt="person-slider">
 											</a>
 										</div>
 									</div>
@@ -405,7 +408,7 @@
 													<span class="position">Left Forward</span>
 													<span class="number">14</span>
 												</span>
-												<img src="images/vs_arena/stuff-person.jpg" alt="person-slider">
+												<img src="<?php echo $urlFE;?>/images/vs_arena/stuff-person.jpg" alt="person-slider">
 											</a>
 										</div>
 									</div>
@@ -418,7 +421,7 @@
 													<span class="position">Left Midfielder</span>
 													<span class="number">8</span>
 												</span>
-												<img src="images/vs_arena/player-2.jpg" alt="person-slider">
+												<img src="<?php echo $urlFE;?>/images/vs_arena/player-2.jpg" alt="person-slider">
 											</a>
 										</div>
 									</div>
@@ -431,7 +434,7 @@
 													<span class="position">Central Attacking Midfielder</span>
 													<span class="number">7</span>
 												</span>
-												<img src="images/vs_arena/player-3.jpg" alt="person-slider">
+												<img src="<?php echo $urlFE;?>/images/vs_arena/player-3.jpg" alt="person-slider">
 											</a>
 										</div>
 									</div>
@@ -452,7 +455,7 @@
 													<span class="position">Left Forward</span>
 													<span class="number">14</span>
 												</span>
-												<img src="images/vs_arena/player-3.jpg" alt="person-slider">
+												<img src="<?php echo $urlFE;?>/images/vs_arena/player-3.jpg" alt="person-slider">
 											</a>
 										</div>
 									</div>
@@ -465,7 +468,7 @@
 													<span class="position">Left Midfielder</span>
 													<span class="number">8</span>
 												</span>
-												<img src="images/vs_arena/player-2.jpg" alt="person-slider">
+												<img src="<?php echo $urlFE;?>/images/vs_arena/player-2.jpg" alt="person-slider">
 											</a>
 										</div>
 									</div>
@@ -478,7 +481,7 @@
 													<span class="position">Central Attacking Midfielder</span>
 													<span class="number">7</span>
 												</span>
-												<img src="images/vs_arena/stuff-person.jpg" alt="person-slider">
+												<img src="<?php echo $urlFE;?>/images/vs_arena/stuff-person.jpg" alt="person-slider">
 											</a>
 										</div>
 									</div>

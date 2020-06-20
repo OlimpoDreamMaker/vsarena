@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -56,7 +59,7 @@
                     <div class="info">
                         <div class="wrap">
                             <ul class="breadcrumbs">
-                                <li><a href="index.html">Inicio</a>/</li>
+                                <li><a href="<?php echo $amigable;?>/">Inicio</a>/</li>
                                 <li>Orden</li>
                             </ul>
                             <h1>Orden</h1>
@@ -190,7 +193,7 @@
                                 <th class="total">Total</th>
                             </tr>
                             <tr>
-                                <td><img class="product-image" src="images/common/cart-product.jpg" alt="cart-product"><strong>Lorem Impsum</strong></td>
+                                <td><img class="product-image" src="<?php echo $urlFE;?>/images/common/cart-product.jpg" alt="cart-product"><strong>Lorem Impsum</strong></td>
                                 <td class="total">£ 120</td>
                             </tr>
                             <tr>
@@ -218,7 +221,7 @@
                             <label class="item">
                                 <input name="del-check" type="radio">
                                 <span class="name">PayPal</span>
-                                <span class="price"><img src="images/common/card-img.jpg" alt="card"></span>
+                                <span class="price"><img src="<?php echo $urlFE;?>/images/common/card-img.jpg" alt="card"></span>
                             </label>
                             <label class="item">
                                 <input name="del-check" type="radio">

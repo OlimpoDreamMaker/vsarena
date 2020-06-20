@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -56,7 +59,7 @@
                     <div class="info">
                         <div class="wrap">
                             <ul class="breadcrumbs">
-                                <li><a href="index.php">Inicio</a>/</li>
+                                <li><a href="<?php echo $amigable;?>/">Inicio</a>/</li>
                                 <li>Tienda</li>
                             </ul>
                             <h1>Tienda</h1>
@@ -336,7 +339,7 @@
                             <div class="store-list-item">
                                 <div>
                                     <a href="#">
-                                        <img src="images/common/store-item-img.jpg" alt="product">
+                                        <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product">
                                     </a>
                                     <div class="info">
                                         <span class="name">Lorem</span>
@@ -354,7 +357,7 @@
                             <div class="store-list-item">
                                 <div>
                                     <a href="#">
-                                        <img src="images/common/store-item-img.jpg" alt="product">
+                                        <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product">
                                     </a>
                                     <div class="info">
                                         <span class="name">Lorem</span>
@@ -372,7 +375,7 @@
                             <div class="store-list-item">
                                 <div>
                                     <a href="#">
-                                        <img src="images/common/store-item-img.jpg" alt="product">
+                                        <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product">
                                     </a>
                                     <div class="info">
                                         <span class="name">Lorem</span>
@@ -390,7 +393,7 @@
                             <div class="store-list-item">
                                 <div>
                                     <a href="#">
-                                        <img src="images/common/store-item-img.jpg" alt="product">
+                                        <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product">
                                     </a>
                                     <div class="info">
                                         <span class="name">Lorem</span>
@@ -408,7 +411,7 @@
                             <div class="store-list-item">
                                 <div>
                                     <a href="#">
-                                        <img src="images/common/store-item-img.jpg" alt="product">
+                                        <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product">
                                     </a>
                                     <div class="info">
                                         <span class="name">Lorem</span>
@@ -426,7 +429,7 @@
                             <div class="store-list-item">
                                 <div>
                                     <a href="#">
-                                        <img src="images/common/store-item-img.jpg" alt="product">
+                                        <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product">
                                     </a>
                                     <div class="info">
                                         <span class="name">Lorem</span>
@@ -444,7 +447,7 @@
                             <div class="store-list-item">
                                 <div>
                                     <a href="#">
-                                        <img src="images/common/store-item-img.jpg" alt="product">
+                                        <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product">
                                     </a>
                                     <div class="info">
                                         <span class="name">Lorem</span>
@@ -462,7 +465,7 @@
                             <div class="store-list-item">
                                 <div>
                                     <a href="#">
-                                        <img src="images/common/store-item-img.jpg" alt="product">
+                                        <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product">
                                     </a>
                                     <div class="info">
                                         <span class="name">Lorem</span>
@@ -480,7 +483,7 @@
                             <div class="store-list-item">
                                 <div>
                                     <a href="#">
-                                        <img src="images/common/store-item-img.jpg" alt="product">
+                                        <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product">
                                     </a>
                                     <div class="info">
                                         <span class="name">Lorem</span>

@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -56,7 +59,7 @@
                     <div class="info">
                         <div class="wrap">
                             <ul class="breadcrumbs">
-                                <li><a href="index.html">Inicio</a>/</li>
+                                <li><a href="<?php echo $amigable;?>/">Inicio</a>/</li>
                                 <li>Premios</li>
                             </ul>
                             <h1>Premios</h1>
@@ -82,7 +85,7 @@
                 <!--IMAGEN-->
                 <div class="col-md-12">
                     <div class="trophey-media">
-                        <img src="images/vs_arena/trophey-media-img.jpg" alt="trophey-media-img">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/trophey-media-img.jpg" alt="trophey-media-img">
                     </div>
                 </div>
                 <!--TEXTO CUERPO-->
@@ -115,7 +118,7 @@
                                 <!--TROFEOS-->
                                 <div class="col-xs-4 text-center">
                                     <div class="award">
-                                        <div class="image"><img class="img-responsive" src="images/common/am-trophey.png" alt="cup-image"></div>
+                                        <div class="image"><img class="img-responsive" src="<?php echo $urlFE;?>/images/common/am-trophey.png" alt="cup-image"></div>
                                         <div class="name">All-Star Series</div>
                                         <div class="year">2016</div>
                                     </div>
@@ -123,7 +126,7 @@
                                 <!--TROFEOS-->
                                 <div class="col-xs-4 text-center">
                                     <div class="award">
-                                        <div class="image"><img class="img-responsive" src="images/common/am-trophey1.png" alt="cup-image"></div>
+                                        <div class="image"><img class="img-responsive" src="<?php echo $urlFE;?>/images/common/am-trophey1.png" alt="cup-image"></div>
                                         <div class="name">World Class Championship</div>
                                         <div class="year">2016</div>
                                     </div>
@@ -131,7 +134,7 @@
                                 <!--TROFEOS-->
                                 <div class="col-xs-4 text-center">
                                     <div class="award">
-                                        <div class="image"><img class="img-responsive" src="images/common/am-trophey2.png" alt="cup-image"></div>
+                                        <div class="image"><img class="img-responsive" src="<?php echo $urlFE;?>/images/common/am-trophey2.png" alt="cup-image"></div>
                                         <div class="name">Major League Trophy</div>
                                         <div class="year">2016</div>
                                     </div>
@@ -146,21 +149,21 @@
                             <div class="row">
                                 <div class="col-xs-4 text-center">
                                     <div class="award">
-                                        <div class="image"><img class="img-responsive" src="images/common/am-trophey.png" alt="cup-image"></div>
+                                        <div class="image"><img class="img-responsive" src="<?php echo $urlFE;?>/images/common/am-trophey.png" alt="cup-image"></div>
                                         <div class="name">All-Star Series</div>
                                         <div class="year">2016</div>
                                     </div>
                                 </div>
                                 <div class="col-xs-4 text-center">
                                     <div class="award">
-                                        <div class="image"><img class="img-responsive" src="images/common/am-trophey1.png" alt="cup-image"></div>
+                                        <div class="image"><img class="img-responsive" src="<?php echo $urlFE;?>/images/common/am-trophey1.png" alt="cup-image"></div>
                                         <div class="name">World Class Championship</div>
                                         <div class="year">2016</div>
                                     </div>
                                 </div>
                                 <div class="col-xs-4 text-center">
                                     <div class="award">
-                                        <div class="image"><img class="img-responsive" src="images/common/am-trophey2.png" alt="cup-image"></div>
+                                        <div class="image"><img class="img-responsive" src="<?php echo $urlFE;?>/images/common/am-trophey2.png" alt="cup-image"></div>
                                         <div class="name">Major League Trophy</div>
                                         <div class="year">2016</div>
                                     </div>

@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <html lang="es" class="" data-triggered="true">
 
 <head>

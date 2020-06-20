@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -56,7 +59,7 @@
                     <div class="info">
                         <div class="wrap">
                             <ul class="breadcrumbs">
-                                <li><a href="index.html">Inicio</a>/</li>
+                                <li><a href="<?php echo $amigable;?>/">Inicio</a>/</li>
                                 <li>Carrito</li>
                             </ul>
                             <h1>Carrito</h1>
@@ -86,14 +89,14 @@
                         </tr>
                         <tr class="cart_iem">
                             <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
-                            <td class="name"><img class="product-image" src="images/common/cart-product.jpg" alt="cart-product">Lorem ipsum</td>
+                            <td class="name"><img class="product-image" src="<?php echo $urlFE;?>/images/common/cart-product.jpg" alt="cart-product">Lorem ipsum</td>
                             <td class="cost">$ 60</td>
                             <td class="quantity"><input type="number"></td>
                             <td class="total">$ 120</td>
                         </tr>
                         <tr>
                             <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
-                            <td class="name"><img class="product-image" src="images/common/cart-product.jpg" alt="cart-product">Lorem ipsum</td>
+                            <td class="name"><img class="product-image" src="<?php echo $urlFE;?>/images/common/cart-product.jpg" alt="cart-product">Lorem ipsum</td>
                             <td class="cost">$ 60</td>
                             <td class="quantity"><input type="number"></td>
                             <td class="total">$ 120</td>
@@ -119,7 +122,7 @@
                         <div class="offer">
                             <div class="store-badge new">Nueva</div>
                             <div class="title">Tienda <span>Oficial</span></div>
-                            <img src="images/vs_arena/cart-offer.jpg" alt="cart-offer">
+                            <img src="<?php echo $urlFE;?>/images/vs_arena/cart-offer.jpg" alt="cart-offer">
                         </div>
                     </div>
                 </div>

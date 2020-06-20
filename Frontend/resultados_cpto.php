@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -56,7 +59,7 @@
                     <div class="info">
                         <div class="wrap">
                             <ul class="breadcrumbs">
-                                <li><a href="index.html">Inicio</a>/</li>
+                                <li><a href="<?php echo $amigable;?>/">Inicio</a>/</li>
                                 <li>Campeonatos</li>
                             </ul>
                             <h1>Campeonatos</h1>
@@ -97,7 +100,7 @@
                                 </tr>
                                 <tr>
                                     <td class="up">
-                                        <i class="fa fa-caret-up" aria-hidden="true"></i> 1 <span class="team"><img src="images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"> </span>Team 1
+                                        <i class="fa fa-caret-up" aria-hidden="true"></i> 1 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"> </span>Team 1
                                     </td>
                                     <td>11</td>
                                     <td>8</td>
@@ -112,11 +115,11 @@
                                         <span class="win">w</span>
                                         <span class="win">w</span>
                                     </td>
-                                    <td><a href="club-stats.html"><img src="images/vs_arena/team-logo2.png" width="30" height="30" alt="team-logo"></a></td>
+                                    <td><a href="club-stats.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo2.png" width="30" height="30" alt="team-logo"></a></td>
                                 </tr>
                                 <tr>
                                     <td class="down">
-                                        <i class="fa fa-caret-down" aria-hidden="true"></i> 2 <span class="team"><img src="images/vs_arena/team-logo2.png" width="30" height="30" alt="team-logo"> </span>Team 2
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i> 2 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo2.png" width="30" height="30" alt="team-logo"> </span>Team 2
                                     </td>
                                     <td>11</td>
                                     <td>8</td>
@@ -131,11 +134,11 @@
                                         <span class="win">w</span>
                                         <span class="lose">l</span>
                                     </td>
-                                    <td><a href="club-stats.html"><img src="images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"></a></td>
+                                    <td><a href="club-stats.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"></a></td>
                                 </tr>
                                 <tr>
                                     <td class="down">
-                                        <i class="fa fa-caret-down" aria-hidden="true"></i> 2 <span class="team"><img src="images/vs_arena/team-logo3.png" width="30" height="30" alt="team-logo"> </span>Team 3
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i> 2 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo3.png" width="30" height="30" alt="team-logo"> </span>Team 3
                                     </td>
                                     <td>11</td>
                                     <td>8</td>
@@ -150,11 +153,11 @@
                                         <span class="win">w</span>
                                         <span class="drawn">d</span>
                                     </td>
-                                    <td><a href="club-stats.html"><img src="images/vs_arena/team-logo4.png" width="30" height="30" alt="team-logo"></a></td>
+                                    <td><a href="club-stats.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo4.png" width="30" height="30" alt="team-logo"></a></td>
                                 </tr>
                                 <tr>
                                     <td class="down">
-                                        <i class="fa fa-caret-down" aria-hidden="true"></i> 2 <span class="team"><img src="images/vs_arena/team-logo4.png" width="30" height="30" alt="team-logo"> </span>Team 4
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i> 2 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo4.png" width="30" height="30" alt="team-logo"> </span>Team 4
                                     </td>
                                     <td>11</td>
                                     <td>8</td>
@@ -169,11 +172,11 @@
                                         <span class="win">w</span>
                                         <span class="win">w</span>
                                     </td>
-                                    <td><a href="club-stats.html"><img src="images/vs_arena/team-logo3.png" width="30" height="30" alt="team-logo"></a></td>
+                                    <td><a href="club-stats.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo3.png" width="30" height="30" alt="team-logo"></a></td>
                                 </tr>
                                 <tr>
                                     <td class="none">
-                                        <i class="fa fa-circle" aria-hidden="true"></i> 3 <span class="team"><img src="images/vs_arena/team-logo5.png" width="30" height="30" alt="team-logo"> </span>Team 5
+                                        <i class="fa fa-circle" aria-hidden="true"></i> 3 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo5.png" width="30" height="30" alt="team-logo"> </span>Team 5
                                     </td>
                                     <td>11</td>
                                     <td>8</td>
@@ -188,7 +191,7 @@
                                         <span class="win">w</span>
                                         <span class="win">w</span>
                                     </td>
-                                    <td><a href="club-stats.html"><img src="images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"></a></td>
+                                    <td><a href="club-stats.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"></a></td>
                                 </tr>
                             </table>
                         </div>
@@ -208,7 +211,7 @@
                                 </tr>
                                 <tr>
                                     <td class="up">
-                                        <i class="fa fa-caret-up" aria-hidden="true"></i> 1 <span class="team"><img src="images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"> </span>Team 5
+                                        <i class="fa fa-caret-up" aria-hidden="true"></i> 1 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"> </span>Team 5
                                     </td>
                                     <td>11</td>
                                     <td>8</td>
@@ -223,11 +226,11 @@
                                         <span class="win">w</span>
                                         <span class="win">w</span>
                                     </td>
-                                    <td><a href="club-stats.html"><img src="images/vs_arena/team-logo2.png" width="30" height="30" alt="team-logo"></a></td>
+                                    <td><a href="club-stats.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo2.png" width="30" height="30" alt="team-logo"></a></td>
                                 </tr>
                                 <tr>
                                     <td class="down">
-                                        <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="images/vs_arena/team-logo2.png" width="30" height="30" alt="team-logo"> </span>Team 1
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo2.png" width="30" height="30" alt="team-logo"> </span>Team 1
                                     </td>
                                     <td>11</td>
                                     <td>8</td>
@@ -242,11 +245,11 @@
                                         <span class="win">w</span>
                                         <span class="win">w</span>
                                     </td>
-                                    <td><a href="club-stats.html"><img src="images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"></a></td>
+                                    <td><a href="club-stats.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"></a></td>
                                 </tr>
                                 <tr>
                                     <td class="down">
-                                        <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="images/vs_arena/team-logo3.png" width="30" height="30" alt="team-logo"> </span>Team 2
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo3.png" width="30" height="30" alt="team-logo"> </span>Team 2
                                     </td>
                                     <td>11</td>
                                     <td>8</td>
@@ -261,11 +264,11 @@
                                         <span class="win">w</span>
                                         <span class="win">w</span>
                                     </td>
-                                    <td><a href="club-stats.html"><img src="images/vs_arena/team-logo4.png" width="30" height="30" alt="team-logo"></a></td>
+                                    <td><a href="club-stats.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo4.png" width="30" height="30" alt="team-logo"></a></td>
                                 </tr>
                                 <tr>
                                     <td class="down">
-                                        <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="images/vs_arena/team-logo4.png" width="30" height="30" alt="team-logo"> </span>Team 3
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo4.png" width="30" height="30" alt="team-logo"> </span>Team 3
                                     </td>
                                     <td>11</td>
                                     <td>8</td>
@@ -280,11 +283,11 @@
                                         <span class="win">w</span>
                                         <span class="win">w</span>
                                     </td>
-                                    <td><a href="club-stats.html"><img src="images/vs_arena/team-logo3.png" width="30" height="30" alt="team-logo"></a></td>
+                                    <td><a href="club-stats.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo3.png" width="30" height="30" alt="team-logo"></a></td>
                                 </tr>
                                 <tr>
                                     <td class="none">
-                                        <i class="fa fa-circle" aria-hidden="true"></i> 1 <span class="team"><img src="images/vs_arena/team-logo5.png" width="30" height="30" alt="team-logo"> </span>Team 4
+                                        <i class="fa fa-circle" aria-hidden="true"></i> 1 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo5.png" width="30" height="30" alt="team-logo"> </span>Team 4
                                     </td>
                                     <td>11</td>
                                     <td>8</td>
@@ -299,7 +302,7 @@
                                         <span class="win">w</span>
                                         <span class="win">w</span>
                                     </td>
-                                    <td><a href="club-stats.html"><img src="images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"></a></td>
+                                    <td><a href="club-stats.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"></a></td>
                                 </tr>
                             </table>
                         </div>

@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -56,7 +59,7 @@
                     <div class="info">
                         <div class="wrap">
                             <ul class="breadcrumbs">
-                                <li><a href="index.php">Inicio</a>/</li>
+                                <li><a href="<?php echo $amigable?>/">Inicio</a>/</li>
                                 <li>Batallas</li>
                             </ul>
                             <h1>Batallas</h1>
@@ -89,7 +92,7 @@
                             <div class="amateurs-main-match">
                                 <div class="title">Premier League - Round 28</div>
                                 <a href="#" class="team">
-                                    <span class="image"><img src="images/vs_arena/team-logo1.png" alt="main-match"></span>
+                                    <span class="image"><img src="<?php echo $urlFE ;?>/images/vs_arena/team-logo1.png" alt="main-match"></span>
                                     <span class="info">
                                         <span class="name">Team 1</span>
                                         <span class="city">SKT Telecom</span>
@@ -103,7 +106,7 @@
                                         <span class="name">Team 2</span>
                                         <span class="city">Giants</span>
                                     </span>
-                                    <span class="image"><img src="images/vs_arena/team-logo2.png" alt="main-match"></span>
+                                    <span class="image"><img src="<?php echo $urlFE ;?>/images/vs_arena/team-logo2.png" alt="main-match"></span>
                                 </a>
                                 <div class="title">26 septiembre / 8:45 PM</div>
                             </div>
@@ -113,7 +116,7 @@
                             <div class="amateurs-main-match">
                                 <div class="title">LCS - Round 1</div>
                                 <a href="#" class="team">
-                                    <span class="image"><img src="images/vs_arena/team-logo3.png" alt="main-match"></span>
+                                    <span class="image"><img src="<?php echo $urlFE ;?>/images/vs_arena/team-logo3.png" alt="main-match"></span>
                                     <span class="info">
                                         <span class="name">Internacional</span>
                                         <span class="city">london</span>
@@ -127,7 +130,7 @@
                                         <span class="name">Arsenalp</span>
                                         <span class="city">Lyon</span>
                                     </span>
-                                    <span class="image"><img src="images/vs_arena/team-logo4.png" alt="main-match"></span>
+                                    <span class="image"><img src="<?php echo $urlFE ;?>/images/vs_arena/team-logo4.png" alt="main-match"></span>
                                 </a>
                                 <div class="title">26 septiembre / 8:45 PM</div>
                             </div>
@@ -137,7 +140,7 @@
                             <div class="amateurs-main-match">
                                 <div class="title">Premier League - Round 28</div>
                                 <a href="#" class="team">
-                                    <span class="image"><img src="images/vs_arena/team-logo2.png" alt="main-match"></span>
+                                    <span class="image"><img src="<?php echo $urlFE ;?>/images/vs_arena/team-logo2.png" alt="main-match"></span>
                                     <span class="info">
                                         <span class="name">Internacional</span>
                                         <span class="city">london</span>
@@ -151,7 +154,7 @@
                                         <span class="name">Arsenalp</span>
                                         <span class="city">Lyon</span>
                                     </span>
-                                    <span class="image"><img src="images/vs_arena/team-logo4.png" alt="main-match"></span>
+                                    <span class="image"><img src="<?php echo $urlFE ;?>/images/vs_arena/team-logo4.png" alt="main-match"></span>
                                 </a>
                                 <div class="title">26 septiembre / 8:45 PM</div>
                             </div>
@@ -170,7 +173,7 @@
                             <span class="teams-wrap">
                                 <span class="team">
                                     <span>
-                                        <img src="images/common/team-logo1.png" alt="team-image">
+                                        <img src="<?php echo $urlFE ;?>/images/common/team-logo1.png" alt="team-image">
                                     </span>
                                     <span>Team 1</span>
                                 </span>
@@ -179,7 +182,7 @@
                                 </span>
                                 <span class="team1">
                                     <span>Team 2</span>
-                                    <span><img src="images/common/team-logo2.png" alt="team-image"></span>
+                                    <span><img src="<?php echo $urlFE ;?>/images/common/team-logo2.png" alt="team-image"></span>
                                 </span>
                             </span>
                             <span class="game-result">(5-4) lorem</span>
@@ -190,7 +193,7 @@
                             <span class="teams-wrap">
                                 <span class="team">
                                     <span>
-                                        <img src="images/common/team-logo3.png" alt="team-image">
+                                        <img src="<?php echo $urlFE ;?>/images/common/team-logo3.png" alt="team-image">
                                     </span>
                                     <span>Team 1</span>
                                 </span>
@@ -199,7 +202,7 @@
                                 </span>
                                 <span class="team1">
                                     <span>Team 2</span>
-                                    <span><img src="images/common/team-logo4.png" alt="team-image"></span>
+                                    <span><img src="<?php echo $urlFE ;?>/images/common/team-logo4.png" alt="team-image"></span>
                                 </span>
                             </span>
                             <span class="game-result">(5-4) lorem</span>
@@ -210,7 +213,7 @@
                             <span class="teams-wrap">
                                 <span class="team">
                                     <span>
-                                        <img src="images/common/team-logo5.png" alt="team-image">
+                                        <img src="<?php echo $urlFE ;?>/images/common/team-logo5.png" alt="team-image">
                                     </span>
                                     <span>Team 1</span>
                                 </span>
@@ -219,7 +222,7 @@
                                 </span>
                                 <span class="team1">
                                     <span>Team 2</span>
-                                    <span><img src="images/common/team-logo1.png" alt="team-image"></span>
+                                    <span><img src="<?php echo $urlFE ;?>/images/common/team-logo1.png" alt="team-image"></span>
                                 </span>
                             </span>
                             <span class="game-result">(5-4) lorem</span>
@@ -230,7 +233,7 @@
                             <span class="teams-wrap">
                                 <span class="team">
                                     <span>
-                                        <img src="images/common/team-logo2.png" alt="team-image">
+                                        <img src="<?php echo $urlFE ;?>/images/common/team-logo2.png" alt="team-image">
                                     </span>
                                     <span>Team 1</span>
                                 </span>
@@ -239,7 +242,7 @@
                                 </span>
                                 <span class="team1">
                                     <span>Team 2</span>
-                                    <span><img src="images/common/team-logo3.png" alt="team-image"></span>
+                                    <span><img src="<?php echo $urlFE ;?>/images/common/team-logo3.png" alt="team-image"></span>
                                 </span>
                             </span>
                             <span class="game-result">(5-4) lorem</span>
@@ -250,7 +253,7 @@
                             <span class="teams-wrap">
                                 <span class="team">
                                     <span>
-                                        <img src="images/common/team-logo4.png" alt="team-image">
+                                        <img src="<?php echo $urlFE ;?>/images/common/team-logo4.png" alt="team-image">
                                     </span>
                                     <span>Team 1</span>
                                 </span>
@@ -259,7 +262,7 @@
                                 </span>
                                 <span class="team1">
                                     <span>Team 2</span>
-                                    <span><img src="images/common/team-logo5.png" alt="team-image"></span>
+                                    <span><img src="<?php echo $urlFE ;?>/images/common/team-logo5.png" alt="team-image"></span>
                                 </span>
                             </span>
                             <!--MATCH-->

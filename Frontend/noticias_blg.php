@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -56,7 +59,7 @@
                     <div class="info">
                         <div class="wrap">
                             <ul class="breadcrumbs">
-                                <li><a href="index.php">Inicio</a>/</li>
+                                <li><a href="<?php echo $amigable;?>/">Inicio</a>/</li>
                                 <li>Noticias</li>
                             </ul>
                             <h1>Noticias</h1>
@@ -214,7 +217,7 @@
                     <div class="item img-top">
                         <div class="img-wrap">
                             <div class="bage"><a href="#">Destacado</a></div>
-                            <a href="#"><img src="images/vs_arena/news-list-img.jpg" alt="post image"></a>
+                            <a href="#"><img src="<?php echo $urlFE;?>/images/vs_arena/news-list-img.jpg" alt="post image"></a>
                         </div>
                         <div class="info">
                             <a href="#" class="name" id="top_name">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>

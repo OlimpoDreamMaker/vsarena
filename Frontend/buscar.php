@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -56,7 +59,7 @@
                     <div class="info">
                         <div class="wrap">
                             <ul class="breadcrumbs">
-                                <li><a href="index.html">Inicio</a>/</li>
+                                <li><a href="<?php echo $amigable?>/">Inicio</a>/</li>
                                 <li>Buscador</li>
                             </ul>
                             <h1>Buscador</h1>
@@ -91,7 +94,7 @@
                     <div class="search-item">
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="image"><img class="img-responsive" src="images/vs_arena/gallery-slide-img.jpg" alt="gallery-slide-img"></div>
+                                <div class="image"><img class="img-responsive" src="<?php echo $urlFE?>/images/vs_arena/gallery-slide-img.jpg" alt="gallery-slide-img"></div>
                             </div>
                             <div class="col-md-8">
                                 <div class="info">
@@ -109,7 +112,7 @@
                     <div class="search-item">
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="image"><img class="img-responsive" src="images/vs_arena/single-player-photo.jpg" alt="single-player-photo"></div>
+                                <div class="image"><img class="img-responsive" src="<?php echo $urlFE?>/images/vs_arena/single-player-photo.jpg" alt="single-player-photo"></div>
                             </div>
                             <div class="col-md-8">
                                 <div class="info">

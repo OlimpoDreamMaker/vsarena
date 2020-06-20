@@ -5,10 +5,10 @@
 #ErrorDocument 404 /VsArena/FrontEnd/404.php
 
 #Enlaces amigables Dashboard
-#Options +FollowSymLinks
-#RewriteEngine on
+Options +FollowSymLinks
+RewriteEngine on
 
-#RewriteRule ^panel/cupon/([0-9]+)/$ Dashboard/templates/cupon.php?id=$1
+RewriteRule ^panel/cupon/([0-9]+)/$ Dashboard/templates/cupon.php?id=$1
 RewriteRule ^panel/equipo/([0-9]+)/$ Dashboard/templates/equipo.php?id=$1
 RewriteRule ^panel/grupo/([0-9]+)/$ Dashboard/templates/grupo.php?id=$1
 RewriteRule ^panel/juego/([0-9]+)/$ Dashboard/templates/juego.php?id=$1
@@ -25,3 +25,33 @@ RewriteRule ^panel/torneos/$ Dashboard/templates/torneos.php
 RewriteRule ^panel/usuario/([0-9]+)/$ Dashboard/templates/usuario.php?id=$1
 RewriteRule ^panel/usuarios/$ Dashboard/templates/usuarios.php
 RewriteRule ^panel/venta-compra/([0-9]+)/$ /VsArena/Dashboard/templates/venta-compra.php?id=$1
+
+#Enlaces amigables FrontEnd
+
+RewriteRule ^404$ FrontEnd/404.php
+RewriteRule ^articulo$ FrontEnd/articulo_tda.php
+RewriteRule ^batallas$ FrontEnd/batallas.php
+RewriteRule ^buscar$ FrontEnd/buscar.php
+RewriteRule ^campeonatos_activos$ FrontEnd/campeonatos_activos.php
+RewriteRule ^carrito$ FrontEnd/carrito.php
+RewriteRule ^carrito_checkout$ FrontEnd/carrito_checkout.php
+RewriteRule ^contacto$ FrontEnd/contacto.php
+RewriteRule ^donacion$ FrontEnd/donacion.php
+RewriteRule ^enfrentamiento_cpa$ FrontEnd/enfrentamiento_cpa.php
+RewriteRule ^equipo$ FrontEnd/equipo.php
+RewriteRule ^$ FrontEnd/index.php
+RewriteRule ^home$ FrontEnd/index.php
+#RewriteRule ^login$ FrontEnd/login.php
+RewriteRule ^mantenimiento$ FrontEnd/mantenimiento.php
+RewriteRule ^nosotros$ FrontEnd/nosotros.php
+RewriteRule ^noticias_blog$ FrontEnd/noticias_blg.php
+RewriteRule ^perfil$ FrontEnd/perfil.php
+RewriteRule ^perfil_cpto$ FrontEnd/perfil_cpto.php
+RewriteRule ^premios$ FrontEnd/premios.php
+RewriteRule ^producto_tda$ FrontEnd/producto_tda.php
+RewriteRule ^prox_enfrent_cpa$ FrontEnd/prox_enfrent_cpa.php
+RewriteRule ^proximamente$ FrontEnd/proximamente.php
+#RewriteRule ^registro$ FrontEnd/registro.php
+RewriteRule ^resultados_cpto$ FrontEnd/resultados_cpto.php
+RewriteRule ^tienda$ FrontEnd/tienda.php
+RewriteRule ^torneo_llaves$ FrontEnd/torneo_llaves.php

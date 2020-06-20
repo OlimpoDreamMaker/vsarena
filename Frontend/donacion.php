@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -56,7 +59,7 @@
                     <div class="info">
                         <div class="wrap">
                             <ul class="breadcrumbs">
-                                <li><a href="index.html">Inicio</a>/</li>
+                                <li><a href="<?php echo $amigable;?>/">Inicio</a>/</li>
                                 <li>Donaciones</li>
                             </ul>
                             <h1>Donaciones</h1>
@@ -80,7 +83,7 @@
                     <div class="donation-item">
                         <div class="row no-gutter equal-height">
                             <div class="col-md-7 col-sm-12">
-                                <div class="img-wrap"><img class="img-responsive" src="images/vs_arena/donation-item-img.jpg" alt="donation-item"></div>
+                                <div class="img-wrap"><img class="img-responsive" src="<?php echo $urlFE;?>/images/vs_arena/donation-item-img.jpg" alt="donation-item"></div>
                             </div>
                             <div class="col-md-5 col-sm-12 position-relative">
                                 <div class="info">
@@ -108,7 +111,7 @@
                     <div class="donation-item">
                         <div class="row no-gutter equal-height">
                             <div class="col-md-7 col-sm-12">
-                                <div class="img-wrap"><img class="img-responsive" src="images/vs_arena/donation-item-img.jpg" alt="donation-item"></div>
+                                <div class="img-wrap"><img class="img-responsive" src="<?php echo $urlFE;?>/images/vs_arena/donation-item-img.jpg" alt="donation-item"></div>
                             </div>
                             <div class="col-md-5 col-sm-12 position-relative">
                                 <div class="info">
@@ -136,7 +139,7 @@
                     <div class="donation-item">
                         <div class="row no-gutter equal-height">
                             <div class="col-md-7 col-sm-12">
-                                <div class="img-wrap"><img class="img-responsive" src="images/vs_arena/donation-item-img.jpg" alt="donation-item"></div>
+                                <div class="img-wrap"><img class="img-responsive" src="<?php echo $urlFE;?>/images/vs_arena/donation-item-img.jpg" alt="donation-item"></div>
                             </div>
                             <div class="col-md-5 col-sm-12 position-relative">
                                 <div class="info">
@@ -164,7 +167,7 @@
                     <div class="donation-item">
                         <div class="row no-gutter equal-height">
                             <div class="col-md-7 col-sm-12">
-                                <div class="img-wrap"><img class="img-responsive" src="images/vs_arena/donation-item-img.jpg" alt="donation-item"></div>
+                                <div class="img-wrap"><img class="img-responsive" src="<?php echo $urlFE;?>/images/vs_arena/donation-item-img.jpg" alt="donation-item"></div>
                             </div>
                             <div class="col-md-5 col-sm-12 position-relative">
                                 <div class="info">

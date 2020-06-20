@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -56,7 +59,7 @@
                     <div class="info">
                         <div class="wrap">
                             <ul class="breadcrumbs">
-                                <li><a href="index.html">Inicio</a>/</li>
+                                <li><a href="<?php echo $amigable;?>/">Inicio</a>/</li>
                                 <li>Nosotros</li>
                             </ul>
                             <h1>Nosotros</h1>
@@ -88,7 +91,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="trophey-media">
-                        <img src="images/vs_arena/about-us-img.jpg" alt="club-image">
+                        <img src="<?php echo $urlFE;?>/images/vs_arena/about-us-img.jpg" alt="club-image">
                     </div>
                 </div>
                 <!--DESCRIPCION-->
@@ -129,13 +132,13 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-4 text-center">
-                                <img class="sponsor-icons" src="images/common/sponsor-img.png" alt="sponsor-image">
+                                <img class="sponsor-icons" src="<?php echo $urlFE;?>/images/common/sponsor-img.png" alt="sponsor-image">
                             </div>
                             <div class="col-xs-4 text-center">
-                                <img class="sponsor-icons" src="images/common/sponsor-img.png" alt="sponsor-image">
+                                <img class="sponsor-icons" src="<?php echo $urlFE;?>/images/common/sponsor-img.png" alt="sponsor-image">
                             </div>
                             <div class="col-xs-4 text-center">
-                                <img class="sponsor-icons" src="images/common/sponsor-img.png" alt="sponsor-image">
+                                <img class="sponsor-icons" src="<?php echo $urlFE;?>/images/common/sponsor-img.png" alt="sponsor-image">
                             </div>
                         </div>
                     </div>
@@ -145,13 +148,13 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-4 text-center">
-                                <img class="sponsor-icons" src="images/common/sponsor-img.png" alt="sponsor-image">
+                                <img class="sponsor-icons" src="<?php echo $urlFE;?>/images/common/sponsor-img.png" alt="sponsor-image">
                             </div>
                             <div class="col-xs-4 text-center">
-                                <img class="sponsor-icons" src="images/common/sponsor-img.png" alt="sponsor-image">
+                                <img class="sponsor-icons" src="<?php echo $urlFE;?>/images/common/sponsor-img.png" alt="sponsor-image">
                             </div>
                             <div class="col-xs-4 text-center">
-                                <img class="sponsor-icons" src="images/common/sponsor-img.png" alt="sponsor-image">
+                                <img class="sponsor-icons" src="<?php echo $urlFE;?>/images/common/sponsor-img.png" alt="sponsor-image">
                             </div>
                         </div>
                     </div>

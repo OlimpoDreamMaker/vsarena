@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -56,7 +59,7 @@
                     <div class="info">
                         <div class="wrap">
                             <ul class="breadcrumbs">
-                                <li><a href="index.html">Inicio</a>/</li>
+                                <li><a href="<?php echo $amigable;?>/">Inicio</a>/</li>
                                 <li>CAMPEONATO</li>
                             </ul>
                             <h1>CAMPEONATO</h1>
@@ -86,7 +89,7 @@
                 <div class="row">
                     <div class="col-md-5">
                         <div class="club-logo">
-                            <img src="images/vs_arena/champ-logo.png" class="img-responsive" alt="champ image">
+                            <img src="<?php echo $urlFE;?>/images/vs_arena/champ-logo.png" class="img-responsive" alt="champ image">
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -135,70 +138,70 @@
                             <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
-                                    <span class="logo"><img src="images/vs_arena/team-logo1.png" width="80" height="80" alt="team-logo"></span>
+                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" width="80" height="80" alt="team-logo"></span>
                                     <span class="name">Team 1</span>
                                 </a>
                             </div>
                             <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
-                                    <span class="logo"><img src="images/vs_arena/team-logo2.png" width="80" height="80" alt="team-logo"></span>
+                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo2.png" width="80" height="80" alt="team-logo"></span>
                                     <span class="name">Team 2</span>
                                 </a>
                             </div>
                             <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
-                                    <span class="logo"><img src="images/vs_arena/team-logo3.png" width="80" height="80" alt="team-logo"></span>
+                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo3.png" width="80" height="80" alt="team-logo"></span>
                                     <span class="name">Team 3</span>
                                 </a>
                             </div>
                             <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
-                                    <span class="logo"><img src="images/vs_arena/team-logo4.png" width="80" height="80" alt="team-logo"></span>
+                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo4.png" width="80" height="80" alt="team-logo"></span>
                                     <span class="name">Team 4</span>
                                 </a>
                             </div>
                             <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
-                                    <span class="logo"><img src="images/vs_arena/team-logo5.png" width="80" height="80" alt="team-logo"></span>
+                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo5.png" width="80" height="80" alt="team-logo"></span>
                                     <span class="name">Team 5</span>
                                 </a>
                             </div>
                             <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
-                                    <span class="logo"><img src="images/vs_arena/team-logo1.png" width="80" height="80" alt="team-logo"></span>
+                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" width="80" height="80" alt="team-logo"></span>
                                     <span class="name">Team 6</span>
                                 </a>
                             </div>
                             <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
-                                    <span class="logo"><img src="images/vs_arena/team-logo2.png" width="80" height="80" alt="team-logo"></span>
+                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo2.png" width="80" height="80" alt="team-logo"></span>
                                     <span class="name">Team 7</span>
                                 </a>
                             </div>
                             <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
-                                    <span class="logo"><img src="images/vs_arena/team-logo3.png" width="80" height="80" alt="team-logo"></span>
+                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo3.png" width="80" height="80" alt="team-logo"></span>
                                     <span class="name">Team 8</span>
                                 </a>
                             </div>
                             <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
-                                    <span class="logo"><img src="images/vs_arena/team-logo4.png" width="80" height="80" alt="team-logo"></span>
+                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo4.png" width="80" height="80" alt="team-logo"></span>
                                     <span class="name">Team 9</span>
                                 </a>
                             </div>
                             <!--TEAM-->
                             <div class="col-md-3">
                                 <a href="club-stats.html" class="item">
-                                    <span class="logo"><img src="images/vs_arena/team-logo5.png" width="80" height="80" alt="team-logo"></span>
+                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo5.png" width="80" height="80" alt="team-logo"></span>
                                     <span class="name">Team 10</span>
                                 </a>
                             </div>
@@ -217,9 +220,9 @@
                                 <a href="matches.html" class="item">
                                     <span class="championship">National cup - quarterfinal</span>
                                     <span class="teams-wrap">
-                                        <span class="team"><span><img src="images/vs_arena/team-logo1.png" alt="team-logo"></span><span>Valencia Valencia</span></span>
+                                        <span class="team"><span><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" alt="team-logo"></span><span>Valencia Valencia</span></span>
                                         <span class="score"><span>3:2</span></span>
-                                        <span class="team1"><span>Internacional Internacional</span><span><img src="images/vs_arena/team-logo2.png" alt="team-logo"></span></span>
+                                        <span class="team1"><span>Internacional Internacional</span><span><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo2.png" alt="team-logo"></span></span>
                                     </span>
                                     <span class="game-result">(5-4) penalties</span>
                                 </a>
@@ -227,9 +230,9 @@
                                 <a href="matches.html" class="item">
                                     <span class="championship">National cup - quarterfinal</span>
                                     <span class="teams-wrap">
-                                        <span class="team"><span><img src="images/vs_arena/team-logo3.png" alt="team-logo"></span><span>Valencia Valencia</span></span>
+                                        <span class="team"><span><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo3.png" alt="team-logo"></span><span>Valencia Valencia</span></span>
                                         <span class="score"><span>3:2</span></span>
-                                        <span class="team1"><span>Internacional Internacional</span><span><img src="images/vs_arena/team-logo4.png" alt=""></span></span>
+                                        <span class="team1"><span>Internacional Internacional</span><span><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo4.png" alt=""></span></span>
                                     </span>
                                     <span class="game-result">(5-4) penalties</span>
                                 </a>
@@ -237,9 +240,9 @@
                                 <a href="matches.html" class="item">
                                     <span class="championship">National cup - quarterfinal</span>
                                     <span class="teams-wrap">
-                                        <span class="team"><span><img src="images/vs_arena/team-logo5.png" alt="team-logo"></span><span>Valencia Valencia</span></span>
+                                        <span class="team"><span><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo5.png" alt="team-logo"></span><span>Valencia Valencia</span></span>
                                         <span class="score"><span>3:2</span></span>
-                                        <span class="team1"><span>Internacional Internacional</span><span><img src="images/vs_arena/team-logo1.png" alt=""></span></span>
+                                        <span class="team1"><span>Internacional Internacional</span><span><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" alt=""></span></span>
                                     </span>
                                     <span class="game-result">(5-4) penalties</span>
                                 </a>
@@ -247,9 +250,9 @@
                                 <a href="matches.html" class="item">
                                     <span class="championship">National cup - quarterfinal</span>
                                     <span class="teams-wrap">
-                                        <span class="team"><span><img src="images/vs_arena/team-logo1.png" alt="team-logo"></span><span>Valencia Valencia</span></span>
+                                        <span class="team"><span><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" alt="team-logo"></span><span>Valencia Valencia</span></span>
                                         <span class="score"><span>3:2</span></span>
-                                        <span class="team1"><span>Internacional Internacional</span><span><img src="images/vs_arena/team-logo2.png" alt="team-logo"></span></span>
+                                        <span class="team1"><span>Internacional Internacional</span><span><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo2.png" alt="team-logo"></span></span>
                                     </span>
                                     <span class="game-result">(5-4) penalties</span>
                                 </a>
@@ -257,9 +260,9 @@
                                 <a href="matches.html" class="item">
                                     <span class="championship">National cup - quarterfinal</span>
                                     <span class="teams-wrap">
-                                        <span class="team"><span><img src="images/vs_arena/team-logo3.png" alt="team-logo"></span><span>Valencia Valencia</span></span>
+                                        <span class="team"><span><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo3.png" alt="team-logo"></span><span>Valencia Valencia</span></span>
                                         <span class="score"><span>3:2</span></span>
-                                        <span class="team1"><span>Internacional Internacional</span><span><img src="images/vs_arena/team-logo4.png" alt="team-logo"></span></span>
+                                        <span class="team1"><span>Internacional Internacional</span><span><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo4.png" alt="team-logo"></span></span>
                                     </span>
                                     <span class="game-result">(5-4) penalties</span>
                                 </a>
@@ -300,7 +303,7 @@
                                             </tr>
                                             <tr>
                                                 <td class="up">
-                                                    <i class="fa fa-caret-up" aria-hidden="true"></i> 1 <span class="team"><img src="images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"> </span>Team 1
+                                                    <i class="fa fa-caret-up" aria-hidden="true"></i> 1 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"> </span>Team 1
                                                 </td>
                                                 <td>11</td>
                                                 <td>8</td>
@@ -315,11 +318,11 @@
                                                     <span class="win">w</span>
                                                     <span class="win">w</span>
                                                 </td>
-                                                <td><a href="matches.html"><img src="images/vs_arena/team-logo2.png" width="30" height="30" alt="team-logo"></a></td>
+                                                <td><a href="matches.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo2.png" width="30" height="30" alt="team-logo"></a></td>
                                             </tr>
                                             <tr>
                                                 <td class="down">
-                                                    <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="images/vs_arena/team-logo2.png" width="30" height="30" alt="team-logo"> </span>Team 2
+                                                    <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo2.png" width="30" height="30" alt="team-logo"> </span>Team 2
                                                 </td>
                                                 <td>11</td>
                                                 <td>8</td>
@@ -334,11 +337,11 @@
                                                     <span class="win">w</span>
                                                     <span class="lose">l</span>
                                                 </td>
-                                                <td><a href="matches.html"><img src="images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"></a></td>
+                                                <td><a href="matches.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"></a></td>
                                             </tr>
                                             <tr>
                                                 <td class="down">
-                                                    <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="images/vs_arena/team-logo3.png" width="30" height="30" alt="team-logo"> </span>Team 3
+                                                    <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo3.png" width="30" height="30" alt="team-logo"> </span>Team 3
                                                 </td>
                                                 <td>11</td>
                                                 <td>8</td>
@@ -353,11 +356,11 @@
                                                     <span class="win">w</span>
                                                     <span class="win">w</span>
                                                 </td>
-                                                <td><a href="matches.html"><img src="images/vs_arena/team-logo4.png" width="30" height="30" alt=""></a></td>
+                                                <td><a href="matches.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo4.png" width="30" height="30" alt=""></a></td>
                                             </tr>
                                             <tr>
                                                 <td class="down">
-                                                    <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="images/vs_arena/team-logo4.png" width="30" height="30" alt="team-logo"> </span>Team 4
+                                                    <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo4.png" width="30" height="30" alt="team-logo"> </span>Team 4
                                                 </td>
                                                 <td>11</td>
                                                 <td>8</td>
@@ -372,11 +375,11 @@
                                                     <span class="win">w</span>
                                                     <span class="lose">l</span>
                                                 </td>
-                                                <td><a href="matches.html"><img src="images/vs_arena/team-logo3.png" width="30" height="30" alt="team-logo"></a></td>
+                                                <td><a href="matches.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo3.png" width="30" height="30" alt="team-logo"></a></td>
                                             </tr>
                                             <tr>
                                                 <td class="none">
-                                                    <i class="fa fa-circle" aria-hidden="true"></i> 1 <span class="team"><img src="images/vs_arena/team-logo5.png" width="30" height="30" alt="team-logo"> </span>Team 5
+                                                    <i class="fa fa-circle" aria-hidden="true"></i> 1 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo5.png" width="30" height="30" alt="team-logo"> </span>Team 5
                                                 </td>
                                                 <td>11</td>
                                                 <td>8</td>
@@ -391,7 +394,7 @@
                                                     <span class="win">w</span>
                                                     <span class="win">w</span>
                                                 </td>
-                                                <td><a href="matches.html"><img src="images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"></a></td>
+                                                <td><a href="matches.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"></a></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -413,7 +416,7 @@
                                             </tr>
                                             <tr>
                                                 <td class="up">
-                                                    <i class="fa fa-caret-up" aria-hidden="true"></i> 1 <span class="team"><img src="images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"> </span>Team 5
+                                                    <i class="fa fa-caret-up" aria-hidden="true"></i> 1 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"> </span>Team 5
                                                 </td>
                                                 <td>11</td>
                                                 <td>8</td>
@@ -428,11 +431,11 @@
                                                     <span class="win">w</span>
                                                     <span class="win">w</span>
                                                 </td>
-                                                <td><a href="matches.html"><img src="images/vs_arena/team-logo2.png" width="30" height="30" alt="team-logo"></a></td>
+                                                <td><a href="matches.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo2.png" width="30" height="30" alt="team-logo"></a></td>
                                             </tr>
                                             <tr>
                                                 <td class="down">
-                                                    <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="images/vs_arena/team-logo2.png" width="30" height="30" alt="team-logo"> </span>Team 3
+                                                    <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo2.png" width="30" height="30" alt="team-logo"> </span>Team 3
                                                 </td>
                                                 <td>11</td>
                                                 <td>8</td>
@@ -447,11 +450,11 @@
                                                     <span class="win">w</span>
                                                     <span class="lose">l</span>
                                                 </td>
-                                                <td><a href="matches.html"><img src="images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"></a></td>
+                                                <td><a href="matches.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"></a></td>
                                             </tr>
                                             <tr>
                                                 <td class="down">
-                                                    <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="images/vs_arena/team-logo3.png" width="30" height="30" alt="team-logo"> </span>Team 4
+                                                    <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo3.png" width="30" height="30" alt="team-logo"> </span>Team 4
                                                 </td>
                                                 <td>11</td>
                                                 <td>8</td>
@@ -466,11 +469,11 @@
                                                     <span class="win">w</span>
                                                     <span class="win">w</span>
                                                 </td>
-                                                <td><a href="matches.html"><img src="images/vs_arena/team-logo4.png" width="30" height="30" alt=""></a></td>
+                                                <td><a href="matches.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo4.png" width="30" height="30" alt=""></a></td>
                                             </tr>
                                             <tr>
                                                 <td class="down">
-                                                    <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="images/vs_arena/team-logo4.png" width="30" height="30" alt="team-logo"> </span>Team 2
+                                                    <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo4.png" width="30" height="30" alt="team-logo"> </span>Team 2
                                                 </td>
                                                 <td>11</td>
                                                 <td>8</td>
@@ -485,11 +488,11 @@
                                                     <span class="win">w</span>
                                                     <span class="lose">l</span>
                                                 </td>
-                                                <td><a href="matches.html"><img src="images/vs_arena/team-logo3.png" width="30" height="30" alt="team-logo"></a></td>
+                                                <td><a href="matches.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo3.png" width="30" height="30" alt="team-logo"></a></td>
                                             </tr>
                                             <tr>
                                                 <td class="none">
-                                                    <i class="fa fa-circle" aria-hidden="true"></i> 1 <span class="team"><img src="images/vs_arena/team-logo5.png" width="30" height="30" alt="team-logo"> </span>Team 1
+                                                    <i class="fa fa-circle" aria-hidden="true"></i> 1 <span class="team"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo5.png" width="30" height="30" alt="team-logo"> </span>Team 1
                                                 </td>
                                                 <td>11</td>
                                                 <td>8</td>
@@ -504,7 +507,7 @@
                                                     <span class="win">w</span>
                                                     <span class="win">w</span>
                                                 </td>
-                                                <td><a href="matches.html"><img src="images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"></a></td>
+                                                <td><a href="matches.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" width="30" height="30" alt="team-logo"></a></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -526,7 +529,7 @@
                                 <div class="item img-top">
                                     <div class="img-wrap">
                                         <div class="bage highlight">highlight</div>
-                                        <a href="news-single.html"><img src="images/vs_arena/news-list-img.jpg" alt="news-list-img"></a>
+                                        <a href="news-single.html"><img src="<?php echo $urlFE;?>/images/vs_arena/news-list-img.jpg" alt="news-list-img"></a>
                                     </div>
                                     <div class="info">
                                         <a href="news-single.html" class="name">Bauza: Bono and Tolo will start against Intercitulo</a>
@@ -542,7 +545,7 @@
                                 <div class="item img-top">
                                     <div class="img-wrap">
                                         <div class="bage interview">interview</div>
-                                        <a href="news-single.html"><img src="images/vs_arena/news-list-img.jpg" alt="news-list-img"></a>
+                                        <a href="news-single.html"><img src="<?php echo $urlFE;?>/images/vs_arena/news-list-img.jpg" alt="news-list-img"></a>
                                     </div>
                                     <div class="info">
                                         <a href="news-single.html" class="name">Bauza: Bono and Tolo will start against Intercitulo</a>
@@ -558,7 +561,7 @@
                                 <div class="item img-top">
                                     <div class="img-wrap">
                                         <div class="bage interview">interview</div>
-                                        <a href="news-single.html"><img src="images/vs_arena/news-list-img.jpg" alt="news-list-img"></a>
+                                        <a href="news-single.html"><img src="<?php echo $urlFE;?>/images/vs_arena/news-list-img.jpg" alt="news-list-img"></a>
                                     </div>
                                     <div class="info">
                                         <a href="news-single.html" class="name">Bauza: Bono and Tolo will start against Intercitulo</a>
@@ -574,7 +577,7 @@
                                 <div class="item img-top">
                                     <div class="img-wrap">
                                         <div class="bage interview">interview</div>
-                                        <a href="news-single.html"><img src="images/vs_arena/news-list-img.jpg" alt="news-list-img"></a>
+                                        <a href="news-single.html"><img src="<?php echo $urlFE;?>/images/vs_arena/news-list-img.jpg" alt="news-list-img"></a>
                                     </div>
                                     <div class="info">
                                         <a href="news-single.html" class="name">Bauza: Bono and Tolo will start against Intercitulo</a>

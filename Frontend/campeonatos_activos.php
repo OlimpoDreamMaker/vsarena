@@ -1,3 +1,6 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -56,7 +59,7 @@
                     <div class="info">
                         <div class="wrap">
                             <ul class="breadcrumbs">
-                                <li><a href="index.html">Inicio</a>/</li>
+                                <li><a href="<?php echo $amigable?>/">Inicio</a>/</li>
                                 <li>Campeonatos actuales</li>
                             </ul>
                             <h1>Campeonatos actuales</h1>
@@ -80,7 +83,7 @@
                             </div>
                             <div class="col-md-11">
                                 <div class="item-head-body">
-                                    <a href="club-stats.html"><img src="images/vs_arena/team-logo1.png" width="40" height="40" alt="main-match-icon"></a>
+                                    <a href="club-stats.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" width="40" height="40" alt="main-match-icon"></a>
                                     <span class="info">
                                         <span class="what">September, 20 - 27</span>
                                         <span class="then">Champions league</span>
@@ -92,7 +95,7 @@
                     </div>
                     <!--EQUIPOS START-->
                     <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                        <div class="img-wrap"><img src="images/vs_arena/broad-cup-img.jpg" alt="main-match-icon"></div>
+                        <div class="img-wrap"><img src="<?php echo $urlFE;?>/images/vs_arena/broad-cup-img.jpg" alt="main-match-icon"></div>
                         <div class="item-body">
                             <div class="row">
                                 <div class="col-md-12">
@@ -102,69 +105,69 @@
                                             <!--EQUIPO-->
                                             <div class="col-md-3">
                                                 <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo5.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo5.png" width="80" height="80" alt="club-image"></span>
                                                     <span class="name">Djurgardens IF</span>
                                                 </a>
                                             </div>
                                             <!--EQUIPO-->
                                             <div class="col-md-3">
                                                 <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo1.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" width="80" height="80" alt="club-image"></span>
                                                     <span class="name">Djurgardens IF</span>
                                                 </a>
                                             </div>
                                             <!--EQUIPO-->
                                             <div class="col-md-3">
                                                 <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo2.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo2.png" width="80" height="80" alt="club-image"></span>
                                                     <span class="name">Djurgardens IF</span>
                                                 </a>
                                             </div>
                                             <!--EQUIPO-->
                                             <div class="col-md-3">
                                                 <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo3.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo3.png" width="80" height="80" alt="club-image"></span>
                                                     <span class="name">Djurgardens IF</span>
                                                 </a>
                                             </div>
                                             <!--EQUIPO-->
                                             <div class="col-md-3">
                                                 <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo4.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo4.png" width="80" height="80" alt="club-image"></span>
                                                     <span class="name">Djurgardens IF</span>
                                                 </a>
                                             </div>
                                             <!--EQUIPO-->
                                             <div class="col-md-3">
                                                 <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo5.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo5.png" width="80" height="80" alt="club-image"></span>
                                                     <span class="name">Djurgardens IF</span>
                                                 </a>
                                             </div>
                                             <!--EQUIPO-->
                                             <div class="col-md-3">
                                                 <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo2.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo2.png" width="80" height="80" alt="club-image"></span>
                                                     <span class="name">Djurgardens IF</span>
                                                 </a>
                                             </div>
                                             <div class="col-md-3">
                                                 <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo3.png" width="80" height="80" alt="club-image"></span>
-                                                    <span class="name">Djurgardens IF</span>
-                                                </a>
-                                            </div>
-                                            <!--EQUIPO-->
-                                            <div class="col-md-3">
-                                                <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo4.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo3.png" width="80" height="80" alt="club-image"></span>
                                                     <span class="name">Djurgardens IF</span>
                                                 </a>
                                             </div>
                                             <!--EQUIPO-->
                                             <div class="col-md-3">
                                                 <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo5.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo4.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="name">Djurgardens IF</span>
+                                                </a>
+                                            </div>
+                                            <!--EQUIPO-->
+                                            <div class="col-md-3">
+                                                <a href="club-stats.html" class="item">
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo5.png" width="80" height="80" alt="club-image"></span>
                                                     <span class="name">Djurgardens IF</span>
                                                 </a>
                                             </div>
@@ -189,7 +192,7 @@
                             </div>
                             <div class="col-md-11">
                                 <div class="item-head-body">
-                                    <a href="club-stats.html"><img src="images/vs_arena/team-logo1.png" width="40" height="40" alt="main-match-icon"></a>
+                                    <a href="club-stats.html"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" width="40" height="40" alt="main-match-icon"></a>
                                     <span class="info">
                                         <span class="what">September, 20 - 27</span>
                                         <span class="then">Champions league</span>
@@ -201,7 +204,7 @@
                     </div>
                     <!--EQUIPOS START-->
                     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                        <div class="img-wrap"><img src="images/vs_arena/broad-cup-img.jpg" alt="main-match-icon"></div>
+                        <div class="img-wrap"><img src="<?php echo $urlFE;?>/images/vs_arena/broad-cup-img.jpg" alt="main-match-icon"></div>
                         <div class="item-body">
                             <div class="row">
                                 <div class="col-md-12">
@@ -211,70 +214,70 @@
                                             <!--EQUIPO-->
                                             <div class="col-md-3">
                                                 <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo5.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo5.png" width="80" height="80" alt="club-image"></span>
                                                     <span class="name">Djurgardens IF</span>
                                                 </a>
                                             </div>
                                             <!--EQUIPO-->
                                             <div class="col-md-3">
                                                 <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo1.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo1.png" width="80" height="80" alt="club-image"></span>
                                                     <span class="name">Djurgardens IF</span>
                                                 </a>
                                             </div>
                                             <!--EQUIPO-->
                                             <div class="col-md-3">
                                                 <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo2.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo2.png" width="80" height="80" alt="club-image"></span>
                                                     <span class="name">Djurgardens IF</span>
                                                 </a>
                                             </div>
                                             <!--EQUIPO-->
                                             <div class="col-md-3">
                                                 <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo3.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo3.png" width="80" height="80" alt="club-image"></span>
                                                     <span class="name">Djurgardens IF</span>
                                                 </a>
                                             </div>
                                             <!--EQUIPO-->
                                             <div class="col-md-3">
                                                 <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo4.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo4.png" width="80" height="80" alt="club-image"></span>
                                                     <span class="name">Djurgardens IF</span>
                                                 </a>
                                             </div>
                                             <!--EQUIPO-->
                                             <div class="col-md-3">
                                                 <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo5.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo5.png" width="80" height="80" alt="club-image"></span>
                                                     <span class="name">Djurgardens IF</span>
                                                 </a>
                                             </div>
                                             <!--EQUIPO-->
                                             <div class="col-md-3">
                                                 <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo2.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo2.png" width="80" height="80" alt="club-image"></span>
                                                     <span class="name">Djurgardens IF</span>
                                                 </a>
                                             </div>
                                             <!--EQUIPO-->
                                             <div class="col-md-3">
                                                 <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo3.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo3.png" width="80" height="80" alt="club-image"></span>
                                                     <span class="name">Djurgardens IF</span>
                                                 </a>
                                             </div>
                                             <!--EQUIPO-->
                                             <div class="col-md-3">
                                                 <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo4.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo4.png" width="80" height="80" alt="club-image"></span>
                                                     <span class="name">Djurgardens IF</span>
                                                 </a>
                                             </div>
                                             <!--EQUIPO-->
                                             <div class="col-md-3">
                                                 <a href="club-stats.html" class="item">
-                                                    <span class="logo"><img src="images/vs_arena/team-logo5.png" width="80" height="80" alt="club-image"></span>
+                                                    <span class="logo"><img src="<?php echo $urlFE;?>/images/vs_arena/team-logo5.png" width="80" height="80" alt="club-image"></span>
                                                     <span class="name">Djurgardens IF</span>
                                                 </a>
                                             </div>
@@ -297,16 +300,16 @@
                     <div class="row">
                         <!--SPONSOR-->
                         <div class="col-sm-3 col-xs-6 text-center">
-                            <img class="image-width" src="images/common/sponsor-img.png" alt="sponsor-img">
+                            <img class="image-width" src="<?php echo $urlFE;?>/images/common/sponsor-img.png" alt="sponsor-img">
                         </div>
                         <div class="col-sm-3 col-xs-6 text-center">
-                            <img class="image-width" src="images/common/sponsor-img.png" alt="sponsor-img">
+                            <img class="image-width" src="<?php echo $urlFE;?>/images/common/sponsor-img.png" alt="sponsor-img">
                         </div>
                         <div class="col-sm-3 col-xs-6 text-center">
-                            <img class="image-width" src="images/common/sponsor-img.png" alt="sponsor-img">
+                            <img class="image-width" src="<?php echo $urlFE;?>/images/common/sponsor-img.png" alt="sponsor-img">
                         </div>
                         <div class="col-sm-3 col-xs-6 text-center">
-                            <img class="vs_arena-csgo-image image-width" src="images/common/sponsor-img.png" alt="sponsor-img">
+                            <img class="vs_arena-csgo-image image-width" src="<?php echo $urlFE;?>/images/common/sponsor-img.png" alt="sponsor-img">
                         </div>
                     </div>
                 </div>
