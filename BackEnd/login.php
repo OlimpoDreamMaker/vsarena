@@ -1,6 +1,6 @@
 <?php
 
-  require_once("../php/conexionBD.php");
+  require_once("../../BackEnd/config.php");
   $conexion = conectar(); 
 
   $usuario = $_POST['usuario'];
@@ -12,12 +12,12 @@
     session_start();
     $idUser = $user['idUsuario'];
     $_SESSION['usuario'] = $idUser;
-    header("Location: ../templates/usuarios.php");
+    desconectar($conexion);
+    header("Location: $amigable/");
   }else{
-    header("Location: ../index.php?err=123");//no es usuario
+    desconectar($conexion);
+    header("Location: $amigable/login/123/");//no es usuario ?err=123
   }
 
-
-  $desconectar = desconectarBD($conexion);
 
 ?>
