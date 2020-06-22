@@ -10,5 +10,5 @@ $headers = "De:" . $from;
 mail($to,$subject,$message, $headers);
 echo "Email enviado con exito";
 
-desconectarBD($conexion);
+desconectar($conexion);
 ?>

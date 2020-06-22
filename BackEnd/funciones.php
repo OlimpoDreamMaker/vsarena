@@ -142,4 +142,26 @@ function ingresosTotales($conexion){
   }
   return $total;
 }
+//Verificando Existencia de Usuario
+function existeUsuario($conexion,$usuario){
+  $consulta = "SELECT * FROM usuarios";
+  $rs = mysqli_query($conexion, $consulta);
+  while($fila = mysqli_fetch_assoc($rs)){
+    if($fila['usuario'] == $usuario){
+      return true;
+    }
+  }
+  return false;
+}
+//Verificando Existencia de Email
+function existeEmail($conexion,$email){
+  $consulta = "SELECT * FROM usuarios";
+  $rs = mysqli_query($conexion, $consulta);
+  while($fila = mysqli_fetch_assoc($rs)){
+    if($fila['emailUsuario'] == $email){
+      return true;
+    }
+  }
+  return false;
+}
 ?>
