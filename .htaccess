@@ -31,7 +31,7 @@ RewriteRule ^panel/venta-compra/([0-9]+)/$ /VsArena/Dashboard/templates/venta-co
 #Enlaces amigables FrontEnd
 
 RewriteRule ^404$ FrontEnd/404.php
-RewriteRule ^articulo$ FrontEnd/articulo_tda.php
+RewriteRule ^articulo/([0-9]+)/$ FrontEnd/articulo_tda.php?noticia=$1
 RewriteRule ^batallas$ FrontEnd/batallas.php
 RewriteRule ^buscar$ FrontEnd/buscar.php
 RewriteRule ^torneos$ FrontEnd/campeonatos_activos.php
@@ -42,6 +42,7 @@ RewriteRule ^donacion$ FrontEnd/donacion.php
 RewriteRule ^enfrentamiento_cpa$ FrontEnd/enfrentamiento_cpa.php
 RewriteRule ^equipo$ FrontEnd/equipo.php
 RewriteRule ^$ FrontEnd/index.php
+RewriteRule ^/$ FrontEnd/index.php
 RewriteRule ^home$ FrontEnd/index.php
 #RewriteRule ^login$ FrontEnd/login.php
 RewriteRule ^mantenimiento$ FrontEnd/mantenimiento.php

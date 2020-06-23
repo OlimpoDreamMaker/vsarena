@@ -172,4 +172,41 @@ function verificarImg($type){
     return false;
   }
 }
+
+//FUNCIONES PARA EL FRONT END
+//Tags de las Noticias
+function tagsNot($conexion, $id){
+  $consulta = "SELECT * 
+               FROM tags_has_noticias h, tags t 
+               WHERE t.idTag=h.Tags_idTag
+               AND h.Noticias_idNoticia='$id'";
+  $rs = mysqli_query($conexion, $consulta);
+  while($fila = mysqli_fetch_assoc($rs)){
+    echo "<a href='#'>".$fila['tag']."</a>";
+  }
+}
+//Comentarios de las Noticias
+function comentariosNot($conexion,$id,$urlFE){
+  $consulta = "SELECT * 
+               FROM comentarios c, usuarios u
+               WHERE c.Noticias_idNoticia='$id'
+               AND c.Usuarios_idUsuario=u.idUsuario";
+  $rs = mysqli_query($conexion, $consulta);
+  while($fila = mysqli_fetch_assoc($rs)){
+    echo "<div class='comment-item'>";
+      echo "<div class='avatar'>";
+        echo "<img src='$urlFE/images/common/user-avatar.jpg' alt='user-avatar'>";
+      echo "</div>";
+      echo "<div class='info'>";
+        echo "<div class='date'>";
+          echo "<a href='#'>fecha de comentario</a> Por <a href='#'>".$fila['usuario']."</a>";
+        echo "</div>";
+          echo "<p>";
+          echo $fila['contenidoComentario'];
+          echo "</p>";
+          echo "<a href='#' class='reply'>Responder</a>";
+      echo "</div>";
+    echo "</div>";
+  }
+}
 ?>

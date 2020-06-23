@@ -1,5 +1,23 @@
 <?php
 require_once("../BackEnd/config.php");
+require_once("../BackEnd/funciones.php");
+$conexion = conectar();
+if(!isset($_GET['noticia']) AND $_GET['noticia'] == NULL){
+  header("Location: $amigable/noticias");
+}
+$idNoticia = $_GET['noticia'];
+$consulta =  "SELECT * FROM noticias n, usuarios u 
+              WHERE n.idNoticia='$idNoticia' 
+              AND n.Usuarios_idUsuario=u.idUsuario";
+$resultado = mysqli_query($conexion, $consulta);
+$noticia = mysqli_fetch_assoc($resultado);
+$tituloNoticia = $noticia['tituloNoticia'];
+$imgNoticia = $noticia['imgNoticia'];
+$contenidoNoticia = $noticia['contenidoNoticia'];
+$fechaNoticia = $noticia['fechaNoticia'];
+$idUsuario = $noticia['idUsuario'];
+$usuario = $noticia['usuario'];
+desconectar($conexion);
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -34,7 +52,7 @@ require_once("../BackEnd/config.php");
     <meta name="keywords" content="" />
     <!--END METAS LOCALES-->
     <!--START TITULO-->
-    <title>Artículo</title>
+    <title>Artículo <?php echo $tituloNoticia;?></title>
     <!--END TITULO-->
 </head>
 
@@ -294,27 +312,31 @@ require_once("../BackEnd/config.php");
                     <div class="item">
                         <!--NOTICIA-->
                         <div class="top-info">
-                            <div class="date"><a href="#">25 Sep 2016</a> Por <a href="#">Mason Carrington</a></div>
+                            <div class="date"><a href="#">25 Sep 2016</a> Por <a href="#"><?php echo $usuario;?></a></div>
                             <div class="comment-quantity">3 Comentarios</div>
                         </div>
                         <div class="img-wrap">
                             <div class="bage highlight">highlight</div>
-                            <img src="<?php echo $urlFE?>/images/vs_arena/news-list-img.jpg" alt="news-single">
+                            <img src="<?php echo $imagenes;?>/imgNoticias/<?php echo $imgNoticia;?>" alt="news-single">
                         </div>
                         <div class="post-text">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quo excepturi fugit molestiae omnis harum consectetur reprehenderit numquam ipsam magnam molestias, autem possimus libero dolores magni, nisi totam dolorum odio? Next level paleo taxidermy, bespoke messenger bag leggings occupy food truck. <br>Hella pop-up flexitarian, semiotics migas humblebrag schlitz literally tofu deep v thundercats skateboard viral cornhole. Lomo knausgaard truffaut selfies flexitarian, tbh swag kickstarter gastropub mustache readymade artisan keffiyeh gochujang.</p>
-                            <blockquote>
+                            <?php
+                            echo $contenidoNoticia;
+                            ?>
+                            <!-- Ejemplo de blockquote -->
+                            <!--blockquote>
                                 <p>Ogi farm-to-table migas vinyl, semiotics yuccie swag ugh helvetica 8-bit. Austin mustache man bun vice helvetica.</p>
                                 <p class="name">Brandon Campbell</p>
-                            </blockquote>
-                            <p>Fixie four dollar toast meggings, 8-bit letterpress schlitz kale chips vexillologist yr venmo blog kitsch hammock affogato. Tbh kombucha typewriter pug, cliche ramps try-hard. Salvia enamel pin quinoa twee edison bulb, affogato typewriter unicorn cray asymmetrical. Scenester bitters kinfolk, small batch green juice cliche flexitarian poutine fixie cornhole dreamcatcher. Mustache irony pickled schlitz wayfarers tattooed. Kale chips roof party activated charcoal, paleo kogi affogato coloring book direct trade. Blue bottle dreamcatcher cardigan, bicycle rights live-edge shoreditch echo park sartorial deep v heirloom narwhal mumblecore.</p>
+                            </blockquote-->
                             <!--TAGS-->
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="tags">
-                                        <a href="#">Lol</a>
-                                        <a href="#">Esport</a>
-                                        <a href="#">Gaming</a>
+                                        <?php
+                                        $conexion = conectar();
+                                        tagsNot($conexion,$idNoticia);
+                                        desconectar($conexion);
+                                        ?>
                                     </div>
                                 </div>
                             </div>
@@ -363,8 +385,13 @@ require_once("../BackEnd/config.php");
                                         <a href="#" class="reply">Responder</a>
                                     </div>
                                 </div>
+                                <?php
+                                $conexion = conectar();
+                                comentariosNot($conexion,$idNoticia,$urlFE);
+                                desconectar($conexion);
+                                ?>
                                 <!--COMENTARIO RESPUESTA-->
-                                <div class="comment-item answer">
+                                <!--div class="comment-item answer">
                                     <div class="avatar"><img src="<?php echo $urlFE?>/images/common/user-avatar.jpg" alt="user-avatar"></div>
                                     <div class="info">
                                         <div class="date">
@@ -374,9 +401,9 @@ require_once("../BackEnd/config.php");
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quo excepturi fugit molestiae omnis harum consectetur reprehenderit numquam ipsam magnam molestias, autem possimus libero dolores magni, nisi totam dolorum odio?</p>
                                         <a href="#" class="reply">Responder</a>
                                     </div>
-                                </div>
+                                </div-->
                                 <!--COMENTARIO-->
-                                <div class="comment-item">
+                                <!-- <div class="comment-item">
                                     <div class="avatar"><img src="<?php echo $urlFE?>/images/common/user-avatar.jpg" alt="user-avatar"></div>
                                     <div class="info">
                                         <div class="date">
@@ -386,7 +413,7 @@ require_once("../BackEnd/config.php");
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quo excepturi fugit molestiae omnis harum consectetur reprehenderit numquam ipsam magnam molestias, autem possimus libero dolores magni, nisi totam dolorum odio?</p>
                                         <a href="#" class="reply">Responder</a>
                                     </div>
-                                </div>
+                                </div> -->
                                 <!--FORMULARIO-->
                                 <div class="leave-comment-wrap">
                                     <h4>Dejar un comentario</h4>
