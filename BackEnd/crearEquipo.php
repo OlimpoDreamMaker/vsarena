@@ -20,6 +20,6 @@ if(verificarImg($type)){
 }else{
   //El archivo q ingreso no es una imagen
 }
-header("Location $amigable/usuario");
 desconectar($conexion);
+header("Location: $amigable/usuario");
 ?>

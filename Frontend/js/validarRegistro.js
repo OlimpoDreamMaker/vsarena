@@ -1,3 +1,4 @@
+//Validacion Registro START
 //Validando Nombre Usuario
 var usuario = $("#usuario");
 usuario.change(function(e){
@@ -61,3 +62,5 @@ registrarUsuario.click(function(){
     return false;
   }
 })
+//Validacion Registro END
+//USAR O HACER UNO PARA MODIFICAR
