@@ -164,4 +164,12 @@ function existeEmail($conexion,$email){
   }
   return false;
 }
+//Verificar IMG
+function verificarImg($type){
+  if($type=="image/jpeg" OR $type=="image/jpg" OR $type=="image/png" OR $type=="image/gif"){
+    return true;
+  }else{
+    return false;
+  }
+}
 ?>

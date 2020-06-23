@@ -23,10 +23,10 @@ function conectar(){
   $s = 'localhost'; //Servidor
   $u = 'u932243340_154152'; //Root
   $p = '123456789';//Password
-  //$d = 'root';//Base de Datos
-  //$u = 'root'; //Root
-  //$p = '';//Password
   $d = 'u932243340_vsarena';//Base de Datos
+  $u = 'root'; //Root
+  $p = '';//Password
+  $d = 'vsarena';//Base de Datos
   $con = mysqli_connect($s, $u, $p, $d);
   return $con;
 }
