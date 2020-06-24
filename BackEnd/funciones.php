@@ -186,27 +186,94 @@ function tagsNot($conexion, $id){
   }
 }
 //Comentarios de las Noticias
-function comentariosNot($conexion,$id,$urlFE){
+function comentariosNot($conexion,$id,$imagenes){
   $consulta = "SELECT * 
-               FROM comentarios c, usuarios u
+               FROM comentarios c, usuarios u, noregistrados n
                WHERE c.Noticias_idNoticia='$id'
-               AND c.Usuarios_idUsuario=u.idUsuario";
+               AND c.Usuarios_idUsuario=u.idUsuario
+               AND c.NoRegistrados_idNoRegistrado=n.idNoRegistrado
+               ORDER BY c.idComentario ASC";
   $rs = mysqli_query($conexion, $consulta);
+  // var_dump(mysqli_fetch_assoc($rs));
   while($fila = mysqli_fetch_assoc($rs)){
     echo "<div class='comment-item'>";
       echo "<div class='avatar'>";
-        echo "<img src='$urlFE/images/common/user-avatar.jpg' alt='user-avatar'>";
+      if($fila['idUsuario']!=1 AND $fila['idNoRegistrado']==1 ){
+        echo "<img src='$imagenes/avatarUser/".$fila['avatarUsuario']."' alt='user-avatar'>";
+      }else{
+        echo "<img src='$imagenes/avatarUser/pordefecto.png' alt='user-avatar'>";
+      }
       echo "</div>";
       echo "<div class='info'>";
         echo "<div class='date'>";
-          echo "<a href='#'>fecha de comentario</a> Por <a href='#'>".$fila['usuario']."</a>";
+        if($fila['idUsuario']!=1 AND $fila['idNoRegistrado']==0 ){
+          echo "<a href='#'>".fechaTexto($fila['fechaComentario'])."</a> Por <a href='#'>".$fila['usuario']."</a>";
+        }else{
+          echo "<a href='#'>".fechaTexto($fila['fechaComentario'])."</a> Por <a href='#'>".$fila['nombreNoRegistrado']."</a>";
+        }
         echo "</div>";
           echo "<p>";
           echo $fila['contenidoComentario'];
           echo "</p>";
-          echo "<a href='#' class='reply'>Responder</a>";
+          //echo "<a href='#' class='reply'>Responder</a>";
       echo "</div>";
     echo "</div>";
   }
+}
+//Cantidad Comentarios de las Noticias
+function cantidadComenNoticias($conexion,$noticia){
+  $consulta = "SELECT * FROM comentarios WHERE Noticias_idNoticia='$noticia'";
+  $resultado = mysqli_query($conexion, $consulta);
+  return mysqli_num_rows($resultado);
+}
+//Fecha a texto 
+function fechaTexto($fecha){
+  $year = trim(substr($fecha,0,4));
+  $month = trim(substr($fecha,5,2));
+  $day = trim(substr($fecha,8,strlen($fecha)));
+  switch ($month) {
+    case '1':
+      $mes = "Ene";
+      break;
+    case '2':
+      $mes = "Feb";
+      break;
+    case '3':
+      $mes = "Mar";
+      break;
+    case '4':
+      $mes = "Abr";
+      break;
+    case '5':
+      $mes = "May";
+      break;
+    case '6':
+      $mes = "Jun";
+      break;
+    case '7':
+      $mes = "Jul";
+      break;
+    case '8':
+      $mes = "Ago";
+      break;
+    case '9':
+      $mes = "Sep";
+      break;
+    case '10':
+      $mes = "Oct";
+      break;
+    case '11':
+      $mes = "Nov";
+      break;
+    default:
+      $mes = $month;
+      break;
+  }
+  return "$day $mes $year";
+}
+//Fecha HOY
+function fechaHoy(){
+  $hoy = date("Y-m-d"); 
+  return trim($hoy);
 }
 ?>

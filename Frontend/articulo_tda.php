@@ -17,6 +17,7 @@ $contenidoNoticia = $noticia['contenidoNoticia'];
 $fechaNoticia = $noticia['fechaNoticia'];
 $idUsuario = $noticia['idUsuario'];
 $usuario = $noticia['usuario'];
+$avatarUsuario = $noticia['avatarUsuario'];
 desconectar($conexion);
 ?>
 <!DOCTYPE html>
@@ -106,95 +107,10 @@ desconectar($conexion);
                     <!--BUSCAR-->
                     <div class="sidebar-search-wrap">
                         <h6>Buscar</h6>
-                        <form>
+                        <form action="<?php echo $amigable;?>/buscar" method="POST">
                             <div class="wrap">
-                                <input type="text">
-                                <button><i class="fa fa-search" aria-hidden="true"></i></button>
-                            </div>
-                        </form>
-                    </div>
-                    <!--CALENDARIO-->
-                    <div class="sidebar-calendar">
-                        <h6>Calendario</h6>
-                        <div class="widget widget_calendar">
-                            <div id="calendar_wrap" class="calendar_wrap">
-                                <table id="wp-calendar">
-                                    <caption>Mayo 2020</caption>
-                                    <thead>
-                                        <tr>
-                                            <th scope="col" title="Domingo">Do</th>
-                                            <th scope="col" title="Lunes">Lu</th>
-                                            <th scope="col" title="Martes">Ma</th>
-                                            <th scope="col" title="Miercoles">Mi</th>
-                                            <th scope="col" title="Jueves">Ju</th>
-                                            <th scope="col" title="Viernes">Vi</th>
-                                            <th scope="col" title="Sabado">Sa</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td colspan="2" class="pad"> </td>
-                                            <td>1</td>
-                                            <td>2</td>
-                                            <td>3</td>
-                                            <td>4</td>
-                                            <td>5</td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>7</td>
-                                            <td>8</td>
-                                            <td>
-                                                <a href="#calendar" aria-label="Noticia publicada el dia 9, 2020">9</a>
-                                            </td>
-                                            <td>
-                                                <a href="#calendar" aria-label="Noticia publicada el dia 10, 2020">10</a>
-                                            </td>
-                                            <td>11</td>
-                                            <td>12</td>
-                                        </tr>
-                                        <tr>
-                                            <td>13</td>
-                                            <td>14</td>
-                                            <td>15</td>
-                                            <td>16</td>
-                                            <td>17</td>
-                                            <td>18</td>
-                                            <td>19</td>
-                                        </tr>
-                                        <tr>
-                                            <td>20</td>
-                                            <td>21</td>
-                                            <td>22</td>
-                                            <td>23</td>
-                                            <td>24</td>
-                                            <td>25</td>
-                                            <td>26</td>
-                                        </tr>
-                                        <tr>
-                                            <td>27</td>
-                                            <td>28</td>
-                                            <td class="pad" colspan="5"> </td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="3" id="prev" class="pad">Abril</td>
-                                            <td class="pad"> </td>
-                                            <td colspan="3" id="next" class="pad">Junio</td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <!--BUSCAR-->
-                    <div class="sidebar-search-wrap">
-                        <h6>Buscar</h6>
-                        <form>
-                            <div class="wrap">
-                                <input type="text">
-                                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                                <input type="text" name="buscar">
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                             </div>
                         </form>
                     </div>
@@ -312,11 +228,19 @@ desconectar($conexion);
                     <div class="item">
                         <!--NOTICIA-->
                         <div class="top-info">
-                            <div class="date"><a href="#">25 Sep 2016</a> Por <a href="#"><?php echo $usuario;?></a></div>
-                            <div class="comment-quantity">3 Comentarios</div>
+                            <div class="date">
+                                <a href="#"><?php echo fechaTexto($fechaNoticia);?></a> Por <a href="#"><?php echo $usuario;?></a>
+                            </div>
+                            <div class="comment-quantity">
+                            <?php 
+                            $conexion = conectar();
+                            echo cantidadComenNoticias($conexion,$idNoticia)." Comentarios";
+                            desconectar($conexion); 
+                            ?>
+                            </div>
                         </div>
                         <div class="img-wrap">
-                            <div class="bage highlight">highlight</div>
+                            <!-- <div class="bage highlight">highlight</div> -->
                             <img src="<?php echo $imagenes;?>/imgNoticias/<?php echo $imgNoticia;?>" alt="news-single">
                         </div>
                         <div class="post-text">
@@ -344,12 +268,12 @@ desconectar($conexion);
                         <!--AUTOR-->
                         <div class="author-box">
                             <div class="top">
-                                <div class="avatar"><img src="<?php echo $urlFE?>/images/common/author-avatar.jpg" alt="author-avatar"></div>
+                                <div class="avatar"><img src="<?php echo $imagenes?>/avatarUser/<?php echo $avatarUsuario;?>" alt="author-avatar"></div>
                                 <div class="info">
-                                    <div class="name">Mason Carrington</div>
+                                    <div class="name"><?php echo $usuario;?></div>
                                     <p>Lorem ipsum dolor sit amet consectetur</p>
                                 </div>
-                                <div class="share-box">
+                                <!-- <div class="share-box">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="item">
@@ -369,25 +293,14 @@ desconectar($conexion);
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             <!--COMENTARIOS-->
                             <div class="comments-wrap">
                                 <h4>Comentarios</h4>
-                                <div class="comment-item">
-                                    <div class="avatar"><img src="<?php echo $urlFE?>/images/common/user-avatar.jpg" alt="user-avatar"></div>
-                                    <div class="info">
-                                        <div class="date">
-                                            <a href="#">25 Sep 2016</a> Por <a href="#">Ian Finch</a>
-                                            <a href="#" class="quote">#</a>
-                                        </div>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quo excepturi fugit molestiae omnis harum consectetur reprehenderit numquam ipsam magnam molestias, autem possimus libero dolores magni, nisi totam dolorum odio?</p>
-                                        <a href="#" class="reply">Responder</a>
-                                    </div>
-                                </div>
                                 <?php
                                 $conexion = conectar();
-                                comentariosNot($conexion,$idNoticia,$urlFE);
+                                comentariosNot($conexion,$idNoticia,$imagenes);
                                 desconectar($conexion);
                                 ?>
                                 <!--COMENTARIO RESPUESTA-->
@@ -417,41 +330,48 @@ desconectar($conexion);
                                 <!--FORMULARIO-->
                                 <div class="leave-comment-wrap">
                                     <h4>Dejar un comentario</h4>
-                                    <form>
+                                    <form method ="POST" action="<?php echo $urlBE;?>/comentar.php?noticia=<?php echo $idNoticia;?>">
                                         <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="item">
-                                                    <label>
-                                                        <span>Nombre <i>*</i></span>
-                                                        <input type="text" name="name" placeholder="Nombre">
-                                                    </label>
+                                            <?php
+                                            if(!isset($_SESSION['usuario'])){
+                                            ?>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Nombre <i>*</i></span>
+                                                            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                                                        </label>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="item">
-                                                    <label>
-                                                        <span>Correo <i>*</i></span>
-                                                        <input type="email" name="email" placeholder="Correo">
-                                                    </label>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Correo <i>*</i></span>
+                                                            <input type="email" name="email" id="email" placeholder="Correo">
+                                                        </label>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            <?php
+                                            }
+                                            ?>
                                             <div class="col-md-12">
                                                 <div class="item">
                                                     <label>
                                                         <span>Tu comentario</span>
-                                                        <textarea></textarea>
+                                                        <textarea name="comentario" id="comentario"></textarea>
                                                     </label>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
-                                                <button class="comment-submit">Dejar comentario</button>
+                                                <button class="comment-submit" type="submit">Dejar comentario</button>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
-                        <!--NOTICIA END-->
+                    </div>
+                    <!--NOTICIA END-->
                 </section>
                 <!--SECCION NOTICIAS END-->
             </div>

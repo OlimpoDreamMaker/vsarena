@@ -21,26 +21,5 @@
 - venta agregar nombre usuario 
 - descripcion autor
 - mercado pago 
-.htaccess
-Options +FollowSymLinks
-RewriteEngine on
-
-RewriteRule ^blog/([0-9]+)$ templates/blog.php?id=$1
-
-RewriteRule ^cupon/([0-9]+)$ templates/cupon.php?id=$1
-RewriteRule ^equipo/([0-9]+)$ templates/equipo.php?id=$1
-RewriteRule ^grupo/([0-9]+)$ templates/grupo.php?id=$1
-RewriteRule ^juego/([0-9]+)$ templates/juego.php?id=$1
-RewriteRule ^juegos/$ templates/juegos.php
-RewriteRule ^noticia/([0-9]+)$ templates/noticia.php?id=$1
-RewriteRule ^noticias/$ templates/noticias.php
-RewriteRule ^premio/([0-9]+)$ templates/premio.php?id=$1
-RewriteRule ^producto/([0-9]+)$ templates/producto.php?id=$1
-RewriteRule ^rondas/([0-9]+)$ templates/rondas.php?id=$1
-RewriteRule ^tag/([0-9]+)$ templates/tag.php?id=$1
-RewriteRule ^tienda/$ templates/tienda.php
-RewriteRule ^torneo/([0-9]+)$ templates/torneo.php?id=$1
-RewriteRule ^torneos/$ templates/torneos.php
-RewriteRule ^usuario/([0-9]+)$ templates/usuario.php?id=$1
-RewriteRule ^usuarios/$ templates/usuarios.php
-RewriteRule ^venta-compra/([0-9]+)$ templates/venta-compra.php?id=$1
+- crear una tabla de usuarios no registrados q quieran dejar su comentario
+- crear una respuesta para los comentarios, analizar si es mejor un comentario o una tabla q se llame respuesta
