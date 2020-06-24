@@ -1,5 +1,10 @@
 <?php
 require_once("../BackEnd/config.php");
+require_once("../BackEnd/funciones.php");
+$buscar = $_POST['buscar'];
+if(empty($buscar)){
+    header("Location: $amigable");
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -14,7 +19,6 @@ require_once("../BackEnd/config.php");
     <!--START METAS GLOBALES-->
     <?php
     include('estructura/global_meta.php');
-
     ?>
     <!--END METAS GLOBALES-->
     <!--START FUENTES-->
@@ -75,12 +79,12 @@ require_once("../BackEnd/config.php");
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h4>Mostrando resultados de “Tier”</h4>
+                    <h4>Mostrando resultados de “<?php echo $buscar;?>”</h4>
                     <div class="search-field">
-                        <form>
+                    <form action="<?php echo $amigable;?>/buscar" method="POST">
                             <div class="wrap">
-                                <input type="text" value="Tier">
-                                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                                <input type="text" name="buscar" value="<?php echo $buscar;?>">
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                             </div>
                         </form>
                     </div>
@@ -90,42 +94,14 @@ require_once("../BackEnd/config.php");
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <!--ELEMENTO-->
-                    <div class="search-item">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="image"><img class="img-responsive" src="<?php echo $urlFE?>/images/vs_arena/gallery-slide-img.jpg" alt="gallery-slide-img"></div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="info">
-                                    <a href="#" class="name">Phanteon, actualmente mas fuerte que nunca</a>
-                                    <div class="wrap">
-                                        <a href="#">25 Sep 2020</a> Por <a href="#">Arena Admin</a>
-                                    </div>
-                                    <p>Phanteon, actualmente mas fuerte que nunca esta primero en la <span>Tier</span> List</p>
-                                    <a href="#" class="read-more">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--ELEMENTO-->
-                    <div class="search-item">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="image"><img class="img-responsive" src="<?php echo $urlFE?>/images/vs_arena/single-player-photo.jpg" alt="single-player-photo"></div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="info">
-                                    <a href="#" class="name">En busqueda de Sneaky actualmente <span>Tier</span> list main</a>
-                                    <div class="wrap">
-                                        <a href="#">25 Sep 2020</a> Por <a href="#">Arena Admin</a>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae et doloremque necessitatibus reiciendis accusantium alias quas deleniti maxime expedita, quae eligendi, dolores temporibus quasi, amet id non! Quas, temporibus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam repellat sapiente impedit ad totam, dicta libero fuga mollitia beatae explicabo quasi, eaque ipsum rerum amet perferendis repellendus? Rerum, harum consequatur?.</p>
-                                    <a href="#" class="read-more">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php
+                    $conexion = conectar();
+                    buscarNoticias($conexion, $buscar, $amigable, $imagenes);
+                    // buscarJuegos($conexion, $buscar, $amigable, $imagenes);
+                    // buscarProductos($conexion, $buscar, $amigable, $imagenes);
+                    // buscarTorneos($conexion, $buscar, $amigable, $imagenes);
+                    desconectar($conexion);
+                    ?>
                 </div>
             </div>
         </div>

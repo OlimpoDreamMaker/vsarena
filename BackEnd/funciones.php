@@ -276,4 +276,71 @@ function fechaHoy(){
   $hoy = date("Y-m-d"); 
   return trim($hoy);
 }
+
+//BUSQUEDAS FRONT END
+//Buscar Noticas
+function buscarNoticias($conexion, $buscar, $amigable, $imagenes){
+  $consulta = "SELECT * FROM noticias n, usuarios u
+               WHERE (n.tituloNoticia LIKE '%$buscar%' 
+               OR n.contenidoNoticia LIKE '%$buscar%'
+               OR n.fechaNoticia LIKE '%$buscar%'
+               OR u.usuario LIKE '%$buscar%')
+               AND u.idUsuario=n.Usuarios_idUsuario";
+  $rs = mysqli_query($conexion, $consulta);
+  while($fila = mysqli_fetch_assoc($rs)){
+    $idNoticia = $fila['idNoticia'];
+    $idUsuario = $fila['idUsuario'];
+    // $titulo = $fila['tituloNoticia'];
+    // $contenido = $fila['contenidoNoticia'];
+    // $fecha = $fila['fechaNoticia'];
+    // $usuario = $fila['usuario'];
+    if(strpos($fila['tituloNoticia'], $buscar) !== false){
+      $titulo = str_replace($buscar, "<span>$buscar</span>", $fila['tituloNoticia']);
+    }else{
+      $titulo = $fila['tituloNoticia'];
+    }
+    if(strpos($fila['contenidoNoticia'], $buscar) !== false){
+      $contenido = str_replace($buscar, "<span>$buscar</span>", $fila['contenidoNoticia']);
+    }else{
+      $contenido = $fila['contenidoNoticia'];
+    }
+    if(strpos($fila['fechaNoticia'], $buscar) !== false){
+      $fecha = str_replace($buscar, "<span>$buscar</span>", $fila['fechaNoticia']);
+    }else{
+      $fecha = $fila['fechaNoticia'];
+    }
+    if(strpos($fila['usuario'], $buscar) !== false){
+      $usuario = str_replace($buscar, "<span>$buscar</span>", $fila['usuario']);
+    }else{
+      $usuario = $fila['usuario'];
+    }
+    echo "<!--ELEMENTO START-->";
+    echo "<div class='search-item'>";
+      echo "<div class='row'>";
+        echo "<div class='col-md-4'>";
+          echo "<div class='image'>";
+            echo "<img class='img-responsive' src='$imagenes/imgNoticias/".$fila['imgNoticia']."' alt='imagen $titulo' />";
+          echo "</div>";
+        echo "</div>";
+        echo "<div class='col-md-8'>";
+          echo "<div class='info'>";
+            echo "<a href='$amigable/articulo/$idNoticia/' class='name'>$titulo";
+            echo "<div class='wrap'>";
+              echo "<a href='#'>".fechaTexto($fila['fechaNoticia'])."</a> Por <a href='$amigable/perfil/$idUsuario/'>$usuario</a>";
+            echo "</div><div>";
+            if(strlen($contenido)>250){
+              echo substr($contenido, 0, 250);
+            }else{
+              echo $contenido;
+            }
+            echo "</div><a href='$amigable/articulo/$idNoticia/' class='read-more'>Leer Mas</a>";
+          echo "</div>";
+        echo "</div>";
+      echo "</div>";
+    echo "</div>";
+    echo "<!--ELEMENTO END-->";
+  }
+
+}
 ?>
+

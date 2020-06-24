@@ -23,3 +23,6 @@
 - mercado pago 
 - crear una tabla de usuarios no registrados q quieran dejar su comentario
 - crear una respuesta para los comentarios, analizar si es mejor un comentario o una tabla q se llame respuesta
+- agregar categoria a las noticias
+- solucionar error de noticias resumidas (se cierran automaticamente las etiquetas que quedan a mitad)
+- analizar si hacer buscador de juegos y productos y torneos
