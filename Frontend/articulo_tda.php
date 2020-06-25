@@ -209,11 +209,11 @@ desconectar($conexion);
                     <div class="sidebar-tags-wrap">
                         <h6>Tags</h6>
                         <div class="tags">
-                            <a href="#">Grupo</a>
-                            <a href="#">Soporte</a>
-                            <a href="#">TFT</a>
-                            <a href="#">Profesional</a>
-                            <a href="#">LoL</a>
+                            <?php
+                            $conexion = conectar();
+                            tagsNots($conexion,$amigable);
+                            desconectar($conexion);
+                            ?>
                         </div>
                     </div>
                 </section>

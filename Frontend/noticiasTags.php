@@ -1,11 +1,11 @@
 <?php
 require_once("../BackEnd/config.php");
 require_once("../BackEnd/funciones.php");
-if(empty($_GET['pagina'])){
-    $pagina = 1;
-}else{
-    $pagina = $_GET['pagina'];
+if($_GET['tag']==NULL OR $_GET['tag']==""){
+  header("Location: $amigable/noticias");
 }
+$tag = $_GET['tag'];
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -40,7 +40,7 @@ if(empty($_GET['pagina'])){
     <meta name="keywords" content="" />
     <!--END METAS LOCALES-->
     <!--START TITULO-->
-    <title>Noticias</title>
+    <title>Noticias con el tag </title>
     <!--END TITULO-->
 </head>
 
@@ -118,10 +118,10 @@ if(empty($_GET['pagina'])){
                     <!--BUSCADOR-->
                     <div class="sidebar-search-wrap">
                         <h6>Buscar</h6>
-                        <form action="<?php echo $amigable;?>/buscar" method="POST">
+                        <form>
                             <div class="wrap">
-                                <input type="text" name="buscar">
-                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                <input type="text">
+                                <button><i class="fa fa-search" aria-hidden="true"></i></button>
                             </div>
                         </form>
                     </div>
@@ -169,7 +169,7 @@ if(empty($_GET['pagina'])){
                                             <td>13</td>
                                             <td>14</td>
                                             <td>15</td>
-                                            <td>16</td>p
+                                            <td>16</td>
                                             <td>17</td>
                                             <td>18</td>
                                             <td>19</td>
@@ -219,38 +219,20 @@ if(empty($_GET['pagina'])){
                     <p class="hidden-md hidden-lg">
                         <button type="button" class="btn sidebar-btn" data-toggle="offcanvas" title="Toggle sidebar">MENÚ</button>
                     </p>
-                    <?php
-                    $conexion = conectar();
-                    $destacada = noticiaDestacada($conexion);
-                    $consultaDestacada = "SELECT * FROM noticias n, usuarios u 
-                                          WHERE n.idNoticia='$destacada'
-                                          AND u.idUsuario=n.Usuarios_idUsuario";
-                    $rs = mysqli_query($conexion,$consultaDestacada);
-                    $fila = mysqli_fetch_assoc($rs);
-                    $idnoticia_destacada= $fila['idNoticia'];
-                    $img_destacada= $fila['imgNoticia'];
-                    $titulo_destacada = $fila['tituloNoticia'];
-                    $fecha_destacada = $fila['fechaNoticia'];
-                    $usuario_destacada = $fila['usuario'];
-                    $idusuario_destacada = $fila['idUsuario'];
-                    ?>
                     <!--ARTICULO DESTACADO-->
                     <div class="item img-top">
                         <div class="img-wrap">
-                            <div class="bage"><a href=<?php echo $amigable."/articulo/".$idnoticia_destacada."/";?>>Destacado</a></div>
-                            <a href=<?php echo $amigable."/articulo/".$idnoticia_destacada."/";?>><img src="<?php echo $imagenes;?>/imgNoticias/<?php echo $img_destacada;?>" alt="post image"></a>
+                            <div class="bage"><a href="#">Destacado</a></div>
+                            <a href="#"><img src="<?php echo $urlFE;?>/images/vs_arena/news-list-img.jpg" alt="post image"></a>
                         </div>
                         <div class="info">
-                            <!-- <a href=php echo "".$amigable."/articulo/".$idnoticia_destacada."/";?> class="name" id="top_name">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a> -->
+                            <a href="#" class="name" id="top_name">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
                             <div class="wrap">
-                                <a href=<?php echo $amigable."/articulo/".$idnoticia_destacada."/";?>><?php echo fechaTexto($fecha_destacada);?></a> Por <a href=<?php echo $amigable."/perfil/".$idusuario_destacada."/";?>><?php echo $usuario_destacada?></a>
+                                <a href="#">10 may 2020</a> Por <a href="#">Vs Arena Admin</a>
                             </div>
                             <div class="clear"></div>
                         </div>
                     </div>
-                    <?php
-                    noticiasFE($conexion,$amigable,$imagenes,$destacada,$pagina);
-                    ?>
                     <!--ARTICULO-->
                     <div class="item">
                         <div class="info">
@@ -267,10 +249,13 @@ if(empty($_GET['pagina'])){
                     <!--PAGINACION-->
                     <div class="pagination-wrap">
                         <ul class="pagination">
-                            <?php
-                            paginador($conexion,$pagina,$amigable);
-                            desconectar($conexion);
-                            ?>
+                            <li><a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
+                            <li><a href="#">1</a></li>
+                            <li class="active"><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </div>

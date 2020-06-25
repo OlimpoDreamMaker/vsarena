@@ -48,6 +48,7 @@ RewriteRule ^home$ FrontEnd/index.php
 RewriteRule ^mantenimiento$ FrontEnd/mantenimiento.php
 RewriteRule ^nosotros$ FrontEnd/nosotros.php
 RewriteRule ^noticias$ FrontEnd/noticias_blg.php
+RewriteRule ^noticiasTags/([0-9]+)/$ FrontEnd/noticiasTags.php?tag=$1
 RewriteRule ^perfil$ FrontEnd/perfil.php
 RewriteRule ^perfil_cpto$ FrontEnd/perfil_cpto.php
 RewriteRule ^premios$ FrontEnd/premios.php

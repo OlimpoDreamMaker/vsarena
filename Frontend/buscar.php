@@ -1,9 +1,10 @@
 <?php
 require_once("../BackEnd/config.php");
 require_once("../BackEnd/funciones.php");
-$buscar = $_POST['buscar'];
-if(empty($buscar)){
-    header("Location: $amigable");
+if(empty($_POST['buscar'])){
+    $buscar = "";
+}else{
+    $buscar = $_POST['buscar'];
 }
 ?>
 <!DOCTYPE html>
@@ -95,12 +96,14 @@ if(empty($buscar)){
             <div class="row">
                 <div class="col-md-12">
                     <?php
-                    $conexion = conectar();
-                    buscarNoticias($conexion, $buscar, $amigable, $imagenes);
-                    // buscarJuegos($conexion, $buscar, $amigable, $imagenes);
-                    // buscarProductos($conexion, $buscar, $amigable, $imagenes);
-                    // buscarTorneos($conexion, $buscar, $amigable, $imagenes);
-                    desconectar($conexion);
+                    if($buscar!=""){
+                        $conexion = conectar();
+                        buscarNoticias($conexion, $buscar, $amigable, $imagenes);
+                        // buscarJuegos($conexion, $buscar, $amigable, $imagenes);
+                        // buscarProductos($conexion, $buscar, $amigable, $imagenes);
+                        // buscarTorneos($conexion, $buscar, $amigable, $imagenes);
+                        desconectar($conexion);
+                    }
                     ?>
                 </div>
             </div>

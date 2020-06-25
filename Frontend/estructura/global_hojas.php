@@ -3,7 +3,7 @@
     echo
     ("<!--START HOJAS-->
 
-        <link rel='icon' href='favicon.ico' type='image/x-icon' />
+        <link rel='icon' href='$urlFE/favicon.ico' type='image/x-icon' />
         <link href='$urlFE/css/style.min.css' rel='stylesheet' type='text/css' />
         
     <!--END HOJAS-->");

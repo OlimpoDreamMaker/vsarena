@@ -174,7 +174,57 @@ function verificarImg($type){
 }
 
 //FUNCIONES PARA EL FRONT END
-//Tags de las Noticias
+//Noticia destacada
+function noticiaDestacada($conexion){
+  $consulta = "SELECT * FROM noticias";
+  $rs = mysqli_query($conexion, $consulta);
+  $idMax = 0;
+  $comentariosMax = 0;
+  while($fila = mysqli_fetch_assoc($rs)){
+    if($comentariosMax<cantidadComenNoticias($conexion,$fila['idNoticia']) AND $fila['idNoticia']!=1){
+      $idMax=$fila['idNoticia'];
+      $comentariosMax = cantidadComenNoticias($conexion, $fila['idNoticia']);
+    }
+  }
+  return $idMax;
+}
+//Noticias Resumidas
+function noticiasFE($conexion,$amigable,$imagenes,$id,$pagina){
+  $consulta = paginadorNoticias($conexion,$pagina);
+  $rs = mysqli_query($conexion, $consulta);
+  while($fila = mysqli_fetch_assoc($rs)){
+    if($fila['idNoticia']==$id){
+      continue;
+    }
+    echo "<!--ARTICULO-->";
+    echo "<div class='item'>";
+      echo "<div class='info'>";
+        echo "<a href='$amigable/articulo/".$fila['idNoticia']."/' class='name'>".$fila['tituloNoticia']."</a>";
+        echo "<div class='wrap'>";
+          echo "<a href='#'>".fechaTexto($fila['fechaNoticia'])."</a> Por <a href='$amigable/perfil/".$fila['idUsuario']."/'>".$fila['usuario']."</a>";
+        echo "</div>";
+        echo "<div class='comment-quantity'>";
+        echo cantidadComenNoticias($conexion,$fila['idNoticia'])." comentarios";
+        echo "</div>";
+        echo "<br/>";
+        echo "<div class='img-wrap'>";
+          echo "<img src='$imagenes/imgNoticias/".$fila['imgNoticia']."' />";
+        echo "</div>";
+        echo "<div class='clear'></div>";
+        echo "<p>";
+        if(strlen($fila['contenidoNoticia'])>500){
+          echo substr($fila['contenidoNoticia'], 0, 500);
+        }else{
+          echo $fila['contenidoNoticia'];
+        }
+        echo "</p>";
+        echo "<a href='$amigable/articulo/".$fila['idNoticia']."/' class='read-more'>Leer Mas</a>";
+      echo "</div>";
+    echo "</div>";
+  }
+
+}
+//Tags de la Noticia
 function tagsNot($conexion, $id){
   $consulta = "SELECT * 
                FROM tags_has_noticias h, tags t 
@@ -183,6 +233,14 @@ function tagsNot($conexion, $id){
   $rs = mysqli_query($conexion, $consulta);
   while($fila = mysqli_fetch_assoc($rs)){
     echo "<a href='#'>".$fila['tag']."</a>";
+  }
+}
+//Tags de las Noticias
+function tagsNots($conexion,$amigable){
+  $consulta = "SELECT * FROM tags";
+  $rs = mysqli_query($conexion,$consulta);
+  while($fila = mysqli_fetch_assoc($rs)){
+    echo "<a href='$amigable/noticiasTags/".$fila['idTag']."/' >".$fila['tag']."</a>";
   }
 }
 //Comentarios de las Noticias
@@ -342,5 +400,82 @@ function buscarNoticias($conexion, $buscar, $amigable, $imagenes){
   }
 
 }
+//Paginador Noticias
+function paginadorNoticias($conexion,$pagina){
+  $consulta = "SELECT COUNT(*) AS total_registro FROM noticias ";
+  $sql_registe = mysqli_query($conexion,$consulta);
+  $result_register = mysqli_fetch_array($sql_registe);
+  $total_registro = $result_register['total_registro'];
+
+  $por_pagina = 5;
+
+  $desde = ($pagina-1) * $por_pagina;
+  if($total_registro>$por_pagina){
+    $total_paginas = ceil($total_registro / $por_pagina);
+  }else{
+    $total_paginas = $total_registro;
+  }
+  
+
+  return "SELECT * FROM usuarios u, noticias n
+          WHERE n.Usuarios_idUsuario=u.idUsuario
+          LIMIT $desde,$total_paginas";
+
+}
+//Paginador 
+function paginador($conexion,$pagina,$amigable){
+  $consulta = "SELECT COUNT(*) AS total_registro FROM noticias ";
+  $sql_registe = mysqli_query($conexion,$consulta);
+  $result_register = mysqli_fetch_array($sql_registe);
+  $total_registro = $result_register['total_registro'];
+  $por_pagina = 5;
+  $total_paginas = ceil($total_registro / $por_pagina);
+  if($total_registro>$por_pagina){
+    if($pagina != 1){
+      echo "<li>";
+        echo "<a href='$amigable/noticia/".($pagina-1)."/'><i class='fa fa-chevron-left' aria-hidden='true'></i>";
+        echo "</a>";
+      echo "</li>";
+    }else{
+      echo "<li>";
+        echo "<a href='#' class='disabled'><i class='fa fa-chevron-left' aria-hidden='true'></i>";
+        echo "</a>";
+      echo "</li>";
+    }
+    for($i=0;$i<$total_paginas;$i++){
+      if($pagina==$i){
+      echo "<li class='active'>";  
+      }else{
+      echo "<li>";    
+      }
+        echo "<a href='$amigable/noticias/$i/'>$i</a>";
+      echo "</li>";
+    }
+    if($pagina != ($total_paginas-1)){
+      echo "<li>";
+        echo "<a href='$amigable/noticia/".($pagina+1)."/'><i class='fa fa-chevron-right' aria-hidden='true'></i>";
+        echo "</a>";
+      echo "</li>";
+    }else{
+      echo "<li>";
+        echo "<a href='#' class='disabled'><i class='fa fa-chevron-right' aria-hidden='true'></i>";
+        echo "</a>";
+      echo "</li>";
+    }
+  }else{
+    echo "<li>";
+      echo "<a href='#' class='disabled'><i class='fa fa-chevron-left' aria-hidden='true'></i>";
+      echo "</a>";
+    echo "</li>";
+    echo "<li class='active'>";
+      echo "<a href='$amigable/noticias'>1</a>";
+    echo "</li>";
+    echo "<li>";
+      echo "<a href='#' class='disabled'><i class='fa fa-chevron-right' aria-hidden='true'></i>";
+      echo "</a>";
+    echo "</li>";
+  }
+}
 ?>
+
 
