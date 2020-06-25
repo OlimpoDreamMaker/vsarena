@@ -18,6 +18,7 @@ $fechaNoticia = $noticia['fechaNoticia'];
 $idUsuario = $noticia['idUsuario'];
 $usuario = $noticia['usuario'];
 $avatarUsuario = $noticia['avatarUsuario'];
+$descripcionAutor = $noticia['descripcionAdmin'];
 desconectar($conexion);
 ?>
 <!DOCTYPE html>
@@ -258,7 +259,7 @@ desconectar($conexion);
                                     <div class="tags">
                                         <?php
                                         $conexion = conectar();
-                                        tagsNot($conexion,$idNoticia);
+                                        tagsNot($conexion,$idNoticia,$amigable);
                                         desconectar($conexion);
                                         ?>
                                     </div>
@@ -271,7 +272,11 @@ desconectar($conexion);
                                 <div class="avatar"><img src="<?php echo $imagenes?>/avatarUser/<?php echo $avatarUsuario;?>" alt="author-avatar"></div>
                                 <div class="info">
                                     <div class="name"><?php echo $usuario;?></div>
-                                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                                    <?php
+                                    if($descripcionAutor!=NULL){
+                                        echo "<p>$descripcionAutor</p>";
+                                    }
+                                    ?>
                                 </div>
                                 <!-- <div class="share-box">
                                     <div class="row">

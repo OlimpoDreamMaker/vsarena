@@ -7,8 +7,7 @@ ErrorDocument 404 /VsArena/FrontEnd/404.php
 #Enlaces amigables Dashboard
 Options +FollowSymLinks
 RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d 
+
 
 RewriteRule ^panel/$ Dashboard/index.php
 RewriteRule ^panel/([0-9]+)/$ Dashboard/index.php?err=$1

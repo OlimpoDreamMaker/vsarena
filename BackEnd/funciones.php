@@ -232,10 +232,10 @@ function tagsNot($conexion, $id,$amigable){
                AND h.Noticias_idNoticia='$id'";
   $rs = mysqli_query($conexion, $consulta);
   while($fila = mysqli_fetch_assoc($rs)){
-    if(strpos($fila['tag'], " ")===true){ 
-      $urlTag = str_replace(' ', '-', $fila['tag']);
-    }else{
+    if(strpos($fila['tag'], " ")===false){ 
       $urlTag = $fila['tag'];
+    }else{
+      $urlTag = str_replace(' ', '-', $fila['tag']);
     }
     echo "<a href='$amigable/buscar/$urlTag/'>".$fila['tag']."</a>";
   }
