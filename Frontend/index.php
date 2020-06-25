@@ -27,7 +27,6 @@ require_once('../BackEnd/config.php');
 	<!--START HOJAS-->
 	<?php
 	include('estructura/global_hojas.php');
-
 	?>
 	<!--END HOJAS-->
 	<!--START METAS LOCALES-->
@@ -35,7 +34,7 @@ require_once('../BackEnd/config.php');
 	<meta name="keywords" content="" />
 	<!--END METAS LOCALES-->
 	<!--START TITULO-->
-	<title>Index</title>
+	<title>Home</title>
 	<!--END TITULO-->
 </head>
 

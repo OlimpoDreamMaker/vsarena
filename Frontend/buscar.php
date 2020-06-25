@@ -1,10 +1,19 @@
 <?php
 require_once("../BackEnd/config.php");
 require_once("../BackEnd/funciones.php");
-if(empty($_POST['buscar'])){
-    $buscar = "";
+if(empty($_REQUEST['buscar'])){
+    if(empty($_REQUEST['tag'])){
+        $buscar = "";
+    }else{
+        $buscar = $_REQUEST['tag'];
+    }
 }else{
-    $buscar = $_POST['buscar'];
+    $buscar = $_REQUEST['buscar'];
+}
+if(strpos($buscar, "-")===false){
+    
+}else{
+    $buscar = str_replace("-", ' ', $buscar);
 }
 ?>
 <!DOCTYPE html>

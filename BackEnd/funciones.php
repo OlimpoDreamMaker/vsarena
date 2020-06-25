@@ -225,14 +225,19 @@ function noticiasFE($conexion,$amigable,$imagenes,$id,$pagina){
 
 }
 //Tags de la Noticia
-function tagsNot($conexion, $id){
+function tagsNot($conexion, $id,$amigable){
   $consulta = "SELECT * 
                FROM tags_has_noticias h, tags t 
                WHERE t.idTag=h.Tags_idTag
                AND h.Noticias_idNoticia='$id'";
   $rs = mysqli_query($conexion, $consulta);
   while($fila = mysqli_fetch_assoc($rs)){
-    echo "<a href='#'>".$fila['tag']."</a>";
+    if(strpos($fila['tag'], " ")===true){ 
+      $urlTag = str_replace(' ', '-', $fila['tag']);
+    }else{
+      $urlTag = $fila['tag'];
+    }
+    echo "<a href='$amigable/buscar/$urlTag/'>".$fila['tag']."</a>";
   }
 }
 //Tags de las Noticias
@@ -240,7 +245,12 @@ function tagsNots($conexion,$amigable){
   $consulta = "SELECT * FROM tags";
   $rs = mysqli_query($conexion,$consulta);
   while($fila = mysqli_fetch_assoc($rs)){
-    echo "<a href='$amigable/noticiasTags/".$fila['idTag']."/' >".$fila['tag']."</a>";
+    if(strpos($fila['tag'], " ")===false){ 
+      $urlTag = $fila['tag'];
+    }else{
+      $urlTag = str_replace(' ', '-', $fila['tag']);
+    }
+    echo "<a href='$amigable/buscar/$urlTag/'>".$fila['tag']."</a>";
   }
 }
 //Comentarios de las Noticias
@@ -338,12 +348,16 @@ function fechaHoy(){
 //BUSQUEDAS FRONT END
 //Buscar Noticas
 function buscarNoticias($conexion, $buscar, $amigable, $imagenes){
-  $consulta = "SELECT * FROM noticias n, usuarios u
+  $consulta = "SELECT * 
+               FROM noticias n, usuarios u, tags t, tags_has_noticias h 
                WHERE (n.tituloNoticia LIKE '%$buscar%' 
                OR n.contenidoNoticia LIKE '%$buscar%'
                OR n.fechaNoticia LIKE '%$buscar%'
-               OR u.usuario LIKE '%$buscar%')
-               AND u.idUsuario=n.Usuarios_idUsuario";
+               OR u.usuario LIKE '%$buscar%'
+               OR t.tag LIKE '%$buscar%')
+               AND (u.idUsuario=n.Usuarios_idUsuario)
+               AND (n.idNoticia=h.Noticias_idNoticia)
+               AND (h.Tags_idTag=t.idTag)";
   $rs = mysqli_query($conexion, $consulta);
   while($fila = mysqli_fetch_assoc($rs)){
     $idNoticia = $fila['idNoticia'];
@@ -423,8 +437,27 @@ function paginadorNoticias($conexion,$pagina){
 
 }
 //Paginador 
-function paginador($conexion,$pagina,$amigable){
-  $consulta = "SELECT COUNT(*) AS total_registro FROM noticias ";
+function paginador($conexion,$pagina,$amigable,$where,$like){
+  if($where!='' OR $where!="NULL"){
+    $consulta = "SELECT COUNT(*) AS total_registro FROM noticias WHERE '$where'";
+  }elseif ($like!='' OR $like!="NULL") {
+    $consulta = "SELECT COUNT(*) AS total_registro FROM noticias n, usuarios u
+               WHERE (n.tituloNoticia LIKE '%$like%' 
+               OR n.contenidoNoticia LIKE '%$like%'
+               OR n.fechaNoticia LIKE '%$like%'
+               OR u.usuario LIKE '%$like%')
+               AND u.idUsuario=n.Usuarios_idUsuario";
+  }elseif (($where!='' OR $where!="NULL") AND ($like!='' OR $like!="NULL")){
+    $consulta = "SELECT COUNT(*) AS total_registro FROM noticias n, usuarios u
+               WHERE (n.tituloNoticia LIKE '%$like%' 
+               OR n.contenidoNoticia LIKE '%$like%'
+               OR n.fechaNoticia LIKE '%$like%'
+               OR u.usuario LIKE '%$like%')
+               AND (u.idUsuario=n.Usuarios_idUsuario)
+               AND ".$where;
+  }else{
+    $consulta = "SELECT COUNT(*) AS total_registro FROM noticias ";
+  }
   $sql_registe = mysqli_query($conexion,$consulta);
   $result_register = mysqli_fetch_array($sql_registe);
   $total_registro = $result_register['total_registro'];
@@ -463,14 +496,14 @@ function paginador($conexion,$pagina,$amigable){
       echo "</li>";
     }
   }else{
-    echo "<li>";
-      echo "<a href='#' class='disabled'><i class='fa fa-chevron-left' aria-hidden='true'></i>";
+    echo "<li class='disabled'>";
+      echo "<a href='#'><i class='fa fa-chevron-left' aria-hidden='true'></i>";
       echo "</a>";
     echo "</li>";
     echo "<li class='active'>";
       echo "<a href='$amigable/noticias'>1</a>";
     echo "</li>";
-    echo "<li>";
+    echo "<li class='disabled'>";
       echo "<a href='#' class='disabled'><i class='fa fa-chevron-right' aria-hidden='true'></i>";
       echo "</a>";
     echo "</li>";

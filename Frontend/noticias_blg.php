@@ -268,7 +268,7 @@ if(empty($_GET['pagina'])){
                     <div class="pagination-wrap">
                         <ul class="pagination">
                             <?php
-                            paginador($conexion,$pagina,$amigable);
+                            paginador($conexion,$pagina,$amigable,"","");
                             desconectar($conexion);
                             ?>
                         </ul>

@@ -7,6 +7,8 @@ ErrorDocument 404 /VsArena/FrontEnd/404.php
 #Enlaces amigables Dashboard
 Options +FollowSymLinks
 RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d 
 
 RewriteRule ^panel/$ Dashboard/index.php
 RewriteRule ^panel/([0-9]+)/$ Dashboard/index.php?err=$1
@@ -30,10 +32,13 @@ RewriteRule ^panel/venta-compra/([0-9]+)/$ /VsArena/Dashboard/templates/venta-co
 
 #Enlaces amigables FrontEnd
 
+ 
+
 RewriteRule ^404$ FrontEnd/404.php
 RewriteRule ^articulo/([0-9]+)/$ FrontEnd/articulo_tda.php?noticia=$1
 RewriteRule ^batallas$ FrontEnd/batallas.php
 RewriteRule ^buscar$ FrontEnd/buscar.php
+RewriteRule ^buscar/(.*)/$ FrontEnd/buscar.php?tag=$1
 RewriteRule ^torneos$ FrontEnd/campeonatos_activos.php
 RewriteRule ^carrito$ FrontEnd/carrito.php
 RewriteRule ^carrito_checkout$ FrontEnd/carrito_checkout.php
