@@ -274,7 +274,7 @@ desconectar($conexion);
                                     <div class="name"><?php echo $usuario;?></div>
                                     <?php
                                     if($descripcionAutor!=NULL){
-                                        echo "<p>$descripcionAutor</p>";
+                                    echo "<p>$descripcionAutor</p>";
                                     }
                                     ?>
                                 </div>

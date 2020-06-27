@@ -1,6 +1,6 @@
 <?php
-require_once("conexionBD.php");
-require_once("tomarFecha.php");
+require_once("../../BackEnd/config.php");
+require_once("../../BackEnd/funciones.php");
 $conexion = conectar(); 
 $idTag = $_GET['id'];
 $selec = "SELECT * FROM tags WHERE idTag='$idTag'";
@@ -14,5 +14,6 @@ if(isset($_POST['tag']) && $_POST['tag']!=''){
 $consulta = "UPDATE tags SET tag='$tag' WHERE idTag='$idTag'";
 mysqli_query($conexion,$consulta);
 
-$desconectar = desconectarBD($conexion);
+$desconectar = desconectar($conexion);
+header("Location: $amigable/panel/tag/$idTag/");
 ?>

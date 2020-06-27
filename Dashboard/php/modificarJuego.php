@@ -1,5 +1,5 @@
 <?php
-  require_once("conexionBD.php");
+  require_once("../../BackEnd/config.php");
   $conexion = conectar(); 
   $idJuego= $_GET['id'];
   $carpeta = "imgJuegos";
@@ -51,8 +51,8 @@
 
   mysqli_query($conexion,$consulta);
 
-  $desconectar = desconectarBD($conexion);
-  header("Location:../templates/juego.php?id=$idJuego");
+  $desconectar = desconectar($conexion);
+  header("Location: $amigable/panel/juego/$idJuego/");
   //Mostrar Alerta de Juego modificado
 
 ?>

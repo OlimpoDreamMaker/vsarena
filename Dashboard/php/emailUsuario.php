@@ -1,5 +1,5 @@
 <?php
-require_once("conexionBD.php");
+require_once("../../BackEnd/config.php");
 $conexion = conectar();
 
 $from = "vsarena@email.com";//Cambiar y configurar hosting

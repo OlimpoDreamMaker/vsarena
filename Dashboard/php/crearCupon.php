@@ -1,6 +1,6 @@
 <?php
-  require_once("conexionBD.php");
-  require_once("tomarFecha.php");
+  require_once("../../BackeEnd/config.php");
+  require_once("../../BackeEnd/funciones.php");
   $conexion = conectar(); 
 
   $cupon = $_POST['nombreCupon'];
@@ -12,7 +12,7 @@
   
   mysqli_query($conexion, $consulta);   
   
-  $desconectar = desconectarBD($conexion);
-  header("Location: ../templates/tienda.php");
+  $desconectar = desconectar($conexion);
+  header("Location: $amigable/panel/tienda/");
   
 ?>

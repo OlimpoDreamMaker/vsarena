@@ -1,11 +1,11 @@
 <?php
-  require_once("conexionBD.php");
-  require_once("tomarFecha.php");
+  require_once("../../BackEnd/config.php");
+  require_once("../../BackEnd/funciones.php");
   $conexion = conectar(); 
   $idCupon = $_GET['id'];
   $selec = "SELECT * FROM cupones WHERE idCupon='$idCupon'";
   $resultado = mysqli_query($conexion,$selec);
-  $fila = mysqli_fetch_assoc($resultado);
+  $fila = mysqli_fetch_assoc($resultado);//Realizo esto en caso de que el usuario solo haya querido modificar un atributo del cupon, asi lo demas mantenga los mismos datos
   if(isset($_POST['cupon'])){
     $cupon = $_POST['cupon'];
   }else{
@@ -34,7 +34,7 @@
   mysqli_query($conexion,$consulta);
 
   $desconectar = desconectarBD($conexion);
-  header("Location:../templates/cupon.php?id=$idCupon");
+  header("Location:$amigable/panel/cupon/$idCupon/");
   //Mostrar Alerta de Juego modificado
 
 ?>

@@ -1,13 +1,14 @@
 <?php
-  require_once("conexionBD.php");
+  require_once("../../BackEnd/config.php");
   $conexion = conectar(); 
 
   $idEquipo = $_GET['idEquipo']; //Se recibe el ID del usuario a eliminar
 
-  $consulta = "DELETE FROM Equipos WHERE idEquipo='$idEquipo'";
+  $consulta = "DELETE FROM equipos WHERE idEquipo='$idEquipo'";
 
   mysqli_query($conexion, $consulta);   
   
-  $desconectar = desconectarBD($conexion);
+  $desconectar = desconectar($conexion);
+  header("Location: $amigable/panel/usuarios/"); 
   
 ?>

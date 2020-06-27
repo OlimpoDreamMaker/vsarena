@@ -18,7 +18,7 @@ class Auth{
       $hybridAuth = new Hybrid_Auth(__DIR__.'\redes.php');
       $adapter = $hybridAuth->authenticate($service);
       $userProfile = $adapter->getUserProfile();
-      self::storeUser($service,$userProfile)
+      self::storeUser($service,$userProfile);
       //Redireccionar usuario
       header("Location: http://localhost/VSARENA/");
     }

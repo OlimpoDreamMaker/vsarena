@@ -28,11 +28,11 @@ echo ("<!--NAV START-->
 					</li>
 					<li class='login'>
 						<a href='#'><span><i class='fa fa-user' aria-hidden='true'></i></span></a>
-                    </li>
-                    <li>
+          </li>
+					<li>
 						<a href='$amigable/registro'><span>Regístrate</span></a>
-                    </li>
-                    <li>
+					</li>
+					<li>
 						<a href='$amigable/buscar'><span>BUSQUEDA</span></a>
 					</li>
 					<!-- SUBMENUES 

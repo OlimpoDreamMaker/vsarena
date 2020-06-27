@@ -1,5 +1,5 @@
 <?php
-  require_once("conexionBD.php");
+  require_once("../../BackeEnd/config.php");
   $conexion = conectar(); 
 
   $carpeta = "imgJuegos";
@@ -9,7 +9,7 @@
   $foto = $_FILES["foto"]["name"];
   $type = $_FILES["foto"]["type"];
   $origen = $_FILES["foto"]["tmp_name"]; 
-  $destino = "../../$carpeta/$foto";
+  $destino = "../../$imagenes/$carpeta/$foto";
   if($type=="image/jpeg" OR $type=="image/jpg" OR $type=="image/png" OR $type=="image/gif"){
     move_uploaded_file($origen, $destino);
     $consulta = "INSERT INTO juegos(juego,descripcionJuego,plataforma, imgJuego) VALUES ('$juego', '$descripcion', '$plataforma', '$foto')";
@@ -19,8 +19,8 @@
 
   mysqli_query($conexion, $consulta);   
   
-  $desconectar = desconectarBD($conexion);
-  header("Location:../templates/juegos.php");
+  $desconectar = desconectar($conexion);
+  header("Location: $amigable/panel/juegos/");
   //Mostrar Alerta de Juego creado
   
 ?>

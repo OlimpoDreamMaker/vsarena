@@ -1,6 +1,6 @@
 <?php
 
-  require_once("../../BackEnd/config.php");
+  require_once("./config.php");
   $conexion = conectar(); 
 
   $usuario = $_POST['usuario'];

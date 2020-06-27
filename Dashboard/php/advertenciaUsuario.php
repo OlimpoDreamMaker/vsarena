@@ -1,5 +1,5 @@
 <?php
-require_once("conexionBD.php");
+require_once("../../BackeEnd/config.php");
 $conexion = conectar();
 $idUsuario = $_GET['id'];
 $consulta =  "SELECT * 
@@ -15,5 +15,5 @@ $headers = "De:" . $from;
 mail($to,$subject,$message, $headers);
 echo "Email enviado con exito";
 
-desconectarBD($conexion);
+desconectar($conexion);
 ?>

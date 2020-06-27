@@ -1,5 +1,5 @@
 <?php
-  require_once("conexionBD.php");
+  require_once("../../BackEnd/config.php");
   $conexion = conectar(); 
 
   $tag = $_POST['tag'];
@@ -7,8 +7,8 @@
 
   mysqli_query($conexion, $consulta);   
   
-  $desconectar = desconectarBD($conexion);
-  header("Location:../templates/noticias.php");
+  $desconectar = desconectar($conexion);
+  header("Location: $amigable/panel/noticias/");
   //Mostrar Alerta de Juego creado
   
 ?>

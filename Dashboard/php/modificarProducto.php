@@ -1,5 +1,5 @@
 <?php
-  require_once("conexionBD.php");
+  require_once("../../BackEnd/config.php");
   $conexion = conectar(); 
   $idProducto= $_GET['id'];
   $carpeta = "imgProductos";
@@ -67,8 +67,8 @@
 
   mysqli_query($conexion,$consulta);
 
-  $desconectar = desconectarBD($conexion);
-  header("Location:../templates/producto.php?id=$idProducto");
+  $desconectar = desconectar($conexion);
+  header("Location: $amigable/panel/producto/$idProducto/");
   //Mostrar Alerta de producto modificado
 
 ?>

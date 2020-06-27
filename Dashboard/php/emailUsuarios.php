@@ -1,8 +1,8 @@
 <?php
-require_once("conexionBD.php");
+require_once("../../BackEnd/config.php");
 $conexion = conectar();
 $from = "vsarena@email.com";//Cambiar y configurar hosting
-$to = "pegasotirius@gmail.com";//email de todos los usuarios
+$to = "";//email de todos los usuarios
 $subject = $_POST['asunto'];
 $message = $_POST['mensaje'];
 $headers = "De:" . $from;

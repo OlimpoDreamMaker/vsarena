@@ -1,5 +1,5 @@
 <?php
-  require_once("conexionBD.php");
+  require_once("../../BackeEnd/config.php");
   $conexion = conectar(); 
 
   $carpeta = "imgProductos";
@@ -11,7 +11,7 @@
   $foto = $_FILES["foto"]["name"];
   $type = $_FILES["foto"]["type"];
   $origen = $_FILES["foto"]["tmp_name"]; 
-  $destino = "../../$carpeta/$foto";
+  $destino = "../../$imagenes/$carpeta/$foto";
   if($type=="image/jpeg" OR $type=="image/jpg" OR $type=="image/png" OR type=="image/gif"){
     move_uploaded_file($origen, $destino);
     $consulta = "INSERT INTO productos(producto,precioEfectivo,precioMonVirtual,stock,descripcion,imgProducto, Cupones_idCupones) VALUES ('$producto', '$precioEfectivo', '$precioMonVirtual','$stock', '$descripcion', '$foto', '1')";
@@ -23,6 +23,6 @@
   mysqli_query($conexion, $consulta);   
   
   $desconectar = desconectarBD($conexion);
-  header("Location:../templates/tienda.php");
+  header("Location: $amigable/panel/tienda/");
   
 ?>

@@ -1,6 +1,6 @@
 <?php
   //Cancelar Torneo
-  require_once("conexionBD.php");
+  require_once("../../BackeEnd/config.php");
   $conexion = conectar(); 
 
   $idTorneo = $_GET['id']; //Se recibe el ID del usuario a eliminar
@@ -14,14 +14,14 @@
                   estado='Cancelado'
                   WHERE idTorneo='$idTorneo";
     mysqli_query($conexion, $consulta);   
-    $desconectar = desconectarBD($conexion);
-    header("Location: ../templates/torneo.php?id=$idTorneo");
+    $desconectar = desconectar($conexion);
+    header("Location: $amigable/panel/torneo/$idTorneo/");
     //Hacer alert
     //Torneo Cancelado
   }else{
     echo "<script>alert('Usuario o contraseña incorrecto')</script>";
-    $desconectar = desconectarBD($conexion);
-    header("Location: ../templates/torneo.php?id=$idTorneo");
+    $desconectar = desconectar($conexion);
+    header("Location: $amigable/panel/torneo/$idTorneo/");
   }
 
   

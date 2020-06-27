@@ -1,7 +1,7 @@
 <?php
-  require_once("conexionBD.php");
+  require_once("../../BackEnd/config.php");
+  require_once("../../BackEnd/funciones.php");
   require_once("estadoTorneo.php");
-  require_once("tomarFecha.php");
   $conexion = conectar(); 
 
   $torneo = $_POST['nombreTorneo'];
@@ -25,7 +25,7 @@
   
   mysqli_query($conexion, $consulta);   
   
-  $desconectar = desconectarBD($conexion);
-  header("Location: ../templates/torneos.php");
+  $desconectar = desconectar($conexion);
+  header("Location: $amigable/panel/torneos/");
   
 ?>

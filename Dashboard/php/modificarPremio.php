@@ -1,6 +1,6 @@
 <?php
-  require_once("conexionBD.php");
-  require_once("tomarFecha.php");
+  require_once("../../BackEnd/config.php");
+  require_once("../../BackEnd/funciones.php");
   $conexion = conectar(); 
   $idPremio = $_GET['id'];
   $selec = "SELECT * FROM premios p, torneos t
@@ -50,8 +50,8 @@
 
   mysqli_query($conexion,$consulta);
 
-  $desconectar = desconectarBD($conexion);
-  header("Location:../templates/premio.php?id=$idPremio");
+  $desconectar = desconectar($conexion);
+  header("Location: $amigable/panel/premio/$idPremio/");
   //Mostrar Alerta de Torneo modificado
 
 ?>

@@ -1,5 +1,5 @@
 <?php
-  require_once("conexionBD.php");
+  require_once("../../BackEnd/congfig.php");
   $conexion = conectar(); 
 
   $idPremio = $_GET['id']; //Se recibe el ID del premio a eliminar
@@ -10,12 +10,12 @@
   if($resultado = mysqli_query($conexion, $consulta)){
     $consulta = "DELETE FROM premios WHERE idPremio='$idPremio'";
     mysqli_query($conexion, $consulta);   
-    $desconectar = desconectarBD($conexion);
-    header("Location: ../templates/torneos.php");
+    $desconectar = desconectar($conexion);
+    header("Location: $amigable/panel/torneos/");
   }else{
     echo "<script>alert('Usuario o contraseña incorrecto')</script>";
-    $desconectar = desconectarBD($conexion);
-    header("Location: ../templates/premio.php?id=$idPremio");
+    $desconectar = desconectar($conexion);
+    header("Location: $amigable/panel/premio/$idPremio/");
   }  
 
   

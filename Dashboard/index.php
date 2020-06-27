@@ -51,7 +51,7 @@ require_once("../BackEnd/config.php");
       </p>
 
       <!-- Form START -->
-      <form action="./php/login.php" method="POST">
+      <form action="<?php echo $urlBE;?>/login.php" method="POST">
         <!-- Input Cuenta START -->
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="Cuenta" name="usuario" id="usuario" required>

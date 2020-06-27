@@ -1,6 +1,6 @@
 <?php
 require_once('../BackEnd/config.php');
-
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="es">

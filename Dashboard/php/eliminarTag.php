@@ -1,5 +1,5 @@
 <?php
-  require_once("conexionBD.php");
+  require_once("../../BackEnd/config.php");
   $conexion = conectar(); 
 
   $idTag = $_GET['id']; //Se recibe el ID del producto a eliminar
@@ -10,12 +10,13 @@
   if($resultado = mysqli_query($conexion, $consulta)){
     $consulta = "DELETE FROM tags WHERE idTag='$idTag'";
     mysqli_query($conexion, $consulta);   
-    header("../templates/noticias.php");
+    $desconectar = desconectar($conexion);
+    header("Location: $amigable/panel/noticias/");
   }else{
     echo "<script>alert('Usuario o contraseña incorrecto')</script>";
-    header("../templates/tag.php?id=$idTag");
+    $desconectar = desconectar($conexion);
+    header("Location: $amigable/panel/tag/$idTag/");
   }  
   
-  $desconectar = desconectarBD($conexion);
-  
+
 ?>

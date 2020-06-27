@@ -1,5 +1,5 @@
 <?php
-  require_once("conexionBD.php");
+  require_once("../../BackEnd/config.php");
   $conexion = conectar(); 
 
 
@@ -41,6 +41,6 @@
     mysqli_query($conexion, $consulta);   
   }
 
-  $desconectar = desconectarBD($conexion);
+  $desconectar = desconectar($conexion);
   
 ?>

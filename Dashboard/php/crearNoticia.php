@@ -1,6 +1,6 @@
 <?php
-  require_once("conexionBD.php");
-  require_once("tomarFecha.php");
+  require_once("../../BackEnd/config.php");
+  require_once("../../BackEnd/funciones.php");
   $conexion = conectar(); 
 
   $idAutor = $_GET['autor'];
@@ -13,7 +13,7 @@
   $foto = $_FILES["foto"]["name"];
   $type = $_FILES["foto"]["type"];
   $origen = $_FILES["foto"]["tmp_name"]; 
-  $destino = "../../$carpeta/$foto";
+  $destino = "../../$imagenes/$carpeta/$foto";
   $tags = $_POST["tags"];
   if($type=="image/jpeg" OR $type=="image/jpg" OR $type=="image/png" OR type=="image/gif"){
     move_uploaded_file($origen, $destino);
@@ -36,8 +36,8 @@
     }
   }
   
-  $desconectar = desconectarBD($conexion);
-  header("Location:../templates/noticias.php");
+  $desconectar = desconectar($conexion);
+  header("Location: $amigables/panel/noticias/");
   //Mostrar Alerta de noticia creado
   
 ?>

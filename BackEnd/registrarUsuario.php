@@ -12,5 +12,10 @@ if(existeEmail($conexion,$email)){
 }
 $pass = $_POST['pass'];
 $fecha = $_POST['nacimiento'];
-$consulta = "INSERT INTO usuarios(usuario,emailUsuario,fechaNacimiento,passUsuario,saldoEfectivo,saldoMonVir,isAdmin,Cupones_idCupon) VALUES ('$usuario', '$email', '$fecha','$pass', '0', '0','0','1')";
+$consulta = "INSERT INTO usuarios(usuario,emailUsuario,fechaNacimiento,passUsuario,saldoEfectivo,saldoMonVir,isAdmin,Cupones_idCupon,Equipos_idEquipo) VALUES ('$usuario', '$email', '$fecha','$pass', '0', '0','0','1','1')";
+mysqli_query($conexion,$consulta);
+desconectar($conexion);
+session_start();
+$_SESSION['usuario'] = mysqli_last_id($conexion);
+header("Location: $amigable/");
 ?>

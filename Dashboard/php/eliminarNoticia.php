@@ -1,5 +1,5 @@
 <?php
-  require_once("conexionBD.php");
+  require_once("../../BackEnd/congfig.php");
   $conexion = conectar(); 
 
   $idNoticia = $_GET['id']; //Se recibe el ID de la noticia a eliminar
@@ -17,16 +17,15 @@
 
     $subconsulta = "DELETE FROM noticias WHERE idNoticia='$idNoticia' AND Usuarios_idUsuario='$autor'";
     mysqli_query($conexion, $subconsulta);   
-    
-    header("Location: ../templates/noticias.php");
+    $desconectar = desconectar($conexion);
+    header("Location: $amigable/panel/noticias/");
   }else{
-    echo "<br>Entre a el ELSE</hr>";
+    $desconectar = desconectar($conexion);
     echo "<script>alert('Usuario o contraseña incorrecto')</script>";
-    //header("Location ../templates/noticia.php?id=$idNoticia");
+    header("Location $amigable/panel/noticia/$idNoticia/");
   }
   //Agregar modal o alert q avise q se elmino la noticia
   
-  
-  $desconectar = desconectarBD($conexion);
+
   
 ?>

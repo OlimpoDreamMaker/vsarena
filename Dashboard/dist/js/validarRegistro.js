@@ -13,7 +13,7 @@ usuario.change(function(e){
 var pass = $("#pass");
 pass.change(function(e){
   e.preventDefault(e);
-  if(pass.val() == "" || pass.val() == null || pass.val().length<8 || pass.val().match(/[a-z]/) || pass.val().match(/[A-Z]/) || pass.val().match(/\d/)){
+  if(pass.val() == "" || pass.val() == null || pass.val().length<8 || !pass.val().match(/[a-z]/) || !pass.val().match(/[A-Z]/) || !pass.val().match(/\d/)){
     pass.css("border-color", "red");
   }else{
     pass.css("border-color", "green");
@@ -24,9 +24,9 @@ var pass1 = $("#pass1");
 pass1.change(function(e){
   e.preventDefault(e);
   if(pass.val() != pass1.val()){
-    pass.css("border-color", "red");
+    pass1.css("border-color", "red");
   }else{
-    pass.css("border-color", "green");
+    pass1.css("border-color", "green");
   }
 })
 //Validando email

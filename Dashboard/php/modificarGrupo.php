@@ -1,5 +1,5 @@
 <?php
-  require_once("conexionBD.php");
+  require_once("../../BackEnd/config.php");
   $conexion = conectar(); 
   $idGrupo= $_GET['id'];
   $grupo = $_POST['nombreGrupo'];
@@ -10,8 +10,8 @@
 
   mysqli_query($conexion,$consulta);
 
-  $desconectar = desconectarBD($conexion);
-  header("Location:../templates/grupo.php?id=$idGrupo");
+  $desconectar = desconectar($conexion);
+  header("Location: $amigable/panel/grupo/$idGrupo/");
   //Mostrar Alerta de Juego modificado
 
 ?>

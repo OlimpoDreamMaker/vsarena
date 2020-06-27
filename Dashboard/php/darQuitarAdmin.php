@@ -1,5 +1,5 @@
 <?php
-  require_once("conexionBD.php");
+  require_once("../../BackEnd/config.php");
   $conexion = conectar(); 
   $idUsuario = $_GET['id'];
   $selec = "SELECT * FROM usuarios WHERE idUsuario='$idUsuario'";
@@ -19,12 +19,12 @@
                   isAdmin='$newValor'
                   WHERE idUsuario='$idUsuario";
     mysqli_query($conexion, $consulta);   
-    header("Location:../templates/usuario.php?id=$idUsuario");
-    $desconectar = desconectarBD($conexion);
+    header("Location: $amigable/panel/usuario/$idUsuario/");
+    $desconectar = desconectar($conexion);
   }else{
     echo "<script>alert('Usuario o contraseña incorrecto')</script>";
-    header("Location:../templates/usuario.php?id=$idUsuario");
-    $desconectar = desconectarBD($conexion);
+    header("Location: $amigable/panel/usuario/$idUsuario/");
+    $desconectar = desconectar($conexion);
   }
 
   //Mostrar Alerta de Juego modificado

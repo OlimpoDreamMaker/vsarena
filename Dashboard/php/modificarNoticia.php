@@ -1,5 +1,5 @@
 <?php
-  require_once("conexionBD.php");
+  require_once("../../BackEnd/config.php");
   $conexion = conectar(); 
   $idNoticia = $_GET['id'];
 
@@ -118,8 +118,8 @@
   var_dump($tagsPost);
   echo "<br>TAGS NOTICIAS</hr>";
   var_dump($obteniendoTags);
-  $desconectar = desconectarBD($conexion);
-  header("Location:../templates/noticia.php?id=$idNoticia");
+  $desconectar = desconectar($conexion);
+  header("Location: $amigable/panel/noticia/$idNoticia/");
   //Mostrar Alerta de Noticia modificado
 
 ?>

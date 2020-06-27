@@ -1,5 +1,5 @@
 <?php
-  require_once("conexionBD.php");
+  require_once("../../BackEnd/config.php");
   $conexion = conectar(); 
 
   $idProducto = $_GET['id']; //Se recibe el ID del producto a eliminar
@@ -10,12 +10,14 @@
   if($resultado = mysqli_query($conexion, $consulta)){
     $consulta = "DELETE FROM productos WHERE idProducto='$idProducto'";
     mysqli_query($conexion, $consulta);   
-    header("../templates/productos.php");
+    $desconectar = desconectar($conexion);
+    header("Location: $amigable/panel/productos/");
   }else{
     echo "<script>alert('Usuario o contraseña incorrecto')</script>";
-    header("../templates/productos.php");
+    $desconectar = desconectar($conexion);
+    header("Location: $amigable/panel/producto/$idProducto/");
   }  
   
-  $desconectar = desconectarBD($conexion);
+  
   
 ?>
