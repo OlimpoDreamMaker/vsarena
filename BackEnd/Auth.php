@@ -1,10 +1,13 @@
 <?php
+// Import
+use Hybridauth\Hybridauth;
+
 class Auth{
 
   protected static $allow = ['Facebook', 'Google'];
 
   protected static function issetRequest(){
-    if(issest($_GET['login'])){
+    if(isset($_GET['login'])){
       if(in_array($_GET['login'], self::$allow)){
         return true;
       }
@@ -15,7 +18,7 @@ class Auth{
   public static function getuserAuth(){
     if(self::issetRequest()){
       $service = $_GET['login'];
-      $hybridAuth = new Hybrid_Auth(__DIR__.'\redes.php');
+      $hybridAuth = new Hybridauth(__DIR__.'\redes.php');
       $adapter = $hybridAuth->authenticate($service);
       $userProfile = $adapter->getUserProfile();
       self::storeUser($service,$userProfile);

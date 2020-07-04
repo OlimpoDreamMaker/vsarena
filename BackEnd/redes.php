@@ -1,7 +1,7 @@
 <?php
 //Callback redes sociales
 return array(
-  "base_url" => "http://localhost/VSARENA/BackEnd/hydridauth.php",
+  "callback" => "http://localhost/VSARENA/BackEnd/hydridauth.php",
   "providers" => array(
     "Twitter" => array(
       "enabled" => true,
