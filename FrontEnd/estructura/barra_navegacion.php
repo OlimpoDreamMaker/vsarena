@@ -25,10 +25,10 @@ echo ("<!--NAV START-->
 					</li>
 					<li>
 						<a href='$amigable/noticias><span>Noticias</span></a>
-					</li>
-					<li class='login'>
+							</li>
+							<li class='login'>
 						<a href='#'><span><i class='fa fa-user' aria-hidden='true'></i></span></a>
-          </li>
+					</li>
 					<li>
 						<a href='$amigable/registro'><span>Regístrate</span></a>
 					</li>
