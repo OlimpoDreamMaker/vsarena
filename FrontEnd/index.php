@@ -27,6 +27,7 @@ session_start();
 	<!--START HOJAS-->
 	<?php
 	include('estructura/global_hojas.php');
+
 	?>
 	<!--END HOJAS-->
 	<!--START METAS LOCALES-->

@@ -15,7 +15,7 @@ echo ("<!--NAV START-->
 			<div class='collapse navbar-collapse' id='team-menu'>
 				<ul class='main-menu nav'>
 					<li>
-						<a href='$amigable/torneos'><span>Torneos</span></a>
+						<a href='$amigable/torneos'><span>Torneos2</span></a>
 					</li>
 					<li>
 						<a href='$amigable/tienda'><span>Tienda</span></a>
@@ -25,10 +25,10 @@ echo ("<!--NAV START-->
 					</li>
 					<li>
 						<a href='$amigable/noticias><span>Noticias</span></a>
-					</li>
-					<li class='login'>
+							</li>
+							<li class='login'>
 						<a href='#'><span><i class='fa fa-user' aria-hidden='true'></i></span></a>
-          </li>
+					</li>
 					<li>
 						<a href='$amigable/registro'><span>Regístrate</span></a>
 					</li>

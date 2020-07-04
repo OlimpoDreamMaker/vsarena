@@ -22,4 +22,3 @@ if(verificarImg($type)){
 }
 desconectar($conexion);
 header("Location: $amigable/usuario");
-?>

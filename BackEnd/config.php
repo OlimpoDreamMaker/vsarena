@@ -35,4 +35,3 @@ function desconectar($conexion){
   $desconectar = mysqli_close($conexion) or die("Ocurrio un error");
   return $desconectar;
 }
-?>
