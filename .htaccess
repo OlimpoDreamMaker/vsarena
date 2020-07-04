@@ -32,8 +32,6 @@ RewriteRule ^panel/venta-compra/([0-9]+)/$ /VsArena/Dashboard/templates/venta-co
 
 #Enlaces amigables FrontEnd
 
- 
-
 RewriteRule ^404$ FrontEnd/404.php
 RewriteRule ^articulo/([0-9]+)/$ FrontEnd/articulo_tda.php?noticia=$1
 RewriteRule ^batallas$ FrontEnd/batallas.php

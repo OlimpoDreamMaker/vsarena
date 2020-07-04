@@ -1,5 +1,5 @@
 <?php
-
+  // Login Dasboard
   require_once("./config.php");
   $conexion = conectar(); 
 
@@ -13,10 +13,15 @@
     $idUser = $user['idUsuario'];
     $_SESSION['usuario'] = $idUser;
     desconectar($conexion);
-    header("Location: $amigable/");
+    if ($user['isAdmin']) {
+      header("Location: $amigable/panel/usuarios/");
+    } else {
+      header("Location: $amigable/");
+    }
+    
   }else{
     desconectar($conexion);
-    header("Location: $amigable/login/123/");//no es usuario ?err=123
+    header("Location: $amigable/panel/123/");//no es usuario ?err=123
   }
 
 
