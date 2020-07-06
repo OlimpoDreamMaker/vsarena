@@ -1,7 +1,7 @@
 <?php
 echo ("<!--NAV START-->
 <div class='main-menu-wrap sticky-menu'>
-	<div class='container nav_index'>
+	<div class='nav_index'>
 		<a href='$amigable/' class='custom-logo-link'><img src='$urlFE/images/vs_arena/ilogo.png' alt='logo' class='custom-logo'></a>
 		<!--START BOTON MOBILE-->
 		<button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#team-menu' aria-expanded='false'>
@@ -14,8 +14,9 @@ echo ("<!--NAV START-->
 		<nav class='navbar'>
 			<div class='collapse navbar-collapse' id='team-menu'>
 				<ul class='main-menu nav'>
+					<span class='margen-izquierdo'>	</span>
 					<li>
-						<a href='$amigable/torneos'><span>Torneos2</span></a>
+						<a href='$amigable/torneos'><span>Torneos</span></a>
 					</li>
 					<li>
 						<a href='$amigable/tienda'><span>Tienda</span></a>
@@ -23,17 +24,14 @@ echo ("<!--NAV START-->
 					<li>
 						<a href='$amigable/noticias'><span>Noticias</span></a>
 					</li>
+					<li class='search'>
+							<a href='$amigable/buscar'><i class='fa fa-search' aria-hidden='true'></i></a>
+                    </li>
 					<li>
-						<a href='$amigable/noticias><span>Noticias</span></a>
-							</li>
-							<li class='login'>
-						<a href='#'><span><i class='fa fa-user' aria-hidden='true'></i></span></a>
-					</li>
+						<a href='$amigable/registro'><span>LOGIN</span></a>
+					</li>				
 					<li>
-						<a href='$amigable/registro'><span>Regístrate</span></a>
-					</li>
-					<li>
-						<a href='$amigable/buscar'><span>BUSQUEDA</span></a>
+						<a href='$amigable/registro'><span>REGÍSTRATE</span></a>
 					</li>
 					<!-- SUBMENUES 
 						<li>
@@ -48,10 +46,11 @@ echo ("<!--NAV START-->
 						        <li><a href='#'><span>lorem</span></a></li>
 						        <li><a href='#'><span>lorem</span></a></li>
 						    </ul>
-						</li>-->
+						</li> 
+					-->
 					<li class='cart full'>
 						<a href='#cart'>
-						<span><i class='fa fa-shopping-cart' aria-hidden='true'></i></span>
+							<span><i class='fa fa-shopping-cart' aria-hidden='true'></i></span>
 						</a>
 						<div class='cart-drop'>
 							<table class='ct'>

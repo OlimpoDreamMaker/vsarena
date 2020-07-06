@@ -8,7 +8,6 @@ ErrorDocument 404 /VsArena/FrontEnd/404.php
 Options +FollowSymLinks
 RewriteEngine on
 
-
 RewriteRule ^panel/$ Dashboard/index.php
 RewriteRule ^panel/([0-9]+)/$ Dashboard/index.php?err=$1
 RewriteRule ^panel/cupon/([0-9]+)/$ Dashboard/templates/cupon.php?id=$1
@@ -62,3 +61,11 @@ RewriteRule ^proximamente$ FrontEnd/proximamente.php
 RewriteRule ^resultados_cpto$ FrontEnd/resultados_cpto.php
 RewriteRule ^tienda$ FrontEnd/tienda.php
 RewriteRule ^torneo_llaves$ FrontEnd/torneo_llaves.php
+
+# BEGIN Force HTTP (If "RewriteEngine On" exists, plese remove it from this code)
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+# END Force HTTP

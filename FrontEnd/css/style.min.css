@@ -1588,6 +1588,7 @@ pre code {
 }
 .nav_index {
 	height: 72px !important;
+	margin-left: 250px;
 }
 @media (min-width: 768px) {
 	.container {
@@ -14060,7 +14061,7 @@ body {
 	background: #141414;
 }
 a {
-	color: #da6100;
+	color: #e62117;
 	text-decoration: none;
 	outline: 0;
 	transition: all 0.4s;
@@ -14291,7 +14292,7 @@ h5.esport-landing-header {
 	color: #fff;
 }
 .cart-drop table .delete a:hover:before {
-	background: #da6100;
+	background: #e62117;
 }
 .cart-drop table td.info {
 	width: 70%;
@@ -14383,7 +14384,7 @@ h5.esport-landing-header {
 	padding: 15px 24px 13px 24px;
 	border-radius: 9px;
 	border: none;
-	background: #da6100;
+	background: #e62117;
 	font-size: 16px;
 	color: #e5e5e5;
 	text-transform: uppercase;
@@ -14522,14 +14523,26 @@ body.admin-bar .is-sticky .main-menu-wrap {
 	margin: auto 0;
 }
 .main-menu {
-	text-align: right;
+	text-align: center;
+}
+.margen-izquierdo {
+	padding-left: 12em;
 }
 .main-menu > li {
 	display: inline-block;
 }
+.main-menu .search form {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	align-content: center;
+}
+.main-menu .search a {
+	padding-left: 12em;
+}
 .main-menu > li:hover > a {
 	background: 0 0;
-	color: #da6100;
+	color: #e62117;
 }
 .main-menu > li a:focus {
 	background: 0 0;
@@ -14566,6 +14579,10 @@ body.admin-bar .is-sticky .main-menu-wrap {
 	opacity: 1;
 	height: 2px;
 }
+.main-menu .cart a:hover span:before {
+	opacity: 0 !important;
+	display: none !important;
+}
 .main-menu > li.cart a {
 	padding-right: 0;
 }
@@ -14578,7 +14595,7 @@ body.admin-bar .is-sticky .main-menu-wrap {
 	width: 6px;
 	height: 6px;
 	border-radius: 50%;
-	background: #da6100;
+	background: #e62117;
 	position: absolute;
 	top: -2px;
 	right: -3px;
@@ -14620,7 +14637,7 @@ body.admin-bar .is-sticky .main-menu-wrap {
 	color: #fff;
 }
 .main-menu > li > ul > li:hover {
-	background: #da6100;
+	background: #e62117;
 	border-left: 2px solid #000;
 }
 .main-menu > li > ul > li:hover > a {
@@ -14642,7 +14659,7 @@ body.admin-bar .is-sticky .main-menu-wrap {
 	display: block;
 }
 .main-menu > li > ul > li > ul li:hover {
-	background: #da6100;
+	background: #e62117;
 	border-left: 2px solid #000;
 }
 .main-menu > li > ul > li > ul li:hover a {
@@ -14692,7 +14709,7 @@ body.admin-bar .is-sticky .main-menu-wrap {
 	margin-top: 65px;
 	padding: 9px 26px 8px 26px;
 	display: inline-block;
-	background: #da6100;
+	background: #e62117;
 	border-radius: 9px;
 	color: #fff;
 	font-size: 16px;
@@ -14760,7 +14777,7 @@ body.admin-bar .is-sticky .main-menu-wrap {
 	margin-top: 65px;
 	padding: 9px 26px 8px 26px;
 	display: inline-block;
-	background: #da6100;
+	background: #e62117;
 	border-radius: 9px;
 	color: #fff;
 	font-size: 16px;
@@ -14828,7 +14845,7 @@ body.admin-bar .is-sticky .main-menu-wrap {
 .cybersport-slogan > .big-title {
 	line-height: 40px;
 	text-transform: uppercase;
-	color: #da6100;
+	color: #e62117;
 	font-family: Raleway, sans-serif;
 	font-size: 48px;
 	font-weight: 900;
@@ -14907,7 +14924,7 @@ body.admin-bar .is-sticky .main-menu-wrap {
 .call-to-action .join {
 	padding: 9px 31px 10px 31px;
 	display: inline-block;
-	background: #da6100;
+	background: #e62117;
 	border-radius: 9px;
 	color: #fff;
 	font-size: 16px;
@@ -14929,7 +14946,7 @@ body.admin-bar .is-sticky .main-menu-wrap {
 	text-transform: uppercase;
 }
 #show-all-link:hover {
-	color: #da6100;
+	color: #e62117;
 }
 .store-list-item > div {
 	max-width: 320px;
@@ -14987,7 +15004,7 @@ body.admin-bar .is-sticky .main-menu-wrap {
 	transform: rotate(9deg);
 	transition: all 0.4s;
 	top: 100%;
-	background: #da6100;
+	background: #e62117;
 	z-index: 0;
 }
 .store-list-item > div:hover .name {
@@ -15035,7 +15052,7 @@ body.admin-bar .is-sticky .main-menu-wrap {
 	font-size: 12px;
 	color: #fff;
 	float: left;
-	background: #da6100;
+	background: #e62117;
 }
 .store-list-item .btn:last-child {
 	float: right;
@@ -15072,10 +15089,10 @@ body.admin-bar .is-sticky .main-menu-wrap {
 }
 .store-badge.hot {
 	padding-left: 23px;
-	background: url(../images/vs_arena/hot-bg.png) 9px 8px no-repeat #da6100;
+	background: url(../images/vs_arena/hot-bg.png) 9px 8px no-repeat #e62117;
 }
 .store-badge.hot:before {
-	background: #da6100;
+	background: #e62117;
 }
 .store-badge.new {
 	background: #06a5e7;
@@ -15174,7 +15191,7 @@ body.admin-bar .is-sticky .main-menu-wrap {
 	font-size: 12px;
 	text-transform: uppercase;
 	font-family: Montserrat, sans-serif;
-	color: #da6100;
+	color: #e62117;
 }
 .footer .foot-left-menu li a:hover {
 	color: #fff;
@@ -15184,7 +15201,7 @@ body.admin-bar .is-sticky .main-menu-wrap {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: #da6100;
+	background: #e62117;
 	position: absolute;
 	left: 0;
 	top: 50%;
@@ -15205,7 +15222,7 @@ body.admin-bar .is-sticky .main-menu-wrap {
 	display: block;
 }
 .footer .foot-news .item .name:hover {
-	color: #da6100;
+	color: #e62117;
 }
 .footer .foot-news .item .date {
 	font-size: 12px;
@@ -15308,7 +15325,7 @@ body.admin-bar .is-sticky .main-menu-wrap {
 	content: '';
 	width: 100%;
 	height: 2px !important;
-	background: #da6100;
+	background: #e62117;
 	bottom: 30px;
 	left: 0;
 	position: absolute;
@@ -15374,7 +15391,7 @@ body.admin-bar .is-sticky .main-menu-wrap {
 	color: #e5e5e5;
 }
 .main-match-shedule.amateurs-match-shedule > ul.player-filters li a:before {
-	background: #da6100;
+	background: #e62117;
 }
 .image-header {
 	min-height: 300px;
@@ -15610,7 +15627,7 @@ ul.team-legend {
 	top: 0;
 	bottom: 0;
 	left: 0;
-	background: #da6100;
+	background: #e62117;
 	transition: all 0.4s;
 	z-index: -1;
 }
@@ -15628,7 +15645,7 @@ ul.team-legend {
 	width: 100%;
 	transition: all 0.6s;
 	margin-top: 0;
-	border: solid #da6100;
+	border: solid #e62117;
 	border-width: 0 0 0 2px;
 	position: relative;
 	background: #e5e5e5;
@@ -15667,7 +15684,7 @@ ul.team-legend {
 	left: -10%;
 }
 .categories-list > li ul li:hover a {
-	color: #da6100;
+	color: #e62117;
 }
 .categories-list > li:hover > ul {
 	max-height: 250px;
@@ -15742,7 +15759,7 @@ ul.team-legend {
 	display: block;
 	height: 39px;
 	line-height: 39px;
-	background: #da6100;
+	background: #e62117;
 	color: #e5e5e5;
 }
 #wp-calendar tr td:first-child {
@@ -15778,7 +15795,7 @@ ul.team-legend {
 	line-height: normal;
 }
 .recent-news .item .date a:hover {
-	color: #da6100;
+	color: #e62117;
 }
 .recent-news .item .name {
 	font-size: 18px;
@@ -15788,7 +15805,7 @@ ul.team-legend {
 	display: block;
 }
 .recent-news .item .name:hover {
-	color: #da6100;
+	color: #e62117;
 }
 .content {
 	background-color: #000;
@@ -15809,8 +15826,8 @@ ul.team-legend {
 	line-height: normal;
 }
 .tags a:hover {
-	background: #da6100;
-	border-color: #da6100;
+	background: #e62117;
+	border-color: #e62117;
 }
 .news-list .item {
 	margin-top: 35px;
@@ -15828,7 +15845,7 @@ ul.team-legend {
 	line-height: normal;
 	text-transform: uppercase;
 	color: #fff;
-	background: #da6100;
+	background: #e62117;
 }
 .news-list .item .img-wrap .bage:before {
 	content: '';
@@ -15883,7 +15900,7 @@ ul.team-legend {
 	left: 0;
 	right: 0;
 	opacity: 0;
-	background: #da6100;
+	background: #e62117;
 	transform: skewY(4deg);
 	z-index: 0;
 	transition: all 0.3s;
@@ -15900,11 +15917,11 @@ ul.team-legend {
 	display: block;
 	font-size: 22px;
 	font-weight: 700;
-	color: #da6100;
+	color: #e62117;
 	line-height: normal;
 }
 .news-list .item .info #top_name:hover {
-	color: #da6100 !important;
+	color: #e62117 !important;
 }
 .news-list .item .info .name:hover {
 	color: #fff !important;
@@ -15946,7 +15963,7 @@ ul.team-legend {
 	color: #292929;
 }
 .news-list .item .info .continue {
-	color: #da6100;
+	color: #e62117;
 	font-size: 12px;
 	text-transform: uppercase;
 	font-family: Montserrat, sans-serif;
@@ -15979,7 +15996,7 @@ ul.team-legend {
 	font-size: 200px;
 	line-height: 120px;
 	z-index: -1;
-	color: #da6100;
+	color: #e62117;
 	font-family: 'Open Sans', sans-serif;
 }
 .news-list .item.status .info {
@@ -15998,7 +16015,7 @@ ul.team-legend {
 	top: 16px;
 }
 .sidebar-btn {
-	background: #da6100;
+	background: #e62117;
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #e5e5e5;
@@ -16021,7 +16038,7 @@ ul.team-legend {
 	font-family: Montserrat, sans-serif;
 }
 .champ-nav-list li a:hover {
-	background: #da6100;
+	background: #e62117;
 	color: #e5e5e5;
 }
 .champ-nav-list li.active a {
@@ -16086,7 +16103,7 @@ ul.team-legend {
 	display: inline-block;
 }
 .news-single .item .top-info .date a:hover {
-	color: #da6100;
+	color: #e62117;
 }
 .news-single .item .top-info .comment-quantity {
 	float: right;
@@ -16110,7 +16127,7 @@ ul.team-legend {
 	color: #fff;
 }
 .news-single .item .img-wrap .bage.highlight {
-	background: #da6100;
+	background: #e62117;
 }
 .news-single .item .img-wrap .bage.interview {
 	background: #689f38;
@@ -16200,7 +16217,7 @@ blockquote:before {
 	font-size: 200px;
 	line-height: 120px;
 	z-index: 0;
-	color: #da6100;
+	color: #e62117;
 	font-family: 'Open Sans';
 }
 blockquote p {
@@ -16320,7 +16337,7 @@ blockquote p.name {
 	font-size: 14px;
 }
 .share-box .share-socials li a:hover {
-	color: #da6100;
+	color: #e62117;
 }
 .comments-wrap {
 	padding: 0 30px;
@@ -16360,7 +16377,7 @@ blockquote p.name {
 	line-height: normal;
 }
 .comment-item .info .date a:hover {
-	color: #da6100;
+	color: #e62117;
 }
 .comment-item .info .date .quote {
 	position: absolute;
@@ -16408,7 +16425,7 @@ blockquote p.name {
 }
 .leave-comment-wrap .item span i {
 	font-style: normal;
-	color: #da6100;
+	color: #e62117;
 }
 .leave-comment-wrap .item input[type='text'] {
 	padding: 15px 10px;
@@ -16441,7 +16458,7 @@ blockquote p.name {
 .leave-comment-wrap .comment-submit {
 	padding: 18px 30px 16px 30px;
 	border-radius: 9px;
-	background: #da6100;
+	background: #e62117;
 	border: none;
 	font-size: 12px;
 	text-transform: uppercase;
@@ -16765,7 +16782,7 @@ td a {
 	width: 100%;
 }
 .player-hockey-wrap .circle-item path {
-	stroke: #da6100;
+	stroke: #e62117;
 }
 .player-hockey-wrap .circle-item > .text {
 	color: #9e9e9e;
@@ -16773,7 +16790,7 @@ td a {
 #circle-bar2 .progressbar-text,
 #circle-bar3 .progressbar-text {
 	font-size: 12px;
-	color: #da6100;
+	color: #e62117;
 	font-family: Montserrat;
 }
 .player-hockey-wrap {
@@ -16803,7 +16820,7 @@ td a {
 	position: relative;
 	margin: 10px;
 	margin-top: 20px;
-	color: #da6100;
+	color: #e62117;
 }
 .canvas-minutes {
 	padding-top: 20px;
@@ -16825,7 +16842,7 @@ td a {
 	transform: skew(-10deg);
 }
 .player-hockey-wrap .number {
-	color: #da6100;
+	color: #e62117;
 	font-size: 40px;
 	font-family: Montserrat;
 }
@@ -16880,7 +16897,7 @@ td a {
 	height: 4px;
 }
 .filter-wrap .ui-widget-header {
-	background: #da6100;
+	background: #e62117;
 }
 .filter-wrap .ui-slider .ui-slider-handle {
 	margin-top: -3px;
@@ -16889,7 +16906,7 @@ td a {
 	border: none;
 	cursor: pointer;
 	border-radius: 50%;
-	background: #da6100;
+	background: #e62117;
 }
 .filter-wrap .filter-title {
 	padding: 15px 0 0 0;
@@ -17101,14 +17118,14 @@ td a {
 }
 .product-right-info .details ul li {
 	padding-bottom: 3px;
-	color: #da6100;
+	color: #e62117;
 }
 .product-right-info .details ul li span {
 	color: #9e9e9e;
 }
 .product-right-info .details ul li a {
 	font-size: 16px;
-	color: #da6100;
+	color: #e62117;
 }
 .product-right-info .socials {
 	padding-top: 29px;
@@ -17155,7 +17172,7 @@ td a {
 	font-family: Montserrat, sans-serif;
 }
 .feat-show-all:hover {
-	color: #da6100;
+	color: #e62117;
 }
 [type='checkbox'].filter-check:checked,
 [type='checkbox'].filter-check:not(:checked) {
@@ -17215,7 +17232,7 @@ td a {
 	border: 2px solid #ccc;
 }
 label:hover:before {
-	border: 2px solid #da6100 !important;
+	border: 2px solid #e62117 !important;
 }
 .post-password-form {
 	color: #e5e5e5;
@@ -17240,7 +17257,7 @@ label:hover:before {
 .post-password-form input[type='submit'] {
 	border-radius: 3px;
 	font-size: 16px;
-	background-color: #da6100;
+	background-color: #e62117;
 	color: #e5e5e5;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
@@ -17321,7 +17338,7 @@ label:hover:before {
 	color: #fff;
 }
 .cart-table td.name:hover {
-	color: #da6100;
+	color: #e62117;
 }
 .cart-table .cost {
 	font-size: 14px;
@@ -17354,7 +17371,7 @@ label:hover:before {
 	box-shadow: 0 0 10px 0 #a3a3a3;
 }
 .cart-table tr:hover .delete a:before {
-	background: #da6100;
+	background: #e62117;
 }
 .cart-table tr:hover .delete a i {
 	color: #292929;
@@ -17396,7 +17413,7 @@ label:hover:before {
 	bottom: 0;
 	right: -30px;
 	left: 0;
-	background: #da6100;
+	background: #e62117;
 	transform: skew(-6deg);
 	transition: all 0.4s;
 }
@@ -17416,7 +17433,7 @@ label:hover:before {
 	font-size: 12px;
 	text-transform: uppercase;
 	font-family: Montserrat, sans-serif;
-	background: #da6100;
+	background: #e62117;
 	border: none;
 	color: #e5e5e5;
 }
@@ -17536,7 +17553,7 @@ label:hover:before {
 	color: #e5e5e5;
 	transition: all 0.4s;
 	font-family: Montserrat, sans-serif;
-	background: #da6100;
+	background: #e62117;
 	border-radius: 8px;
 	border: none;
 	width: 100%;
@@ -17567,7 +17584,7 @@ label:hover:before {
 	background: #fcfcfc;
 	border-radius: 0;
 	overflow-x: hidden;
-	border: solid #da6100;
+	border: solid #e62117;
 	border-width: 0 0 0 5px;
 }
 .team-alert .close {
@@ -17596,7 +17613,7 @@ label:hover:before {
 	transition: all 0.4s;
 }
 .team-alert .close:hover:before {
-	background: #da6100;
+	background: #e62117;
 }
 .team-alert .close:hover span {
 	color: #e5e5e5;
@@ -17620,7 +17637,7 @@ label:hover:before {
 }
 .customer-info .item span i {
 	font-style: normal;
-	color: #da6100;
+	color: #e62117;
 }
 .checkout-wrap .cart-table {
 	margin-bottom: 0;
@@ -17687,7 +17704,7 @@ label:hover:before {
 .search-item .info .name {
 	font-size: 22px;
 	font-weight: 700;
-	color: #da6100;
+	color: #e62117;
 }
 .search-item .info .name:hover {
 	color: #fff;
@@ -17721,7 +17738,7 @@ label:hover:before {
 .search-item .info .read-more {
 	margin-top: 1.2em;
 	display: inline-block;
-	color: #da6100;
+	color: #e62117;
 	font-weight: 800;
 	font-size: 12px;
 	text-transform: uppercase;
@@ -17880,7 +17897,7 @@ overflow-scroll.table tr td {
 		background: #141414;
 	}
 	.navbar-toggle .icon-bar {
-		background: #da6100;
+		background: #e62117;
 	}
 	.navbar-fixed-top {
 		top: 0;
@@ -17953,10 +17970,10 @@ overflow-scroll.table tr td {
 		border-left: none;
 	}
 	.main-menu > li > ul > li > ul li:hover > a {
-		color: #da6100;
+		color: #e62117;
 	}
 	.main-menu > li > ul > li:hover > a {
-		color: #da6100;
+		color: #e62117;
 	}
 	.main-menu > li > a > span:before {
 		bottom: 5px;
@@ -18379,7 +18396,7 @@ overflow-scroll.table tr td {
 	color: #9e9e9e;
 }
 .socials li a:hover {
-	color: #da6100;
+	color: #e62117;
 }
 .top-contacts .contacts {
 	padding: 20px 0 4px 0;
@@ -18404,10 +18421,10 @@ overflow-scroll.table tr td {
 	color: #9e9e9e;
 }
 .top-contacts .contacts li a:hover {
-	color: #da6100;
+	color: #e62117;
 }
 .top-contacts .contacts li a:hover .fa {
-	color: #da6100;
+	color: #e62117;
 }
 .top-search {
 	border: solid #9e9e9e;
@@ -18495,7 +18512,7 @@ overflow-scroll.table tr td {
 	position: absolute;
 	color: #292929;
 	font-size: 12px;
-	background: #da6100;
+	background: #e62117;
 }
 .main-slider .nav-arrow.left-arrow {
 	padding-left: 36px;
@@ -18510,7 +18527,7 @@ overflow-scroll.table tr td {
 	bottom: 0;
 	width: 12px;
 	transform: skew(-10deg);
-	background: #da6100;
+	background: #e62117;
 	transition: all 0.4s;
 }
 .main-slider .nav-arrow.right-arrow:before {
@@ -18521,7 +18538,7 @@ overflow-scroll.table tr td {
 	bottom: 0;
 	width: 12px;
 	transform: skew(-10deg);
-	background: #da6100;
+	background: #e62117;
 	transition: all 0.4s;
 }
 .main-slider .nav-arrow.right-arrow {
@@ -18622,7 +18639,7 @@ overflow-scroll.table tr td {
 }
 .main-slider-caption .booking a {
 	padding: 15px 24px 15px 24px;
-	background: #da6100;
+	background: #e62117;
 	overflow: hidden;
 	border-radius: 23px;
 	color: #fff;
@@ -18683,7 +18700,7 @@ overflow-scroll.table tr td {
 	left: 0;
 	position: absolute;
 	bottom: -6px;
-	background: #da6100;
+	background: #e62117;
 	transition: all 0.4s;
 }
 .event-nav .nav-item:hover:before {
@@ -19137,7 +19154,7 @@ overflow-scroll.table tr td {
 .main-next-match .booking {
 	padding: 0 15px 0 15px;
 	display: inline-block;
-	background: #da6100;
+	background: #e62117;
 	border-radius: 9px;
 	color: #fff;
 	font-size: 12px;
@@ -19165,7 +19182,7 @@ overflow-scroll.table tr td {
 	box-sizing: border-box;
 }
 .main-lates-matches .item:hover {
-	border-bottom: 1px solid #da6100;
+	border-bottom: 1px solid #e62117;
 	transition: all 0.5s;
 }
 .main-lates-matches .item:last-child {
@@ -19299,7 +19316,7 @@ overflow-scroll.table tr td {
 	left: 0;
 	bottom: 0;
 	height: 6px;
-	background: #da6100;
+	background: #e62117;
 	transition: all 0.4s;
 }
 .players_statistic_slider .player-filters li a:hover:before {
@@ -19426,7 +19443,7 @@ overflow-scroll.table tr td {
 	top: 0;
 	bottom: 0;
 	left: 0;
-	background: #da6100;
+	background: #e62117;
 }
 .players_statistic_slider .player-stat-slider .item .progress-line .bar.bar-1 {
 	width: 80%;
@@ -19528,7 +19545,7 @@ overflow-scroll.table tr td {
 	left: 0;
 	bottom: 0;
 	height: 6px;
-	background: #da6100;
+	background: #e62117;
 	transition: all 0.4s;
 }
 .team-best-player .player-filters li a:hover:before {
@@ -19586,7 +19603,7 @@ overflow-scroll.table tr td {
 }
 .best-players-list .item:first-child .achievement {
 	color: #fff;
-	background: #da6100;
+	background: #e62117;
 }
 .best-players-list .item:first-child .achievement:before {
 	content: '';
@@ -19597,7 +19614,7 @@ overflow-scroll.table tr td {
 	bottom: 0;
 	transform: skew(-10deg);
 	z-index: -1;
-	background: #da6100;
+	background: #e62117;
 }
 .best-players-list .item .achievement:before {
 	content: '';
@@ -19697,7 +19714,7 @@ overflow-scroll.table tr td {
 	transform: translateY(-50%);
 }
 .main-award-slider .nav-arrow:hover {
-	background: #da6100;
+	background: #e62117;
 	color: #e5e5e5;
 }
 .main-award-slider .left-arrow {
@@ -19803,7 +19820,7 @@ overflow-scroll.table tr td {
 	position: absolute;
 	color: #fff;
 	font-size: 12px;
-	background: #da6100;
+	background: #e62117;
 }
 .main-stuff-slider .nav-arrow.left-arrow {
 	padding-left: 36px;
@@ -19818,7 +19835,7 @@ overflow-scroll.table tr td {
 	bottom: 0;
 	width: 12px;
 	transform: skew(-10deg);
-	background: #da6100;
+	background: #e62117;
 	transition: all 0.4s;
 }
 .main-stuff-slider .nav-arrow.right-arrow:before {
@@ -19829,7 +19846,7 @@ overflow-scroll.table tr td {
 	bottom: 0;
 	width: 12px;
 	transform: skew(-10deg);
-	background: #da6100;
+	background: #e62117;
 	transition: all 0.4s;
 }
 .main-stuff-slider .nav-arrow.right-arrow {
@@ -19875,7 +19892,7 @@ overflow-scroll.table tr td {
 	left: 0;
 	bottom: 0;
 	height: 6px;
-	background: #da6100;
+	background: #e62117;
 	transition: all 0.4s;
 }
 .player-filters li a:hover:before {
@@ -19918,7 +19935,7 @@ overflow-scroll.table tr td {
 	transform: translateY(-50%);
 }
 .main-sponsor-slider .nav-arrow:hover {
-	background: #da6100;
+	background: #e62117;
 	color: #e5e5e5;
 }
 .main-sponsor-slider .left-arrow {
@@ -19936,7 +19953,7 @@ overflow-scroll.table tr td {
 	position: relative;
 	font-size: 16px;
 	text-transform: uppercase;
-	background: #da6100;
+	background: #e62117;
 	color: #fff;
 	font-family: Montserrat, sans-serif;
 	z-index: 1;
@@ -19951,7 +19968,7 @@ overflow-scroll.table tr td {
 	left: -10000%;
 	top: 0;
 	bottom: 0;
-	background: #da6100;
+	background: #e62117;
 	right: 0;
 	z-index: 0;
 }
@@ -19961,7 +19978,7 @@ overflow-scroll.table tr td {
 	top: 0;
 	bottom: 0;
 	width: 40px;
-	background: #da6100;
+	background: #e62117;
 	right: -20px;
 	z-index: 1;
 	transform: skew(-10deg);
@@ -20232,10 +20249,10 @@ overflow-scroll.table tr td {
 	line-height: normal;
 }
 #circle_3 > svg > path {
-	stroke: #da6100;
+	stroke: #e62117;
 }
 #circle_4 > svg > path {
-	stroke: #da6100;
+	stroke: #e62117;
 }
 #circle_3 > div.progressbar-text {
 	color: #fff !important;
@@ -20812,7 +20829,7 @@ overflow-scroll.table tr td {
 	vertical-align: middle;
 }
 .match-lineup .member .card.yellow {
-	background: #da6100;
+	background: #e62117;
 }
 .match-lineup .member .card.red {
 	background: #c80b0b;
@@ -20972,7 +20989,7 @@ overflow-scroll.table tr td {
 	font-size: 14px;
 }
 .share-box .share-socials li a:hover {
-	color: #da6100;
+	color: #e62117;
 }
 @media (max-width: 767px) {
 	.share-box .item .title {
@@ -21236,13 +21253,13 @@ overflow-scroll.table tr td {
 }
 .broadcast-item.active .item-header {
 	background: #292929;
-	border-bottom: 1px solid #da6100;
+	border-bottom: 1px solid #e62117;
 }
 .broadcast-item.active .arrow {
 	color: #292929;
 }
 .broadcast-item.active .arrow:before {
-	background: #da6100;
+	background: #e62117;
 }
 .broadcast-item.active .vs {
 	color: #fff;
@@ -21491,13 +21508,13 @@ overflow-scroll.table tr td {
 }
 .championship-list.active .item-header {
 	background: #292929;
-	border-bottom: 1px solid #da6100;
+	border-bottom: 1px solid #e62117;
 }
 .championship-list.active .arrow {
 	color: #292929;
 }
 .championship-list.active .arrow:before {
-	background: #da6100;
+	background: #e62117;
 }
 .championship-list.active .vs {
 	color: #292929;
@@ -21699,7 +21716,7 @@ overflow-scroll.table tr td {
 	text-transform: uppercase;
 	color: #292929;
 	font-family: Montserrat, sans-serif;
-	background: #da6100;
+	background: #e62117;
 	position: relative;
 }
 .staff-box .info .role span {
@@ -21708,7 +21725,7 @@ overflow-scroll.table tr td {
 .staff-box .info .role:before {
 	content: '';
 	width: 100%;
-	background: #da6100;
+	background: #e62117;
 	transform: skew(-10deg);
 	position: absolute;
 	top: 0;
@@ -21743,7 +21760,7 @@ overflow-scroll.table tr td {
 	text-transform: uppercase;
 	color: #292929;
 	font-family: Montserrat, sans-serif;
-	background: #da6100;
+	background: #e62117;
 }
 .captain-bage:before {
 	content: '';
@@ -21753,7 +21770,7 @@ overflow-scroll.table tr td {
 	bottom: 0;
 	right: -10px;
 	transform: skew(-10deg);
-	background: #da6100;
+	background: #e62117;
 	z-index: -1;
 }
 .player-name {
@@ -21772,7 +21789,7 @@ overflow-scroll.table tr td {
 	font-size: 40px;
 	font-weight: 700;
 	color: #e5e5e5;
-	background: #da6100;
+	background: #e62117;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -22116,7 +22133,7 @@ table tr td:first-child span {
 }
 .donation-item .info:after {
 	content: '';
-	background: #da6100;
+	background: #e62117;
 	transform: skew(-13deg);
 	position: absolute;
 	top: 0;
@@ -22170,7 +22187,7 @@ table tr td:first-child span {
 	left: 0;
 	top: 0;
 	bottom: 0;
-	background: #da6100;
+	background: #e62117;
 	width: 20%;
 }
 .donation-item .info .progress-line .bar-1 {
@@ -22178,7 +22195,7 @@ table tr td:first-child span {
 	left: 0;
 	top: 0;
 	bottom: 0;
-	background: #da6100;
+	background: #e62117;
 	width: 30%;
 }
 .donation-item .info .progress-line .bar-2 {
@@ -22186,7 +22203,7 @@ table tr td:first-child span {
 	left: 0;
 	top: 0;
 	bottom: 0;
-	background: #da6100;
+	background: #e62117;
 	width: 40%;
 }
 .donation-item .info .progress-line .bar-3 {
@@ -22194,13 +22211,13 @@ table tr td:first-child span {
 	left: 0;
 	top: 0;
 	bottom: 0;
-	background: #da6100;
+	background: #e62117;
 	width: 50%;
 }
 .donation-item .info .progress-line .bar:before {
 	content: '';
 	width: 4px;
-	background: #da6100;
+	background: #e62117;
 	transform: skew(-10deg);
 	position: absolute;
 	top: 0;
@@ -22297,7 +22314,7 @@ table tr td:first-child span {
 	color: #e5e5e5;
 }
 .contacts-wrap .contact-list li a:hover {
-	color: #da6100;
+	color: #e62117;
 }
 .contacts-wrap .contact-list li.phone span {
 	font-size: 16px;
@@ -22391,7 +22408,7 @@ td a {
 #circle-bar .progressbar-text,
 #circle-bar1 .progressbar-text {
 	font-size: 12px;
-	color: #da6100;
+	color: #e62117;
 	font-family: Montserrat;
 }
 .player-hockey-wrap {
@@ -22435,7 +22452,7 @@ td a {
 	padding: 35px 20px 37px;
 }
 .player-hockey-wrap .number {
-	color: #da6100;
+	color: #e62117;
 	font-size: 40px;
 	font-family: Montserrat;
 }
@@ -22467,7 +22484,7 @@ td a {
 	background: #292929;
 	border-radius: 0;
 	overflow-x: hidden;
-	border: solid #da6100;
+	border: solid #e62117;
 	border-width: 0 0 0 5px;
 }
 .team-alert .close {
@@ -22496,7 +22513,7 @@ td a {
 	transition: all 0.4s;
 }
 .team-alert .close:hover:before {
-	background: #da6100;
+	background: #e62117;
 }
 .team-alert .close:hover span {
 	color: #e5e5e5;
@@ -22519,7 +22536,7 @@ td a {
 }
 .customer-info .item span i {
 	font-style: normal;
-	color: #da6100;
+	color: #e62117;
 }
 .checkout-wrap .cart-table {
 	margin-bottom: 0;
@@ -22560,7 +22577,7 @@ td a {
 	font-weight: 700;
 }
 .amateurs-news-list .item .name:hover {
-	color: #da6100;
+	color: #e62117;
 }
 .amateurs-news-list .item .date {
 	padding-bottom: 13px;
@@ -22577,14 +22594,14 @@ td a {
 	color: #e5e5e5;
 }
 .amateurs-news-list .item .date a:hover {
-	color: #da6100;
+	color: #e62117;
 }
 .amateurs-news-list .item a > img {
 	height: 100%;
 	width: 100%;
 }
 .sidebar-btn {
-	background: #da6100;
+	background: #e62117;
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #e5e5e5;
@@ -22607,7 +22624,7 @@ td a {
 	width: 10px;
 	height: 10px;
 	display: inline-block;
-	background: #da6100;
+	background: #e62117;
 	cursor: pointer;
 }
 .main-slider-dots li.active {
@@ -22626,12 +22643,12 @@ td a {
 	left: 0;
 	top: 0;
 	bottom: 0;
-	background: #da6100;
+	background: #e62117;
 }
 .main-slider .progress-line .bar:before {
 	content: '';
 	width: 4px;
-	background: #da6100;
+	background: #e62117;
 	transform: skew(-10deg);
 	position: absolute;
 	top: 0;
@@ -22689,7 +22706,7 @@ td a {
 	padding: 35px 20px 37px;
 }
 .player-hockey-wrap .number {
-	color: #da6100;
+	color: #e62117;
 	font-size: 40px;
 	font-family: Montserrat;
 }
@@ -22752,7 +22769,7 @@ player-hockey-wrap .wrapper-circle {
 	text-transform: uppercase;
 	color: #fcfcfc;
 	font-family: Montserrat, sans-serif;
-	background: #da6100;
+	background: #e62117;
 }
 .player-single-wrap .captain-bage:before {
 	content: '';
@@ -22762,7 +22779,7 @@ player-hockey-wrap .wrapper-circle {
 	bottom: 0;
 	right: -10px;
 	transform: skew(-10deg);
-	background: #da6100;
+	background: #e62117;
 	z-index: -1;
 }
 .player-single-wrap .player-name {
@@ -22776,7 +22793,7 @@ player-hockey-wrap .wrapper-circle {
 }
 .ct-series-a .ct-line,
 .ct-series-a .ct-point {
-	stroke: #da6100;
+	stroke: #e62117;
 }
 .ct-series-b .ct-line,
 .ct-series-b .ct-point {
@@ -22809,7 +22826,7 @@ player-hockey-wrap .wrapper-circle {
 }
 .ct-series-a .ct-line,
 .ct-series-a .ct-point {
-	stroke: #da6100;
+	stroke: #e62117;
 }
 .ct-series-b .ct-line,
 .ct-series-b .ct-point {
@@ -23111,7 +23128,7 @@ table tr td .organisation-name {
 	vertical-align: middle;
 }
 .match-lineup .member .card.yellow {
-	background: #da6100;
+	background: #e62117;
 }
 .match-lineup .member .card.red {
 	background: #c80b0b;
@@ -23411,7 +23428,7 @@ table tr td .organisation-name {
 	width: 10px;
 	height: 10px;
 	display: inline-block;
-	background: #da6100;
+	background: #e62117;
 	cursor: pointer;
 	float: left;
 }
@@ -23432,13 +23449,13 @@ table tr td .organisation-name {
 	left: 0;
 	top: 0;
 	bottom: 0;
-	background: #da6100;
+	background: #e62117;
 	width: 10%;
 }
 .msp_post_slider .progress-line .bar:before {
 	content: '';
 	width: 4px;
-	background: #da6100;
+	background: #e62117;
 	transform: skew(-10deg);
 	position: absolute;
 	top: 0;
@@ -23456,7 +23473,7 @@ table tr td .organisation-name {
 	position: absolute;
 	color: #fff;
 	font-size: 12px;
-	background: #da6100;
+	background: #e62117;
 }
 .msp_post_slider .nav-arrow.left-arrow {
 	padding-left: 36px;
@@ -23471,7 +23488,7 @@ table tr td .organisation-name {
 	bottom: 0;
 	width: 12px;
 	transform: skew(-10deg);
-	background: #da6100;
+	background: #e62117;
 	transition: all 0.4s;
 }
 .msp_post_slider .nav-arrow.right-arrow:before {
@@ -23482,7 +23499,7 @@ table tr td .organisation-name {
 	bottom: 0;
 	width: 12px;
 	transform: skew(-10deg);
-	background: #da6100;
+	background: #e62117;
 	transition: all 0.4s;
 }
 .msp_post_slider .nav-arrow.right-arrow {
@@ -23587,7 +23604,7 @@ table tr td .organisation-name {
 }
 .msp_post_slider .msp_post_slide .slider-caption .booking a {
 	padding: 15px 24px 15px 24px;
-	background: #da6100;
+	background: #e62117;
 	overflow: hidden;
 	border-radius: 23px;
 	color: #e5e5e5;
@@ -23597,7 +23614,7 @@ table tr td .organisation-name {
 }
 .msp_post_slider .msp_post_slide .slider-caption .booking a:hover {
 	border-radius: 9px;
-	background: #da6100;
+	background: #e62117;
 }
 .msp_post_slider .msp_post_slide .slider-caption .title {
 	line-height: normal;
@@ -23666,7 +23683,7 @@ table tr td .organisation-name {
 	left: 0;
 	bottom: 0;
 	height: 6px;
-	background: #da6100;
+	background: #e62117;
 	transition: all 0.4s;
 }
 .tab-filters li a:hover:before {
@@ -23692,7 +23709,7 @@ table tr td .organisation-name {
 }
 .preloader-wrapper .dark-big {
 	display: flex;
-	background: #da6100;
+	background: #e62117;
 	width: 90%;
 	z-index: 1;
 	opacity: 0.9;
@@ -23700,7 +23717,7 @@ table tr td .organisation-name {
 }
 .preloader-wrapper .dark-small {
 	display: flex;
-	background: #da6100;
+	background: #e62117;
 	width: 35%;
 	z-index: 2;
 	left: -200%;
@@ -23711,7 +23728,7 @@ table tr td .organisation-name {
 	display: flex;
 	width: 13%;
 	z-index: 5;
-	background-color: #da6100;
+	background-color: #e62117;
 	right: -200%;
 }
 .preloader-wrapper .yellow-normal {
@@ -23720,7 +23737,7 @@ table tr td .organisation-name {
 	display: flex;
 	width: 4%;
 	z-index: 3;
-	background-color: #da6100;
+	background-color: #e62117;
 	right: -200%;
 }
 .preloader-wrapper .yellow-small1 {
@@ -23935,7 +23952,7 @@ table tr td .organisation-name {
 	position: relative;
 }
 .comm-wrap .item:hover {
-	background: #da6100;
+	background: #e62117;
 	z-index: 1;
 }
 .comm-wrap .item:hover .name {
@@ -25302,7 +25319,7 @@ div.fancy-select ul.options li {
 	-o-transition: all 150ms ease-out;
 }
 div.fancy-select ul.options li.selected {
-	background: #da6100;
+	background: #e62117;
 	color: #e5e5e5;
 }
 div.fancy-select ul.options li.hover {
@@ -25344,7 +25361,7 @@ div.fancy-select div.trigger:after {
 	stroke: #000;
 }
 #stackedbar > svg > g > g.ct-series.ct-series-a > line {
-	stroke: #da6100;
+	stroke: #e62117;
 }
 #stackedbar > svg > g > g.ct-series.ct-series-b > line {
 	stroke: #cd5f51;
@@ -25356,7 +25373,7 @@ div.fancy-select div.trigger:after {
 	stroke: #000;
 }
 #gaugechart > svg > g.ct-series.ct-series-a > path {
-	fill: #da6100;
+	fill: #e62117;
 }
 #gaugechart > svg > g.ct-series.ct-series-b > path {
 	fill: #cd5f51;
@@ -25388,9 +25405,9 @@ div.fancy-select div.trigger:after {
 	position: absolute;
 	left: 0;
 	content: '';
-	border: 3px solid #da6100;
+	border: 3px solid #e62117;
 	border-radius: 10px;
-	background: #da6100;
+	background: #e62117;
 	margin-right: 10px;
 	margin-bottom: 10px;
 }
@@ -25437,7 +25454,7 @@ div.fancy-select div.trigger:after {
 	top: 15%;
 }
 .svgpath > svg > g > g.ct-series.ct-series-a > path {
-	stroke: #da6100;
+	stroke: #e62117;
 }
 .svgpath > svg > g > g.ct-series.ct-series-b > path {
 	stroke: #c68100;
@@ -25452,7 +25469,7 @@ div.fancy-select div.trigger:after {
 	background-color: #292929;
 }
 .svgpath > svg > g > g.ct-series.ct-series-a > path.ct-area {
-	fill: #da6100;
+	fill: #e62117;
 }
 .svgpath > svg > g > g.ct-series.ct-series-b > path.ct-area {
 	fill: #c68100;
@@ -25461,10 +25478,10 @@ div.fancy-select div.trigger:after {
 	fill: #f4c63d;
 }
 #pickcircle > svg > g > g > line {
-	stroke: #da6100;
+	stroke: #e62117;
 }
 #pickcircle > svg > g > g > circle {
-	fill: #da6100;
+	fill: #e62117;
 }
 #pickcircle > svg > g.ct-grids > line {
 	stroke: #000;
@@ -25551,10 +25568,10 @@ div.fancy-select div.trigger:after {
 	stroke: #000;
 }
 #diagram > svg > g > g.ct-series.ct-series-a > path {
-	stroke: #da6100;
+	stroke: #e62117;
 }
 #diagram > svg > g > g.ct-series.ct-series-a > .ct-point {
-	stroke: #da6100;
+	stroke: #e62117;
 }
 #diagram > svg > g > g.ct-series.ct-series-b > path {
 	stroke: #0051ad;
@@ -25575,10 +25592,10 @@ div.fancy-select div.trigger:after {
 	stroke: #000;
 }
 .advancesmill > svg > g > g.ct-series.ct-series-a > path {
-	stroke: #da6100;
+	stroke: #e62117;
 }
 .advancesmill > svg > g > g.ct-series.ct-series-a > .ct-point {
-	stroke: #da6100;
+	stroke: #e62117;
 }
 .advancesmill > svg > g > g.ct-series.ct-series-b > path {
 	stroke: #0051ad;
@@ -25618,9 +25635,9 @@ div.fancy-select div.trigger:after {
 	position: absolute;
 	left: 0;
 	content: '';
-	border: 3px solid #da6100;
+	border: 3px solid #e62117;
 	border-radius: 10px;
-	background: #da6100;
+	background: #e62117;
 	margin-right: 10px;
 }
 .advancesmill > .ct-legend li.ct-series-1:before {
@@ -25676,7 +25693,7 @@ div.fancy-select div.trigger:after {
 	stroke: #fff;
 }
 #donutchart > svg > g.ct-series.ct-series-a > path {
-	fill: #da6100;
+	fill: #e62117;
 }
 #donutchart > svg > g.ct-series.ct-series-b > path {
 	fill: #4f1d17;
@@ -25698,9 +25715,9 @@ div.fancy-select div.trigger:after {
 	position: absolute;
 	left: 0;
 	content: '';
-	border: 3px solid #da6100;
+	border: 3px solid #e62117;
 	border-radius: 10px;
-	background: #da6100;
+	background: #e62117;
 	margin-right: 10px;
 	margin-bottom: 10px;
 }
@@ -25752,7 +25769,7 @@ div.fancy-select div.trigger:after {
 	background: #292929;
 }
 #horizontalbar > svg > g > g.ct-series.ct-series-a > line {
-	stroke: #da6100;
+	stroke: #e62117;
 }
 #horizontalbar > svg > g > g.ct-series.ct-series-b > line {
 	stroke: #c68100;
@@ -25774,9 +25791,9 @@ div.fancy-select div.trigger:after {
 	position: absolute;
 	left: 0;
 	content: '';
-	border: 3px solid #da6100;
+	border: 3px solid #e62117;
 	border-radius: 10px;
-	background: #da6100;
+	background: #e62117;
 	margin-right: 10px;
 }
 #horizontalbar > .ct-legend li.ct-series-1:before {
@@ -25850,7 +25867,7 @@ div.fancy-select div.trigger:after {
 .ct-bar.ct-threshold-above,
 .ct-line.ct-threshold-above,
 .ct-point.ct-threshold-above {
-	stroke: #da6100;
+	stroke: #e62117;
 }
 .ct-bar.ct-threshold-below,
 .ct-line.ct-threshold-below,
@@ -27039,7 +27056,7 @@ div.fancy-select div.trigger:after {
 	position: absolute;
 	color: #fff;
 	font-size: 12px;
-	background: #da6100;
+	background: #e62117;
 }
 .landing-sport-players-slider .main-stuff-slider .nav-arrow.left-arrow {
 	padding-left: 36px;
@@ -27054,7 +27071,7 @@ div.fancy-select div.trigger:after {
 	bottom: 0;
 	width: 12px;
 	transform: skew(-10deg);
-	background: #da6100;
+	background: #e62117;
 	transition: all 0.4s;
 }
 .landing-sport-players-slider .main-stuff-slider .nav-arrow.right-arrow:before {
@@ -27065,7 +27082,7 @@ div.fancy-select div.trigger:after {
 	bottom: 0;
 	width: 12px;
 	transform: skew(-10deg);
-	background: #da6100;
+	background: #e62117;
 	transition: all 0.4s;
 }
 .landing-sport-players-slider .main-stuff-slider .nav-arrow.right-arrow {
@@ -27115,7 +27132,7 @@ div.fancy-select div.trigger:after {
 	left: 0;
 	bottom: 0;
 	height: 6px;
-	background: #da6100;
+	background: #e62117;
 	transition: all 0.4s;
 }
 .landing-sport-players-slider .player-filters li a:hover:before {
@@ -30558,7 +30575,7 @@ ul.esport-championship-timline-tabs > li > a:before {
 	background: #fff;
 }
 .esport-team-landing-main-slider .msp_post_slider .owl-dot.active {
-	background: #da6100;
+	background: #e62117;
 }
 .esport-team-landing-sponsors {
 	padding-top: 50px;
@@ -30720,7 +30737,7 @@ ul.esport-championship-timline-tabs > li > a:before {
 	text-align: right;
 }
 .esport-team-landing-latest-matches > a:hover {
-	box-shadow: 0 0 50px #da6100;
+	box-shadow: 0 0 50px #e62117;
 	z-index: 20;
 }
 .esport-team-landing-latest-matches > a:hover > span {
@@ -30790,7 +30807,7 @@ ul.esport-championship-timline-tabs > li > a:before {
 	left: 0;
 	bottom: 0;
 	height: 6px;
-	background: #da6100;
+	background: #e62117;
 	transition: all 0.4s;
 }
 .esport-team-landing-players ul.esport-players li.active a:before {
@@ -30899,7 +30916,7 @@ ul.esport-championship-timline-tabs > li > a:before {
 	line-height: 1;
 }
 .esport-team-landing-players .wrap a:hover {
-	box-shadow: 0 0 50px #da6100;
+	box-shadow: 0 0 50px #e62117;
 	z-index: 20;
 }
 .esport-team-landing-players .wrap a:hover > .name {
@@ -30953,7 +30970,7 @@ ul.esport-championship-timline-tabs > li > a:before {
 	position: relative;
 	padding: 21px 23px 18px 23px;
 	display: inline-block;
-	background: #da6100;
+	background: #e62117;
 	border-radius: 10px;
 	text-transform: uppercase;
 	color: #fff;
@@ -31214,7 +31231,7 @@ ul.esport-championship-timline-tabs > li > a:before {
 	line-height: 18px;
 }
 .esport-team-landing-subscribe button {
-	background: #da6100;
+	background: #e62117;
 	color: #fff;
 	font-size: 14px;
 	line-height: 50px;
@@ -31253,7 +31270,7 @@ ul.esport-championship-timline-tabs > li > a:before {
 	left: 0;
 	bottom: 0;
 	height: 6px;
-	background: #da6100;
+	background: #e62117;
 	transition: all 0.4s;
 }
 .esport-team-landing-store .esport-store-list-item > div {
@@ -31261,7 +31278,7 @@ ul.esport-championship-timline-tabs > li > a:before {
 	display: block;
 	position: relative;
 	overflow: hidden;
-	background-color: #da6100;
+	background-color: #e62117;
 	margin-bottom: 30px;
 }
 .esport-team-landing-store .esport-store-list-item img {
