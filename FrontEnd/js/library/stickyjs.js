@@ -1,9 +1,3 @@
-// StickyJS Plugin for jQuery
-// =============
-// Author: Sebastian Dawidziak <sebastian@dawidziak.eu>
-// Created: 6/20/2014
-// Version: 0.0.6
-
 (function($) {
 	"use strict";
 
@@ -141,8 +135,6 @@
 			}
 		};
 
-
-
 	if (window.addEventListener) {
 		window.addEventListener('scroll', scroller, false);
 		window.addEventListener('resize', resizer, false);
@@ -165,4 +157,4 @@
 	$(function() {
 		setTimeout(scroller, 0);
 	});
-})(jQuery);
+	})(jQuery);
