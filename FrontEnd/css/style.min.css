@@ -14526,19 +14526,19 @@ body.admin-bar .is-sticky .main-menu-wrap {
 	text-align: center;
 }
 .margen-izquierdo {
-	padding-left: 12em;
+	padding-left: 5em;
 }
 .main-menu > li {
 	display: inline-block;
+}
+.search {
+	margin-left: 10em;
 }
 .main-menu .search form {
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
 	align-content: center;
-}
-.main-menu .search a {
-	padding-left: 12em;
 }
 .main-menu > li:hover > a {
 	background: 0 0;
@@ -14553,7 +14553,6 @@ body.admin-bar .is-sticky .main-menu-wrap {
 	font-weight: 800;
 	font-family: Montserrat, sans-serif;
 	color: #000;
-	text-transform: uppercase;
 }
 .main-menu > li > a > span {
 	padding: 20px 0;
@@ -30543,13 +30542,25 @@ ul.esport-championship-timline-tabs > li > a:before {
 	}
 }
 .esport-team-landing-main-slider .msp_post_slider .msp_post_slide.slide-1 {
-	background: url(../images/common/esport-team-landing-main-slider-slide-1.jpg)
+	background: url(../images/common/main-slide-1.jpg)
 		no-repeat;
 	background-size: cover;
 	background-position: bottom;
 }
 .esport-team-landing-main-slider .msp_post_slider .msp_post_slide.slide-2 {
-	background: url(../images/common/esport-team-landing-main-slider-slide-2.jpg)
+	background: url(../images/common/main-slide-2.jpg)
+		no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
+.esport-team-landing-main-slider .msp_post_slider .msp_post_slide.slide-3 {
+	background: url(../images/common/main-slide-3.png)
+		no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
+.esport-team-landing-main-slider .msp_post_slider .msp_post_slide.slide-4 {
+	background: url(../images/common/main-slide-4.jpg)
 		no-repeat;
 	background-size: cover;
 	background-position: bottom;

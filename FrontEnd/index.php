@@ -35,7 +35,7 @@ session_start();
 	<meta name="keywords" content="" />
 	<!--END METAS LOCALES-->
 	<!--START TITULO-->
-	<title>Home</title>
+	<title>Inicio</title>
 	<!--END TITULO-->
 </head>
 
@@ -52,7 +52,7 @@ session_start();
 
 	?>
 	<!--NAV END-->
-	<!--ESPORT TEAM LANDING MAIN SLIDER BEGIN-->
+	<!--SLIDER START-->
 	<div id="home" class="esport-team-landing-main-slider">
 		<div class="msp_post_slider" id="amateurs-slider">
 			<div class="owl-carousel owl-theme" role="listbox">
@@ -62,13 +62,13 @@ session_start();
 							<div class="row">
 								<div class="col-md-6 col-sm-8">
 									<div class="sub-title">
-										Tornament Gaming
+										Divertite y Participá
 									</div>
 									<div class="big-title">
-										VSARENA
+										TORNEOS
 									</div>
 									<a href="<?php echo $amigable; ?>/torneos" class="btn">
-										TORNEOS
+										Magnificos Torneos
 									</a>
 								</div>
 							</div>
@@ -81,13 +81,51 @@ session_start();
 							<div class="row">
 								<div class="col-md-6 col-sm-8">
 									<div class="sub-title">
-										Tornament Gaming
+										Presencía las ultimas
 									</div>
 									<div class="big-title">
-										Magnificas noticias
+										Batallas
+									</div>
+									<a href="<?php echo $amigable; ?>/batallas" class="btn">
+										ULTIMAS BATALLAS
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item msp_post_slide slide-3">
+					<div class="slider-caption">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6 col-sm-8">
+									<div class="sub-title">
+										Enterate nuestras últimas
+									</div>
+									<div class="big-title">
+										NOTICIAS
 									</div>
 									<a href="<?php echo $amigable; ?>/noticias" class="btn">
 										NOTICIAS
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="item msp_post_slide slide-4">
+					<div class="slider-caption">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6 col-sm-8">
+									<div class="sub-title">
+										Compite por magnificos
+									</div>
+									<div class="big-title">
+										PREMIOS
+									</div>
+									<a href="<?php echo $amigable; ?>/noticias" class="btn">
+										PREMIOS
 									</a>
 								</div>
 							</div>
@@ -109,7 +147,7 @@ session_start();
 			</div>
 		</div>
 	</div>
-	<!--ESPORT TEAM LANDING MAIN SLIDER BEGIN-->
+	<!--SLIDER END-->
 	<!--ESPORT TEAM LANDING SPONSORS BEGIN-->
 	<div class="esport-team-landing-sponsors">
 		<div class="container">
@@ -119,13 +157,13 @@ session_start();
 					<span>Sponsors</span>
 				</div>
 				<div class="col-md-3 col-sm-4 text-center">
-					<img src="<?php echo $urlFE; ?>/images/common/sponsor-img.png" alt="sponsor-image">
+					<img src="<?php echo $urlFE; ?>/images/common/sponsor-img.jpg" alt="sponsor-image">
 				</div>
 				<div class="col-md-3 col-sm-4  text-center">
-					<img src="<?php echo $urlFE; ?>/images/common/sponsor-img.png" alt="sponsor-image">
+					<img src="<?php echo $urlFE; ?>/images/common/sponsor-img.jpg" alt="sponsor-image">
 				</div>
 				<div class="col-md-3 col-sm-4  text-center">
-					<img src="<?php echo $urlFE; ?>/images/common/sponsor-img.png" alt="sponsor-image">
+					<img src="<?php echo $urlFE; ?>/images/common/sponsor-img.jpg" alt="sponsor-image">
 				</div>
 			</div>
 		</div>
