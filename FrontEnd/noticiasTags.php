@@ -40,7 +40,7 @@ $tag = $_GET['tag'];
     <meta name="keywords" content="" />
     <!--END METAS LOCALES-->
     <!--START TITULO-->
-    <title>Noticias con el tag </title>
+    <title>Noticia</title>
     <!--END TITULO-->
 </head>
 

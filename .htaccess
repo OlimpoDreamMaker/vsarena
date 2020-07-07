@@ -1,7 +1,7 @@
 #Options All -Indexes
 
 #Errores
-ErrorDocument 403 /VsArena/FrontEnd/404.php
+ErrorDocument 403 /VsArena/FrontEnd/404.ph
 ErrorDocument 404 /VsArena/FrontEnd/404.php
 
 #Enlaces amigables Dashboard
@@ -57,7 +57,7 @@ RewriteRule ^premios$ FrontEnd/premios.php
 RewriteRule ^producto_tda$ FrontEnd/producto_tda.php
 RewriteRule ^prox_enfrent_cpa$ FrontEnd/prox_enfrent_cpa.php
 RewriteRule ^proximamente$ FrontEnd/proximamente.php
-#RewriteRule ^registro$ FrontEnd/registro.php
+RewriteRule ^registro$ FrontEnd/registro.php
 RewriteRule ^resultados_cpto$ FrontEnd/resultados_cpto.php
 RewriteRule ^tienda$ FrontEnd/tienda.php
 RewriteRule ^torneo_llaves$ FrontEnd/torneo_llaves.php

@@ -148,7 +148,7 @@ session_start();
 		</div>
 	</div>
 	<!--SLIDER END-->
-	<!--ESPORT TEAM LANDING SPONSORS BEGIN-->
+	<!--SPONSORS START-->
 	<div class="esport-team-landing-sponsors">
 		<div class="container">
 			<div class="row">
@@ -168,7 +168,7 @@ session_start();
 			</div>
 		</div>
 	</div>
-	<!--ESPORT TEAM LANDING SPONSORS END-->
+	<!--SPONSORS END-->
 	<div id="matches" class="esport-landing-next-event-section">
 		<div class="container">
 			<div class="row">
