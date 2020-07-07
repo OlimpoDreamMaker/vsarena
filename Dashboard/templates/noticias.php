@@ -94,7 +94,12 @@ desconectar($conexion);
           <div class="col-lg-3 col-6">
             <div class="small-box bg-primary">
               <div class="inner">
-                <h3>44</h3>
+                <h3><?php 
+                $conexion= conectar();
+                echo cantidadNoticias($conexion);
+                desconectar($conexion);
+                
+                ?></h3>
                 <p>Noticias Totales</p>
               </div>
               <div class="icon">

@@ -1,4 +1,5 @@
 <?php
+require_once(__DIR__."/config.php");
 //Funciones
 
 //Funciones Cantidad Compras Usuario
@@ -508,6 +509,68 @@ function paginador($conexion,$pagina,$amigable,$where,$like){
       echo "</a>";
     echo "</li>";
   }
+}
+
+//Irvana trabajo aquí- feliciteme luego
+function noticiasPorFecha ($fechaInicio, $fechaFinal) {
+  global $amigable;
+  global $imagenes;
+  $fechaInicio = soloFecha($fechaInicio);
+  $fechaFinal = soloFecha($fechaFinal);
+  $conexion = conectar();
+  $query = "SELECT * FROM noticias n, usuarios u WHERE (u.idUsuario = n.Usuarios_idUsuario) AND n.fechaNoticia BETWEEN ('$fechaInicio') AND ('$fechaFinal')";
+  $rs = mysqli_query($conexion, $query);
+  while($fila = mysqli_fetch_assoc($rs)) {
+    $contenido = $fila['contenidoNoticia'];
+    $idNoticia = $fila['idNoticia'];
+    $idUsuario = $fila['Usuarios_idUsuario'];
+    $usuario = $fila['usuario'];
+    $titulo = $fila['tituloNoticia'];
+    echo "<!--ELEMENTO START-->";
+    echo "<div class='search-item'>";
+      echo "<div class='row'>";
+        echo "<div class='col-md-4'>";
+          echo "<div class='image'>";
+            echo "<img class='img-responsive' src='$imagenes/imgNoticias/".$fila['imgNoticia']."' alt='imagen $titulo' />";
+          echo "</div>";
+        echo "</div>";
+        echo "<div class='col-md-8'>";
+          echo "<div class='info'>";
+            echo "<a href='$amigable/articulo/$idNoticia/' class='name'>$titulo";
+            echo "<div class='wrap'>";
+              echo "<a href='#'>".fechaTexto($fila['fechaNoticia'])."</a> Por <a href='$amigable/perfil/$idUsuario/'>$usuario</a>";
+            echo "</div><div>";
+            if(strlen($contenido)>250){
+              echo substr($contenido, 0, 250);
+            }else{
+              echo $contenido;
+            }
+            echo "</div><a href='$amigable/articulo/$idNoticia/' class='read-more'>Leer Mas</a>";
+          echo "</div>";
+        echo "</div>";
+      echo "</div>";
+    echo "</div>";
+    echo "<!--ELEMENTO END-->";
+  }
+  desconectar($conexion);
+}
+
+function findLemaByUsuario ($idUsuario) {
+  $lema = "SELECT * FROM usuarios WHERE idUsuario=$idUsuario";
+  $conexion = conectar();
+  $rs = mysqli_query($conexion, $lema);
+  $fila = mysqli_fetch_assoc($rs);
+  desconectar($conexion);
+  return $fila['lema'];
+}
+
+function modificarLemaByUsuario ($idUsuario, $nuevoLema) {
+  //$lema = "UPDATE usuarios SET lema = $nuevoLema WHERE idUsuario=$idUsuario";
+  $lema = "UPDATE usuarios SET lema = '$nuevoLema' WHERE idUsuario = $idUsuario";
+  $conexion = conectar();
+  $rs = mysqli_query($conexion, $lema);
+  desconectar($conexion);
+  return $rs;
 }
 ?>
 

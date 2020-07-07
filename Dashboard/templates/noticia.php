@@ -303,7 +303,7 @@ desconectar($conexion);
                   <!-- Input Nombre Producto START -->
                   <div class="form-group col-4">
                     <label for="tituloNoticia">Titulo Noticia</label>
-                    <input type="text" class="form-control" name="tituloNoticia" id="tituloNoticia" placeholder="<?php echo $tituloNoticia;?>">
+                    <input type="text" class="form-control" name="tituloNoticia" id="tituloNoticia" value="<?php echo $tituloNoticia;?>">
                   </div>
                   <!-- Input Nombre Producto END -->
 
@@ -311,7 +311,7 @@ desconectar($conexion);
                   <div class="form-group col-4">
                     <label>Fecha Noticia:</label>
                       <div class="input-group date" id="reservationdate" data-target-input="nearest">
-                          <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate" name="fecha" id="fecha" placeholder="<?php echo $fechaNoticia;?>" />
+                          <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate" name="fecha" id="fecha" value="<?php echo $fechaNoticia;?>" />
                           <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
                               <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                           </div>

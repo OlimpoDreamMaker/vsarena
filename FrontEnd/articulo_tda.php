@@ -18,7 +18,7 @@ $fechaNoticia = $noticia['fechaNoticia'];
 $idUsuario = $noticia['idUsuario'];
 $usuario = $noticia['usuario'];
 $avatarUsuario = $noticia['avatarUsuario'];
-$descripcionAutor = $noticia['descripcionAdmin'];
+$descripcionAutor = findLemaByUsuario($idUsuario);
 desconectar($conexion);
 ?>
 <!DOCTYPE html>
