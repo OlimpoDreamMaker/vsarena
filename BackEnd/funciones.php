@@ -511,15 +511,38 @@ function paginador($conexion,$pagina,$amigable,$where,$like){
   }
 }
 
-//Irvana trabajo aquí- feliciteme luego
+//Irvana
 function noticiasPorFecha ($fechaInicio, $fechaFinal) {
-  global $amigable;
-  global $imagenes;
   $fechaInicio = soloFecha($fechaInicio);
   $fechaFinal = soloFecha($fechaFinal);
   $conexion = conectar();
   $query = "SELECT * FROM noticias n, usuarios u WHERE (u.idUsuario = n.Usuarios_idUsuario) AND n.fechaNoticia BETWEEN ('$fechaInicio') AND ('$fechaFinal')";
   $rs = mysqli_query($conexion, $query);
+  desconectar($conexion);
+  return $rs;
+}
+
+function findLemaByUsuario ($idUsuario) {
+  $lema = "SELECT * FROM usuarios WHERE idUsuario=$idUsuario";
+  $conexion = conectar();
+  $rs = mysqli_query($conexion, $lema);
+  $fila = mysqli_fetch_assoc($rs);
+  desconectar($conexion);
+  return $fila['lema'];
+}
+
+function modificarLemaByUsuario ($idUsuario, $nuevoLema) {
+  //$lema = "UPDATE usuarios SET lema = $nuevoLema WHERE idUsuario=$idUsuario";
+  $lema = "UPDATE usuarios SET lema = '$nuevoLema' WHERE idUsuario = $idUsuario";
+  $conexion = conectar();
+  $rs = mysqli_query($conexion, $lema);
+  desconectar($conexion);
+  return $rs;
+}
+
+function imprimirNoticiaPorFecha ($rs){
+  global $amigable;
+  global $imagenes;
   while($fila = mysqli_fetch_assoc($rs)) {
     $contenido = $fila['contenidoNoticia'];
     $idNoticia = $fila['idNoticia'];
@@ -552,25 +575,29 @@ function noticiasPorFecha ($fechaInicio, $fechaFinal) {
     echo "</div>";
     echo "<!--ELEMENTO END-->";
   }
-  desconectar($conexion);
 }
 
-function findLemaByUsuario ($idUsuario) {
-  $lema = "SELECT * FROM usuarios WHERE idUsuario=$idUsuario";
-  $conexion = conectar();
-  $rs = mysqli_query($conexion, $lema);
-  $fila = mysqli_fetch_assoc($rs);
-  desconectar($conexion);
-  return $fila['lema'];
+function noticiaDashboard ($rs) {
+  global $amigable;
+  $url = $amigable;
+  while($fila = mysqli_fetch_assoc($rs)){
+    echo "<tr>";
+    echo "<td>
+    <a href='$url/panel/noticia/".$fila['idNoticia']."/'>".$fila['idNoticia']."</a>
+    </td>";
+    echo "<td>
+    <a href='$url/panel/noticia/".$fila['idNoticia']."/'>".$fila['tituloNoticia']."</a>
+    </td>";
+    echo "<td>
+    <a href='$url/panel/usuario/".$fila['idUsuario']."/'>".$fila['usuario']."</a>
+    </td>";
+    echo "</tr>";
+  }
 }
 
-function modificarLemaByUsuario ($idUsuario, $nuevoLema) {
-  //$lema = "UPDATE usuarios SET lema = $nuevoLema WHERE idUsuario=$idUsuario";
-  $lema = "UPDATE usuarios SET lema = '$nuevoLema' WHERE idUsuario = $idUsuario";
+function crearCategoria ($categoria) {
   $conexion = conectar();
-  $rs = mysqli_query($conexion, $lema);
-  desconectar($conexion);
-  return $rs;
+
 }
 ?>
 
