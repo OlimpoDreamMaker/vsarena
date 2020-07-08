@@ -151,7 +151,7 @@ desconectar($conexion);
                       </div>
                       <div class="col">
                         <label for="fechaFinal">Fecha final</label>
-                        <input name="fechaFinal" type="date" class="form-control" placeholder="Fecha final" required value="<?php echo isset($_GET['fechaFinal']) ? $_GET['fechaInicio'] : "" ?>">
+                        <input name="fechaFinal" type="date" class="form-control" placeholder="Fecha final" required value="<?php echo isset($_GET['fechaFinal']) ? $_GET['fechaFinal'] : "" ?>">
                       </div>
                     </div>
                     <div class="row mt-2">
