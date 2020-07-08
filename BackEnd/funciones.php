@@ -595,10 +595,11 @@ function noticiaDashboard ($rs) {
   }
 }
 
-function crearCategoria ($categoria) {
+function findNoticiasByCategoria ($categoria) {
+  // SELECT * FROM categorias_has_noticias cn, noticias n, categorias c WHERE (n.idNoticia = cn.Noticias_idNoticia) AND (c.idCategoria = cn.Categorias_idCategoria)
   $conexion = conectar();
-
+  $query = "SELECT * FROM categorias_has_noticias cn, noticias n, categorias c WHERE (n.idNoticia = cn.Noticias_idNoticia) AND (c.idCategoria = cn.Categorias_idCategoria) AND (cn.Categorias_idCategoria = $categoria)";
+  $rs = mysqli_query($conexion, $query);
+  desconectar($conexion);
+  return $rs;
 }
-?>
-
-
