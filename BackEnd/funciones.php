@@ -1,7 +1,7 @@
 <?php
 require_once(__DIR__."/config.php");
 //Funciones
-
+session_start();
 //Funciones Cantidad Compras Usuario
 function cantidadComprasUsuario($conexion,$id){
   $consulta =  "SELECT * FROM ventas v
@@ -631,12 +631,31 @@ function imprimirProductos ($rs) {
                                         <span class="price">$'.$fila["precioEfectivo"]. '</span>
                                         <div class="btn-wrap">
                                             <button class="btn small">Detalles</button>
-                                            <input class="btn small" type="submit" value="Agregar"/>
+                                            <button class="spinner-border btn small" type="submit" value="Agregar"/>Agregar</button>
                                         </div>
                                     </div>
                                     </form>
                                 </div>
                             </div>
                         </div>';
+  }
+}
+
+function imprimirCarrito () {
+  echo isset($_SESSION["PRODUCTOS"]);
+  global $imagenes;
+  if (isset($_SESSION["PRODUCTOS"])) {
+    foreach ($_SESSION["PRODUCTOS"] as $clave => $valor) {
+      $precio = $valor["precioEfectivo"];
+      $cantidad = $valor["cantidad"];
+      $total = $precio * $cantidad;
+      echo '<tr class="cart_iem">
+                            <td class="delete"><a idProducto="' . $valor["idProducto"] . '" onclick="borrarProducto(this)"><i class="fa fa-close" aria-hidden="true"></i></a></td>
+                            <td class="name"><img style="max-height: 100px" class="product-image" src="' . $imagenes . '/imgProductos/' . $valor["imgProducto"] . '" alt="cart-product">Lorem ipsum</td>
+                            <td class="cost">$ '.$valor["precioEfectivo"].'</td>
+                            <td class="quantity"><input value="'. $valor["cantidad"].'" type="number"></td>
+                            <td class="total">$ '.$valor["cantidad"] * $valor["precioEfectivo"].'</td>
+                        </tr>';
+    }
   }
 }

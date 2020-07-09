@@ -14,6 +14,44 @@ if (isset($_POST["action"])) {
                 }
             }
         break;
+        case "cambiarCantidad":
+            foreach ($_SESSION["PRODUCTOS"] as $clave => $valor) {
+                // Si el producto existe en el carrito, se la agrega uno a la cantidad
+                if ($valor["idProducto"] == $_POST["idProducto"]) {
+                    if ($_POST["cantidad"] == 0) {
+                        unset($_SESSION["PRODUCTOS"][$clave]);
+                        $_SESSION["PRODUCTOS"] = array_values($_SESSION["PRODUCTOS"]);
+                        echo json_encode($_SESSION["PRODUCTOS"]);
+                        return;
+                    } else {
+                        $valor["cantidad"] = $_POST["cantidad"];
+                        echo json_encode($_SESSION["PRODUCTOS"]);
+                        return;
+                    }
+                    
+                }
+            }
+        break;
+        case "verificarCupon":
+            $hoy = getdate();
+            $conexion = conectar();
+            $query = "SELECT * FROM where idCupon=".$_POST["codigoCupon"]."";
+            $rs = mysqli_query($conexion, $query);
+            if ($cupon = mysqli_fetch_assoc($rs) && (strtotime($hoy) > strtotime(date($cupon["inicioCupon"]))) && (strtotime($hoy) < strtotime(date($cupon["finCupon"])))) {
+                $response = array(
+                    "cuponValido" => true,
+                    "porcentajeDescuento" => $cupon["porcentajeDescuento"],
+                );
+                echo json_encode($response);
+                return;
+            } else {
+                $response = array(
+                    "cuponValido" => false
+                );
+                echo json_encode($response);
+                return;
+            }
+        break;
         case "vaciar":
             unset($_SESSION["PRODUCTOS"]);
             echo json_encode("{}");
