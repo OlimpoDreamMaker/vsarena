@@ -53,29 +53,44 @@ echo ("<!--NAV START-->
 							<span><i class='fa fa-shopping-cart' aria-hidden='true'></i></span>
 						</a>
 						<div class='cart-drop'>
-							<table class='ct'>
-								<tr>
-									<td class='delete'><a href='#'><i class='fa fa-close' aria-hidden='true'></i></a></td>
+							<table class='ct' id='carrito-box'>
+								<script>
+									fetch('$urlBE/agregarCarrito.php', {
+                                    method: 'GET',
+                                    headers: {
+                                        'Accept': 'application/json'
+                                    }
+                                }).then(async (response) => {
+									if (await response.ok) {
+                                        response.json().then(function(json) {
+                                            var html = '';
+                                            var precio = 0;
+                                            json.forEach(producto => {
+                                                precio += parseFloat(producto.precioEfectivo) * producto.cantidad;
+                                                console.log(producto);
+                                                html += `<tr>
+									<td class='delete'><a idProducto='` + producto.idProducto + `' onclick='borrarProducto(this)'><i class='fa fa-close' aria-hidden='true'></i></a></td>
 									<td class='info'>
-										<img class='product-image' src='$urlFE/images/common/cart-product.jpg' alt='product-image'>
-										<em>lorem lorem lorem<br><em class='price'>1 x $ 600</em></em>
+										<img class='product-image' src='$imagenes/imgProductos/` + producto.imgProducto + `' alt='product-image'>
+										<em>` + producto.producto + `<br><em class='price'>` + producto.cantidad + ` x $ ` + producto.precioEfectivo + `</em></em>
 									</td>
-								</tr>
-								<tr>
-									<td class='delete'><a href='#'><i class='fa fa-close' aria-hidden='true'></i></a></td>
-									<td class='info'>
-										<img class='product-image' src='$urlFE/images/common/cart-product.jpg' alt='product-image'>
-										<em>lorem lorem lorem<br><em class='price'>1 x $ 900</em></em>
-									</td>
-								</tr>
+								</tr>`;
+                                            });
+                                            document.getElementById('carrito-box').innerHTML = html;
+                                            document.getElementById('carrito-box-subtotal').innerHTML = `<div class='total-text'>Subtotal: </div>
+								<div class='total-digit'>$ ` + precio.toFixed(2) + `</div>`;
+                                        });
+                                    }
+                                });
+								</script>
 							</table>
-							<div class='wrap'>
+							<div class='wrap' id='carrito-box-subtotal'>
 								<div class='total-text'>Subtotal: </div>
-								<div class='total-digit'>$ 120</div>
+								<div class='total-digit'>$ 0</div>
 							</div>
 							<div class='wrap btn-wrap'>
 								<a href='$amigable/carrito' class='btn view'>Ver Carrito</a>
-								<a href='#' class='btn check'>Vaciar Carrito</a>
+								<a onclick='vaciarCarrito()' class='btn check'>Vaciar Carrito</a>
 							</div>
 						</div>
 					</li>

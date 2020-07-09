@@ -603,3 +603,40 @@ function findNoticiasByCategoria ($categoria) {
   desconectar($conexion);
   return $rs;
 }
+
+function findAllProductos () {
+  $conexion = conectar();
+  $query = "SELECT * FROM productos";
+  $rs = mysqli_query($conexion, $query);
+  desconectar($conexion);
+  return $rs;
+}
+
+function imprimirProductos ($rs) {
+  global $imagenes;
+  while ($fila = mysqli_fetch_assoc($rs)) {
+    echo '<div style="height:500" class="col-md-4 col-sm-6">
+                            <div class="store-list-item">
+                                <div>
+                                <form name="formulario" action="" onSubmit="enviarDatos(this); return false" >
+                                    <input type="hidden" name="producto" value="'.openssl_encrypt($fila["producto"], COD, KEY).'"/>
+                                    <input type="hidden" name="idProducto" value="'.openssl_encrypt($fila["idProducto"], COD, KEY). '"/>
+                                    <input type="hidden" name="precioEfectivo" value="'.openssl_encrypt($fila["precioEfectivo"], COD, KEY). '"/>
+                                    <input type="hidden" name="imgProducto" value="'.openssl_encrypt($fila["imgProducto"], COD, KEY).'"/>
+                                    <a href="#">
+                                        <img style="height:370px" src="'.$imagenes.'/imgProductos/'.$fila["imgProducto"].'" alt="product">
+                                    </a>
+                                    <div class="info">
+                                        <span class="name">'.$fila["producto"].'</span>
+                                        <span class="price">$'.$fila["precioEfectivo"]. '</span>
+                                        <div class="btn-wrap">
+                                            <button class="btn small">Detalles</button>
+                                            <input class="btn small" type="submit" value="Agregar"/>
+                                        </div>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>';
+  }
+}
