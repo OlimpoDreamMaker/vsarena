@@ -19,7 +19,7 @@ RewriteRule ^panel/noticia/([0-9]+)/$ Dashboard/templates/noticia.php?id=$1
 RewriteRule ^panel/noticias/$ Dashboard/templates/noticias.php
 RewriteRule ^panel/premio/([0-9]+)/$ Dashboard/templates/premio.php?id=$1
 RewriteRule ^panel/producto/([0-9]+)/$ Dashboard/templates/producto.php?id=$1
-RewriteRule ^registro$ Dashboard/templates/register.php
+#RewriteRule ^registro$ Dashboard/templates/register.php
 RewriteRule ^panel/rondas/([0-9]+)/$ Dashboard/templates/rondas.php?id=$1
 RewriteRule ^panel/tag/([0-9]+)/$ Dashboard/templates/tag.php?id=$1
 RewriteRule ^panel/tienda/$ Dashboard/templates/tienda.php
