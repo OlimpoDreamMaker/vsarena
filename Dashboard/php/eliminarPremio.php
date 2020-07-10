@@ -1,5 +1,5 @@
 <?php
-  require_once("../../BackEnd/congfig.php");
+  require_once("../../BackEnd/config.php");
   $conexion = conectar(); 
 
   $idPremio = $_GET['id']; //Se recibe el ID del premio a eliminar

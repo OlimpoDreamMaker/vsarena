@@ -1,6 +1,5 @@
 <?php
 $p = '..';
-session_start();
 require_once("../../BackEnd/config.php");
 require_once("../../BackEnd/funciones.php");
 require_once("../../BackEnd/mostrarTablas.php");
@@ -338,12 +337,7 @@ desconectar($conexion);
                     <!-- Input Fecha START -->
                     <div class="form-group col-4">
                       <label>Fecha:</label>
-                      <div class="input-group date" id="reservationdate" data-target-input="nearest">
-                        <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate" name="fecha" id="fecha" />
-                        <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
-                          <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                        </div>
-                      </div>
+                      <input type="date" class="form-control datetimepicker-input" data-target="#reservationdate" name="fecha" id="fecha" />
                     </div>
                     <!-- Input Fecha END -->
 
