@@ -46,7 +46,6 @@ RewriteRule ^equipo$ FrontEnd/equipo.php
 RewriteRule ^$ FrontEnd/index.php
 RewriteRule ^/$ FrontEnd/index.php
 RewriteRule ^home$ FrontEnd/index.php
-#RewriteRule ^login$ FrontEnd/login.php
 RewriteRule ^mantenimiento$ FrontEnd/mantenimiento.php
 RewriteRule ^nosotros$ FrontEnd/nosotros.php
 RewriteRule ^noticias$ FrontEnd/noticias_blg.php
@@ -58,6 +57,7 @@ RewriteRule ^producto_tda$ FrontEnd/producto_tda.php
 RewriteRule ^prox_enfrent_cpa$ FrontEnd/prox_enfrent_cpa.php
 RewriteRule ^proximamente$ FrontEnd/proximamente.php
 RewriteRule ^registro$ FrontEnd/registro.php
+RewriteRule ^login$ FrontEnd/login.php
 RewriteRule ^resultados_cpto$ FrontEnd/resultados_cpto.php
 RewriteRule ^tienda$ FrontEnd/tienda.php
 RewriteRule ^torneo_llaves$ FrontEnd/torneo_llaves.php

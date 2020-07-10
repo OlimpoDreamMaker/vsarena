@@ -1085,7 +1085,7 @@ body {
 	font-size: 14px;
 	line-height: 1.42857143;
 	color: #333;
-	background-color: #fff;
+	background-color: #000;
 }
 button,
 input,
@@ -14057,9 +14057,6 @@ html {
 	padding: 0;
 	width: 100%;
 }
-body {
-	background: #141414;
-}
 a {
 	color: #e62117;
 	text-decoration: none;
@@ -14192,7 +14189,8 @@ h5.landing-sport-header {
 	margin: 0;
 }
 h5.esport-landing-header {
-	font-size: 16px;
+	font-size: 20px;
+	text-align: center;
 	text-transform: uppercase;
 	font-family: Raleway;
 	font-weight: 700;
@@ -30542,26 +30540,22 @@ ul.esport-championship-timline-tabs > li > a:before {
 	}
 }
 .esport-team-landing-main-slider .msp_post_slider .msp_post_slide.slide-1 {
-	background: url(../images/common/main-slide-1.jpg)
-		no-repeat;
+	background: url(../images/common/main-slide-1.jpg) no-repeat;
 	background-size: cover;
 	background-position: bottom;
 }
 .esport-team-landing-main-slider .msp_post_slider .msp_post_slide.slide-2 {
-	background: url(../images/common/main-slide-2.jpg)
-		no-repeat;
+	background: url(../images/common/main-slide-2.jpg) no-repeat;
 	background-size: cover;
 	background-position: bottom;
 }
 .esport-team-landing-main-slider .msp_post_slider .msp_post_slide.slide-3 {
-	background: url(../images/common/main-slide-3.png)
-		no-repeat;
+	background: url(../images/common/main-slide-3.png) no-repeat;
 	background-size: cover;
 	background-position: bottom;
 }
 .esport-team-landing-main-slider .msp_post_slider .msp_post_slide.slide-4 {
-	background: url(../images/common/main-slide-4.jpg)
-		no-repeat;
+	background: url(../images/common/main-slide-4.jpg) no-repeat;
 	background-size: cover;
 	background-position: bottom;
 }
@@ -30591,7 +30585,7 @@ ul.esport-championship-timline-tabs > li > a:before {
 .esport-team-landing-sponsors {
 	padding-top: 50px;
 	padding-bottom: 50px;
-	border-bottom: 10px solid #141414;
+	border-bottom: 10px solid #000;
 	overflow: hidden;
 }
 .esport-team-landing-sponsors span {
@@ -30656,7 +30650,7 @@ ul.esport-championship-timline-tabs > li > a:before {
 	background-repeat: no-repeat;
 	transition: all 0.4s;
 	position: relative;
-	background-color: #ffc30f;
+	background-color: #c6bfbedb;
 }
 .esport-team-landing-latest-matches > a:last-child {
 	border: none;
@@ -30676,6 +30670,7 @@ ul.esport-championship-timline-tabs > li > a:before {
 }
 .esport-team-landing-latest-matches > a:hover .team-name {
 	color: #141414;
+	font-weight: 600;
 }
 .esport-team-landing-latest-matches > a > div {
 	display: inline-block;
@@ -30686,11 +30681,11 @@ ul.esport-championship-timline-tabs > li > a:before {
 .esport-team-landing-latest-matches > a > span {
 	display: inline-block;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: .8em;
 	font-family: Montserrat;
 	width: 100%;
 	text-align: center;
-	color: #999;
+	color: #FFF;
 	padding: 15px 0;
 	position: relative;
 }
@@ -30722,6 +30717,7 @@ ul.esport-championship-timline-tabs > li > a:before {
 	object-fit: cover;
 }
 .esport-team-landing-latest-matches > a > div > .team > .team-name {
+	font-size: 1.2em;
 	padding: 3px 3px 2px 3px;
 	position: relative;
 }
@@ -30753,16 +30749,15 @@ ul.esport-championship-timline-tabs > li > a:before {
 }
 .esport-team-landing-latest-matches > a:hover > span {
 	color: #141414;
+	font-weight: 600;
 }
 .esport-team-landing-latest-matches > a > div > .team:hover {
 	overflow: visible;
 }
 .esport-team-landing-latest-matches > a > div > .team:hover .team-name {
 	z-index: 100;
-	box-shadow: 0 0 5px 2px #1f1f1f;
 	border-radius: 3px;
-	background: #fff;
-	color: #141414;
+	color: #FFF;
 }
 @media (max-width: 560px) {
 	.esport-team-landing-latest-matches > a {
@@ -30811,6 +30806,9 @@ ul.esport-championship-timline-tabs > li > a:before {
 	font-family: Montserrat, sans-serif;
 	text-transform: uppercase;
 }
+.esport-team-landing-players ul.esport-players li a:hover {
+	color: #E62117;
+}
 .esport-team-landing-players ul.esport-players li a:before {
 	content: '';
 	position: absolute;
@@ -30828,20 +30826,19 @@ ul.esport-championship-timline-tabs > li > a:before {
 	color: #fff;
 }
 .esport-team-landing-players .wrap {
-	display: inline-block;
-	overflow: hidden;
+	display: flex;
+	overflow: visible !important;
 	width: 100%;
 	position: relative;
 }
 .esport-team-landing-players .wrap .width {
-	width: 10000px;
+	display: flex;
 	position: relative;
 }
 .esport-team-landing-players .wrap a {
 	position: relative;
-	display: inline-block;
+	display: flex;
 	margin-left: 0;
-	float: left;
 	overflow: hidden;
 	background-color: #ffc30f;
 }
@@ -30854,6 +30851,7 @@ ul.esport-championship-timline-tabs > li > a:before {
 }
 .esport-team-landing-players .wrap a > .name {
 	position: absolute;
+	text-align: center;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -30878,10 +30876,14 @@ ul.esport-championship-timline-tabs > li > a:before {
 }
 .esport-team-landing-players .wrap .info-bord .name {
 	font-size: 16px;
+	display: inline-block;
+	margin-left: 5em;
+	margin-bottom: .4em;
+	text-align: center;
+	font-weight: 600;
 	color: #000;
 	text-transform: uppercase;
 	font-family: Montserrat;
-	padding-bottom: 25px;
 	white-space: nowrap;
 }
 .esport-team-landing-players .wrap .info-bord .progress-line {
@@ -30927,7 +30929,7 @@ ul.esport-championship-timline-tabs > li > a:before {
 	line-height: 1;
 }
 .esport-team-landing-players .wrap a:hover {
-	box-shadow: 0 0 50px #e62117;
+	box-shadow: 0 0 35px #b5b4b4;
 	z-index: 20;
 }
 .esport-team-landing-players .wrap a:hover > .name {
@@ -30963,8 +30965,8 @@ ul.esport-championship-timline-tabs > li > a:before {
 	line-height: 1;
 }
 .esport-team-landing-about .feature > img {
-	-webkit-filter: drop-shadow(0 10px 15px #da6011);
-	filter: drop-shadow(0 10px 15px #da6011);
+	-webkit-filter: drop-shadow(0 6px 10px #E62117);
+	filter: drop-shadow(0 6px 10px #E62117);
 }
 .esport-team-landing-about .feature > span {
 	width: 40%;

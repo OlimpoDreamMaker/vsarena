@@ -28,7 +28,7 @@ echo ("<!--NAV START-->
 							<a href='$amigable/buscar'><i class='fa fa-search' aria-hidden='true'></i></a>
                     </li>
 					<li>
-						<a href='$amigable/registro'><span>LOGIN</span></a>
+						<a href='$amigable/login'><span>LOGIN</span></a>
 					</li>				
 					<li>
 						<a href='$amigable/registro'><span>REGÍSTRATE</span></a>

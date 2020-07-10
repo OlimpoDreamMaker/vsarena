@@ -68,7 +68,7 @@ session_start();
 										TORNEOS
 									</div>
 									<a href="<?php echo $amigable; ?>/torneos" class="btn">
-										Magnificos Torneos
+										MagnÍficos Torneos
 									</a>
 								</div>
 							</div>
@@ -111,7 +111,7 @@ session_start();
 								</div>
 							</div>
 						</div>
-					</div>					
+					</div>
 				</div>
 				<div class="item msp_post_slide slide-4">
 					<div class="slider-caption">
@@ -169,11 +169,68 @@ session_start();
 		</div>
 	</div>
 	<!--SPONSORS END-->
+	<!--PRIMER FILA START-->
 	<div id="matches" class="esport-landing-next-event-section">
 		<div class="container">
 			<div class="row">
+				<!--ENFRENTAMIENTOS START-->
+				<div class="col-md-7">
+					<h5 class="esport-landing-header">Últimos enfrentamientos</h5>
+					<div class="esport-team-landing-latest-matches">
+						<!--ENFRENTAMIENTO-->
+						<a href="#">
+							<img src="<?php echo $urlFE; ?>/images/common/esport-champ-late-match.jpg" alt="background">
+							<span>Enfrentamiento</span>
+							<div>
+								<div class="team left">
+									<span>
+										<img src="<?php echo $urlFE; ?>/images/common/team-logo.png" alt="team-logo">
+									</span>
+									<span class="team-name">Equipo</span>
+								</div>
+								<div class="score">
+									<span>0 : 0</span>
+								</div>
+								<div class="team right">
+									<span class="image">
+										<img src="<?php echo $urlFE; ?>/images/common/team-logo.png" alt="team-logo">
+									</span>
+									<span class="team-name">Equipo</span>
+								</div>
+							</div>
+							<span>
+								<!-- aca va de donde proviene la batalla --></span>
+						</a>
+						<!--ENFRENTAMIENTO-->
+						<a href="#">
+							<img src="<?php echo $urlFE; ?>/images/common/esport-champ-late-match.jpg" alt="background">
+							<span>Enfrentamiento</span>
+							<div>
+								<div class="team left">
+									<span>
+										<img src="<?php echo $urlFE; ?>/images/common/team-logo.png" alt="team-logo">
+									</span>
+									<span class="team-name">Equipo</span>
+								</div>
+								<div class="score">
+									<span>0 : 0</span>
+								</div>
+								<div class="team right">
+									<span class="image">
+										<img src="<?php echo $urlFE; ?>/images/common/team-logo.png" alt="team-logo">
+									</span>
+									<span class="team-name">Equipo</span>
+								</div>
+							</div>
+							<span>
+								<!-- aca va de donde proviene la batalla --></span>
+						</a>
+					</div>
+				</div>
+				<!--ENFRENTAMIENTOS END-->
+				<!--PROXIMO TORNEO START-->
 				<div class="col-md-5">
-					<h5 class="esport-landing-header">Proximo torneo</h5>
+					<h5 class="esport-landing-header">Próximo torneo</h5>
 					<div class="esport-team-landing-next-event">
 						<img src="<?php echo $urlFE; ?>/images/common/esport-team-landing-next-event-logo.png" alt="next-event">
 						<div class="name">
@@ -184,259 +241,281 @@ session_start();
 						</div>
 					</div>
 				</div>
-				<div class="col-md-7">
-					<h5 class="esport-landing-header">Ultimos enfrentamientos</h5>
-					<!--ESPORT TEAM LANDING LATEST MATCHES BEGIN-->
-					<div class="esport-team-landing-latest-matches">
-						<a href="#">
-							<img src="<?php echo $urlFE; ?>/images/common/esport-champ-late-match.jpg" alt="background">
-							<span>Cuartos de finales</span>
-							<div>
-								<div class="team left">
-									<span>
-										<img src="<?php echo $urlFE; ?>/images/common/team-logo2.png" alt="team-logo">
-									</span>
-									<span class="team-name">internacional</span>
-								</div>
-								<div class="score">
-									<span>3:2</span>
-								</div>
-								<div class="team right">
-									<span class="image">
-										<img src="<?php echo $urlFE; ?>/images/common/team-logo2.png" alt="team-logo">
-									</span>
-									<span class="team-name">internacional</span>
-								</div>
-							</div>
-							<span>full time</span>
-						</a>
-						<a href="#">
-							<img src="<?php echo $urlFE; ?>/images/common/esport-champ-late-match.jpg" alt="background">
-							<span>Cuartos de finales</span>
-							<div>
-								<div class="team left">
-									<span>
-										<img src="<?php echo $urlFE; ?>/images/common/team-logo2.png" alt="team-logo">
-									</span>
-									<span class="team-name">internacional</span>
-								</div>
-								<div class="score">
-									<span>3:2</span>
-								</div>
-								<div class="team right">
-									<span class="image">
-										<img src="<?php echo $urlFE; ?>/images/common/team-logo2.png" alt="team-logo">
-									</span>
-									<span class="team-name">internacional</span>
-								</div>
-							</div>
-							<span>full time</span>
-						</a>
-					</div>
-					<!--ESPORT TEAM LANDING LATEST MATCHES END-->
-				</div>
+				<!--PROXIMO TORNEO END-->
 			</div>
 		</div>
 	</div>
+	<!--PRIMER FILA END-->
+	<!--SEGUNDA FILA START-->
 	<div id="team" class="esport-team-landing-players-sllider-section">
-		<!--ESPORT CHAMPIONSHIP PLAYERS BEGIN-->
+		<!--ESPORT CHAMPIONSHIP PLAYERS START-->
 		<div class="esport-team-landing-players">
 			<div class="container">
+				<!--EQUIPOS DESTACADOS-->
 				<div class="row">
 					<div class="col-md-12">
-						<h5 class="esport-landing-header">Equipos</h5>
+						<h5 class="esport-landing-header">Equipos Destacados</h5>
 						<ul class="esport-players">
 							<li class="active">
-								<a data-toggle="tab" href="#panters">T1</a>
+								<a data-toggle="tab" href="#panters">Equipo</a>
 							</li>
 							<li>
-								<a data-toggle="tab" href="#bears">Giants</a>
-							</li>
-							<li>
-								<a data-toggle="tab" href="#horses">Fnatic</a>
+								<a data-toggle="tab" href="#bears">Equipo</a>
 							</li>
 						</ul>
 					</div>
 				</div>
+				<!--CONTENEDOR DE PANELES DE JUGADORES START-->
 				<div class="tab-content">
+					<!--PANEL DE 5 JUGADORES START-->
 					<div id="panters" class="tab-pane fade in active">
 						<div class="wrap">
 							<div class="width players-wrapper">
+								<!--JUGADOR-->
 								<a href="#" data-id="0">
 									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
-										Robert Fitzgerald
+										Jugador
 									</span>
 									<span class="info-bord">
-										<span class="name">Robert Fitzgerald</span>
+										<span class="name">Jugador</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Jugados</span>
+												<span class="score">10</span>
+											</span>
+										</span>
+										<!--PROGRESS ITEM-->
+										<span class="progress-item">
+											<span class="progress-line">
+												<span class="bar"></span>
+											</span>
+											<span class="bar-label">
+												<span class="achievement">P. Ganados</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Perdidos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">Campeonatos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
 									</span>
 								</a>
+								<!--JUGADOR-->
 								<a href="#" data-id="0">
 									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
-										Robert Fitzgerald
+										Jugador
 									</span>
 									<span class="info-bord">
-										<span class="name">Robert Fitzgerald</span>
+										<span class="name">Jugador</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Jugados</span>
+												<span class="score">10</span>
+											</span>
+										</span>
+										<!--PROGRESS ITEM-->
+										<span class="progress-item">
+											<span class="progress-line">
+												<span class="bar"></span>
+											</span>
+											<span class="bar-label">
+												<span class="achievement">P. Ganados</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Perdidos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">Campeonatos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
 									</span>
 								</a>
+								<!--JUGADOR-->
 								<a href="#" data-id="0">
 									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
-										Robert Fitzgerald
+										Jugador
 									</span>
 									<span class="info-bord">
-										<span class="name">Robert Fitzgerald</span>
+										<span class="name">Jugador</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Jugados</span>
+												<span class="score">10</span>
+											</span>
+										</span>
+										<!--PROGRESS ITEM-->
+										<span class="progress-item">
+											<span class="progress-line">
+												<span class="bar"></span>
+											</span>
+											<span class="bar-label">
+												<span class="achievement">P. Ganados</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Perdidos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">Campeonatos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
 									</span>
 								</a>
+								<!--JUGADOR-->
 								<a href="#" data-id="0">
 									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
-										Robert Fitzgerald
+										Jugador
 									</span>
 									<span class="info-bord">
-										<span class="name">Robert Fitzgerald</span>
+										<span class="name">Jugador</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Jugados</span>
+												<span class="score">10</span>
+											</span>
+										</span>
+										<!--PROGRESS ITEM-->
+										<span class="progress-item">
+											<span class="progress-line">
+												<span class="bar"></span>
+											</span>
+											<span class="bar-label">
+												<span class="achievement">P. Ganados</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Perdidos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">Campeonatos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
 									</span>
 								</a>
+								<!--JUGADOR-->
 								<a href="#" data-id="0">
 									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
-										Robert Fitzgerald
+										Jugador
 									</span>
 									<span class="info-bord">
-										<span class="name">Robert Fitzgerald</span>
+										<span class="name">Jugador</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Jugados</span>
+												<span class="score">10</span>
+											</span>
+										</span>
+										<!--PROGRESS ITEM-->
+										<span class="progress-item">
+											<span class="progress-line">
+												<span class="bar"></span>
+											</span>
+											<span class="bar-label">
+												<span class="achievement">P. Ganados</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Perdidos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">Campeonatos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
@@ -445,370 +524,256 @@ session_start();
 							</div>
 						</div>
 					</div>
+					<!--PANEL DE 5 JUGADORES END-->
+					<!--PANEL DE 5 JUGADORES START-->
 					<div id="bears" class="tab-pane fade">
 						<div class="wrap">
 							<div class="width players-wrapper">
+								<!--JUGADOR-->
 								<a href="#" data-id="0">
 									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
-										Robert Fitzgerald
+										Jugador
 									</span>
 									<span class="info-bord">
-										<span class="name">Robert Fitzgerald</span>
+										<span class="name">Jugador</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Jugados</span>
+												<span class="score">10</span>
+											</span>
+										</span>
+										<!--PROGRESS ITEM-->
+										<span class="progress-item">
+											<span class="progress-line">
+												<span class="bar"></span>
+											</span>
+											<span class="bar-label">
+												<span class="achievement">P. Ganados</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Perdidos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">Campeonatos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
 									</span>
 								</a>
+								<!--JUGADOR-->
 								<a href="#" data-id="0">
 									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
-										Robert Fitzgerald
+										Jugador
 									</span>
 									<span class="info-bord">
-										<span class="name">Robert Fitzgerald</span>
+										<span class="name">Jugador</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Jugados</span>
+												<span class="score">10</span>
+											</span>
+										</span>
+										<!--PROGRESS ITEM-->
+										<span class="progress-item">
+											<span class="progress-line">
+												<span class="bar"></span>
+											</span>
+											<span class="bar-label">
+												<span class="achievement">P. Ganados</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Perdidos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">Campeonatos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
 									</span>
 								</a>
+								<!--JUGADOR-->
 								<a href="#" data-id="0">
 									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
-										Robert Fitzgerald
+										Jugador
 									</span>
 									<span class="info-bord">
-										<span class="name">Robert Fitzgerald</span>
+										<span class="name">Jugador</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Jugados</span>
+												<span class="score">10</span>
+											</span>
+										</span>
+										<!--PROGRESS ITEM-->
+										<span class="progress-item">
+											<span class="progress-line">
+												<span class="bar"></span>
+											</span>
+											<span class="bar-label">
+												<span class="achievement">P. Ganados</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Perdidos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">Campeonatos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
 									</span>
 								</a>
+								<!--JUGADOR-->
 								<a href="#" data-id="0">
 									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
-										Robert Fitzgerald
+										Jugador
 									</span>
 									<span class="info-bord">
-										<span class="name">Robert Fitzgerald</span>
+										<span class="name">Jugador</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Jugados</span>
+												<span class="score">10</span>
+											</span>
+										</span>
+										<!--PROGRESS ITEM-->
+										<span class="progress-item">
+											<span class="progress-line">
+												<span class="bar"></span>
+											</span>
+											<span class="bar-label">
+												<span class="achievement">P. Ganados</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Perdidos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">Campeonatos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
 									</span>
 								</a>
+								<!--JUGADOR-->
 								<a href="#" data-id="0">
 									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
 									<span class="name">
-										Robert Fitzgerald
+										Jugador
 									</span>
 									<span class="info-bord">
-										<span class="name">Robert Fitzgerald</span>
+										<span class="name">Jugador</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Jugados</span>
+												<span class="score">10</span>
+											</span>
+										</span>
+										<!--PROGRESS ITEM-->
+										<span class="progress-item">
+											<span class="progress-line">
+												<span class="bar"></span>
+											</span>
+											<span class="bar-label">
+												<span class="achievement">P. Ganados</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">P. Perdidos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
+										<!--PROGRESS ITEM-->
 										<span class="progress-item">
 											<span class="progress-line">
 												<span class="bar"></span>
 											</span>
 											<span class="bar-label">
-												<span class="achievement">played</span>
-												<span class="score">23</span>
-											</span>
-										</span>
-									</span>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div id="horses" class="tab-pane fade">
-						<div class="wrap">
-							<div class="width players-wrapper">
-								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
-									<span class="name">
-										Robert Fitzgerald
-									</span>
-									<span class="info-bord">
-										<span class="name">Robert Fitzgerald</span>
-										<span class="progress-item">
-											<span class="progress-line">
-												<span class="bar"></span>
-											</span>
-											<span class="bar-label">
-												<span class="achievement">played</span>
-												<span class="score">23</span>
-											</span>
-										</span>
-										<span class="progress-item">
-											<span class="progress-line">
-												<span class="bar"></span>
-											</span>
-											<span class="bar-label">
-												<span class="achievement">played</span>
-												<span class="score">23</span>
-											</span>
-										</span>
-										<span class="progress-item">
-											<span class="progress-line">
-												<span class="bar"></span>
-											</span>
-											<span class="bar-label">
-												<span class="achievement">played</span>
-												<span class="score">23</span>
-											</span>
-										</span>
-									</span>
-								</a>
-								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
-									<span class="name">
-										Robert Fitzgerald
-									</span>
-									<span class="info-bord">
-										<span class="name">Robert Fitzgerald</span>
-										<span class="progress-item">
-											<span class="progress-line">
-												<span class="bar"></span>
-											</span>
-											<span class="bar-label">
-												<span class="achievement">played</span>
-												<span class="score">23</span>
-											</span>
-										</span>
-										<span class="progress-item">
-											<span class="progress-line">
-												<span class="bar"></span>
-											</span>
-											<span class="bar-label">
-												<span class="achievement">played</span>
-												<span class="score">23</span>
-											</span>
-										</span>
-										<span class="progress-item">
-											<span class="progress-line">
-												<span class="bar"></span>
-											</span>
-											<span class="bar-label">
-												<span class="achievement">played</span>
-												<span class="score">23</span>
-											</span>
-										</span>
-									</span>
-								</a>
-								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
-									<span class="name">
-										Robert Fitzgerald
-									</span>
-									<span class="info-bord">
-										<span class="name">Robert Fitzgerald</span>
-										<span class="progress-item">
-											<span class="progress-line">
-												<span class="bar"></span>
-											</span>
-											<span class="bar-label">
-												<span class="achievement">played</span>
-												<span class="score">23</span>
-											</span>
-										</span>
-										<span class="progress-item">
-											<span class="progress-line">
-												<span class="bar"></span>
-											</span>
-											<span class="bar-label">
-												<span class="achievement">played</span>
-												<span class="score">23</span>
-											</span>
-										</span>
-										<span class="progress-item">
-											<span class="progress-line">
-												<span class="bar"></span>
-											</span>
-											<span class="bar-label">
-												<span class="achievement">played</span>
-												<span class="score">23</span>
-											</span>
-										</span>
-									</span>
-								</a>
-								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
-									<span class="name">
-										Robert Fitzgerald
-									</span>
-									<span class="info-bord">
-										<span class="name">Robert Fitzgerald</span>
-										<span class="progress-item">
-											<span class="progress-line">
-												<span class="bar"></span>
-											</span>
-											<span class="bar-label">
-												<span class="achievement">played</span>
-												<span class="score">23</span>
-											</span>
-										</span>
-										<span class="progress-item">
-											<span class="progress-line">
-												<span class="bar"></span>
-											</span>
-											<span class="bar-label">
-												<span class="achievement">played</span>
-												<span class="score">23</span>
-											</span>
-										</span>
-										<span class="progress-item">
-											<span class="progress-line">
-												<span class="bar"></span>
-											</span>
-											<span class="bar-label">
-												<span class="achievement">played</span>
-												<span class="score">23</span>
-											</span>
-										</span>
-									</span>
-								</a>
-								<a href="#" data-id="0">
-									<img class="player-img" alt="player-img" src="<?php echo $urlFE; ?>/images/common/esport-players.jpg">
-									<span class="name">
-										Robert Fitzgerald
-									</span>
-									<span class="info-bord">
-										<span class="name">Robert Fitzgerald</span>
-										<span class="progress-item">
-											<span class="progress-line">
-												<span class="bar"></span>
-											</span>
-											<span class="bar-label">
-												<span class="achievement">played</span>
-												<span class="score">23</span>
-											</span>
-										</span>
-										<span class="progress-item">
-											<span class="progress-line">
-												<span class="bar"></span>
-											</span>
-											<span class="bar-label">
-												<span class="achievement">played</span>
-												<span class="score">23</span>
-											</span>
-										</span>
-										<span class="progress-item">
-											<span class="progress-line">
-												<span class="bar"></span>
-											</span>
-											<span class="bar-label">
-												<span class="achievement">played</span>
+												<span class="achievement">Campeonatos</span>
 												<span class="score">23</span>
 											</span>
 										</span>
@@ -817,11 +782,14 @@ session_start();
 							</div>
 						</div>
 					</div>
+					<!--PANEL DE 5 JUGADORES END-->
 				</div>
+				<!--CONTENEDOR DE PANELES DE JUGADORES START-->
 			</div>
 		</div>
 		<!--ESPORT CHAMPIONSHIP PLAYERS END-->
 	</div>
+	<!--SEGUNDA FILA end-->
 	<div id="about" class="esport-team-landing-about">
 		<div class="container">
 			<div class="row">
