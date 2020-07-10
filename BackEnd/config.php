@@ -1,12 +1,16 @@
 <?php
+// Seguridad
+define("KEY", "encriptdatoscarrito");
+define("COD", "AES-128-ECB");
+
 
 $urlDB = "https://vsarena.net/Dashboard";
 $urlBE = "https://vsarena.net/BackEnd";
-// $urlFE = "https://vsarena.net/FrontEnd";
+$urlFE = "https://vsarena.net/FrontEnd";
 $amigable = "https://vsarena.net";
 $imagenes = "https://vsarena.net/imagenes";
 // $urlDB = "http://localhost/VSARENA/Dashboard";//Mientras use en local usar esta direccion
-$urlFE = "http://localhost/VSARENA/FrontEnd"; //Mientras use en local usar esta direccion
+// $urlFE = "http://localhost/VSARENA/FrontEnd"; //Mientras use en local usar esta direccion
 // $urlBE = "http://localhost/VSARENA/BackEnd";//Mientras use en local usar esta direccion
 // $amigable = "http://localhost/VSARENA";//Mientras use en local usar esta direccion
 // $imagenes = "http://localhost/VSARENA/imagenes";//Mientras use en local usar esta direccion
@@ -25,9 +29,9 @@ function conectar()
   $u = 'u932243340_154152'; //Root
   $p = '123456789'; //Password
   $d = 'u932243340_vsarena'; //Base de Datos
-  $u = 'root'; //Root
-  $p = ''; //Password
-  $d = 'vsarena'; //Base de Datos
+  // $u = 'root'; //Root
+  // $p = ''; //Password
+  // $d = 'vsarena'; //Base de Datos
   $con = mysqli_connect($s, $u, $p, $d);
   return $con;
 }

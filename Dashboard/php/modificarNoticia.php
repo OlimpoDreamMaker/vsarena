@@ -1,5 +1,7 @@
 <?php
   require_once("../../BackEnd/config.php");
+  require_once("../../BackEnd/funciones.php");
+  
   $conexion = conectar(); 
   $idNoticia = $_GET['id'];
 
@@ -8,9 +10,9 @@
   $resultado = mysqli_query($conexion,$consulta);
   $fila = mysqli_fetch_assoc($resultado);
   if(isset($_POST['tituloNoticia'])){
-    $titulo = $fila['tituloNoticia'];
-  }else{
     $titulo = $_POST['tituloNoticia'];
+  }else{
+    $titulo = $fila['tituloNoticia'];
   }
   if(isset($_POST['contenidoNoticia'])){
     $contenido = $_POST['contenidoNoticia'];
@@ -19,9 +21,9 @@
   }
   echo "<br>$contenido";
   if(isset($_POST['fecha'])){
-    $fecha = $fila['fechaNoticia'];
-  }else{
     $fecha = soloFecha($_POST['fecha']);
+  }else{
+    $fecha = $fila['fechaNoticia'];
   }
   if(isset($_FILES['foto']['name'])){
     $foto = $_FILES['foto']['name'];

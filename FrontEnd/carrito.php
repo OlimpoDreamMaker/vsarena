@@ -1,5 +1,6 @@
 <?php
 require_once("../BackEnd/config.php");
+require_once("../BackEnd/funciones.php");
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -87,20 +88,9 @@ require_once("../BackEnd/config.php");
                             <th>Cantidad</th>
                             <th class="total">Total</th>
                         </tr>
-                        <tr class="cart_iem">
-                            <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
-                            <td class="name"><img class="product-image" src="<?php echo $urlFE;?>/images/common/cart-product.jpg" alt="cart-product">Lorem ipsum</td>
-                            <td class="cost">$ 60</td>
-                            <td class="quantity"><input type="number"></td>
-                            <td class="total">$ 120</td>
-                        </tr>
-                        <tr>
-                            <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
-                            <td class="name"><img class="product-image" src="<?php echo $urlFE;?>/images/common/cart-product.jpg" alt="cart-product">Lorem ipsum</td>
-                            <td class="cost">$ 60</td>
-                            <td class="quantity"><input type="number"></td>
-                            <td class="total">$ 120</td>
-                        </tr>
+                        <?php
+                            imprimirCarrito();
+                        ?>
                     </table>
                 </div>
                 <!--BEFORE TABLA-->

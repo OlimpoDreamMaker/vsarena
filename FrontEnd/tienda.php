@@ -1,5 +1,6 @@
 <?php
 require_once("../BackEnd/config.php");
+require_once("../BackEnd/funciones.php");
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -59,7 +60,7 @@ require_once("../BackEnd/config.php");
                     <div class="info">
                         <div class="wrap">
                             <ul class="breadcrumbs">
-                                <li><a href="<?php echo $amigable;?>/">Inicio</a>/</li>
+                                <li><a href="<?php echo $amigable; ?>/">Inicio</a>/</li>
                                 <li>Tienda</li>
                             </ul>
                             <h1>Tienda</h1>
@@ -334,168 +335,90 @@ require_once("../BackEnd/config.php");
                     <h6>Canjear productos</h6>
                     <!--PRODUCTOS CANJEAR START-->
                     <div class="row">
-                        <!--PRODUCTO 01 START-->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="store-list-item">
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product">
-                                    </a>
-                                    <div class="info">
-                                        <span class="name">Lorem</span>
-                                        <span class="price">£ 155</span>
-                                        <div class="btn-wrap">
-                                            <button class="btn small">Detalles</button>
-                                            <button class="btn small">Agregar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--PRODUCTO 02 START-->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="store-list-item">
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product">
-                                    </a>
-                                    <div class="info">
-                                        <span class="name">Lorem</span>
-                                        <span class="price">£ 80</span>
-                                        <div class="btn-wrap">
-                                            <button class="btn small">Detalles</button>
-                                            <button class="btn small">Agregar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--PRODUCTO 03 START-->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="store-list-item">
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product">
-                                    </a>
-                                    <div class="info">
-                                        <span class="name">Lorem</span>
-                                        <span class="price">£ 155</span>
-                                        <div class="btn-wrap">
-                                            <button class="btn small">Detalles</button>
-                                            <button class="btn small">Agregar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--PRODUCTO 04 START-->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="store-list-item">
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product">
-                                    </a>
-                                    <div class="info">
-                                        <span class="name">Lorem</span>
-                                        <span class="price">£ 89</span>
-                                        <div class="btn-wrap">
-                                            <button class="btn small">Detalles</button>
-                                            <button class="btn small">Agregar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--PRODUCTO 05 START-->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="store-list-item">
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product">
-                                    </a>
-                                    <div class="info">
-                                        <span class="name">Lorem</span>
-                                        <span class="price">£ 120</span>
-                                        <div class="btn-wrap">
-                                            <button class="btn small">Detalles</button>
-                                            <button class="btn small">Agregar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--PRODUCTO 06 START-->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="store-list-item">
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product">
-                                    </a>
-                                    <div class="info">
-                                        <span class="name">Lorem</span>
-                                        <span class="price">£ 155</span>
-                                        <div class="btn-wrap">
-                                            <button class="btn small">Detalles</button>
-                                            <button class="btn small">Agregar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--PRODUCTO 07 START-->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="store-list-item">
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product">
-                                    </a>
-                                    <div class="info">
-                                        <span class="name">Lorem</span>
-                                        <span class="price">£ 115</span>
-                                        <div class="btn-wrap">
-                                            <button class="btn small">Detalles</button>
-                                            <button class="btn small">Agregar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--PRODUCTO 08 START-->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="store-list-item">
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product">
-                                    </a>
-                                    <div class="info">
-                                        <span class="name">Lorem</span>
-                                        <span class="price">£ 125</span>
-                                        <div class="btn-wrap">
-                                            <button class="btn small">Detalles</button>
-                                            <button class="btn small">Agregar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--PRODUCTO 09 START-->
-                        <div class="col-md-4 col-sm-6">
-                            <div class="store-list-item">
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo $urlFE;?>/images/common/store-item-img.jpg" alt="product">
-                                    </a>
-                                    <div class="info">
-                                        <span class="name">Lorem</span>
-                                        <span class="price">£ 135</span>
-                                        <div class="btn-wrap">
-                                            <button class="btn small">Detalles</button>
-                                            <button class="btn small">Agregar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <script>
+                            function vaciarCarrito() {
+                                var formData = new FormData();
+                                formData.append("action", "vaciar");
+                                fetch('<?php echo $urlBE ?>/agregarCarrito.php', {
+                                    method: "POST",
+                                    body: formData,
+                                    headers: {
+                                        'Accept': 'application/json'
+                                    }
+                                }).then(response => {
+                                        response.json().then(json => {
+                                            console.log(json);
+                                            document.getElementById("carrito-box").innerHTML = "";
+                                            document.getElementById("carrito-box-subtotal").innerHTML = `<div class='total-text'>Subtotal: </div>
+								<div class='total-digit'>$ ` + 0 + `</div>`;
+                                        });
+                                });
+                            }
+
+                            function borrarProducto(producto) {
+                                var formData = new FormData();
+                                formData.append("idProducto", producto.getAttribute("idProducto"));
+                                formData.append("action", "borrar");
+                                fetch('<?php echo $urlBE ?>/agregarCarrito.php', {
+                                    method: "POST",
+                                    body: formData,
+                                    headers: {
+                                        'Accept': 'application/json'
+                                    }
+                                }).then(response => {
+                                    response.json().then(json => {
+                                        var html = "";
+                                        var precio = 0;
+                                        json.forEach(producto => {
+                                            precio += parseFloat(producto.precioEfectivo) * producto.cantidad;
+                                            html += `<tr>
+									<td class='delete'><a idProducto="` + producto.idProducto + `" onclick='borrarProducto(this)'><i class='fa fa-close' aria-hidden='true'></i></a></td>
+									<td class='info'>
+										<img class='product-image' src='<?php echo $imagenes ?>/imgProductos/` + producto.imgProducto + `' alt='product-image'>
+										<em>` + producto.producto + `<br><em class='price'>` + producto.cantidad + ` x $ ` + producto.precioEfectivo + `</em></em>
+									</td>
+								</tr>`;
+                                        });
+                                        document.getElementById("carrito-box").innerHTML = html;
+                                        document.getElementById("carrito-box-subtotal").innerHTML = `<div class='total-text'>Subtotal: </div>
+								<div class='total-digit'>$ ` + precio.toFixed(2) + `</div>`;
+                                    });
+                                });
+
+                            }
+
+                            function enviarDatos(form) {
+                                let formulario = new FormData(form);
+                                fetch('<?php echo $urlBE ?>/agregarCarrito.php', {
+                                    method: "POST",
+                                    body: formulario,
+                                    headers: {
+                                        'Accept': 'application/json'
+                                    }
+                                }).then(async response => {
+                                    if (await response.ok) {
+                                        response.json().then(function(json) {
+                                            var html = "";
+                                            var precio = 0;
+                                            json.forEach(producto => {
+                                                precio += parseFloat(producto.precioEfectivo) * producto.cantidad;
+                                                html += `<tr>
+									<td class='delete'><a idProducto="` + producto.idProducto + `" onclick='borrarProducto(this)'><i class='fa fa-close' aria-hidden='true'></i></a></td>
+									<td class='info'>
+										<img class='product-image' src='<?php echo $imagenes ?>/imgProductos/` + producto.imgProducto + `' alt='product-image'>
+										<em>` + producto.producto + `<br><em class='price'>` + producto.cantidad + ` x $ ` + producto.precioEfectivo + `</em></em>
+									</td>
+								</tr>`;
+                                            });
+                                            document.getElementById("carrito-box").innerHTML = html;
+                                            document.getElementById("carrito-box-subtotal").innerHTML = `<div class='total-text'>Subtotal: </div>
+								<div class='total-digit'>$ ` + precio.toFixed(2) + `</div>`;
+                                        });
+                                    }
+                                });
+                            }
+                        </script>
+                        <?php imprimirProductos(findAllProductos()); ?>
                         <!--PAGINACION START-->
                         <div class="col-md-12">
                             <div class="pagination-wrap">

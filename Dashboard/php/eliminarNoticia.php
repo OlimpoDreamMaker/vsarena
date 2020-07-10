@@ -11,12 +11,16 @@
   
   if($resultado = mysqli_query($conexion, $consulta)){
     
+    //Borrando relacion comentarios
+    $comentarios = "DELETE FROM comentarios WHERE Noticias_idNoticia='$idNoticia'";
+    mysqli_query($conexion, $comentarios);
     //Borrando relacion tags
     $tags = "DELETE FROM tags_has_noticias WHERE Noticias_idNoticia='$idNoticia'";
     mysqli_query($conexion, $tags);
 
     $subconsulta = "DELETE FROM noticias WHERE idNoticia='$idNoticia' AND Usuarios_idUsuario='$autor'";
-    mysqli_query($conexion, $subconsulta);   
+    mysqli_query($conexion, $subconsulta);
+
     $desconectar = desconectar($conexion);
     header("Location: $amigable/panel/noticias/");
   }else{

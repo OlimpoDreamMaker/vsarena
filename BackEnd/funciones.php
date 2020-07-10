@@ -1,6 +1,7 @@
 <?php
+require_once(__DIR__."/config.php");
 //Funciones
-
+session_start();
 //Funciones Cantidad Compras Usuario
 function cantidadComprasUsuario($conexion,$id){
   $consulta =  "SELECT * FROM ventas v
@@ -509,6 +510,152 @@ function paginador($conexion,$pagina,$amigable,$where,$like){
     echo "</li>";
   }
 }
-?>
 
+//Irvana
+function noticiasPorFecha ($fechaInicio, $fechaFinal) {
+  $fechaInicio = soloFecha($fechaInicio);
+  $fechaFinal = soloFecha($fechaFinal);
+  $conexion = conectar();
+  $query = "SELECT * FROM noticias n, usuarios u WHERE (u.idUsuario = n.Usuarios_idUsuario) AND n.fechaNoticia BETWEEN ('$fechaInicio') AND ('$fechaFinal')";
+  $rs = mysqli_query($conexion, $query);
+  desconectar($conexion);
+  return $rs;
+}
 
+function findLemaByUsuario ($idUsuario) {
+  $lema = "SELECT * FROM usuarios WHERE idUsuario=$idUsuario";
+  $conexion = conectar();
+  $rs = mysqli_query($conexion, $lema);
+  $fila = mysqli_fetch_assoc($rs);
+  desconectar($conexion);
+  return $fila['lema'];
+}
+
+function modificarLemaByUsuario ($idUsuario, $nuevoLema) {
+  //$lema = "UPDATE usuarios SET lema = $nuevoLema WHERE idUsuario=$idUsuario";
+  $lema = "UPDATE usuarios SET lema = '$nuevoLema' WHERE idUsuario = $idUsuario";
+  $conexion = conectar();
+  $rs = mysqli_query($conexion, $lema);
+  desconectar($conexion);
+  return $rs;
+}
+
+function imprimirNoticiaPorFecha ($rs){
+  global $amigable;
+  global $imagenes;
+  while($fila = mysqli_fetch_assoc($rs)) {
+    $contenido = $fila['contenidoNoticia'];
+    $idNoticia = $fila['idNoticia'];
+    $idUsuario = $fila['Usuarios_idUsuario'];
+    $usuario = $fila['usuario'];
+    $titulo = $fila['tituloNoticia'];
+    echo "<!--ELEMENTO START-->";
+    echo "<div class='search-item'>";
+      echo "<div class='row'>";
+        echo "<div class='col-md-4'>";
+          echo "<div class='image'>";
+            echo "<img class='img-responsive' src='$imagenes/imgNoticias/".$fila['imgNoticia']."' alt='imagen $titulo' />";
+          echo "</div>";
+        echo "</div>";
+        echo "<div class='col-md-8'>";
+          echo "<div class='info'>";
+            echo "<a href='$amigable/articulo/$idNoticia/' class='name'>$titulo";
+            echo "<div class='wrap'>";
+              echo "<a href='#'>".fechaTexto($fila['fechaNoticia'])."</a> Por <a href='$amigable/perfil/$idUsuario/'>$usuario</a>";
+            echo "</div><div>";
+            if(strlen($contenido)>250){
+              echo substr($contenido, 0, 250);
+            }else{
+              echo $contenido;
+            }
+            echo "</div><a href='$amigable/articulo/$idNoticia/' class='read-more'>Leer Mas</a>";
+          echo "</div>";
+        echo "</div>";
+      echo "</div>";
+    echo "</div>";
+    echo "<!--ELEMENTO END-->";
+  }
+}
+
+function noticiaDashboard ($rs) {
+  global $amigable;
+  $url = $amigable;
+  while($fila = mysqli_fetch_assoc($rs)){
+    echo "<tr>";
+    echo "<td>
+    <a href='$url/panel/noticia/".$fila['idNoticia']."/'>".$fila['idNoticia']."</a>
+    </td>";
+    echo "<td>
+    <a href='$url/panel/noticia/".$fila['idNoticia']."/'>".$fila['tituloNoticia']."</a>
+    </td>";
+    echo "<td>
+    <a href='$url/panel/usuario/".$fila['idUsuario']."/'>".$fila['usuario']."</a>
+    </td>";
+    echo "</tr>";
+  }
+}
+
+function findNoticiasByCategoria ($categoria) {
+  // SELECT * FROM categorias_has_noticias cn, noticias n, categorias c WHERE (n.idNoticia = cn.Noticias_idNoticia) AND (c.idCategoria = cn.Categorias_idCategoria)
+  $conexion = conectar();
+  $query = "SELECT * FROM categorias_has_noticias cn, noticias n, categorias c WHERE (n.idNoticia = cn.Noticias_idNoticia) AND (c.idCategoria = cn.Categorias_idCategoria) AND (cn.Categorias_idCategoria = $categoria)";
+  $rs = mysqli_query($conexion, $query);
+  desconectar($conexion);
+  return $rs;
+}
+
+function findAllProductos () {
+  $conexion = conectar();
+  $query = "SELECT * FROM productos";
+  $rs = mysqli_query($conexion, $query);
+  desconectar($conexion);
+  return $rs;
+}
+
+function imprimirProductos ($rs) {
+  global $imagenes;
+  while ($fila = mysqli_fetch_assoc($rs)) {
+    echo '<div style="height:500" class="col-md-4 col-sm-6">
+                            <div class="store-list-item">
+                                <div>
+                                <form name="formulario" action="" onSubmit="enviarDatos(this); return false" >
+                                    <input type="hidden" name="producto" value="'.openssl_encrypt($fila["producto"], COD, KEY).'"/>
+                                    <input type="hidden" name="idProducto" value="'.openssl_encrypt($fila["idProducto"], COD, KEY). '"/>
+                                    <input type="hidden" name="precioEfectivo" value="'.openssl_encrypt($fila["precioEfectivo"], COD, KEY). '"/>
+                                    <input type="hidden" name="imgProducto" value="'.openssl_encrypt($fila["imgProducto"], COD, KEY).'"/>
+                                    <a href="#">
+                                        <img style="height:370px" src="'.$imagenes.'/imgProductos/'.$fila["imgProducto"].'" alt="product">
+                                    </a>
+                                    <div class="info">
+                                        <span class="name">'.$fila["producto"].'</span>
+                                        <span class="price">$'.$fila["precioEfectivo"]. '</span>
+                                        <div class="btn-wrap">
+                                            <button class="btn small">Detalles</button>
+                                            <button class="spinner-border btn small" type="submit" value="Agregar"/>Agregar</button>
+                                        </div>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>';
+  }
+}
+
+function imprimirCarrito () {
+  echo isset($_SESSION["PRODUCTOS"]);
+  global $imagenes;
+  if (isset($_SESSION["PRODUCTOS"])) {
+    foreach ($_SESSION["PRODUCTOS"] as $clave => $valor) {
+      $precio = $valor["precioEfectivo"];
+      $cantidad = $valor["cantidad"];
+      $total = $precio * $cantidad;
+      echo '<tr class="cart_iem">
+                            <td class="delete"><a idProducto="' . $valor["idProducto"] . '" onclick="borrarProducto(this)"><i class="fa fa-close" aria-hidden="true"></i></a></td>
+                            <td class="name"><img style="max-height: 100px" class="product-image" src="' . $imagenes . '/imgProductos/' . $valor["imgProducto"] . '" alt="cart-product">Lorem ipsum</td>
+                            <td class="cost">$ '.$valor["precioEfectivo"].'</td>
+                            <td class="quantity"><input value="'. $valor["cantidad"].'" type="number"></td>
+                            <td class="total">$ '.$valor["cantidad"] * $valor["precioEfectivo"].'</td>
+                        </tr>';
+    }
+  }
+}

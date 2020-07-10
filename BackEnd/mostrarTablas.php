@@ -1,4 +1,5 @@
 <?php
+require_once(__DIR__."/config.php");
 
 //Dashboard Mostrando datos
 
@@ -455,6 +456,8 @@ function premiosTorneo($conexion,$idTorneo, $url){
 function mostrarRondas($conexion, $idTorneo){
   $consulta = "SELECT * FROM rondas WHERE Torneos_idTorneos='$idTorneo'";
   $resultado = mysqli_query($conexion,$consulta);
+  global $amigable;
+  $url = $amigable;
   if(mysqli_num_rows($resultado)>0){
     while($fila = mysqli_fetch_assoc($resultado)){
       ?>
