@@ -1,5 +1,5 @@
 <?php
-  require_once("../../BackEnd/congfig.php");
+  require_once("../../BackEnd/config.php");
   $conexion = conectar(); 
 
   $idNoticia = $_GET['id']; //Se recibe el ID de la noticia a eliminar

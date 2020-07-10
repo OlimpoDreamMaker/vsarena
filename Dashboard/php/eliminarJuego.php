@@ -1,5 +1,5 @@
 <?php
-  require_once("../../BackEnd/congfig.php");
+  require_once("../../BackEnd/config.php");
   $conexion = conectar(); 
 
   $idJuego = $_POST['idJuego']; //Se recibe el ID del juego a eliminar

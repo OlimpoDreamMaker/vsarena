@@ -1,6 +1,5 @@
 <?php
 $p = '..';
-session_start();
 require_once("../../BackEnd/config.php");
 require_once("../../BackEnd/funciones.php");
 require_once("../../BackEnd/mostrarTablas.php");
@@ -213,7 +212,7 @@ desconectar($conexion);
                       while($fila = mysqli_fetch_assoc($resultado)){
                         echo "<option value='".$fila['idusuario']."'>".$fila['usuario']."</option>";
                       }
-                      $desconectar = desconectarBD($conexion);
+                      $desconectar = desconectar($conexion);
                       ?>
                     </select>
                   </div>
@@ -237,7 +236,7 @@ desconectar($conexion);
                       while($fila = mysqli_fetch_assoc($resultado)){
                         echo "<option value='".$fila['idEquipo']."'>".$fila['equipo']."</option>";
                       }
-                      $desconectar = desconectarBD($conexion);
+                      $desconectar = desconectar($conexion);
                       ?>
                     </select>
                   </div>

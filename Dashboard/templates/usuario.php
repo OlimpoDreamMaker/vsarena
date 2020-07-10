@@ -1,6 +1,5 @@
 <?php
 $p = '..';
-session_start();
 require_once("../../BackEnd/config.php");
 require_once("../../BackEnd/funciones.php");
 require_once("../../BackEnd/mostrarTablas.php");

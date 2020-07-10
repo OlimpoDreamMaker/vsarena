@@ -1,6 +1,5 @@
 <?php
 $p = '..';
-session_start();
 require_once("../../BackEnd/config.php");
 require_once("../../BackEnd/funciones.php");
 require_once("../../BackEnd/mostrarTablas.php");
@@ -215,7 +214,7 @@ desconectar($conexion);
                   <tbody>
                   <?php
                   $conexion = conectar();
-                  comentariosProducto($conexion, $idProducto);
+                  comentariosProducto($conexion, $idProducto, $amigable);
                   desconectar($conexion);
                   ?>
                   </tbody>
