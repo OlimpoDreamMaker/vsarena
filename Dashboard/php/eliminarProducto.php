@@ -11,7 +11,7 @@
     $consulta = "DELETE FROM productos WHERE idProducto='$idProducto'";
     mysqli_query($conexion, $consulta);   
     $desconectar = desconectar($conexion);
-    header("Location: $amigable/panel/productos/");
+    header("Location: $amigable/panel/tienda/");
   }else{
     echo "<script>alert('Usuario o contraseña incorrecto')</script>";
     $desconectar = desconectar($conexion);

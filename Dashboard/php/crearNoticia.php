@@ -14,10 +14,9 @@
   $type = $_FILES["foto"]["type"];
   $origen = $_FILES["foto"]["tmp_name"];
   $destino = "../../imagenes/$carpeta/$foto";
-  echo realpath("../../$carpeta/$foto");
   $tags = $_POST["tags"];
   if($type=="image/jpeg" OR $type=="image/jpg" OR $type=="image/png" OR $type=="image/gif"){
-    echo move_uploaded_file($origen, $destino);
+    move_uploaded_file($origen, $destino);
     $consulta = "INSERT INTO noticias(tituloNoticia,imgNoticia,contenidoNoticia,fechaNoticia,Usuarios_idUsuario) VALUES ('$titulo', '$foto', '$contenido', '$fechaNoticia','$idAutor')";
   }else{
     $consulta = "INSERT INTO noticias(tituloNoticia,contenidoNoticia,fechaNoticia,Usuarios_idUsuario) VALUES ('$titulo', '$contenido', '$fechaNoticia','$idAutor')";

@@ -33,7 +33,7 @@
                   WHERE idCupon='$idCupon";
   mysqli_query($conexion,$consulta);
 
-  $desconectar = desconectarBD($conexion);
+  $desconectar = desconectar($conexion);
   header("Location:$amigable/panel/cupon/$idCupon/");
   //Mostrar Alerta de Juego modificado
 

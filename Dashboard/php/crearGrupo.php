@@ -1,5 +1,5 @@
 <?php
-  require_once("../../BackeEnd/config.php");
+  require_once("../../BackEnd/config.php");
   $conexion = conectar(); 
 
   $torneo = $_GET['tor'];
@@ -9,7 +9,7 @@
   
   mysqli_query($conexion, $consulta);   
   
-  $desconectar = desconectarBD($conexion);
+  $desconectar = desconectar($conexion);
   header("Location: $amigable/panel/torneo/$torneo/");
   
 ?>

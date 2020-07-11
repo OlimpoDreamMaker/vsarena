@@ -1,5 +1,5 @@
 <?php
-require_once("../../BackeEnd/config.php");
+require_once("../../BackEnd/config.php");
 $conexion = conectar();
 $idUsuario = $_GET['id'];
 $consulta =  "SELECT * 

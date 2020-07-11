@@ -2,6 +2,7 @@
   require_once("../../BackEnd/config.php");
   $conexion = conectar(); 
   $idProducto= $_GET['id'];
+  $foto = $_FILES["foto"]["name"];
   $carpeta = "imgProductos";
   $consulta = "SELECT * FROM productos WHERE idProducto='$idProducto'";
   $resultado = mysqli_query($conexion,$consulta);
@@ -36,14 +37,14 @@
     $type = $_FILES["foto"]["type"];
     $origen = $_FILES["foto"]["tmp_name"]; 
     $destino = "../../$carpeta/$foto";
-    if($type=="image/jpeg" OR $type=="image/jpg" OR $type=="image/png" OR type=="image/gif"){
+    if($type=="image/jpeg" OR $type=="image/jpg" OR $type=="image/png" OR $type=="image/gif"){
       move_uploaded_file($origen, $destino);
       $consulta = "UPDATE productos SET 
                   producto='$nombre', 
                   descripcion='$descripcion',
                   imgProducto='$imgProducto',
                   precioEfectivo='$precioEfectivo',
-                  precioMonVirutal='$precioMonVitural',
+                  precioMonVirtual='$precioMonVitural',
                   stock='$stock'
                   WHERE idProducto='$idProducto";
     }else{
@@ -51,16 +52,16 @@
                   producto='$nombre', 
                   descripcion='$descripcion',
                   precioEfectivo='$precioEfectivo',
-                  precioMonVirutal='$precioMonVitural',
+                  precioMonVirtual='$precioMonVitural',
                   stock='$stock'
-                  WHERE idProducto='$idProducto";
+                  WHERE idProducto='$idProducto'";
     }
   }else{
     $consulta = "UPDATE productos SET 
                   producto='$nombre', 
                   descripcion='$descripcion',
                   precioEfectivo='$precioEfectivo',
-                  precioMonVirutal='$precioMonVitural',
+                  precioMonVirtual='$precioMonVitural',
                   stock='$stock'
                   WHERE idProducto='$idProducto";
   }
