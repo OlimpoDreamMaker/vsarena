@@ -1,6 +1,6 @@
 <?php
   //Cancelar Torneo
-  require_once("../../BackeEnd/config.php");
+  require_once("../../BackEnd/config.php");
   $conexion = conectar(); 
 
   $idTorneo = $_GET['id']; //Se recibe el ID del usuario a eliminar

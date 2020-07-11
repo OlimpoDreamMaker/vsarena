@@ -4,7 +4,7 @@
   $idJuego= $_GET['id'];
   $carpeta = "imgJuegos";
   $selec = "SELECT * FROM juegos WHERE idJuego='$idJuego'";
-  $resultado = mysqli_query($conexion,$consulta);
+  $resultado = mysqli_query($conexion, $selec);
   $fila = mysqli_fetch_assoc($resultado);
   if(isset($_POST['juego'])){
     $juego = $_POST['juego'];
@@ -26,30 +26,30 @@
     $type = $_FILES["foto"]["type"];
     $origen = $_FILES["foto"]["tmp_name"]; 
     $destino = "../../$carpeta/$foto";
-    if($type=="image/jpeg" OR $type=="image/jpg" OR $type=="image/png" OR type=="image/gif"){
+    if($type=="image/jpeg" OR $type=="image/jpg" OR $type=="image/png" OR $type=="image/gif"){
       move_uploaded_file($origen, $destino);
       $consulta = "UPDATE juegos SET 
                   juego='$juego', 
                   descripcionJuego='$descripcionJuego',
                   imgJuego='$imgJuego',
                   plataforma='$plataforma'
-                  WHERE idJuego='$idJuego";
+                  WHERE idJuego='$idJuego'";
     }else{
       $consulta = "UPDATE juegos SET 
                   juego='$juego', 
                   descripcionJuego='$descripcionJuego',
                   plataforma='$plataforma'
-                  WHERE idJuego='$idJuego";
+                  WHERE idJuego='$idJuego'";
     }
   }else{
     $consulta = "UPDATE juegos SET 
                   juego='$juego', 
                   descripcionJuego='$descripcionJuego',
                   plataforma='$plataforma'
-                  WHERE idJuego='$idJuego";
+                  WHERE idJuego='$idJuego'";
   }
 
-  mysqli_query($conexion,$consulta);
+  mysqli_query($conexion,$consulta) or die(mysqli_error($conexion));
 
   $desconectar = desconectar($conexion);
   header("Location: $amigable/panel/juego/$idJuego/");

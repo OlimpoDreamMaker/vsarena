@@ -294,7 +294,7 @@ desconectar($conexion);
                   <tbody>
                   <?php
                   $conexion = conectar();
-                  cupones($conexion,$url);
+                  cupones($conexion, $amigable);
                   desconectar($conexion);
                   ?>
                   </tbody>

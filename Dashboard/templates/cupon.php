@@ -32,7 +32,7 @@ desconectar($conexion);
 <head>
   <?php
   require_once("$p/components/head.php");
-  mostrarHead("Cupon | $nombreCupon", $url);
+  mostrarHead("Cupon | $nombreCupon", $urlDB);
   ?>
 </head>
 
