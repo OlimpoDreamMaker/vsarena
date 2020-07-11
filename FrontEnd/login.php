@@ -42,6 +42,14 @@ require_once("../BackEnd/config.php");
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!--START HOJAS-->
+	<?php
+	include('estructura/global_hojas_gg.php');
+
+	?>
+	<!--END HOJAS-->
+
+	
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,900,900italic,700italic,700,500italic,500,400italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700|Roboto+Slab:400,100,700,300" rel="stylesheet" type="text/css">
 
 
@@ -202,31 +210,11 @@ require_once("../BackEnd/config.php");
 		}
 	</script>
 
-
-
-
-	<!-- Facebook Pixel Code -->
-
-
-	<!-- End Facebook Pixel Code -->
-
-	<!-- Facebook Pixel Code -->
-
-
-
-	<!-- End Facebook Pixel Code -->
-
-
-
-
-
-	<!-- Google Tag Manager -->
-
 	<!-- End Google Tag Manager -->
 
 
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-	<link rel="stylesheet" href="css/2a7388b.css?v3.4.6">
+	
 
 
 	<!-- Include manifest file in the page -->

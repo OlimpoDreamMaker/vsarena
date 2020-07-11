@@ -1,3 +1,7 @@
+<?php
+require_once("../BackEnd/config.php");
+?>
+
 <html lang="es" class="" data-triggered="true">
 
 <head>
@@ -40,7 +44,12 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,900,900italic,700italic,700,500italic,500,400italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700|Roboto+Slab:400,100,700,300" rel="stylesheet" type="text/css">
 
+	<!--START HOJAS-->
+	<?php
+	include('estructura/global_hojas_gg.php');
 
+	?>
+	<!--END HOJAS-->
 
 
 	<!-- Inicio de notificación de consentimiento de cookies de OneTrust -->
