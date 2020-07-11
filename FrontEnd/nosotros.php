@@ -80,10 +80,7 @@ require_once("../BackEnd/config.php");
                 </div>
                 <!--SINOPSIS-->
                 <div class="col-md-12">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit facilis, mollitia laboriosam nihil soluta exercitationem saepe deserunt! Laboriosam saepe officia est hic sapiente eos soluta earum autem? Molestiae, nisi. Inventore.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi vel recusandae aliquid eos nihil! Doloremque nostrum illum omnis a, temporibus atque consequatur minus deserunt totam accusamus possimus velit, nulla incidunt!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, maxime cupiditate corrupti sapiente eum voluptatem? Fugiat quis consectetur esse debitis itaque vero. Quisquam maiores sit rerum doloribus esse iusto laborum!
-                    </p>
+                    <p>Nos dedicamos a impulsar el mercado amateur y semiprofesional de los eSports a través de la organización de torneos y eventos online que generen relevancia y visualización de todas las LEYENDAS (gamers) que aspiran entrar al mundo profesional de los videojuegos; dando como resultado el nacimiento de una comunidad de jugadores comprendida y que día a día crece gracias a la confianza que depositan los usuarios en nosotros.</p>
                 </div>
             </div>
         </div>

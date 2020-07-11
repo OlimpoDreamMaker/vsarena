@@ -789,24 +789,28 @@ session_start();
 		</div>
 		<!--ESPORT CHAMPIONSHIP PLAYERS END-->
 	</div>
-	<!--SEGUNDA FILA end-->
+	<!--SEGUNDA FILA END-->
+	<!--TERCER FILA START-->
 	<div id="about" class="esport-team-landing-about">
 		<div class="container">
 			<div class="row">
+				<!--NOSOTROS-->
 				<div class="col-md-7">
 					<div class="row">
 						<div class="col-md-12">
-							<span>Nosotros</span>
-							<p>Pabst irony tattooed, synth sriracha selvage pok pok. Wayfarers kinfolk sartorial, helvetica you probably haven't heard of them tumeric venmo deep v mixtape semiotics brunch. </p>
+							<span>Conócenos</span>
+							<p>VSARENA te ofrece oportunidades únicas, en donde te irás desafiando continuamente, únete gratis. 
+							Gana puntos de gloria participando en torneos, canjealos por premios,
+							¡Inviertiendo solamente tus mejores jugadas y estrategias!</p>
 						</div>
 						<div class="col-xs-6">
 							<span class="feature">
 								<img src="<?php echo $urlFE; ?>/images/common/esport-team-lp-feature-ico.png" alt="feature">
-								<span>Diversion</span>
+								<span>Diversión</span>
 							</span>
 							<span class="feature">
 								<img src="<?php echo $urlFE; ?>/images/common/esport-team-lp-feature-ico.png" alt="feature">
-								<span>Jugabilidad</span>
+								<span>Gloria</span>
 							</span>
 						</div>
 						<div class="col-xs-6">
@@ -816,20 +820,24 @@ session_start();
 							</span>
 							<span class="feature">
 								<img src="<?php echo $urlFE; ?>/images/common/esport-team-lp-feature-ico.png" alt="feature">
-								<span>Aventura</span>
+								<span>Gratis</span>
 							</span>
 						</div>
 					</div>
 				</div>
+				<!--BIENVENIDOS-->
 				<div class="col-md-5 text-right">
 					<span class="small-title">Bienvenidos a</span>
 					<span class="big-title">vsarena</span>
-					<p>Hella pop-up flexitarian, semiotics migas humblebrag schlitz literally tofu deep v thundercats skateboard viral cornhole.</p>
-					<a href="#">Torneos</a>
+					<p>Dedicados a impulsar el mercado amateur y semiprofesional de los eSports a través de la organización de torneos.
+						
+					</p>
+					<a href="<?php echo $amigable; ?>/nosotros">Nosotros</a>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!--TERCERA FILA START-->
 	<!-- PREMIOS INICIO -->
 	<div class="amateurs-award-box">
 		<div class="container">
@@ -838,7 +846,7 @@ session_start();
 					<div class="text">
 						<div class="title">Visita nuestros</div>
 						<div class="big-title">Magnificos premios</div>
-						<p>Snackwave tote bag fixie gluten-free, affogato master cleane cronut portland prism knausgaard. Chartreuse fingerstache gentrify you probably</p>
+						<p>Gana premios y puntos de gloría, totalmente gratis, y canjealos por magnificos premios</p>
 						<a href="trophies.html" class="btn">Detalles</a>
 					</div>
 				</div>

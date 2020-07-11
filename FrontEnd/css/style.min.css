@@ -30573,7 +30573,7 @@ ul.esport-championship-timline-tabs > li > a:before {
 	.msp_post_slide
 	.slider-caption
 	.sub-title {
-	color: #a1a1a1;
+	color: #cacaca;
 	padding-bottom: 10px;
 }
 .esport-team-landing-main-slider .msp_post_slider .owl-dot {
@@ -30955,6 +30955,7 @@ ul.esport-championship-timline-tabs > li > a:before {
 }
 .esport-team-landing-about span {
 	display: inline-block;
+	font-size: 17px;
 	width: 100%;
 	color: #fff;
 	text-transform: uppercase;
@@ -31141,7 +31142,7 @@ ul.esport-championship-timline-tabs > li > a:before {
 	position: absolute;
 	color: #fff;
 	font-size: 12px;
-	background: #09f;
+	background: #e62117;
 	z-index: 2;
 }
 .esport-team-landing-twitter-slider .nav-arrow.left-arrow:before {
