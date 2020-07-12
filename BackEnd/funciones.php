@@ -264,29 +264,31 @@ function comentariosNot($conexion,$id,$imagenes){
                ORDER BY c.idComentario ASC";
   $rs = mysqli_query($conexion, $consulta);
   // var_dump(mysqli_fetch_assoc($rs));
-  while($fila = mysqli_fetch_assoc($rs)){
-    echo "<div class='comment-item'>";
+  if ($rs) {
+    while ($fila = mysqli_fetch_assoc($rs)) {
+      echo "<div class='comment-item'>";
       echo "<div class='avatar'>";
-      if($fila['idUsuario']!=1 AND $fila['idNoRegistrado']==1 ){
-        echo "<img src='$imagenes/avatarUser/".$fila['avatarUsuario']."' alt='user-avatar'>";
-      }else{
+      if ($fila['idUsuario'] != 1 and $fila['idNoRegistrado'] == 1) {
+        echo "<img src='$imagenes/avatarUser/" . $fila['avatarUsuario'] . "' alt='user-avatar'>";
+      } else {
         echo "<img src='$imagenes/avatarUser/pordefecto.png' alt='user-avatar'>";
       }
       echo "</div>";
       echo "<div class='info'>";
-        echo "<div class='date'>";
-        if($fila['idUsuario']!=1 AND $fila['idNoRegistrado']==0 ){
-          echo "<a href='#'>".fechaTexto($fila['fechaComentario'])."</a> Por <a href='#'>".$fila['usuario']."</a>";
-        }else{
-          echo "<a href='#'>".fechaTexto($fila['fechaComentario'])."</a> Por <a href='#'>".$fila['nombreNoRegistrado']."</a>";
-        }
-        echo "</div>";
-          echo "<p>";
-          echo $fila['contenidoComentario'];
-          echo "</p>";
-          //echo "<a href='#' class='reply'>Responder</a>";
+      echo "<div class='date'>";
+      if ($fila['idUsuario'] != 1 and $fila['idNoRegistrado'] == 0) {
+        echo "<a href='#'>" . fechaTexto($fila['fechaComentario']) . "</a> Por <a href='#'>" . $fila['usuario'] . "</a>";
+      } else {
+        echo "<a href='#'>" . fechaTexto($fila['fechaComentario']) . "</a> Por <a href='#'>" . $fila['nombreNoRegistrado'] . "</a>";
+      }
       echo "</div>";
-    echo "</div>";
+      echo "<p>";
+      echo $fila['contenidoComentario'];
+      echo "</p>";
+      //echo "<a href='#' class='reply'>Responder</a>";
+      echo "</div>";
+      echo "</div>";
+    }
   }
 }
 //Cantidad Comentarios de las Noticias

@@ -338,7 +338,7 @@ function enfrentamientosGrupo($conexion,$idGrupo,$url){
   }
 }
 //Dashboard Grupos
-function mostrarGrupos($conexion, $idTorneo, $url){
+function mostrarGrupos($conexion, $idTorneo, $url) {
   $consulta = "SELECT * FROM grupos WHERE Torneos_idTorneos='$idTorneo'";
   $resultado = mysqli_query($conexion,$consulta);
   if(mysqli_num_rows($resultado)>0){
