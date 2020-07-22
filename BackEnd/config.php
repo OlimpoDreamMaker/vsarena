@@ -3,16 +3,16 @@
 define("KEY", "encriptdatoscarrito");
 define("COD", "AES-128-ECB");
 
-// $urlDB = "https://vsarena.net/Dashboard";
-// $urlBE = "https://vsarena.net/BackEnd";
-// $urlFE = "https://vsarena.net/FrontEnd";
-// $amigable = "https://vsarena.net";
-// $imagenes = "https://vsarena.net/imagenes";
-$urlDB = "http://localhost/VSARENA/Dashboard";//Mientras use en local usar esta direccion
-$urlFE = "http://localhost/VSARENA/FrontEnd"; //Mientras use en local usar esta direccion
-$urlBE = "http://localhost/VSARENA/BackEnd";//Mientras use en local usar esta direccion
-$amigable = "http://localhost/VSARENA";//Mientras use en local usar esta direccion
-$imagenes = "http://localhost/VSARENA/imagenes";//Mientras use en local usar esta direccion
+$urlDB = "https://vsarena.net/Dashboard";
+$urlBE = "https://vsarena.net/BackEnd";
+$urlFE = "https://vsarena.net/FrontEnd";
+$amigable = "https://vsarena.net";
+$imagenes = "https://vsarena.net/imagenes";
+// $urlDB = "http://localhost/VSARENA/Dashboard";//Mientras use en local usar esta direccion
+// $urlFE = "http://localhost/VSARENA/FrontEnd"; //Mientras use en local usar esta direccion
+// $urlBE = "http://localhost/VSARENA/BackEnd";//Mientras use en local usar esta direccion
+// $amigable = "http://localhost/VSARENA";//Mientras use en local usar esta direccion
+// $imagenes = "http://localhost/VSARENA/imagenes";//Mientras use en local usar esta direccion
 //Redes
 $facebook = "https://www.facebook.com/TorneosVSArena";
 $twitch = "https://www.twitch.tv/vsarenatv";
