@@ -62,7 +62,7 @@ session_start();
 							<div class="row">
 								<div class="col-md-6 col-sm-8">
 									<div class="sub-title">
-										Divertite y Participá
+										Divertite
 									</div>
 									<div class="big-title">
 										TORNEOS
@@ -100,7 +100,7 @@ session_start();
 							<div class="row">
 								<div class="col-md-6 col-sm-8">
 									<div class="sub-title">
-										Enterate nuestras últimas
+										Enterate
 									</div>
 									<div class="big-title">
 										NOTICIAS
@@ -119,13 +119,13 @@ session_start();
 							<div class="row">
 								<div class="col-md-6 col-sm-8">
 									<div class="sub-title">
-										Compite por magnificos
+										Compite por
 									</div>
 									<div class="big-title">
 										PREMIOS
 									</div>
 									<a href="<?php echo $amigable; ?>/noticias" class="btn">
-										PREMIOS
+										MAGNIFICOS PREMIOS
 									</a>
 								</div>
 							</div>
@@ -798,28 +798,28 @@ session_start();
 				<div class="col-md-7">
 					<div class="row">
 						<div class="col-md-12">
-							<span>Conócenos</span>
-							<p>VSARENA te ofrece oportunidades únicas, en donde te irás desafiando continuamente, únete gratis. 
-							Gana puntos de gloria participando en torneos, canjealos por premios,
-							¡Inviertiendo solamente tus mejores jugadas y estrategias!</p>
+							<span>Sobre nosotros</span>
+							<p>VsArena te ofrece oportunidades únicas. Te irás desafiando continuamente, unitiendote
+								totalmente gratis. Compite por puntos de gloria participando en torneos, canjealos por premios,
+								¡Inviertiendo solamente tus mejores jugadas y estrategias!</p>
 						</div>
 						<div class="col-xs-6">
 							<span class="feature">
-								<img src="<?php echo $urlFE; ?>/images/common/esport-team-lp-feature-ico.png" alt="feature">
-								<span>Diversión</span>
+								<img src="<?php echo $urlFE; ?>/images/common/icon_gamepad.png" alt="feature">
+								<span>Diversion</span>
 							</span>
 							<span class="feature">
-								<img src="<?php echo $urlFE; ?>/images/common/esport-team-lp-feature-ico.png" alt="feature">
+								<img src="<?php echo $urlFE; ?>/images/common/icon_free.png" alt="feature">
 								<span>Gloria</span>
 							</span>
 						</div>
 						<div class="col-xs-6">
 							<span class="feature">
-								<img src="<?php echo $urlFE; ?>/images/common/esport-team-lp-feature-ico.png" alt="feature">
+								<img src="<?php echo $urlFE; ?>/images/common/icon_trofy.png" alt="feature">
 								<span>Premios</span>
 							</span>
 							<span class="feature">
-								<img src="<?php echo $urlFE; ?>/images/common/esport-team-lp-feature-ico.png" alt="feature">
+								<img src="<?php echo $urlFE; ?>/images/common/icon_glory.png" alt="feature">
 								<span>Gratis</span>
 							</span>
 						</div>
@@ -829,49 +829,51 @@ session_start();
 				<div class="col-md-5 text-right">
 					<span class="small-title">Bienvenidos a</span>
 					<span class="big-title">vsarena</span>
-					<p>Dedicados a impulsar el mercado amateur y semiprofesional de los eSports a través de la organización de torneos.
-						
-					</p>
+					<p>Dedicados a impulsar el mercado amateur y semiprofesional de los eSports a través de la organización de torneos</p>
 					<a href="<?php echo $amigable; ?>/nosotros">Nosotros</a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!--TERCERA FILA START-->
-	<!-- PREMIOS INICIO -->
+	<!--PREMIOS INICIO-->
 	<div class="amateurs-award-box">
 		<div class="container">
 			<div class="row">
+				<!--PREMIO TITULO-->
 				<div class="col-md-5">
 					<div class="text">
 						<div class="title">Visita nuestros</div>
 						<div class="big-title">Magnificos premios</div>
 						<p>Gana premios y puntos de gloría, totalmente gratis, y canjealos por magnificos premios</p>
-						<a href="trophies.html" class="btn">Detalles</a>
+						<a href="<?php echo $amigable; ?>/premios" class="btn">Premios</a>
 					</div>
 				</div>
 				<div class="col-md-7">
 					<div class="am-trophey">
 						<div class="row">
+							<!--PREMIO-->
 							<div class="col-md-4 col-sm-4">
 								<div class="item">
-									<img src="<?php echo $urlFE; ?>/images/common/am-trophey.png" alt="am-trophey">
-									<div class="name">National cup</div>
-									<div class="year">2010</div>
+									<img src="<?php echo $urlFE; ?>/images/common/trophy_b1.png" alt="am-trophey">
+									<div class="name">Trofeo</div>
+									<div class="year">Primero</div>
 								</div>
 							</div>
+							<!--PREMIO-->
 							<div class="col-md-4 col-sm-4">
 								<div class="item">
-									<img src="<?php echo $urlFE; ?>/images/common/am-trophey1.png" alt="am-trophey">
-									<div class="name">Championship trophy</div>
-									<div class="year">2012</div>
+									<img src="<?php echo $urlFE; ?>/images/common/trophy_f1.png" alt="am-trophey">
+									<div class="name">Trofeo</div>
+									<div class="year">Tercero</div>
 								</div>
 							</div>
+							<!--PREMIO-->
 							<div class="col-md-4 col-sm-4">
 								<div class="item">
-									<img src="<?php echo $urlFE; ?>/images/common/am-trophey2.png" alt="am-trophey">
-									<div class="name">Super cup</div>
-									<div class="year">2017</div>
+									<img src="<?php echo $urlFE; ?>/images/common/trophy_b2.png" alt="am-trophey">
+									<div class="name">Trofeo</div>
+									<div class="year">Segundo</div>
 								</div>
 							</div>
 						</div>
@@ -880,19 +882,19 @@ session_start();
 			</div>
 		</div>
 	</div>
-	<!-- PREMIO FINAL -->
-	<!--ESPORT TEAN LANDING TWITTER SLIDER BEGIN-->
+	<!--PREMIO FINAL-->
+	<!--SLYDER INFO START-->
 	<div id="twitter-slider" class="esport-team-landing-twitter-slider" data-ride="carousel">
-		<!--<div class="wrapper-width">-->
+		<!--INFO START-->
 		<div class="owl-carousel owl-theme">
 			<div class="item">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="wrap">
-								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<div class="wrap">	
+								<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>							
 								<div class="text">
-									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga quaerat excepturi debitis, dolore fugit perspiciatis qui ipsa praesentium provident sint, quidem reprehenderit possimus est ad assumenda voluptates, exercitationem odio adipisci.
+									Compite en torneos
 								</div>
 								<div class="copyright">VsArena</div>
 							</div>
@@ -904,10 +906,10 @@ session_start();
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="wrap">
-								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<div class="wrap">	
+								<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>							
 								<div class="text">
-									Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio cumque vero dicta! Facere quam harum ratione error aspernatur quisquam iusto cupiditate praesentium omnis pariatur, non voluptates autem ut, laborum molestiae?
+									Compite en torneos
 								</div>
 								<div class="copyright">VsArena</div>
 							</div>
@@ -916,18 +918,19 @@ session_start();
 				</div>
 			</div>
 		</div>
-		<!--</div>-->
-		<!-- Controls -->
+		<!--INFO END-->
+		<!--CONTROL LEFT-->
 		<a class="nav-arrow left-arrow" href="#twitter-slider" role="button" data-slide="prev">
 			<i class="fa fa-angle-left" aria-hidden="true"></i>
 			<span class="sr-only"></span>
 		</a>
+		<!--CONTROL RIGTH-->
 		<a class="nav-arrow right-arrow" href="#twitter-slider" role="button" data-slide="next">
 			<i class="fa fa-angle-right" aria-hidden="true"></i>
 			<span class="sr-only"></span>
 		</a>
 	</div>
-	<!--ESPORT TEAN LANDING TWITTER SLIDER END-->
+	<!--SLYDER INFO END-->
 	<div id="news" class="esport-landing-big-section">
 		<!--ESPORT TEAM LANDING NEWS BEGIN-->
 		<div class="esport-team-landing-news">

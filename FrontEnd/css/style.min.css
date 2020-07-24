@@ -7,6 +7,7 @@ html {
 }
 body {
 	margin: 0;
+	cursor: default;
 }
 article,
 aside,
@@ -1085,7 +1086,7 @@ body {
 	font-size: 14px;
 	line-height: 1.42857143;
 	color: #333;
-	background-color: #000;
+	background-color: #141414;
 }
 button,
 input,
@@ -14676,6 +14677,7 @@ body.admin-bar .is-sticky .main-menu-wrap {
 .main-menu-wrap .custom-logo-link img {
 	margin: auto 0;
 	position: relative;
+	filter: drop-shadow(rgb(230, 33, 23) 0px 1px 5px);
 }
 .main-players-stat {
 	padding: 44px 0 100px 0;
@@ -19638,7 +19640,7 @@ overflow-scroll.table tr td {
 	object-fit: cover;
 }
 .amateurs-award-box {
-	background: #000;
+	background: #141414;
 }
 .amateurs-award-box {
 	padding: 110px 0;
@@ -19660,11 +19662,21 @@ overflow-scroll.table tr td {
 	font-weight: 900;
 	line-height: 40px;
 }
+.btn:focus{
+	color: #FFF;
+}
+.btn:hover{
+	color: #000;
+}
 .amateurs-award-box .btn {
 	margin-top: 59px;
 }
 .am-trophey .item {
 	text-align: center;
+}
+.am-trophey .item img {
+	text-align: center;
+	/* filter: drop-shadow(rgb(230, 33, 23) 0px 2px 6px); */
 }
 .am-trophey .item .name {
 	padding-top: 21px;
@@ -19675,7 +19687,7 @@ overflow-scroll.table tr td {
 	line-height: normal;
 }
 .am-trophey .item .year {
-	color: #9e9e9e;
+	color: #c1c1c1;
 	font-size: 12px;
 	line-height: normal;
 }
@@ -30585,7 +30597,6 @@ ul.esport-championship-timline-tabs > li > a:before {
 .esport-team-landing-sponsors {
 	padding-top: 50px;
 	padding-bottom: 50px;
-	border-bottom: 10px solid #000;
 	overflow: hidden;
 }
 .esport-team-landing-sponsors span {
@@ -30966,8 +30977,8 @@ ul.esport-championship-timline-tabs > li > a:before {
 	line-height: 1;
 }
 .esport-team-landing-about .feature > img {
-	-webkit-filter: drop-shadow(0 6px 10px #E62117);
-	filter: drop-shadow(0 6px 10px #E62117);
+	-webkit-filter: drop-shadow(2px 4px 12px #E62117);
+	filter: drop-shadow(2px 4px 12px #E62117);
 }
 .esport-team-landing-about .feature > span {
 	width: 40%;
@@ -31101,7 +31112,6 @@ ul.esport-championship-timline-tabs > li > a:before {
 	margin: 0 auto;
 }
 .esport-team-landing-twitter-slider .wrap > a {
-	color: #1da1f2;
 	font-size: 24px;
 	padding-bottom: 34px;
 	display: block;
@@ -31142,38 +31152,12 @@ ul.esport-championship-timline-tabs > li > a:before {
 	position: absolute;
 	color: #fff;
 	font-size: 12px;
-	background: #e62117;
+	background: #000;
 	z-index: 2;
-}
-.esport-team-landing-twitter-slider .nav-arrow.left-arrow:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	right: -7px;
-	bottom: 0;
-	width: 12px;
-	transform: skew(-10deg);
-	background: #09f;
-	transition: all 0.4s;
-}
-.esport-team-landing-twitter-slider .nav-arrow.right-arrow:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: -7px;
-	bottom: 0;
-	width: 12px;
-	transform: skew(-10deg);
-	background: #09f;
-	transition: all 0.4s;
-}
-.esport-team-landing-twitter-slider .nav-arrow.left-arrow:hover:before,
-.esport-team-landing-twitter-slider .nav-arrow.right-arrow:hover:before {
-	background: #ffcf0f;
 }
 .esport-team-landing-twitter-slider .nav-arrow:hover {
 	color: #000;
-	background: #ffcf0f;
+	background: #FFF;
 }
 @media (max-width: 767px) {
 	.esport-team-landing-twitter-slider .wrap {
