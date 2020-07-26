@@ -64,8 +64,8 @@ RewriteRule ^torneo_llaves$ FrontEnd/torneo_llaves.php
 
 # BEGIN Force HTTP (If "RewriteEngine On" exists, plese remove it from this code)
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{SERVER_PORT} !^443$
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	RewriteEngine On
+	RewriteCond %{SERVER_PORT} !^443$
+	RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 # END Force HTTP
