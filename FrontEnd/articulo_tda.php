@@ -309,7 +309,7 @@ desconectar($conexion);
                                 desconectar($conexion);
                                 ?>
                                 <!--COMENTARIO RESPUESTA-->
-                                <!--div class="comment-item answer">
+                                <!-- <div class="comment-item answer">
                                     <div class="avatar"><img src="<?php echo $urlFE?>/images/common/user-avatar.jpg" alt="user-avatar"></div>
                                     <div class="info">
                                         <div class="date">
@@ -319,7 +319,7 @@ desconectar($conexion);
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quo excepturi fugit molestiae omnis harum consectetur reprehenderit numquam ipsam magnam molestias, autem possimus libero dolores magni, nisi totam dolorum odio?</p>
                                         <a href="#" class="reply">Responder</a>
                                     </div>
-                                </div-->
+                                </div> -->
                                 <!--COMENTARIO-->
                                 <!-- <div class="comment-item">
                                     <div class="avatar"><img src="<?php echo $urlFE?>/images/common/user-avatar.jpg" alt="user-avatar"></div>

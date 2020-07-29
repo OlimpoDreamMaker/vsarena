@@ -257,18 +257,23 @@ function tagsNots($conexion,$amigable){
 //Comentarios de las Noticias
 function comentariosNot($conexion,$id,$imagenes){
   $consulta = "SELECT * 
-               FROM comentarios c, usuarios u, noregistrados n
+               FROM comentarios c, usuarios u
                WHERE c.Noticias_idNoticia='$id'
                AND c.Usuarios_idUsuario=u.idUsuario
-               AND c.NoRegistrados_idNoRegistrado=n.idNoRegistrado
                ORDER BY c.idComentario ASC";
+  // $consulta = "SELECT * 
+  //              FROM comentarios c, usuarios u, noregistrados n
+  //              WHERE c.Noticias_idNoticia='$id'
+  //              AND c.Usuarios_idUsuario=u.idUsuario
+  //              AND c.NoRegistrados_idNoRegistrado=n.idNoRegistrado
+  //              ORDER BY c.idComentario ASC";
   $rs = mysqli_query($conexion, $consulta);
   // var_dump(mysqli_fetch_assoc($rs));
   if ($rs) {
     while ($fila = mysqli_fetch_assoc($rs)) {
       echo "<div class='comment-item'>";
       echo "<div class='avatar'>";
-      if ($fila['idUsuario'] != 1 and $fila['idNoRegistrado'] == 1) {
+      if ($fila['idUsuario'] != 1) {
         echo "<img src='$imagenes/avatarUser/" . $fila['avatarUsuario'] . "' alt='user-avatar'>";
       } else {
         echo "<img src='$imagenes/avatarUser/pordefecto.png' alt='user-avatar'>";
@@ -276,18 +281,44 @@ function comentariosNot($conexion,$id,$imagenes){
       echo "</div>";
       echo "<div class='info'>";
       echo "<div class='date'>";
-      if ($fila['idUsuario'] != 1 and $fila['idNoRegistrado'] == 0) {
+      if ($fila['idUsuario'] != 1) {
         echo "<a href='#'>" . fechaTexto($fila['fechaComentario']) . "</a> Por <a href='#'>" . $fila['usuario'] . "</a>";
       } else {
-        echo "<a href='#'>" . fechaTexto($fila['fechaComentario']) . "</a> Por <a href='#'>" . $fila['nombreNoRegistrado'] . "</a>";
+        echo "<a href='#'>" . fechaTexto($fila['fechaComentario']) . "</a> Por <a href='#'>" . "Anonimo" . "</a>";
       }
       echo "</div>";
       echo "<p>";
       echo $fila['contenidoComentario'];
       echo "</p>";
-      //echo "<a href='#' class='reply'>Responder</a>";
+      echo "<a id='".$fila['idComentario']."' class='reply'>Responder</a>";
       echo "</div>";
       echo "</div>";
+      $idComentario = $fila['idComentario'];
+      $consultaComentarios = "SELECT * 
+               FROM comentarios_de_comentarios c, usuarios u
+               WHERE c.Comentarios_idComentario='$idComentario'
+               AND c.Usuarios_idUsuario=u.idUsuario
+               ORDER BY c.idComentario ASC";
+      $rsComentarios = mysqli_query($conexion, $consultaComentarios);
+      while ($filaComentarios = mysqli_fetch_assoc($rsComentarios)) {
+        $nombre = "Anonimo";
+        $imagen = "pordefecto.png";
+        if ($filaComentarios['idUsuario'] != 1) {
+          $nombre = $filaComentarios['usuario'];
+          $imagen = $filaComentarios['avatarUsuario'];
+        }
+        echo '<div class="comment-item answer">
+                                    <div class="avatar"><img src="'.$imagenes.'/avatarUser/' . $imagen .'" alt="user-avatar"></div>
+                                    <div class="info">
+                                        <div class="date">
+                                            <a href="#">'. fechaTexto($filaComentarios['fechaComentario']).'</a> Por <a href="#">'. $nombre .'</a>
+                                            <a href="#" class="quote">#</a>
+                                        </div>
+                                        <p>'. $filaComentarios['contenidoComentario'].'</p>
+                                        <a href="#" class="reply">Responder</a>
+                                    </div>
+                                </div>';
+      }
     }
   }
 }

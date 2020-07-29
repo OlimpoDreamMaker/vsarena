@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once("./config.php");
 require_once("./funciones.php");
 $conexion = conectar();
@@ -9,8 +8,8 @@ if(isset($_GET['noticia'])){
     $usuario = $_SESSION['usuario'];
     $comentario = $_POST['comentario'];
     $fecha = fechaHoy();
-    $consulta = "INSERT INTO comentarios(contenidoComentario,fechaComentario,Usuarios_idUsuario,Noticias_idNoticia,Productos_idProducto,NoRegistrados_idNoRegistrado)
-                 VALUES ('$comentario', '$fecha', '$usuario', '$noticia', '1', '1')";
+    $consulta = "INSERT INTO comentarios(contenidoComentario,fechaComentario,Usuarios_idUsuario,Noticias_idNoticia,Productos_idProducto)
+                 VALUES ('$comentario', '$fecha', '$usuario', '$noticia', '1')";
   }else{
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
@@ -20,10 +19,10 @@ if(isset($_GET['noticia'])){
             VALUES ('$nombre', '$email')";
     mysqli_query($conexion,$aux);
     $usuario = mysqli_insert_id($conexion);
-    $consulta = "INSERT INTO comentarios(contenidoComentario,fechaComentario,Usuarios_idUsuario,Noticias_idNoticia,Productos_idProducto,NoRegistrados_idNoRegistrado)
-                 VALUES ('$comentario', '$fecha', '1', '$noticia', '1', '$usuario')";
+    $consulta = "INSERT INTO comentarios(contenidoComentario,fechaComentario,Usuarios_idUsuario,Noticias_idNoticia,Productos_idProducto)
+                 VALUES ('$comentario', '$fecha', '1', '$noticia', '1')";
   }
-  mysqli_query($conexion,$consulta);
+  mysqli_query($conexion,$consulta) or die(mysqli_error($conexion));
   desconectar($conexion);
   header("Location: $amigable/articulo/$noticia/");
 }
@@ -33,8 +32,8 @@ if(isset($_GET['producto'])){
     $usuario = $_SESSION['usuario'];
     $comentario = $_POST['comentario'];
     $fecha = fechaHoy();
-    $consulta = "INSERT INTO comentarios(contenidoComentario,fechaComentario,Usuarios_idUsuario,Noticias_idNoticia,Productos_idProducto,NoRegistrados_idNoRegistrado)
-                 VALUES ('$comentario', '$fecha', '$usuario', '1', '$producto', '0')";
+    $consulta = "INSERT INTO comentarios(contenidoComentario,fechaComentario,Usuarios_idUsuario,Noticias_idNoticia,Productos_idProducto)
+                 VALUES ('$comentario', '$fecha', '$usuario', '1', '$producto')";
   }else{
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
@@ -44,8 +43,8 @@ if(isset($_GET['producto'])){
             VALUES ('$nombre', '$email')";
     mysqli_query($conexion,$aux);
     $usuario = mysqli_insert_id($conexion);
-    $consulta = "INSERT INTO comentarios(contenidoComentario,fechaComentario,Usuarios_idUsuario,Noticias_idNoticia,Productos_idProducto,NoRegistrados_idNoRegistrado)
-                 VALUES ('$comentario', '$fecha', '1', '1', '$producto', '$usuario')";
+    $consulta = "INSERT INTO comentarios(contenidoComentario,fechaComentario,Usuarios_idUsuario,Noticias_idNoticia,Productos_idProducto)
+                 VALUES ('$comentario', '$fecha', '1', '1', '$producto')";
   }
   mysqli_query($conexion,$consulta);
   desconectar($conexion);

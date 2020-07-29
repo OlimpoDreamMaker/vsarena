@@ -9,7 +9,7 @@ switch ($cantidadEquipos) {
     $enfrentamiento = "INSERT INTO enfrentamientos(NombreEnfrentamiento,Rondas_idRondas,Grupos_idGrupos) VALUES ('A','1','$id')";
     mysqli_query($conexion,$enfrentamiento);
     $rs = mysqli_query($conexion, "SELECT MAX(idEnfrentamiento) AS id FROM enfrentamientos");
-    if ($row = mysql_fetch_row($rs)) {
+    if ($row = mysqli_fetch_assoc($rs)) {
       $idEnfrentamiento = trim($row[0]);
       for($i=0; $i<$cantidadEquipos; $i++){
         $consulta =  "INSERT INTO enfrentamientos_equipos(Enfrentamientos_idEnfrentamientos,Equipos_idEquipo)
@@ -23,7 +23,7 @@ switch ($cantidadEquipos) {
     $enfrentamiento = "INSERT INTO enfrentamientos(NombreEnfrentamiento,Rondas_idRondas,Grupos_idGrupos) VALUES ('A','1','$id')";
     mysqli_query($conexion,$enfrentamiento);
     $rs = mysqli_query($conexion, "SELECT MAX(idEnfrentamiento) AS id FROM enfrentamientos");
-    if ($row = mysql_fetch_row($rs)) {
+    if ($row = mysqli_fetch_assoc($rs)) {
       $idEnfrentamiento = trim($row[0]);
       $consulta =  "INSERT INTO enfrentamientos_equipos(Enfrentamientos_idEnfrentamientos,Equipos_idEquipo)
                       VALUES ('$idEnfrentamiento','$equipo[0]')";
@@ -247,7 +247,7 @@ switch ($cantidadEquipos) {
     # code...
     break;
 }
-desconectarBD($conexion);
+desconectar($conexion);
 header("Location: ../templates/grupo.php?id=$id");
 ?>
 
