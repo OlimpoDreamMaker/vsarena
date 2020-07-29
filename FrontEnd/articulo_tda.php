@@ -1,10 +1,10 @@
 <?php
 require_once("../BackEnd/config.php");
 require_once("../BackEnd/funciones.php");
-$conexion = conectar();
-if(!isset($_GET['noticia']) AND $_GET['noticia'] == NULL){
-  header("Location: $amigable/noticias");
-}
+// $conexion = conectar();
+// if(!isset($_GET['noticia']) AND $_GET['noticia'] == NULL){
+//   header("Location: $amigable/noticias");
+// }
 $idNoticia = $_GET['noticia'];
 $consulta =  "SELECT * FROM noticias n, usuarios u 
               WHERE n.idNoticia='$idNoticia' 
