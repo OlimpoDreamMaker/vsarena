@@ -1,6 +1,9 @@
 <?php
 require_once(__DIR__ . "/config.php");
 session_start();
+// Datos necesarios:
+// POST -> USUARIO, CONTENIDO DEL COMENTARIO, ID DEL COMENTARIO A COMENTAR
+
 // Verifica si el usuario esta logeado
 if (isset($_SESSION['usuario'])) {
     $usuario = $_SESSION['usuario'];

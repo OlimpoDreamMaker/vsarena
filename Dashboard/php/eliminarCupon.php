@@ -1,8 +1,8 @@
 <?php
   require_once("../../BackEnd/config.php");
-  $conexion = conectar(); 
+  $conexion = conectar();
 
-  $idCupon = $_GET['id']; //Se recibe el ID del cupon a eliminar
+  $idCupon = $_GET['id']; // Se recibe el ID del cupon a eliminar
   $usuario = $_POST['usuario'];
   $pass = $_POST['password'];
 

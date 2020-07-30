@@ -4,9 +4,8 @@
   $idRonda = $_GET['id'];
   $ronda = $_POST['nombreRonda'];
   $consulta = "UPDATE rondas SET 
-                  nombreRondas='$ronda'
-                  WHERE idRonda='$idRonda";  
-
+                  nombreRonda='$ronda'
+                  WHERE idRonda='$idRonda'";
   mysqli_query($conexion,$consulta);
 
   $desconectar = desconectar($conexion);
