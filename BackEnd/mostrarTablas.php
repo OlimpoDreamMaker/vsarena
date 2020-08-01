@@ -453,7 +453,7 @@ function premiosTorneo($conexion,$idTorneo, $url){
   }
 }
 //Dashboard Rondas
-function mostrarRondas($conexion, $idTorneo){
+function mostrarRondas($conexion, $idTorneo) {
   $consulta = "SELECT * FROM rondas WHERE Torneos_idTorneos='$idTorneo'";
   $resultado = mysqli_query($conexion,$consulta);
   global $amigable;
@@ -555,24 +555,25 @@ function mostrarRondas($conexion, $idTorneo){
 //Dashboard Equipos Inscriptos Torneo
 function equiposTorneos($conexion,$idTorneo, $url){
   $consulta =  "SELECT * 
-                FROM Equipos_has_Torneos h, Equipos e
+                FROM equipos_has_torneos h, equipos e
                 WHERE h.Torneos_idTorneo='$idTorneo' 
                 AND h.Equipos_idEquipo=e.idEquipo";
   $resultado = mysqli_query($conexion,$consulta);
-  if(isset($resultado) && mysqli_num_rows($resultado)>0){
-    while($fila = mysqli_fetch_assoc($resultado)){
-      $idEquipo = $fila['idEquipo'];
-      $subconsulta = "SELECT * 
+  if(isset($resultado)){ // mysqli_num_rows($resultado)>0
+    if ($resultado->num_rows > 0) {
+      while ($fila = mysqli_fetch_assoc($resultado)) {
+        $idEquipo = $fila['idEquipo'];
+        $subconsulta = "SELECT * 
                       FROM usuarios  
                       WHERE Equipos_idEquipos='$idEquipo'";
-      $resultado2 = mysqli_query($conexion, $subconsulta);
-      echo "<div class='col-6'>";
-      echo  "<div class='card'>";
-      echo  "<!-- Card Header START -->";
-      echo  "<div class='card-header'>
-              <h3 class='card-title'><a href='$url/panel/equipo/".$fila['idEquipo']."/'>".$fila['equipo']."</a></h3>
+        $resultado2 = mysqli_query($conexion, $subconsulta);
+        echo "<div class='col-6'>";
+        echo  "<div class='card'>";
+        echo  "<!-- Card Header START -->";
+        echo  "<div class='card-header'>
+              <h3 class='card-title'><a href='$url/panel/equipo/" . $fila['idEquipo'] . "/'>" . $fila['equipo'] . "</a></h3>
             </div>";
-      echo "<!-- Card Header END -->
+        echo "<!-- Card Header END -->
             <!-- Card Body START -->
             <div class='card-body p-0'>
               <table class='table table-striped'>
@@ -588,24 +589,32 @@ function equiposTorneos($conexion,$idTorneo, $url){
                 
                 <!-- Contenido Tabla Ronda START -->
                 <tbody>";
-      
-      while($usuarios = mysqli_fetch_assoc($resultado2)){
-        echo "<tr>";
-        echo "<td>
-                <a href='$url/panel/usuario".$usuarios['idUsuario']."/'>".$usuarios['idUsuario']."</a>
+
+        while ($usuarios = mysqli_fetch_assoc($resultado2)) {
+          echo "<tr>";
+          echo "<td>
+                <a href='$url/panel/usuario" . $usuarios['idUsuario'] . "/'>" . $usuarios['idUsuario'] . "</a>
               </td>";
-        echo "<td>
-                <a href='$url/panel/usuario/".$usuarios['idUsuario']."/'>".$usuarios['usuario']."</a>
+          echo "<td>
+                <a href='$url/panel/usuario/" . $usuarios['idUsuario'] . "/'>" . $usuarios['usuario'] . "</a>
               </td>";
-        echo "</tr>";
-      }  
-      echo "<!-- Cabecera Tabla Ronda END -->
+          echo "</tr>";
+        }
+        echo "<!-- Cabecera Tabla Ronda END -->
 
               </table>
             </div>
             <!-- Card Body END -->";
-      echo  "</div>";
-      echo "</div>";
+        echo  "</div>";
+        echo "</div>";
+      }
+      // esto esta MUY mal, TODO fix
+    } else {
+      echo "<!-- Mensaje si no hay Equipos START -->
+          <div class='col-12 mb-4'>
+            <h2 class='text-center'>Aun no se inscribieron equipos</h2>
+          </div>
+          <!-- Mensaje si no hay Equipos END -->";
     }
   }else{
     echo "<!-- Mensaje si no hay Equipos START -->

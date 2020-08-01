@@ -9,6 +9,12 @@
 
   $consulta = "SELECT * FROM usuarios WHERE usuario='$usuario' AND passUsuario='$pass'";
   if($resultado = mysqli_query($conexion, $consulta)){
+    $consulta = "DELETE FROM premios WHERE Torneos_idTorneos='$idTorneo'";
+    mysqli_query($conexion, $consulta);
+    $consulta = "DELETE FROM rondas WHERE Torneos_idTorneos='$idTorneo'";
+    mysqli_query($conexion, $consulta);
+    $consulta = "DELETE FROM grupos WHERE Torneos_idTorneos='$idTorneo'";
+    mysqli_query($conexion, $consulta);
     $consulta = "DELETE FROM torneos WHERE idTorneo='$idTorneo'";
     mysqli_query($conexion, $consulta);   
     $desconectar = desconectar($conexion);
@@ -20,5 +26,3 @@
     $desconectar = desconectar($conexion);
     header("Location: $amigable/panel/usuario/$idUsuario/");
   }
-  
-?>
