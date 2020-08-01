@@ -1,8 +1,7 @@
 <?php
 echo ("<!--NAV START-->
-<div class='main-menu-wrap sticky-menu'>
-	<div class='nav_index'>
-		<a href='$amigable/' class='custom-logo-link'><img src='$urlFE/images/vs_arena/ilogo.png' alt='logo' class='custom-logo'></a>
+<div class='main-menu-wrap'>
+	<div class='nav_index'>		
 		<!--START BOTON MOBILE-->
 		<button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#team-menu' aria-expanded='false'>
 		<span class='sr-only'>Navegación</span>
@@ -13,6 +12,7 @@ echo ("<!--NAV START-->
 		<!--END BOTON MOBILE-->
 		<nav class='navbar'>
 			<div class='collapse navbar-collapse' id='team-menu'>
+				<a href='$amigable/' class='custom-logo-link'><img src='$urlFE/images/vs_arena/ilogo.png' alt='logo' class='custom-logo'></a>
 				<ul class='main-menu nav'>
 					<span class='margen-izquierdo'>	</span>
 					<li>
